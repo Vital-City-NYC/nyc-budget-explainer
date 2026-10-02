@@ -1,0 +1,72 @@
+{
+ "fiscal_year": 2026,
+ "source": "NYC Department of Finance, Annual Report on the NYC Real Property Tax FY2026 (July 2026), Fast Facts p.1, Tables 1, 4, 19, 20",
+ "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+ "levy_total_m": 37976.6,
+ "market_value_total_m": 1574378.8,
+ "citywide_rate": 12.283,
+ "classes": [
+  {
+   "key": "c1",
+   "label": "1-, 2- and 3-family homes",
+   "class": "Class 1",
+   "levy_m": 5430.3,
+   "levy_share": 14.299,
+   "mv_share": 49.63,
+   "rate": 19.843,
+   "levy_over_mv": 0.7,
+   "color": "--c-c1"
+  },
+  {
+   "key": "c2r",
+   "label": "Rental apartment buildings",
+   "class": "Class 2",
+   "levy_m": 7628.1,
+   "levy_share": 20.09,
+   "mv_share": 14.87,
+   "rate": 12.439,
+   "levy_over_mv": null,
+   "color": "--c-c2r",
+   "note": "Rentals, conrentals and 4-10 family rentals, grouped from DOF Table 4. Renters pay this through rent; how much passes through is not settled."
+  },
+  {
+   "key": "c2o",
+   "label": "Co-ops, condos and condops",
+   "class": "Class 2",
+   "levy_m": 7241.2,
+   "levy_share": 19.07,
+   "mv_share": 10.22,
+   "rate": 12.439,
+   "levy_over_mv": null,
+   "color": "--c-c2o",
+   "note": "State law values co-ops and condos as if they were rentals, so their official market value sits far below sale prices. No effective rate is shown for that reason."
+  },
+  {
+   "key": "c3",
+   "label": "Utilities",
+   "class": "Class 3",
+   "levy_m": 3145.0,
+   "levy_share": 8.281,
+   "mv_share": 4.01,
+   "rate": 11.108,
+   "levy_over_mv": 4.98,
+   "color": "--c-c3"
+  },
+  {
+   "key": "c4",
+   "label": "Commercial property",
+   "class": "Class 4",
+   "levy_m": 14532.0,
+   "levy_share": 38.266,
+   "mv_share": 21.27,
+   "rate": 10.848,
+   "levy_over_mv": 4.34,
+   "color": "--c-c4"
+  }
+ ],
+ "quotes": {
+  "fast_facts": "Citywide $37,976.6 100.0% 3.0% / Class 1 $5,430.3 14.3% 3.0% / Class 2 $14,869.4 39.2% 3.1% / Class 3 $3,145.0 8.3% 6.5% / Class 4 $14,532.0 38.3% 2.3%",
+  "rptl581": "Unless specifically excluded, Section 581 of the Real Property Tax Law prohibits the use of sales data that reflect actual or potential cooperative or condominium ownership in the assessment of multiple-family housing.",
+  "passthrough": "Unfortunately, the testimony did not reveal conclusive evidence regarding the degree of the property tax borne by renters. (NYC Advisory Commission on Property Tax Reform, final report, Dec 2021, p.8)"
+ }
+}

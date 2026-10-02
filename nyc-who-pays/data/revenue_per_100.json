@@ -1,0 +1,719 @@
+{
+ "source": "NYC Comptroller ACFR, General Fund Revenues (statistical section), as extracted in nyc-budget-per-capita/nyc-budget-fy2000-fy2025.csv",
+ "unit": "thousands of dollars, nominal",
+ "grouping": {
+  "property_tax": [
+   "property_tax"
+  ],
+  "personal_income_tax": [
+   "personal_income_tax"
+  ],
+  "sales_tax": [
+   "sales_tax"
+  ],
+  "business_taxes": [
+   "business_taxes"
+  ],
+  "other_taxes": [
+   "other_taxes",
+   "tax_penalties"
+  ],
+  "state_aid": [
+   "state_aid"
+  ],
+  "federal_aid": [
+   "federal_aid"
+  ],
+  "fees_fines_other": [
+   "charges_for_services",
+   "fines_forfeitures",
+   "licenses_permits",
+   "investment_income",
+   "other_revenues",
+   "other_grants",
+   "unrestricted_aid",
+   "other_financing",
+   "tobacco_settlement",
+   "disallowances"
+  ]
+ },
+ "years": {
+  "2000": {
+   "total": 37884571.0,
+   "groups": {
+    "property_tax": 7849962.0,
+    "personal_income_tax": 5364597.0,
+    "sales_tax": 4159944.0,
+    "business_taxes": 3589022.0,
+    "other_taxes": 1295457.0,
+    "state_aid": 7061723.0,
+    "federal_aid": 4417224.0,
+    "fees_fines_other": 4146642.0
+   },
+   "per_100": {
+    "property_tax": 20.72,
+    "personal_income_tax": 14.16,
+    "sales_tax": 10.98,
+    "business_taxes": 9.47,
+    "other_taxes": 3.42,
+    "state_aid": 18.64,
+    "federal_aid": 11.66,
+    "fees_fines_other": 10.95
+   },
+   "ungrouped": []
+  },
+  "2001": {
+   "total": 40231871.0,
+   "groups": {
+    "property_tax": 8245585.0,
+    "personal_income_tax": 5757074.0,
+    "sales_tax": 4195592.0,
+    "business_taxes": 3685224.0,
+    "other_taxes": 1327059.0,
+    "state_aid": 7767765.0,
+    "federal_aid": 4549764.0,
+    "fees_fines_other": 4703808.0
+   },
+   "per_100": {
+    "property_tax": 20.5,
+    "personal_income_tax": 14.31,
+    "sales_tax": 10.43,
+    "business_taxes": 9.16,
+    "other_taxes": 3.3,
+    "state_aid": 19.31,
+    "federal_aid": 11.31,
+    "fees_fines_other": 11.69
+   },
+   "ungrouped": []
+  },
+  "2002": {
+   "total": 40865260.0,
+   "groups": {
+    "property_tax": 8760873.0,
+    "personal_income_tax": 4555059.0,
+    "sales_tax": 3957386.0,
+    "business_taxes": 3192084.0,
+    "other_taxes": 1252536.0,
+    "state_aid": 8030500.0,
+    "federal_aid": 6096740.0,
+    "fees_fines_other": 5020082.0
+   },
+   "per_100": {
+    "property_tax": 21.44,
+    "personal_income_tax": 11.15,
+    "sales_tax": 9.68,
+    "business_taxes": 7.81,
+    "other_taxes": 3.07,
+    "state_aid": 19.65,
+    "federal_aid": 14.92,
+    "fees_fines_other": 12.28
+   },
+   "ungrouped": []
+  },
+  "2003": {
+   "total": 44345167.0,
+   "groups": {
+    "property_tax": 10062929.0,
+    "personal_income_tax": 4492947.0,
+    "sales_tax": 4321464.0,
+    "business_taxes": 3137916.0,
+    "other_taxes": 1345142.0,
+    "state_aid": 8317388.0,
+    "federal_aid": 5617890.0,
+    "fees_fines_other": 7049491.0
+   },
+   "per_100": {
+    "property_tax": 22.69,
+    "personal_income_tax": 10.13,
+    "sales_tax": 9.75,
+    "business_taxes": 7.08,
+    "other_taxes": 3.03,
+    "state_aid": 18.76,
+    "federal_aid": 12.67,
+    "fees_fines_other": 15.9
+   },
+   "ungrouped": []
+  },
+  "2004": {
+   "total": 47297054.0,
+   "groups": {
+    "property_tax": 11582328.0,
+    "personal_income_tax": 6012580.0,
+    "sales_tax": 5081287.0,
+    "business_taxes": 3690834.0,
+    "other_taxes": 1798313.0,
+    "state_aid": 8454396.0,
+    "federal_aid": 5414833.0,
+    "fees_fines_other": 5262483.0
+   },
+   "per_100": {
+    "property_tax": 24.49,
+    "personal_income_tax": 12.71,
+    "sales_tax": 10.74,
+    "business_taxes": 7.8,
+    "other_taxes": 3.8,
+    "state_aid": 17.88,
+    "federal_aid": 11.45,
+    "fees_fines_other": 11.13
+   },
+   "ungrouped": []
+  },
+  "2005": {
+   "total": 52794817.0,
+   "groups": {
+    "property_tax": 11615939.0,
+    "personal_income_tax": 6656334.0,
+    "sales_tax": 5822751.0,
+    "business_taxes": 4640541.0,
+    "other_taxes": 2130072.0,
+    "state_aid": 8822776.0,
+    "federal_aid": 6653954.0,
+    "fees_fines_other": 6452450.0
+   },
+   "per_100": {
+    "property_tax": 22.0,
+    "personal_income_tax": 12.61,
+    "sales_tax": 11.03,
+    "business_taxes": 8.79,
+    "other_taxes": 4.03,
+    "state_aid": 16.71,
+    "federal_aid": 12.6,
+    "fees_fines_other": 12.22
+   },
+   "ungrouped": []
+  },
+  "2006": {
+   "total": 54003717.0,
+   "groups": {
+    "property_tax": 12636355.0,
+    "personal_income_tax": 7675813.0,
+    "sales_tax": 5986656.0,
+    "business_taxes": 5531620.0,
+    "other_taxes": 2380744.0,
+    "state_aid": 9585566.0,
+    "federal_aid": 5243420.0,
+    "fees_fines_other": 4963543.0
+   },
+   "per_100": {
+    "property_tax": 23.4,
+    "personal_income_tax": 14.21,
+    "sales_tax": 11.09,
+    "business_taxes": 10.24,
+    "other_taxes": 4.41,
+    "state_aid": 17.75,
+    "federal_aid": 9.71,
+    "fees_fines_other": 9.19
+   },
+   "ungrouped": []
+  },
+  "2007": {
+   "total": 58772970.0,
+   "groups": {
+    "property_tax": 13122812.0,
+    "personal_income_tax": 7963170.0,
+    "sales_tax": 6412020.0,
+    "business_taxes": 7451281.0,
+    "other_taxes": 2892579.0,
+    "state_aid": 10247051.0,
+    "federal_aid": 5471205.0,
+    "fees_fines_other": 5212852.0
+   },
+   "per_100": {
+    "property_tax": 22.33,
+    "personal_income_tax": 13.55,
+    "sales_tax": 10.91,
+    "business_taxes": 12.68,
+    "other_taxes": 4.92,
+    "state_aid": 17.43,
+    "federal_aid": 9.31,
+    "fees_fines_other": 8.87
+   },
+   "ungrouped": []
+  },
+  "2008": {
+   "total": 61975523.0,
+   "groups": {
+    "property_tax": 13203930.0,
+    "personal_income_tax": 9764209.0,
+    "sales_tax": 6228357.0,
+    "business_taxes": 6784783.0,
+    "other_taxes": 2619250.0,
+    "state_aid": 11421132.0,
+    "federal_aid": 5691678.0,
+    "fees_fines_other": 6262184.0
+   },
+   "per_100": {
+    "property_tax": 21.31,
+    "personal_income_tax": 15.75,
+    "sales_tax": 10.05,
+    "business_taxes": 10.95,
+    "other_taxes": 4.23,
+    "state_aid": 18.43,
+    "federal_aid": 9.18,
+    "fees_fines_other": 10.1
+   },
+   "ungrouped": []
+  },
+  "2009": {
+   "total": 60171162.0,
+   "groups": {
+    "property_tax": 14487231.0,
+    "personal_income_tax": 7518903.0,
+    "sales_tax": 5302107.0,
+    "business_taxes": 6588642.0,
+    "other_taxes": 1975691.0,
+    "state_aid": 12124101.0,
+    "federal_aid": 5940697.0,
+    "fees_fines_other": 6233790.0
+   },
+   "per_100": {
+    "property_tax": 24.08,
+    "personal_income_tax": 12.5,
+    "sales_tax": 8.81,
+    "business_taxes": 10.95,
+    "other_taxes": 3.28,
+    "state_aid": 20.15,
+    "federal_aid": 9.87,
+    "fees_fines_other": 10.36
+   },
+   "ungrouped": []
+  },
+  "2010": {
+   "total": 62813314.0,
+   "groups": {
+    "property_tax": 16369447.0,
+    "personal_income_tax": 7592657.0,
+    "sales_tax": 5611398.0,
+    "business_taxes": 5706533.0,
+    "other_taxes": 1920938.0,
+    "state_aid": 11645570.0,
+    "federal_aid": 7700009.0,
+    "fees_fines_other": 6266762.0
+   },
+   "per_100": {
+    "property_tax": 26.06,
+    "personal_income_tax": 12.09,
+    "sales_tax": 8.93,
+    "business_taxes": 9.08,
+    "other_taxes": 3.06,
+    "state_aid": 18.54,
+    "federal_aid": 12.26,
+    "fees_fines_other": 9.98
+   },
+   "ungrouped": []
+  },
+  "2011": {
+   "total": 65319897.0,
+   "groups": {
+    "property_tax": 17086484.0,
+    "personal_income_tax": 8165972.0,
+    "sales_tax": 6190215.0,
+    "business_taxes": 6705299.0,
+    "other_taxes": 2201834.0,
+    "state_aid": 11255365.0,
+    "federal_aid": 7746661.0,
+    "fees_fines_other": 5968067.0
+   },
+   "per_100": {
+    "property_tax": 26.16,
+    "personal_income_tax": 12.5,
+    "sales_tax": 9.48,
+    "business_taxes": 10.27,
+    "other_taxes": 3.37,
+    "state_aid": 17.23,
+    "federal_aid": 11.86,
+    "fees_fines_other": 9.14
+   },
+   "ungrouped": []
+  },
+  "2012": {
+   "total": 66981665.0,
+   "groups": {
+    "property_tax": 18157722.0,
+    "personal_income_tax": 8557002.0,
+    "sales_tax": 6512107.0,
+    "business_taxes": 6498881.0,
+    "other_taxes": 2385674.0,
+    "state_aid": 11113775.0,
+    "federal_aid": 6997828.0,
+    "fees_fines_other": 6758676.0
+   },
+   "per_100": {
+    "property_tax": 27.11,
+    "personal_income_tax": 12.78,
+    "sales_tax": 9.72,
+    "business_taxes": 9.7,
+    "other_taxes": 3.56,
+    "state_aid": 16.59,
+    "federal_aid": 10.45,
+    "fees_fines_other": 10.09
+   },
+   "ungrouped": []
+  },
+  "2013": {
+   "total": 71029227.0,
+   "groups": {
+    "property_tax": 18969610.0,
+    "personal_income_tax": 9814898.0,
+    "sales_tax": 7032259.0,
+    "business_taxes": 7248633.0,
+    "other_taxes": 2656383.0,
+    "state_aid": 11026961.0,
+    "federal_aid": 8421030.0,
+    "fees_fines_other": 5859453.0
+   },
+   "per_100": {
+    "property_tax": 26.71,
+    "personal_income_tax": 13.82,
+    "sales_tax": 9.9,
+    "business_taxes": 10.21,
+    "other_taxes": 3.74,
+    "state_aid": 15.52,
+    "federal_aid": 11.86,
+    "fees_fines_other": 8.25
+   },
+   "ungrouped": []
+  },
+  "2014": {
+   "total": 72880530.0,
+   "groups": {
+    "property_tax": 20202022.0,
+    "personal_income_tax": 10173614.0,
+    "sales_tax": 7603986.0,
+    "business_taxes": 7214845.0,
+    "other_taxes": 3180945.0,
+    "state_aid": 10916091.0,
+    "federal_aid": 6767062.0,
+    "fees_fines_other": 6821965.0
+   },
+   "per_100": {
+    "property_tax": 27.72,
+    "personal_income_tax": 13.96,
+    "sales_tax": 10.43,
+    "business_taxes": 9.9,
+    "other_taxes": 4.36,
+    "state_aid": 14.98,
+    "federal_aid": 9.29,
+    "fees_fines_other": 9.36
+   },
+   "ungrouped": []
+  },
+  "2015": {
+   "total": 78035312.0,
+   "groups": {
+    "property_tax": 21517932.0,
+    "personal_income_tax": 11294669.0,
+    "sales_tax": 8050932.0,
+    "business_taxes": 7602042.0,
+    "other_taxes": 3475766.0,
+    "state_aid": 12097019.0,
+    "federal_aid": 6784036.0,
+    "fees_fines_other": 7212916.0
+   },
+   "per_100": {
+    "property_tax": 27.57,
+    "personal_income_tax": 14.47,
+    "sales_tax": 10.32,
+    "business_taxes": 9.74,
+    "other_taxes": 4.45,
+    "state_aid": 15.5,
+    "federal_aid": 8.69,
+    "fees_fines_other": 9.24
+   },
+   "ungrouped": []
+  },
+  "2016": {
+   "total": 79986484.0,
+   "groups": {
+    "property_tax": 23180583.0,
+    "personal_income_tax": 11392473.0,
+    "sales_tax": 8540154.0,
+    "business_taxes": 6947614.0,
+    "other_taxes": 3559825.0,
+    "state_aid": 13001757.0,
+    "federal_aid": 7195098.0,
+    "fees_fines_other": 6168980.0
+   },
+   "per_100": {
+    "property_tax": 28.98,
+    "personal_income_tax": 14.24,
+    "sales_tax": 10.68,
+    "business_taxes": 8.69,
+    "other_taxes": 4.45,
+    "state_aid": 16.25,
+    "federal_aid": 9.0,
+    "fees_fines_other": 7.71
+   },
+   "ungrouped": []
+  },
+  "2017": {
+   "total": 83468358.0,
+   "groups": {
+    "property_tax": 24679412.0,
+    "personal_income_tax": 11257809.0,
+    "sales_tax": 8296436.0,
+    "business_taxes": 7120621.0,
+    "other_taxes": 3308127.0,
+    "state_aid": 13990045.0,
+    "federal_aid": 7728070.0,
+    "fees_fines_other": 7087838.0
+   },
+   "per_100": {
+    "property_tax": 29.57,
+    "personal_income_tax": 13.49,
+    "sales_tax": 9.94,
+    "business_taxes": 8.53,
+    "other_taxes": 3.96,
+    "state_aid": 16.76,
+    "federal_aid": 9.26,
+    "fees_fines_other": 8.49
+   },
+   "ungrouped": []
+  },
+  "2018": {
+   "total": 87936395.0,
+   "groups": {
+    "property_tax": 26407630.0,
+    "personal_income_tax": 13411315.0,
+    "sales_tax": 8650471.0,
+    "business_taxes": 7328895.0,
+    "other_taxes": 3305636.0,
+    "state_aid": 14453133.0,
+    "federal_aid": 7767631.0,
+    "fees_fines_other": 6611684.0
+   },
+   "per_100": {
+    "property_tax": 30.03,
+    "personal_income_tax": 15.25,
+    "sales_tax": 9.84,
+    "business_taxes": 8.33,
+    "other_taxes": 3.76,
+    "state_aid": 16.44,
+    "federal_aid": 8.83,
+    "fees_fines_other": 7.52
+   },
+   "ungrouped": []
+  },
+  "2019": {
+   "total": 91784302.0,
+   "groups": {
+    "property_tax": 27884735.0,
+    "personal_income_tax": 13376944.0,
+    "sales_tax": 9082780.0,
+    "business_taxes": 7416265.0,
+    "other_taxes": 3732776.0,
+    "state_aid": 14970300.0,
+    "federal_aid": 7521888.0,
+    "fees_fines_other": 7798614.0
+   },
+   "per_100": {
+    "property_tax": 30.38,
+    "personal_income_tax": 14.57,
+    "sales_tax": 9.9,
+    "business_taxes": 8.08,
+    "other_taxes": 4.07,
+    "state_aid": 16.31,
+    "federal_aid": 8.2,
+    "fees_fines_other": 8.5
+   },
+   "ungrouped": []
+  },
+  "2020": {
+   "total": 95058142.0,
+   "groups": {
+    "property_tax": 29815935.0,
+    "personal_income_tax": 13591179.0,
+    "sales_tax": 8478110.0,
+    "business_taxes": 7861996.0,
+    "other_taxes": 3342452.0,
+    "state_aid": 15333953.0,
+    "federal_aid": 9394737.0,
+    "fees_fines_other": 7239780.0
+   },
+   "per_100": {
+    "property_tax": 31.37,
+    "personal_income_tax": 14.3,
+    "sales_tax": 8.92,
+    "business_taxes": 8.27,
+    "other_taxes": 3.52,
+    "state_aid": 16.13,
+    "federal_aid": 9.88,
+    "fees_fines_other": 7.62
+   },
+   "ungrouped": []
+  },
+  "2021": {
+   "total": 99587211.0,
+   "groups": {
+    "property_tax": 31464469.0,
+    "personal_income_tax": 15140380.0,
+    "sales_tax": 7602688.0,
+    "business_taxes": 8594422.0,
+    "other_taxes": 2731908.0,
+    "state_aid": 14596947.0,
+    "federal_aid": 12439765.0,
+    "fees_fines_other": 7016632.0
+   },
+   "per_100": {
+    "property_tax": 31.59,
+    "personal_income_tax": 15.2,
+    "sales_tax": 7.63,
+    "business_taxes": 8.63,
+    "other_taxes": 2.74,
+    "state_aid": 14.66,
+    "federal_aid": 12.49,
+    "fees_fines_other": 7.05
+   },
+   "ungrouped": []
+  },
+  "2022": {
+   "total": 107228653.0,
+   "groups": {
+    "property_tax": 29582214.0,
+    "personal_income_tax": 16733563.0,
+    "sales_tax": 10008292.0,
+    "business_taxes": 9523327.0,
+    "other_taxes": 3749484.0,
+    "state_aid": 15847403.0,
+    "federal_aid": 15047371.0,
+    "fees_fines_other": 6736999.0
+   },
+   "per_100": {
+    "property_tax": 27.59,
+    "personal_income_tax": 15.61,
+    "sales_tax": 9.33,
+    "business_taxes": 8.88,
+    "other_taxes": 3.5,
+    "state_aid": 14.78,
+    "federal_aid": 14.03,
+    "fees_fines_other": 6.28
+   },
+   "ungrouped": []
+  },
+  "2023": {
+   "total": 108237610.0,
+   "groups": {
+    "property_tax": 31644665.0,
+    "personal_income_tax": 14828978.0,
+    "sales_tax": 10585017.0,
+    "business_taxes": 12712713.0,
+    "other_taxes": 3665404.0,
+    "state_aid": 17069570.0,
+    "federal_aid": 9974243.0,
+    "fees_fines_other": 7757020.0
+   },
+   "per_100": {
+    "property_tax": 29.24,
+    "personal_income_tax": 13.7,
+    "sales_tax": 9.78,
+    "business_taxes": 11.75,
+    "other_taxes": 3.39,
+    "state_aid": 15.77,
+    "federal_aid": 9.22,
+    "fees_fines_other": 7.17
+   },
+   "ungrouped": []
+  },
+  "2024": {
+   "total": 112814233.0,
+   "groups": {
+    "property_tax": 32987024.0,
+    "personal_income_tax": 14052723.0,
+    "sales_tax": 10666812.0,
+    "business_taxes": 12771685.0,
+    "other_taxes": 3698486.0,
+    "state_aid": 19230757.0,
+    "federal_aid": 11294052.0,
+    "fees_fines_other": 8112694.0
+   },
+   "per_100": {
+    "property_tax": 29.24,
+    "personal_income_tax": 12.46,
+    "sales_tax": 9.46,
+    "business_taxes": 11.32,
+    "other_taxes": 3.28,
+    "state_aid": 17.05,
+    "federal_aid": 10.01,
+    "fees_fines_other": 7.19
+   },
+   "ungrouped": []
+  },
+  "2025": {
+   "total": 117659716.0,
+   "groups": {
+    "property_tax": 34756900.0,
+    "personal_income_tax": 16102462.0,
+    "sales_tax": 11264198.0,
+    "business_taxes": 14119409.0,
+    "other_taxes": 4072491.0,
+    "state_aid": 20022019.0,
+    "federal_aid": 9082951.0,
+    "fees_fines_other": 8239286.0
+   },
+   "per_100": {
+    "property_tax": 29.54,
+    "personal_income_tax": 13.69,
+    "sales_tax": 9.57,
+    "business_taxes": 12.0,
+    "other_taxes": 3.46,
+    "state_aid": 17.02,
+    "federal_aid": 7.72,
+    "fees_fines_other": 7.0
+   },
+   "ungrouped": []
+  },
+  "2026": {
+   "total": 126810081,
+   "groups": {
+    "property_tax": 35386000,
+    "personal_income_tax": 20724000,
+    "sales_tax": 12011000,
+    "business_taxes": 11541000,
+    "other_taxes": 5936497,
+    "state_aid": 20670082,
+    "federal_aid": 9862312,
+    "fees_fines_other": 10679190
+   },
+   "per_100": {
+    "property_tax": 27.9,
+    "personal_income_tax": 16.34,
+    "sales_tax": 9.47,
+    "business_taxes": 9.1,
+    "other_taxes": 4.68,
+    "state_aid": 16.3,
+    "federal_aid": 7.78,
+    "fees_fines_other": 8.42
+   },
+   "ungrouped": [],
+   "basis": "OMB FY2026 budget as modified, June 2026",
+   "budgeted": true
+  },
+  "2027": {
+   "total": 126241596,
+   "groups": {
+    "property_tax": 37190000,
+    "personal_income_tax": 20688000,
+    "sales_tax": 12576000,
+    "business_taxes": 12003000,
+    "other_taxes": 6216947,
+    "state_aid": 20812727,
+    "federal_aid": 7373607,
+    "fees_fines_other": 9381315
+   },
+   "per_100": {
+    "property_tax": 29.46,
+    "personal_income_tax": 16.39,
+    "sales_tax": 9.96,
+    "business_taxes": 9.51,
+    "other_taxes": 4.92,
+    "state_aid": 16.49,
+    "federal_aid": 5.84,
+    "fees_fines_other": 7.43
+   },
+   "ungrouped": [],
+   "basis": "OMB FY2027 adopted budget, June 2026",
+   "budgeted": true
+  }
+ },
+ "budget_years_source": "OMB budget documents as parsed in nyc-budget-per-capita/data.json (budget_years). OMB conventions differ from the ACFR: PTET sits inside personal income tax; mortgage and cigarette taxes sit inside sales; \"other_revenues\" is OMB miscellaneous plus other categorical grants and inter-fund revenue."
+}

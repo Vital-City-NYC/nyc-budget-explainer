@@ -1,0 +1,9 @@
+# 01. Capital spending by function, fiscal 2000-2025
+
+Compiled 2026-10-02. Source: NYC Comptroller, Annual Comprehensive Financial Reports, Capital Projects Fund "Expenditures by Agency" / by function schedules, as extracted with page numbers in the nyc-budget-per-capita repo (data/out/acfr_raw.csv, table `capital_expenditures`; sources acfr2005 for 1996-2005, acfr2015 for 2006-2015, acfr2025 for 2016-2025). Fiscal 2025 report: https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf, Schedule CP2, PDF p. 462 on, e.g. "General Government: Department of Small Business Services 387,167", "Department of Citywide Administrative Services 980,482", "Total General Government 1,446,293", "Public Safety and Judicial: Police Department 143,498", "Fire Department 129,737" (thousands). Function totals for fiscal 2025 (thousands): education 3,858,377; environmental 2,382,483; general government 1,446,293; health 590,502; housing 2,875,769; libraries 103,519; parks 795,473; public safety 1,281,529; social services 199,545; transportation 2,044,516; total 15,578,006. The repo's build asserts each year's functions sum to the printed total.
+
+Bonds issued: ACFR governmental funds statement, fiscal 2025 PDF p. 426, "Principal amount of bonds issued 15,518,392" and "Bond premium 1,562,536"; refunding debt issued 6,970,750 is excluded from the "bonds issued" figure shown. Debt service and operating totals as in part two (research/01 there).
+
+Caveat on the page: these are cash expenditures in the year, not commitments; the capital commitment plan the city announces ($117.1 billion for fiscal 2026-2030 per the Comptroller's June 2026 report, see ../nyc-where-it-goes/research/02) is a different measure. Figures nominal.
+
+Self-audit: HIGH for every number (extracted cells with page numbers, sums asserted). Editorial: labels (schools and CUNY; housing and buildings; water, sewers and sanitation; streets, bridges and transit).

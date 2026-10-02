@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What New York City builds</title>
+<meta name="description" content="The capital budget, fiscal 2000 to 2025: for every $100 of building, what it buys, and how it is paid for.">
+<link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
+<link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/tokens/tokens.css">
+<link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/charts/chart-theme.css">
+<style>
+@font-face{font-family:'GascogneTS';src:url('https://vital-city-nyc.github.io/vital-city-design-system/fonts/GascogneTS-Light.ttf') format('truetype');font-weight:300;font-style:normal;font-display:swap}
+:root{--c-edu:#217ebe;--c-soc:#e7466d;--c-saf:#394882;--c-pen:#ff7c53;--c-ben:#cea9be;--c-debt:#050507;--c-hlth:#dde44c;--c-gov:#9b9fbc;--c-env:#707175;--c-else:#c9c9cb;
+ --vc-sans:"halyard-text","Helvetica Neue",Arial,sans-serif;--vc-serif:"GascogneTS",Georgia,serif;--vc-paper:#f7f7f4;--ink:#050507;--mute:#707175;--rule:#dddddd;
+ --c-prop:#ff7c53;--c-pit:#217ebe;--c-sales:#dde44c;--c-biz:#e7466d;--c-oth:#cea9be;--c-state:#394882;--c-fed:#9b9fbc;--c-fees:#707175;
+ --c-c1:#ff7c53;--c-c2r:#e7466d;--c-c2o:#cea9be;--c-c3:#9b9fbc;--c-c4:#394882;
+ --c-i1:#dde44c;--c-i2:#cea9be;--c-i3:#9b9fbc;--c-i4:#217ebe;--c-i5:#394882;--c-i6:#050507}
+@view-transition{navigation:auto}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.28s}
+.nav{view-transition-name:nav}
+*{box-sizing:border-box}html,body{margin:0;background:#fff;color:var(--ink)}
+body{font-family:var(--vc-sans);font-weight:300;padding:24px 16px}
+.card{max-width:880px;margin:0 auto;border:1px solid var(--ink);background:#fff}
+body.embed{padding:0}body.embed .card{border:none;max-width:none}
+.nav{display:flex;border-bottom:1px solid var(--ink);background:#fff;overflow-x:auto;-webkit-overflow-scrolling:touch}.nav a{flex:1 0 auto;min-width:0;text-align:center;text-decoration:none;color:var(--mute);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:11px 10px;border-right:1px solid var(--ink)}.nav a:last-child{border-right:0}.nav a.on{background:var(--ink);color:#fff}.nav a:not(.on):hover{background:var(--vc-paper);color:var(--ink)}.nav a b{display:block;font-family:var(--vc-serif);font-weight:300;font-size:1rem;letter-spacing:0;text-transform:none;margin-top:3px;white-space:nowrap}
+@media(max-width:640px){.nav a{padding:9px 12px}.nav a b{font-size:.92rem}}
+.head{padding:22px 24px 18px;border-bottom:1px solid var(--rule)}
+h1{min-height:2.4em;font-family:var(--vc-sans);font-weight:900;font-size:1.5rem;line-height:1.2;margin:0 0 6px;max-width:34ch}
+.dek{font-weight:300;font-size:.95rem;line-height:1.5;color:var(--mute);margin:0;max-width:62ch}.dek b{color:var(--ink);font-weight:700}
+.sec{padding:20px 24px;border-bottom:1px solid var(--rule)}.sec:last-child{border-bottom:0}
+.sec h2{font-family:var(--vc-sans);font-weight:900;font-size:1.25rem;line-height:1.25;margin:0 0 4px;max-width:62ch}
+.sub{font-weight:200;font-size:.95rem;color:var(--mute);margin:0 0 14px;max-width:62ch;line-height:1.45}
+.lay{display:grid;grid-template-columns:minmax(0,360px) minmax(240px,1fr);gap:28px;align-items:start}
+.waf{display:grid;grid-template-columns:repeat(10,1fr);gap:3px;aspect-ratio:1;align-content:start}
+.waf i{aspect-ratio:1;display:block;background:var(--rule);position:relative;transition:background .4s,opacity .4s}
+.waf i.dim{background:#ececec!important}
+.waf i:hover{outline:2px solid var(--ink);z-index:1}
+.key{border-top:1px solid var(--ink);min-height:370px}
+.key .row{display:grid;grid-template-columns:12px minmax(0,1fr) auto;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid var(--rule);cursor:pointer}
+.key .row:hover,.key .row.on{background:var(--vc-paper)}
+.key .sw{width:12px;height:12px;display:block}
+.key .nm{font-weight:700;font-size:.9rem}
+.key .num{font-family:var(--vc-serif);font-weight:300;font-size:1.55rem;line-height:1;font-variant-numeric:tabular-nums}
+.key .row.dim .nm,.key .row.dim .num{color:#b9b9ba}.key .row.dim .sw{opacity:.3}
+.waf i.pop{animation:pop .5s both}@keyframes pop{0%{transform:scale(.4);opacity:.2}100%{transform:scale(1);opacity:1}}
+.subkey{grid-column:1/-1;margin:2px 0 4px;font-size:.82rem}.subkey div{display:grid;grid-template-columns:11px minmax(0,1fr) auto;gap:8px;align-items:center;padding:3px 0}.subkey .sw{width:11px;height:11px;display:block}.subkey .n{font-family:var(--vc-serif);font-size:1.1rem;font-variant-numeric:tabular-nums}.subkey a{display:block;margin-top:4px;color:var(--mute);font-size:.75rem}.subkey.ins{border-top:1px solid var(--rule);padding-top:6px}.subkey .k{font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:0 0 4px}
+.spark{grid-column:1/-1;height:56px;max-width:100%;display:none;margin:2px 0 4px;overflow:visible}.row.on .spark{display:block}
+.yr{display:flex;gap:10px;align-items:center;margin-top:14px;font-size:.8rem;color:var(--mute)}.yr label{white-space:nowrap}
+.yr input{flex:1;accent-color:#ff7c53}.yr b{font-family:var(--vc-serif);font-weight:300;font-size:1.3rem;color:var(--ink)}
+.hist{font-size:.9rem;line-height:1.45;margin:10px 0 0;min-height:1.4em}.hist b{font-weight:700}
+.play{font:inherit;font-weight:700;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--ink);background:#fff;padding:5px 10px;cursor:pointer}.play:hover{background:#dde44c}
+.tip{position:fixed;pointer-events:none;background:var(--ink);color:#fff;font-size:.78rem;padding:5px 8px;z-index:5;display:none;max-width:220px;line-height:1.35}
+.alb{display:none;margin-top:10px;font-size:.82rem;color:var(--mute)}.alb label{display:flex;gap:6px;align-items:center;cursor:pointer}
+.note{font-size:.75rem;color:var(--mute);border-top:1px solid var(--rule);padding-top:8px;margin-top:14px;line-height:1.45}.note a{color:var(--mute)}
+.seg{display:inline-flex;border:1px solid var(--ink);margin:0 0 14px}.seg button{font:inherit;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border:0;background:#fff;cursor:pointer}.seg button.on{background:var(--ink);color:#fff}
+table.t{width:100%;border-collapse:collapse;font-size:.88rem}
+.t th{font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);text-align:left;padding:6px 8px 6px 0;border-bottom:1px solid var(--ink)}
+.t td{padding:8px 8px 8px 0;border-bottom:1px solid var(--rule);vertical-align:top;line-height:1.4}
+.t td.n,.t th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}.t td.b{font-weight:700}
+.t .sw{width:11px;height:11px;display:inline-block;margin-right:7px;vertical-align:-1px}
+.t tbody tr.on td{background:var(--vc-paper)}.t.pick tbody tr{cursor:pointer}
+.t td.who{font-weight:700}.t tr.albrow td.who{color:var(--mute)}
+.lay.c{grid-template-columns:minmax(0,300px) 1fr;align-items:center;margin-bottom:18px}.hist.big{font-size:1.05rem;line-height:1.5;margin:0;max-width:40ch}
+.ctl th:nth-child(1){width:26%}.ctl th:nth-child(2){width:32%}
+@media(max-width:640px){.ctl thead{display:none}.ctl tbody tr{display:block;padding:8px 0;border-bottom:1px solid var(--rule)}.ctl td{display:block;border:0;padding:2px 0}}
+.t .sub2{display:block;color:var(--mute);font-weight:300}
+.m-only{display:none}
+.pull{font-size:.95rem;line-height:1.5;max-width:66ch;margin:0 0 14px;padding-left:12px;border-left:3px solid #ff7c53}
+.pull cite{display:block;font-style:normal;font-size:.75rem;color:var(--mute);margin-top:4px}
+.method{font-size:.82rem;color:var(--ink);line-height:1.5;max-width:70ch}.method p{margin:0 0 10px}.method a{color:var(--mute)}
+.method table{font-size:.8rem;margin:0 0 12px}.method td,.method th{padding:5px 10px 5px 0;vertical-align:top}
+@media(max-width:640px){.lay,.lay.c{grid-template-columns:1fr}.hist.big{font-size:.95rem;max-width:none}.head,.sec{padding-left:16px;padding-right:16px}.hide-m{display:none}.m-only{display:block;font-size:.8rem;color:var(--mute);font-weight:300;margin-top:2px}}
+
+.facts{margin:10px 0 0;padding:0;list-style:none;font-size:.85rem;line-height:1.45}.facts li{padding:6px 0 6px 12px;border-left:3px solid var(--rule)}.facts li a{color:var(--mute);font-size:.75rem;white-space:nowrap}
+.strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:14px 0 6px}.strip .k{font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:0 0 4px}.strip .v{font-family:var(--vc-serif);font-weight:300;font-size:1.9rem;line-height:1;margin:0 0 6px}.strip p{font-size:.82rem;line-height:1.45;margin:0;color:var(--ink)}.strip p a{color:var(--mute)}
+@media(max-width:640px){.strip{grid-template-columns:1fr}}
+.tile{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center;text-decoration:none;color:var(--ink);border:1px solid var(--ink);padding:14px 16px;margin-top:4px}.tile:hover{background:var(--vc-paper)}.tile .mini{display:grid;grid-template-columns:repeat(10,1fr);gap:1px}.tile .mini i{aspect-ratio:1;display:block}.tile .k{font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:0 0 3px;display:block}.tile .h{font-weight:900;font-size:1.05rem;line-height:1.25;margin:0 0 3px;display:block}.tile p{margin:0;font-size:.85rem;color:var(--mute)}
+
+.rows{display:grid;gap:6px}.rrow{display:grid;grid-template-columns:150px 1fr auto;gap:12px;align-items:center;cursor:pointer;padding:4px 0;border-bottom:1px solid var(--rule)}.rrow:hover,.rrow.on{background:var(--vc-paper)}.rrow .nm{font-weight:700;font-size:.82rem;line-height:1.2}.rrow .num{font-family:var(--vc-serif);font-size:1.25rem;font-variant-numeric:tabular-nums;white-space:nowrap}.rrow .num small{font-family:var(--vc-sans);font-size:.7rem;color:var(--mute);display:block;text-align:right}
+.bar{display:flex;flex-wrap:wrap;gap:2px}.bar i{width:9px;height:9px;display:block;transition:background .35s,opacity .35s}.bar i.ghost{background:transparent;outline:1px solid var(--rule);outline-offset:-1px}
+@media(max-width:640px){.rrow{grid-template-columns:110px 1fr auto}.rrow .nm{font-size:.76rem}}
+</style></head>
+<body><div class="card">
+<nav class="nav"><a href="../nyc-who-pays/index.html" class="">Part one<b>Who pays?</b></a><a href="../nyc-where-it-goes/index.html" class="">Part two<b>Where it goes</b></a><a href="../nyc-who-pays-for-what/index.html" class="">Part three<b>Who pays for what</b></a><a href="../nyc-budget-since-2000/index.html" class="">Part four<b>Since 2000</b></a><a href="../nyc-what-the-city-builds/index.html" class="on">Part five<b>What it builds</b></a></nav>
+
+<div class="head"><h1 id="finding"></h1><p class="dek" id="lede"></p></div>
+<section class="sec">
+<h2>For every $100 the city builds, what does it buy?</h2>
+<p class="sub">Capital spending is a separate budget, paid for mostly by borrowing. One square is one dollar in a hundred. Audited, fiscal 2000 to 2025.</p>
+<div class="lay">
+ <div><div class="waf" id="w"></div>
+ <div class="yr"><label for="y">Fiscal year</label><input type="range" id="y" min="2000" max="2025" value="2025"><b id="yv">2025</b><button class="play" id="play">Play</button></div>
+ <p class="hist" id="hist"></p></div>
+ <div class="key" id="key"></div>
+</div>
+<div class="tip" id="tip"></div>
+<div class="strip" id="strip" style="margin-top:18px"></div>
+<p class="note">Source: New York City Comptroller, annual comprehensive financial reports, Capital Projects Fund expenditures by function and bonds issued, fiscal 2000 to 2025. Debt service is the operating budget's payment on past borrowing (part two).</p>
+</section>
+<section class="sec"><h2>Method</h2><div class="method" id="method"></div></section>
+<section class="sec"><a class="tile" href="../nyc-who-pays/index.html"><span class="mini" id="mini"></span><span><span class="k">Next</span><span class="h">Back to part one: who pays?</span><p>The $100 of revenue, and who really pays each tax.</p></span></a></section>
+</div>
+<script>
+if(new URLSearchParams(location.search).get('embed')==='1'){document.body.classList.add('embed');const ph=()=>{const el=document.querySelector('.card');if(!el||innerWidth<50)return;const h=Math.ceil(el.getBoundingClientRect().height);if(h>0)parent.postMessage({type:'vc-embed-height',id:'nyc-what-the-city-builds',height:h},'*');};addEventListener('load',ph);addEventListener('resize',ph);let n=0;const t=setInterval(()=>{ph();if(++n>20)clearInterval(t);},300);}
+const $=id=>document.getElementById(id);
+function alloc(items,N=100){const tot=items.reduce((a,x)=>a+x[1],0)||1;let c=items.map(([k,v])=>{const e=v/tot*N;return [k,Math.floor(e),e%1];});let used=c.reduce((a,x)=>a+x[1],0);c.slice().sort((a,b)=>b[2]-a[2]).slice(0,N-used).forEach(x=>x[1]++);return c;}
+function grid(id){const w=$(id);for(let i=0;i<100;i++){const c=document.createElement('i');c.dataset.i=i;c.style.transitionDelay=(i*3)+'ms';w.appendChild(c);}return [...w.children];}
+const Y0=(()=>{const m=location.hash.match(/y=(\d{4})/);return m?+m[1]:2025;})();
+function carry(y){document.querySelectorAll('.nav a').forEach(a=>{a.href=a.getAttribute('href').split('#')[0]+'#y='+y;});history.replaceState(null,'','#y='+y);}
+
+const LABEL={education:['Schools and CUNY','--c-edu'],housing:['Housing and buildings','--c-soc'],environmental:['Water, sewers and sanitation','--c-env'],transportation:['Streets, bridges and transit','--c-saf'],general_government:['General government','--c-gov'],public_safety:['Police, fire, courts and jails','--c-debt'],parks:['Parks, recreation and culture','--c-hlth'],health:['Health and hospitals','--c-ben'],social_services:['Social services','--c-pen'],libraries:['Libraries','--c-else'],other_capital:['Other','--c-else']};
+let D,CUR=2025,SEL=null,timer=null;const YEARS=()=>Object.keys(D.years).map(Number).sort();
+fetch('data/capital_per_100.json').then(r=>r.json()).then(d=>{D=d;grid('w');draw(Math.min(2025,Math.max(2000,Y0)));method();tile();});
+function cells(y){const p=D.years[y].per_100;return alloc(Object.keys(LABEL).map(k=>[k,p[k]||0]));}
+function spark(k){const ys=YEARS(),v=ys.map(y=>D.years[y].per_100[k]||0);const W=Math.max(220,Math.round($('key').clientWidth||300)),H=56,L=2,R=40,T=8,B=16;const lo=0,hi=Math.ceil(Math.max(...v)/5)*5;const X=i=>L+i/(ys.length-1)*(W-L-R),Y=x=>T+(1-(x-lo)/(hi-lo||1))*(H-T-B);const path=v.map((x,i)=>(i?'L':'M')+X(i).toFixed(1)+','+Y(x).toFixed(1)).join(' ');const ci=ys.indexOf(CUR);const f='font-family="halyard-text,sans-serif"';
+ return `<svg class="spark" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><line x1="${L}" x2="${W-R}" y1="${Y(lo)}" y2="${Y(lo)}" stroke="#dddddd"/><path d="${path}" fill="none" stroke="var(${LABEL[k][1]})" stroke-width="2"/><circle cx="${X(ci)}" cy="${Y(v[ci])}" r="3.5" fill="#050507"/><text x="${W-R+6}" y="${Y(v[ci])+4}" font-size="12" ${f} fill="#050507">$${v[ci].toFixed(0)}</text><text x="${L}" y="${H-3}" font-size="10" fill="#707175" ${f}>${ys[0]}</text><text x="${W-R}" y="${H-3}" text-anchor="end" font-size="10" fill="#707175" ${f}>${ys[ys.length-1]}</text></svg>`;}
+function draw(y){CUR=y;const yr=D.years[y],p=yr.per_100,c=cells(y);const sq=[...$('w').children];let i=0;c.forEach(([k,n])=>{for(let j=0;j<n;j++){const e=sq[i++];e.style.background=`var(${LABEL[k][1]})`;e.dataset.k=k;e.classList.toggle('dim',!!SEL&&SEL!==k);}});
+ $('key').innerHTML=c.filter(([k,n])=>n>0||(p[k]||0)>0).map(([k])=>`<div class="row${SEL===k?' on':SEL?' dim':''}" data-k="${k}"><i class="sw" style="background:var(${LABEL[k][1]})"></i><span class="nm">${LABEL[k][0]}</span><span class="num">$${(p[k]||0).toFixed(0)}</span>${SEL===k?spark(k):''}</div>`).join('');
+ const bn=yr.total/1e6,bonds=(yr.borrowing&&yr.borrowing.bonds_issued||0)/1e6,ds=yr.debt_service/yr.operating_total*100;
+ $('finding').textContent=`New York City built $${bn.toFixed(1)} billion of schools, housing, pipes and roads in fiscal ${y}. Schools took $${Math.round(p.education)} of every $100 and housing $${Math.round(p.housing)}.`;
+ $('lede').innerHTML=`That is beside the $${(yr.operating_total/1e6).toFixed(0)} billion operating budget in part two. The city issued <b>$${bonds.toFixed(1)} billion</b> of bonds that year, and paying off past bonds took <b>$${ds.toFixed(0)}</b> of every $100 it spent on operations. Move the slider or press play.`;
+ $('yv').textContent=y;$('y').value=y;carry(y);
+ $('strip').innerHTML=[['Capital spending',`$${bn.toFixed(1)} billion`,`in fiscal ${y}, on the Capital Projects Fund, in nominal dollars.`],['Bonds issued',`$${bonds.toFixed(1)} billion`,`of new general obligation and other long-term debt sold that year, before refundings.`],['Debt service',`$${ds.toFixed(1)} of $100`,`of operating spending went to interest and principal on earlier borrowing.`]].map(x=>`<div><p class="k">${x[0]}</p><p class="v">${x[1]}</p><p>${x[2]}</p></div>`).join('');
+ $('hist').innerHTML=SEL?`<b>${LABEL[SEL][0]}</b>: $${(p[SEL]||0).toFixed(0)} of every $100 of capital spending in fiscal ${y}, about $${((p[SEL]||0)/100*bn).toFixed(2)} billion.`:'Click a line to follow it across the years.';}
+$('key').addEventListener('click',e=>{const r=e.target.closest('.row');if(!r)return;SEL=SEL===r.dataset.k?null:r.dataset.k;draw(CUR);});
+$('w').addEventListener('click',e=>{const k=e.target.dataset.k;if(!k)return;SEL=SEL===k?null:k;draw(CUR);});
+const tip=$('tip');$('w').addEventListener('mousemove',e=>{const k=e.target.dataset.k;if(!k){tip.style.display='none';return;}const yr=D.years[CUR];tip.style.display='block';tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY+12)+'px';tip.innerHTML=`<b>${LABEL[k][0]}</b><br>$${(yr.per_100[k]||0).toFixed(1)} of every $100 in fiscal ${CUR}<br>One square is about $${(yr.total/100/1e6).toFixed(2)} billion`;});
+$('w').addEventListener('mouseleave',()=>tip.style.display='none');
+$('play').addEventListener('click',e=>{if(timer){clearInterval(timer);timer=null;e.target.textContent='Play';return;}const ys=YEARS();let i=CUR>=ys[ys.length-1]?0:ys.indexOf(CUR);e.target.textContent='Pause';draw(ys[i]);timer=setInterval(()=>{i++;if(i>=ys.length){clearInterval(timer);timer=null;e.target.textContent='Play';return;}draw(ys[i]);},600);});
+$('y').addEventListener('input',e=>{if(timer){clearInterval(timer);timer=null;$('play').textContent='Play';}draw(+e.target.value);});
+let rz;addEventListener('resize',()=>{if(!SEL)return;clearTimeout(rz);rz=setTimeout(()=>draw(CUR),120);});
+function method(){$('method').innerHTML=`<p>Capital spending is the Comptroller's Capital Projects Fund expenditure schedule by function, fiscal 2000 to 2025, from the <a href="https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf">annual comprehensive financial reports</a> (2005, 2015 and 2025 editions cover the series). It is cash spent in the year, not commitments, so it runs below the capital commitment plan the city announces. Schools include CUNY; housing is Housing Preservation and Development plus Buildings; water, sewers and sanitation are the Department of Environmental Protection and Sanitation; streets, bridges and transit are Transportation. Bonds issued are the governmental funds' "principal amount of bonds issued," before refundings. Debt service is the General Fund transfer to the debt service funds, as in part two. Each square is one percent, rounded with the largest remainders filled first. Figures are nominal. Citations by page in the <a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-what-the-city-builds/research">research notes</a>.</p>`;}
+function tile(){fetch('../nyc-who-pays/data/revenue_per_100.json').then(r=>r.json()).then(d=>{const C={property_tax:'#ff7c53',personal_income_tax:'#217ebe',sales_tax:'#dde44c',business_taxes:'#e7466d',other_taxes:'#cea9be',state_aid:'#394882',federal_aid:'#9b9fbc',fees_fines_other:'#707175'};const p=d.years['2025'].per_100;$('mini').innerHTML=alloc(Object.keys(C).map(k=>[k,p[k]])).map(([k,n])=>`<i style="background:${C[k]}"></i>`.repeat(n)).join('');}).catch(()=>{});}
+</script></body></html>

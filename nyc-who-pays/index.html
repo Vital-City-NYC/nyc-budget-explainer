@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Who pays for New York City</title>
+<meta name="description" content="For every $100 the city takes in, where the money comes from, who pays the property tax, and what the mayor can change without Albany.">
+<link rel="prefetch" href="../nyc-where-it-goes/index.html"><link rel="prefetch" href="../nyc-where-it-goes/data/spending_per_100.json">
+<link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
+<link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/tokens/tokens.css">
+<link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/charts/chart-theme.css">
+<style>
+@font-face{font-family:'GascogneTS';src:url('https://vital-city-nyc.github.io/vital-city-design-system/fonts/GascogneTS-Light.ttf') format('truetype');font-weight:300;font-style:normal;font-display:swap}
+:root{--vc-sans:"halyard-text","Helvetica Neue",Arial,sans-serif;--vc-serif:"GascogneTS",Georgia,serif;--vc-paper:#f7f7f4;--ink:#050507;--mute:#707175;--rule:#dddddd;
+ --c-prop:#ff7c53;--c-pit:#217ebe;--c-sales:#dde44c;--c-biz:#e7466d;--c-oth:#cea9be;--c-state:#394882;--c-fed:#9b9fbc;--c-fees:#707175;
+ --c-c1:#ff7c53;--c-c2r:#e7466d;--c-c2o:#cea9be;--c-c3:#9b9fbc;--c-c4:#394882;
+ --c-i1:#dde44c;--c-i2:#cea9be;--c-i3:#9b9fbc;--c-i4:#217ebe;--c-i5:#394882;--c-i6:#ff7c53}
+@view-transition{navigation:auto}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.28s}
+.nav{view-transition-name:nav}
+*{box-sizing:border-box}html,body{margin:0;background:#fff;color:var(--ink)}
+body{font-family:var(--vc-sans);font-weight:300;padding:24px 16px}
+.card{max-width:880px;margin:0 auto;border:1px solid var(--ink);background:#fff}
+body.embed{padding:0}body.embed .card{border:none;max-width:none}
+.nav{display:flex;border-bottom:1px solid var(--ink);background:#fff;overflow-x:auto;-webkit-overflow-scrolling:touch}.nav a{flex:1 0 auto;min-width:0;text-align:center;text-decoration:none;color:var(--mute);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:11px 10px;border-right:1px solid var(--ink)}.nav a:last-child{border-right:0}.nav a.on{background:var(--ink);color:#fff}.nav a:not(.on):hover{background:var(--vc-paper);color:var(--ink)}.nav a b{display:block;font-family:var(--vc-serif);font-weight:300;font-size:1rem;letter-spacing:0;text-transform:none;margin-top:3px;white-space:nowrap}
+@media(max-width:640px){.nav a{padding:9px 12px}.nav a b{font-size:.92rem}}
+.head{padding:22px 24px 18px;border-bottom:1px solid var(--rule)}
+h1{min-height:2.4em;font-family:var(--vc-sans);font-weight:900;font-size:1.5rem;line-height:1.2;margin:0 0 6px;max-width:34ch}
+.dek{font-weight:300;font-size:.95rem;line-height:1.5;color:var(--mute);margin:0;max-width:62ch}.dek b{color:var(--ink);font-weight:700}
+.sec{padding:20px 24px;border-bottom:1px solid var(--rule)}.sec:last-child{border-bottom:0}
+.sec h2{font-family:var(--vc-sans);font-weight:900;font-size:1.25rem;line-height:1.25;margin:0 0 4px;max-width:62ch}
+.sub{font-weight:200;font-size:.95rem;color:var(--mute);margin:0 0 14px;max-width:62ch;line-height:1.45}
+.lay{display:grid;grid-template-columns:minmax(0,360px) minmax(240px,1fr);gap:28px;align-items:start}
+.waf{display:grid;grid-template-columns:repeat(10,1fr);gap:3px;aspect-ratio:1;align-content:start}
+.waf i{aspect-ratio:1;display:block;background:var(--rule);position:relative;transition:background .4s,opacity .4s}
+.waf i.dim{background:#ececec!important}
+.waf i:hover{outline:2px solid var(--ink);z-index:1}
+.key{border-top:1px solid var(--ink);min-height:296px}
+.key .row{display:grid;grid-template-columns:12px minmax(0,1fr) auto;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid var(--rule);cursor:pointer}
+.key .row:hover,.key .row.on{background:var(--vc-paper)}
+.key .sw{width:12px;height:12px;display:block}
+.key .nm{font-weight:700;font-size:.9rem}
+.key .num{font-family:var(--vc-serif);font-weight:300;font-size:1.55rem;line-height:1;font-variant-numeric:tabular-nums}
+.key .row.dim .nm,.key .row.dim .num{color:#b9b9ba}.key .row.dim .sw{opacity:.3}
+.waf i.pop{animation:pop .5s both}@keyframes pop{0%{transform:scale(.4);opacity:.2}100%{transform:scale(1);opacity:1}}
+.subkey{grid-column:1/-1;margin:2px 0 4px;font-size:.82rem}.subkey div{display:grid;grid-template-columns:11px minmax(0,1fr) auto;gap:8px;align-items:center;padding:3px 0}.subkey .sw{width:11px;height:11px;display:block}.subkey .n{font-family:var(--vc-serif);font-size:1.1rem;font-variant-numeric:tabular-nums}.subkey a{display:block;margin-top:4px;color:var(--mute);font-size:.75rem}
+.spark{grid-column:1/-1;height:56px;max-width:100%;display:none;margin:2px 0 4px;overflow:visible}.row.on .spark{display:block}
+.yr{display:flex;gap:10px;align-items:center;margin-top:14px;font-size:.8rem;color:var(--mute)}.yr label{white-space:nowrap}
+.yr input{flex:1;accent-color:#ff7c53}.yr b{font-family:var(--vc-serif);font-weight:300;font-size:1.3rem;color:var(--ink)}
+.hist{font-size:.9rem;line-height:1.45;margin:10px 0 0;min-height:1.4em}.hist b{font-weight:700}
+.play{font:inherit;font-weight:700;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--ink);background:#fff;padding:5px 10px;cursor:pointer}.play:hover{background:#dde44c}
+.tip{position:fixed;pointer-events:none;background:var(--ink);color:#fff;font-size:.78rem;padding:5px 8px;z-index:5;display:none;max-width:220px;line-height:1.35}
+.alb{display:none;margin-top:10px;font-size:.82rem;color:var(--mute)}.alb label{display:flex;gap:6px;align-items:center;cursor:pointer}
+.note{font-size:.75rem;color:var(--mute);border-top:1px solid var(--rule);padding-top:8px;margin-top:14px;line-height:1.45}.note a{color:var(--mute)}
+.seg{display:inline-flex;border:1px solid var(--ink);margin:0 0 14px}.seg button{font:inherit;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border:0;background:#fff;cursor:pointer}.seg button.on{background:var(--ink);color:#fff}
+table.t{width:100%;border-collapse:collapse;font-size:.88rem}
+.t th{font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);text-align:left;padding:6px 8px 6px 0;border-bottom:1px solid var(--ink)}
+.t td{padding:8px 8px 8px 0;border-bottom:1px solid var(--rule);vertical-align:top;line-height:1.4}
+.t td.n,.t th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}.t td.b{font-weight:700}
+.t .sw{width:11px;height:11px;display:inline-block;margin-right:7px;vertical-align:-1px}
+.t tbody tr.on td{background:var(--vc-paper)}.t.pick tbody tr{cursor:pointer}
+.t td.who{font-weight:700}.t tr.albrow td.who{color:var(--mute)}
+.lay.c{grid-template-columns:minmax(0,300px) 1fr;align-items:center;margin-bottom:18px}.hist.big{font-size:1.05rem;line-height:1.5;margin:0;max-width:40ch}
+.ctl th:nth-child(1){width:26%}.ctl th:nth-child(2){width:32%}
+@media(max-width:640px){.ctl thead{display:none}.ctl tbody tr{display:block;padding:8px 0;border-bottom:1px solid var(--rule)}.ctl td{display:block;border:0;padding:2px 0}}
+.t .sub2{display:block;color:var(--mute);font-weight:300}
+.m-only{display:none}
+.pull{font-size:.95rem;line-height:1.5;max-width:66ch;margin:0 0 14px;padding-left:12px;border-left:3px solid #ff7c53}
+.pull cite{display:block;font-style:normal;font-size:.75rem;color:var(--mute);margin-top:4px}
+.method{font-size:.82rem;color:var(--ink);line-height:1.5;max-width:70ch}.method p{margin:0 0 10px}.method a{color:var(--mute)}
+.tile{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center;text-decoration:none;color:var(--ink);border:1px solid var(--ink);padding:14px 16px;margin-top:4px}.tile:hover{background:var(--vc-paper)}.tile .mini{display:grid;grid-template-columns:repeat(10,1fr);gap:1px}.tile .mini i{aspect-ratio:1;display:block}.tile .k{font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:0 0 3px;display:block}.tile .h{font-weight:900;font-size:1.05rem;line-height:1.25;margin:0 0 3px;display:block}.tile p{margin:0;font-size:.85rem;color:var(--mute)}
+.method table{font-size:.8rem;margin:0 0 12px}.method td,.method th{padding:5px 10px 5px 0;vertical-align:top}
+@media(max-width:640px){.lay,.lay.c{grid-template-columns:1fr}.hist.big{font-size:.95rem;max-width:none}.head,.sec{padding-left:16px;padding-right:16px}.hide-m{display:none}.m-only{display:block;font-size:.8rem;color:var(--mute);font-weight:300;margin-top:2px}}
+</style></head>
+<body><div class="card">
+<nav class="nav"><a href="../nyc-who-pays/index.html" class="on">Part one<b>Who pays?</b></a><a href="../nyc-where-it-goes/index.html" class="">Part two<b>Where it goes</b></a><a href="../nyc-who-pays-for-what/index.html" class="">Part three<b>Who pays for what</b></a><a href="../nyc-budget-since-2000/index.html" class="">Part four<b>Since 2000</b></a><a href="../nyc-what-the-city-builds/index.html" class="">Part five<b>What it builds</b></a></nav>
+<div class="head">
+<h1 id="finding"></h1>
+<p class="dek" id="lede"></p>
+</div>
+
+<section class="sec">
+<h2>For every $100 the city takes in, where does it come from?</h2>
+<p class="sub">One square is one dollar in a hundred. Audited through fiscal 2025; 2026 and 2027 are budgeted.</p>
+<div class="lay">
+ <div><div class="waf" id="w"></div>
+ <div class="yr"><label for="y">Fiscal year</label><input type="range" id="y" min="2000" max="2027" value="2025"><b id="yv">2025</b><span id="bflag"></span><button class="play" id="play">Play</button></div>
+ <p class="hist" id="hist"></p>
+ <div class="alb" id="alb"><label><input type="checkbox" id="albx"> Grey out the taxes and aid whose rates Albany or Washington set</label></div></div>
+ <div class="key" id="key"></div>
+</div>
+<p class="note" id="basis" style="display:none"></p><div class="tip" id="tip"></div>
+<p class="note">Source: New York City Comptroller, annual comprehensive financial reports, General Fund revenues by source, fiscal 2000 to 2025; Office of Management and Budget, adopted budget for fiscal 2027, June 2026. Buckets listed in the method note.</p>
+</section>
+
+<section class="sec" id="sec-p" hidden>
+<h2>Who pays the property tax?</h2>
+<p class="sub" id="subp"></p>
+<div class="seg" id="pseg"></div>
+<div class="lay">
+ <div><div class="waf" id="pw"></div><p class="hist" id="phist"></p></div>
+ <div><table class="t pick"><thead><tr><th>Who</th><th class="n">Of the tax</th><th class="n">Of value</th><th class="n hide-m">Tax per $100 of value</th></tr></thead><tbody id="pt"></tbody></table></div>
+</div>
+<p class="note" id="pnote"></p>
+</section>
+
+<section class="sec" id="sec-i" hidden>
+<h2>Who pays the income tax?</h2>
+<p class="sub" id="subi"></p>
+<div class="seg" id="iseg"></div>
+<div class="lay">
+ <div><div class="waf" id="iw"></div><p class="hist" id="ihist"></p></div>
+ <div><table class="t pick"><thead><tr><th>Income</th><th class="n">Of the tax</th><th class="n">Of filers</th><th class="n hide-m">Of income</th></tr></thead><tbody id="it"></tbody></table></div>
+</div>
+<p class="note" id="inote"></p>
+</section>
+
+<section class="sec" id="sec-c" hidden>
+<h2>What can the mayor change without Albany?</h2>
+<p class="sub" id="subc"></p>
+<p class="pull" id="pull"></p>
+<div class="lay c">
+ <div><div class="waf" id="cw"></div></div>
+ <p class="hist big" id="chist"></p>
+</div>
+<table class="t ctl"><thead><tr><th>Source</th><th>Who sets it</th><th>What City Hall can do alone</th></tr></thead><tbody id="ct"></tbody></table>
+<p class="note" id="cnote"></p>
+</section>
+
+<section class="sec"><h2>Method</h2><div class="method" id="method"></div></section>
+<section class="sec"><a class="tile" href="../nyc-where-it-goes/index.html"><span class="mini" id="mini"></span><span><span class="k">Companion</span><span class="h">Where New York City's money goes</span><p>The same $100, by what it buys: schools, social services, police, pensions, debt, and what sits off the budget.</p></span></a></section>
+</div>
+<script>
+if(new URLSearchParams(location.search).get('embed')==='1'){document.body.classList.add('embed');const ph=()=>{const el=document.querySelector('.card');if(!el||innerWidth<50)return;const h=Math.ceil(el.getBoundingClientRect().height);if(h>0)parent.postMessage({type:'vc-embed-height',id:'nyc-who-pays',height:h},'*');};addEventListener('load',ph);addEventListener('resize',ph);let n=0;const t=setInterval(()=>{ph();if(++n>20)clearInterval(t);},300);}
+
+const LABEL={property_tax:['Property tax','--c-prop'],personal_income_tax:['Personal income tax','--c-pit'],sales_tax:['Sales tax','--c-sales'],business_taxes:['Business taxes','--c-biz'],other_taxes:['Other taxes','--c-oth'],state_aid:['State aid','--c-state'],federal_aid:['Federal aid','--c-fed'],fees_fines_other:['Fees, fines and other','--c-fees']};
+const $=id=>document.getElementById(id);
+const bn=x=>(x/1000).toFixed(1);
+const Y0=(()=>{const m=location.hash.match(/y=(\d{4})/);return m?+m[1]:2025;})();
+let D,CUR=2025,SEL=null,CTRL=null,timer=null;
+const YEARS=()=>Object.keys(D.years).map(Number).sort();
+
+// 100 squares, largest remainders fill the last few
+function alloc(items,N=100){const tot=items.reduce((a,x)=>a+x[1],0)||1;let c=items.map(([k,v])=>{const e=v/tot*N;return [k,Math.floor(e),e%1];});let used=c.reduce((a,x)=>a+x[1],0);c.slice().sort((a,b)=>b[2]-a[2]).slice(0,N-used).forEach(x=>x[1]++);return c;}
+const BREAK={};
+function grid(id){const w=$(id);for(let i=0;i<100;i++){const c=document.createElement('i');c.dataset.i=i;c.style.transitionDelay=(i*3)+'ms';w.appendChild(c);}return [...w.children];}
+
+fetch('data/revenue_per_100.json').then(r=>r.json()).then(d=>{D=d;grid('w');draw(Math.min(2027,Math.max(2000,Y0)));method();tile();
+ fetch('data/control.json').then(r=>r.ok?r.json():null).then(c=>{if(c){CTRL=c;$('alb').style.display='block';movement3();draw(CUR);}}).catch(()=>{});
+ fetch('data/property_tax_by_class.json').then(r=>r.ok?r.json():null).then(t=>{if(t)movementP(t);}).catch(()=>{});
+ fetch('data/aid_by_function.json').then(r=>r.ok?r.json():null).then(t=>{if(!t)return;const PAL=['--c-c4','--c-c2r','--c-c2o','--c-c1','--c-sales','--c-fees'];const mk=kind=>yr=>{const v=t.years[yr];if(!v)return null;const o=v[kind],tot=Object.values(o).reduce((a,b)=>a+b,0);const rows=Object.entries(o).sort((a,b)=>b[1]-a[1]);const top=rows.slice(0,5),rest=rows.slice(5).reduce((a,x)=>a+x[1],0);const r=top.map(([l,x],i)=>({key:'f'+i,label:l,short:l,share:x/tot*100,color:PAL[i]}));if(rest>0)r.push({key:'f5',label:'Everything else',short:'Everything else',share:rest/tot*100,color:PAL[5]});return r;};
+  BREAK.state_aid={rows:mk('state'),key:'share',caption:yr=>t.years[yr]?`Fiscal ${yr}, by what the grants fund.`:'The split by purpose is published for fiscal 2016 on; pick one of those years.',src:t.url,srcname:'Comptroller, annual financial report, state grants by function'};
+  BREAK.federal_aid={rows:mk('federal'),key:'share',caption:yr=>t.years[yr]?`Fiscal ${yr}, by what the grants fund.`:'The split by purpose is published for fiscal 2016 on; pick one of those years.',src:t.url,srcname:'Comptroller, annual financial report, federal grants by function'};
+  if(SEL==='state_aid'||SEL==='federal_aid')draw(CUR);}).catch(()=>{});
+ fetch('data/business_by_sector.json').then(r=>r.ok?r.json():null).then(t=>{if(t){BREAK.business_taxes={rows:t.sectors,key:'tax_share',caption:t.caption,src:t.url,srcname:'Department of Finance'};if(SEL==='business_taxes')draw(CUR);}}).catch(()=>{});
+ fetch('data/pit_by_income.json').then(r=>r.ok?r.json():null).then(t=>{if(t)movementI(t);}).catch(()=>{});});
+
+// ---- movement 1: the $100
+function cells(y){const p=D.years[y].per_100;return alloc(Object.keys(LABEL).map(k=>[k,p[k]]));}
+function spark(k){const ys=YEARS(),v=ys.map(y=>D.years[y].per_100[k]);const W=Math.max(220,Math.round($('key').clientWidth||300)),H=56,L=2,R=40,T=8,B=16;const lo=Math.max(0,Math.floor(Math.min(...v)/5)*5),hi=Math.ceil(Math.max(...v)/5)*5;
+ const X=i=>L+i/(ys.length-1)*(W-L-R),Y=x=>T+(1-(x-lo)/(hi-lo||1))*(H-T-B);const aud=ys.filter(y=>!D.years[y].budgeted).length;
+ const path=v.map((x,i)=>(i?'L':'M')+X(i).toFixed(1)+','+Y(x).toFixed(1)).join(' ');const ci=ys.indexOf(CUR);const solid=(X(aud-1)-L).toFixed(0);const f='font-family="halyard-text,sans-serif"';
+ return `<svg class="spark" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><line x1="${L}" x2="${W-R}" y1="${Y(lo)}" y2="${Y(lo)}" stroke="#dddddd"/><path d="${path}" fill="none" stroke="var(${LABEL[k][1]})" stroke-width="2" stroke-dasharray="${solid} 999"/><path d="${path}" fill="none" stroke="var(${LABEL[k][1]})" stroke-width="2" stroke-dasharray="0 ${solid} 3 3"/><circle cx="${X(ci)}" cy="${Y(v[ci])}" r="3.5" fill="#050507"/><text x="${W-R+6}" y="${Y(v[ci])+4}" font-size="12" ${f} fill="#050507">$${v[ci].toFixed(0)}</text><text x="${L}" y="${H-3}" font-size="10" fill="#707175" ${f}>${ys[0]}</text><text x="${W-R}" y="${H-3}" text-anchor="end" font-size="10" fill="#707175" ${f}>${ys[ys.length-1]}</text></svg>`;}
+function draw(y){CUR=y;const yr=D.years[y],p=yr.per_100,c=cells(y),alb=CTRL&&$('albx').checked;
+ const sq=[...$('w').children],B0=SEL&&BREAK[SEL],B=B0&&(typeof B0.rows==='function'?(r=>r&&Object.assign({},B0,{rows:r}))(B0.rows(y)):B0);let i=0;
+ c.forEach(([k,n])=>{if(B&&k===SEL){alloc(B.rows.map(r=>[r.key,r[B.key]]),n).forEach(([rk,m])=>{const r=B.rows.find(x=>x.key===rk);for(let j=0;j<m;j++){const e=sq[i++];e.style.background=`var(${r.color})`;e.dataset.k=k;e.dataset.sub=rk;e.classList.remove('dim');e.classList.add('pop');}});return;}
+  for(let j=0;j<n;j++){const e=sq[i++];e.style.background=`var(${LABEL[k][1]})`;e.dataset.k=k;delete e.dataset.sub;e.classList.remove('pop');e.classList.toggle('dim',(SEL&&SEL!==k)||(alb&&CTRL[k]&&CTRL[k].albany));}});
+ const subkey=(B0&&!B)?`<div class="subkey"><a>${typeof B0.caption==='function'?B0.caption(y):B0.caption}</a></div>`:B?`<div class="subkey">${B.rows.map(r=>`<div><i class="sw" style="background:var(${r.color})"></i><span>${r.short||r.label}</span><span class="n">$${(p[SEL]*r[B.key]/100).toFixed(1)}</span></div>`).join('')}${(()=>{const cap=typeof B.caption==='function'?B.caption(y):B.caption;return B.anchor?`<a href="#${B.anchor}">${cap} Full breakdown below.</a>`:`<a${B.src?` href="${B.src}" target="_blank" rel="noopener"`:''}>${cap}${B.src?' Source: '+B.srcname+'.':''}</a>`;})()}</div>`:'';
+ $('key').innerHTML=c.map(([k])=>`<div class="row${SEL===k?' on':SEL?' dim':''}" data-k="${k}"><i class="sw" style="background:var(${LABEL[k][1]})"></i><span class="nm">${LABEL[k][0]}</span><span class="num">$${p[k].toFixed(0)}</span>${SEL===k?spark(k)+subkey:''}</div>`).join('');
+ const own=Math.round(p.property_tax+p.personal_income_tax+p.sales_tax+p.business_taxes+p.other_taxes),aid=Math.round(p.state_aid+p.federal_aid),prop=Math.round(p.property_tax);
+ const cityset=CTRL?Math.round(Object.keys(LABEL).filter(k=>CTRL[k]&&!CTRL[k].albany).reduce((a,k)=>a+p[k],0)):null;
+ $('finding').textContent=`New York City collects $${own} of every $100 it takes in through its own taxes, but Albany sets the rates on most of them. Albany and Washington send another $${aid} in aid.`;
+ $('lede').innerHTML=`In fiscal ${y} the city took in <b>$${(yr.total/1e6).toFixed(0)} billion</b>${yr.budgeted?' (budgeted)':''}. Property tax alone was <b>$${prop}</b> of every hundred, ${prop>aid?'more':'less'} than state and federal aid combined${cityset!=null?`, and it is the one big tax whose rate City Hall sets itself: with fees and fines, about <b>$${cityset}</b> of the $100 is the city's to set`:''}. Move the slider or press play to see any year since 2000.`;
+ $('yv').textContent=y;$('y').value=y;document.querySelectorAll('.nav a').forEach(a=>{a.href=a.getAttribute('href').split('#')[0]+'#y='+y;});history.replaceState(null,'','#y='+y);$('bflag').textContent=yr.budgeted?'budgeted':'audited';
+ hist();}
+function hist(){const h=$('hist');if(!SEL){h.innerHTML='Click a source to follow it across the years.';return;}
+ const ys=YEARS(),f=ys[0],v0=D.years[f].per_100[SEL],v=D.years[CUR].per_100[SEL],aud=ys.filter(y=>!D.years[y].budgeted),pk=aud.reduce((a,y)=>D.years[y].per_100[SEL]>D.years[a].per_100[SEL]?y:a,aud[0]),lo=aud.reduce((a,y)=>D.years[y].per_100[SEL]<D.years[a].per_100[SEL]?y:a,aud[0]);
+ const d=v-v0,dir=Math.abs(d)<0.5?'about the same as':d>0?`up from $${v0.toFixed(0)}`:`down from $${v0.toFixed(0)}`;
+ h.innerHTML=`<b>${LABEL[SEL][0]}</b> is $${v.toFixed(0)} of every $100 in fiscal ${CUR}, ${dir} in ${f}. Audited high $${D.years[pk].per_100[SEL].toFixed(0)} in ${pk}, low $${D.years[lo].per_100[SEL].toFixed(0)} in ${lo}. The dotted tail is budgeted.${BREAK[SEL]?' The squares are split by who pays it.':''}`;}
+$('key').addEventListener('click',e=>{const r=e.target.closest('.row');if(!r)return;SEL=SEL===r.dataset.k?null:r.dataset.k;draw(CUR);});
+$('w').addEventListener('click',e=>{const k=e.target.dataset.k;if(!k)return;SEL=SEL===k?null:k;draw(CUR);});
+const tip=$('tip');
+$('w').addEventListener('mousemove',e=>{const k=e.target.dataset.k;if(!k){tip.style.display='none';return;}const yr=D.years[CUR];tip.style.display='block';tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY+12)+'px';const sb=e.target.dataset.sub,B=BREAK[k],rows=B&&(typeof B.rows==='function'?B.rows(CUR):B.rows),r=sb&&rows&&rows.find(x=>x.key===sb);tip.innerHTML=r?`<b>${r.label}</b><br>${r[B.key].toFixed(0)}% of the ${LABEL[k][0].toLowerCase()}, about $${(yr.per_100[k]*r[B.key]/100).toFixed(1)} of every $100<br>${typeof B.caption==='function'?B.caption(CUR):B.caption}`:`<b>${LABEL[k][0]}</b><br>$${yr.per_100[k].toFixed(1)} of every $100 in fiscal ${CUR}<br>One square is about $${(yr.total/100/1e6).toFixed(2)} billion`;});
+$('w').addEventListener('mouseleave',()=>tip.style.display='none');
+$('play').addEventListener('click',e=>{if(timer){clearInterval(timer);timer=null;e.target.textContent='Play';return;}const ys=YEARS();let i=CUR>=ys[ys.length-1]?0:ys.indexOf(CUR);e.target.textContent='Pause';draw(ys[i]);timer=setInterval(()=>{i++;if(i>=ys.length){clearInterval(timer);timer=null;e.target.textContent='Play';return;}draw(ys[i]);},600);});
+$('albx').addEventListener('change',()=>draw(CUR));
+$('y').addEventListener('input',e=>{if(timer){clearInterval(timer);timer=null;$('play').textContent='Play';}draw(+e.target.value);});
+let rz;addEventListener('resize',()=>{if(!SEL)return;clearTimeout(rz);rz=setTimeout(()=>draw(CUR),120);});
+
+// ---- a split movement: 100 squares of one tax, coloured by who pays, with two views
+function split(cfg){const sq=grid(cfg.w);let view=cfg.views[0][0],sel=null;const seg=$(cfg.seg);
+ seg.innerHTML=cfg.views.map(([k,l],i)=>`<button class="${i?'':'on'}" data-v="${k}">${l}</button>`).join('');
+ seg.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;view=b.dataset.v;[...seg.children].forEach(x=>x.classList.toggle('on',x===b));go();});
+ $(cfg.tbody).addEventListener('click',e=>{const r=e.target.closest('tr');if(!r)return;sel=sel===r.dataset.k?null:r.dataset.k;go();});
+ $(cfg.w).addEventListener('click',e=>{const k=e.target.dataset.k;if(!k)return;sel=sel===k?null:k;go();});
+ function go(){const rows=cfg.rows;let i=0;alloc(rows.map(x=>[x.key,x[view]])).forEach(([k,n])=>{const x=rows.find(y=>y.key===k);for(let j=0;j<n&&i<100;j++){const e=sq[i++];e.style.background=`var(${x.color})`;e.dataset.k=k;e.classList.toggle('dim',!!sel&&sel!==k);}});while(i<100)sq[i++].style.background='#eee';
+  $(cfg.tbody).innerHTML=rows.map(x=>`<tr data-k="${x.key}" class="${sel===x.key?'on':''}">${cfg.row(x,view)}</tr>`).join('');
+  $(cfg.hist).innerHTML=sel?cfg.one(rows.find(x=>x.key===sel)):cfg.all(view);}
+ go();}
+
+function movementP(PT){BREAK.property_tax={rows:PT.classes,key:'levy_share',anchor:'sec-p',caption:`Fiscal ${PT.fiscal_year} split.`};if(SEL==='property_tax')draw(CUR);const SHORT={c1:'1-3 family homes',c2r:'Rental buildings',c2o:'Co-ops and condos',c3:'Utilities',c4:'Commercial'};PT.classes.forEach(x=>x.short=SHORT[x.key]||x.label);const c=PT.classes,g=k=>c.find(x=>x.key===k),home=g('c1'),rent=g('c2r'),own=g('c2o'),com=g('c4');
+ $('sec-p').hidden=false;
+ $('subp').textContent=`The property-tax squares, split by who gets the bill. Fiscal ${PT.fiscal_year} levy, $${bn(PT.levy_total_m)} billion. Click a row to isolate it.`;
+ $('pnote').innerHTML=`Source: <a href="${PT.url}">${PT.source}</a>. Rentals group the report's rentals, conrentals and 4-10 family rentals; co-ops, condos and condops are the rest of Class 2. Tax per $100 of value is levy divided by the department's market value. It is not shown for co-ops and condos because state law (Real Property Tax Law section 581) requires them to be valued as if they were rentals, far below sale prices. Whether landlords pass the tax to tenants is not settled: the city's 2021 property tax reform commission found the testimony "did not reveal conclusive evidence regarding the degree of the property tax borne by renters."`;
+ split({w:'pw',seg:'pseg',tbody:'pt',hist:'phist',rows:c,views:[['levy_share','Share of the tax'],['mv_share','Share of market value']],
+  row:x=>`<td><i class="sw" style="background:var(${x.color})"></i>${x.label}<span class="hide-m" style="color:var(--mute)"> (${x.class})</span></td><td class="n b">${x.levy_share.toFixed(0)}%</td><td class="n">${x.mv_share.toFixed(0)}%</td><td class="n hide-m">${x.levy_over_mv!=null?'$'+x.levy_over_mv.toFixed(2):'see note'}</td>`,
+  one:x=>`<b>${x.label}</b> carry ${x.levy_share.toFixed(0)}% of the levy, $${bn(x.levy_m)} billion, on ${x.mv_share.toFixed(0)}% of the city's taxable market value.${x.note?' '+x.note:''}`,
+  all:v=>v==='levy_share'?`One-to-three-family homes pay <b>$${home.levy_share.toFixed(0)}</b> of every $100 of property tax. Rental buildings pay <b>$${rent.levy_share.toFixed(0)}</b>, co-ops and condos <b>$${own.levy_share.toFixed(0)}</b>, commercial property <b>$${com.levy_share.toFixed(0)}</b>.`:`Those same homes are <b>${home.mv_share.toFixed(0)}%</b> of the city's taxable market value. Rentals are <b>${rent.mv_share.toFixed(0)}%</b>, commercial property <b>${com.mv_share.toFixed(0)}%</b>. The squares that move between the two views are the gap.`});}
+
+function movementI(IT){BREAK.personal_income_tax={rows:IT.bands,key:'tax_share',anchor:'sec-i',caption:`Tax year ${IT.tax_year} split.`};if(SEL==='personal_income_tax')draw(CUR);const c=IT.bands,top=c[c.length-1],bot=c[0];
+ $('sec-i').hidden=false;
+ $('subi').textContent=IT.sub||`The income-tax squares, split by the filer's income. Tax year ${IT.tax_year}. Click a row to isolate it.`;
+ $('inote').innerHTML=`Source: <a href="${IT.url}">${IT.source}</a>. ${IT.note||''}`;
+ split({w:'iw',seg:'iseg',tbody:'it',hist:'ihist',rows:c,views:[['tax_share','Share of the tax'],['filer_share','Share of filers']],
+  row:x=>`<td><i class="sw" style="background:var(${x.color})"></i>${x.label}</td><td class="n b">${x.tax_share.toFixed(0)}%</td><td class="n">${x.filer_share.toFixed(0)}%</td><td class="n hide-m">${x.income_share!=null?x.income_share.toFixed(0)+'%':''}</td>`,
+  one:x=>`Filers with incomes <b>${x.label.toLowerCase()}</b> are ${x.filer_share.toFixed(0)}% of filers and pay ${x.tax_share.toFixed(0)}% of the city income tax${x.income_share!=null?`, on ${x.income_share.toFixed(0)}% of the income`:''}.${x.note?' '+x.note:''}`,
+  all:v=>v==='tax_share'?`Filers making <b>${top.label.toLowerCase()}</b>, ${top.filer_share.toFixed(1)}% of filers, pay <b>$${top.tax_share.toFixed(0)}</b> of every $100 of city income tax on ${top.income_share.toFixed(0)}% of the income. The ${bot.filer_share.toFixed(0)}% making <b>${bot.label.toLowerCase()}</b> pay <b>$${bot.tax_share.toFixed(0)}</b>.`:`Switch the view and the squares re-sort by headcount: <b>${top.filer_share.toFixed(1)}%</b> of filers make ${top.label.toLowerCase()}; <b>${bot.filer_share.toFixed(0)}%</b> make ${bot.label.toLowerCase()}.`});}
+
+// ---- movement 3: the Albany line
+function movement3(){const sq=grid('cw'),y=2027,p=D.years[y].per_100;let city=0,i=0;
+ $('sec-c').hidden=false;
+ cells(y).forEach(([k,n])=>{const a=CTRL[k]&&CTRL[k].albany;if(!a)city+=p[k];for(let j=0;j<n;j++){const e=sq[i++];e.style.background=`var(${LABEL[k][1]})`;e.classList.toggle('dim',!!a);}});
+ $('subc').textContent=`The same $100, fiscal ${y} budget. The city collects most of it, but it can change the rate on its own only where the squares stay coloured.`;
+ $('pull').innerHTML=`"${CTRL.quote_ibo}"<cite>Independent Budget Office, analysis of the fiscal 2027 preliminary budget, March 2026</cite>`;
+ $('chist').innerHTML=`City Hall and the Council can change the rate on about <b>$${Math.round(city)}</b> of every $100 without a state law, and $${Math.round(p.property_tax)} of that is the property tax. The income, sales and business taxes are city taxes, collected here and spent here, but their rates are written in Albany. Of the mayor's two paths to close the budget gap in February 2026, the one that needed Albany was refused and the one he could take alone was dropped.`;
+ $('ct').innerHTML=Object.keys(LABEL).map(k=>{const r=CTRL[k];if(!r)return '';const what=r.alone+(r.limits?` <span style="color:var(--mute)">${r.limits}</span>`:'');return `<tr class="${r.albany?'albrow':''}"><td><i class="sw" style="background:var(${LABEL[k][1]})"></i>${LABEL[k][0]}<span style="color:var(--mute)"> $${p[k].toFixed(0)}</span></td><td class="who">${r.albany?'Albany or Washington':'City Hall'}<span class="sub2">${r.who}</span></td><td>${what}</td></tr>`;}).join('');
+ $('cnote').textContent='Sources: Independent Budget Office, Department of Finance, Office of Management and Budget, Comptroller, state and local law; each claim is cited in the research notes linked in the method.';}
+
+function tile(){fetch('../nyc-where-it-goes/data/spending_per_100.json').then(r=>r.json()).then(d=>{const C={education:'#217ebe',social_services:'#e7466d',public_safety:'#394882',pensions:'#ff7c53',benefits:'#cea9be',debt_service:'#050507',health:'#dde44c',general_government:'#9b9fbc',environmental:'#707175',everything_else:'#c9c9cb'};const p=d.years['2025'].per_100;$('mini').innerHTML=alloc(Object.keys(C).map(k=>[k,p[k]])).map(([k,n])=>`<i style="background:${C[k]}"></i>`.repeat(n)).join('');}).catch(()=>{});}
+// ---- method
+function method(){const rows=[['Property tax','Real estate taxes','General property'],['Personal income tax','Personal income tax','Personal income, which in the budget includes the pass-through entity tax'],['Sales tax','Sales and use taxes, which the audited report defines to include the mortgage recording, cigarette and auto-use taxes','General sales, mortgage recording, cigarette'],['Business taxes','Other income taxes: general and financial corporation, unincorporated business, pass-through entity, utility','General corporation, unincorporated business, utility'],['Other taxes','Other taxes (transfer, hotel, commercial rent, payments in lieu of taxes and smaller levies) and tax penalties','Transfer, hotel, commercial rent, second-home surcharge, tax audits, cannabis, other, tax programs'],['State aid','State categorical grants','State categorical grants'],['Federal aid','Federal categorical grants','Federal categorical grants'],['Fees, fines and other','Charges for services, fines, licenses and permits, investment income, non-governmental grants, unrestricted aid, other revenues and financing sources, less disallowances','Miscellaneous revenue, unrestricted aid, other categorical grants and inter-fund agreements, less intra-city revenue and disallowances']];
+ $('method').innerHTML=`<p>Each square is one percent of General Fund revenue for the year, rounded to whole squares with the largest remainders filled first. Fiscal 2000 to 2025 are audited figures from the Comptroller's <a href="https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf">annual comprehensive financial reports</a> (ten-year revenue trend, statistical section). Fiscal 2026 and 2027 are the Office of Management and Budget's <a href="https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/erc6-26.pdf">June 2026 adopted budget</a>, fiscal 2026 as modified and fiscal 2027 as adopted. The eight buckets follow the audited report's own groupings:</p>
+ <table class="t"><thead><tr><th>Bucket</th><th>Audited report lines</th><th>Budget lines</th></tr></thead><tbody>${rows.map(r=>`<tr><td class="b">${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</tbody></table>
+ <p>The one break between the two: the audited report counts the pass-through entity tax (about $2 of every $100 in fiscal 2025) as a business tax, while the budget counts it as personal income tax. That, not a policy change, is most of why business taxes fall and income tax rises between 2025 and 2026. Tax audit revenue is folded into each tax in the audited report and is a separate line in the budget, filed here under other taxes.</p>
+ <p>Who pays each tax: property tax by class is the Department of Finance's <a href="https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf">annual report on the real property tax</a>, fiscal 2026; income tax by income band is the Independent Budget Office's <a href="https://a860-gpp.nyc.gov/concern/nyc_government_publications/pv63g542d">tables on residents' income and tax liability</a>, tax year 2023; business taxes by sector are the Department of Finance's <a href="https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2022.pdf">statistical profiles of the business income taxes</a>, tax year 2022. Who controls each source draws on the Independent Budget Office, the Department of Finance and the Comptroller, with citations in the project's <a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-who-pays/research">research notes</a>, which carry a URL and quotation for every figure on this page.</p>`;}
+</script></body></html>

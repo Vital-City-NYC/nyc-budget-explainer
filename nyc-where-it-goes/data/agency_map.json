@@ -1,0 +1,558 @@
+{
+ "002": {
+  "name": "Mayoralty",
+  "fn": "general_government"
+ },
+ "003": {
+  "name": "Board of Elections",
+  "fn": "general_government"
+ },
+ "004": {
+  "name": "Campaign Finance Board",
+  "fn": "general_government"
+ },
+ "008": {
+  "name": "Office of the Actuary",
+  "fn": "general_government"
+ },
+ "010": {
+  "name": "Borough President\u2014 Manhattan",
+  "fn": "general_government"
+ },
+ "011": {
+  "name": "Borough President\u2014 Bronx",
+  "fn": "general_government"
+ },
+ "012": {
+  "name": "Borough President\u2014 Brooklyn",
+  "fn": "general_government"
+ },
+ "013": {
+  "name": "Borough President\u2014 Queens",
+  "fn": "general_government"
+ },
+ "014": {
+  "name": "Borough President\u2014 Staten Island",
+  "fn": "general_government"
+ },
+ "015": {
+  "name": "Office of the Comptroller",
+  "fn": "general_government"
+ },
+ "021": {
+  "name": "Office of Administrative Tax Appeals",
+  "fn": "general_government"
+ },
+ "025": {
+  "name": "Law Department",
+  "fn": "general_government"
+ },
+ "030": {
+  "name": "Department of City Planning",
+  "fn": "general_government"
+ },
+ "032": {
+  "name": "Department of Investigation",
+  "fn": "general_government"
+ },
+ "063": {
+  "name": "Department of Veterans Services",
+  "fn": "general_government"
+ },
+ "101": {
+  "name": "Public Advocate",
+  "fn": "general_government"
+ },
+ "102": {
+  "name": "City Council",
+  "fn": "general_government"
+ },
+ "103": {
+  "name": "City Clerk",
+  "fn": "general_government"
+ },
+ "127": {
+  "name": "Financial Information Services Agency",
+  "fn": "general_government"
+ },
+ "131": {
+  "name": "Office of Payroll Administration",
+  "fn": "general_government"
+ },
+ "132": {
+  "name": "Independent Budget Office",
+  "fn": "general_government"
+ },
+ "133": {
+  "name": "Equal Employment Practices Commission",
+  "fn": "general_government"
+ },
+ "134": {
+  "name": "Civil Service Commission",
+  "fn": "general_government"
+ },
+ "136": {
+  "name": "Landmarks Preservation Commission",
+  "fn": "general_government"
+ },
+ "138": {
+  "name": "Districting Commission",
+  "fn": "general_government"
+ },
+ "213": {
+  "name": "Office of Racial Equity",
+  "fn": "general_government"
+ },
+ "215": {
+  "name": "Commission of Racial Equity",
+  "fn": "general_government"
+ },
+ "226": {
+  "name": "Commission on Human Rights",
+  "fn": "general_government"
+ },
+ "260": {
+  "name": "Department of Youth and Community Development",
+  "fn": "general_government"
+ },
+ "312": {
+  "name": "Conflicts of Interest Board",
+  "fn": "general_government"
+ },
+ "313": {
+  "name": "Office of Collective Bargaining",
+  "fn": "general_government"
+ },
+ "341": {
+  "name": "Manhattan Community Board # 1",
+  "fn": "general_government"
+ },
+ "342": {
+  "name": "Manhattan Community Board # 2",
+  "fn": "general_government"
+ },
+ "343": {
+  "name": "Manhattan Community Board # 3",
+  "fn": "general_government"
+ },
+ "344": {
+  "name": "Manhattan Community Board # 4",
+  "fn": "general_government"
+ },
+ "345": {
+  "name": "Manhattan Community Board # 5",
+  "fn": "general_government"
+ },
+ "346": {
+  "name": "Manhattan Community Board # 6",
+  "fn": "general_government"
+ },
+ "347": {
+  "name": "Manhattan Community Board # 7",
+  "fn": "general_government"
+ },
+ "348": {
+  "name": "Manhattan Community Board # 8",
+  "fn": "general_government"
+ },
+ "349": {
+  "name": "Manhattan Community Board # 9",
+  "fn": "general_government"
+ },
+ "350": {
+  "name": "Manhattan Community Board # 10",
+  "fn": "general_government"
+ },
+ "351": {
+  "name": "Manhattan Community Board # 11",
+  "fn": "general_government"
+ },
+ "352": {
+  "name": "Manhattan Community Board # 12",
+  "fn": "general_government"
+ },
+ "381": {
+  "name": "Bronx Community Board # 1",
+  "fn": "general_government"
+ },
+ "382": {
+  "name": "Bronx Community Board # 2",
+  "fn": "general_government"
+ },
+ "383": {
+  "name": "Bronx Community Board # 3",
+  "fn": "general_government"
+ },
+ "384": {
+  "name": "Bronx Community Board # 4",
+  "fn": "general_government"
+ },
+ "385": {
+  "name": "Bronx Community Board # 5",
+  "fn": "general_government"
+ },
+ "386": {
+  "name": "Bronx Community Board # 6",
+  "fn": "general_government"
+ },
+ "387": {
+  "name": "Bronx Community Board # 7",
+  "fn": "general_government"
+ },
+ "388": {
+  "name": "Bronx Community Board # 8",
+  "fn": "general_government"
+ },
+ "389": {
+  "name": "Bronx Community Board # 9",
+  "fn": "general_government"
+ },
+ "390": {
+  "name": "Bronx Community Board # 10",
+  "fn": "general_government"
+ },
+ "391": {
+  "name": "Bronx Community Board # 11",
+  "fn": "general_government"
+ },
+ "392": {
+  "name": "Bronx Community Board # 12",
+  "fn": "general_government"
+ },
+ "431": {
+  "name": "Queens Community Board # 1",
+  "fn": "general_government"
+ },
+ "432": {
+  "name": "Queens Community Board # 2",
+  "fn": "general_government"
+ },
+ "433": {
+  "name": "Queens Community Board # 3",
+  "fn": "general_government"
+ },
+ "434": {
+  "name": "Queens Community Board # 4",
+  "fn": "general_government"
+ },
+ "435": {
+  "name": "Queens Community Board # 5",
+  "fn": "general_government"
+ },
+ "436": {
+  "name": "Queens Community Board # 6",
+  "fn": "general_government"
+ },
+ "437": {
+  "name": "Queens Community Board # 7",
+  "fn": "general_government"
+ },
+ "438": {
+  "name": "Queens Community Board # 8",
+  "fn": "general_government"
+ },
+ "439": {
+  "name": "Queens Community Board # 9",
+  "fn": "general_government"
+ },
+ "440": {
+  "name": "Queens Community Board # 10",
+  "fn": "general_government"
+ },
+ "441": {
+  "name": "Queens Community Board # 11",
+  "fn": "general_government"
+ },
+ "442": {
+  "name": "Queens Community Board # 12",
+  "fn": "general_government"
+ },
+ "443": {
+  "name": "Queens Community Board # 13",
+  "fn": "general_government"
+ },
+ "444": {
+  "name": "Queens Community Board # 14",
+  "fn": "general_government"
+ },
+ "471": {
+  "name": "Brooklyn Community Board # 1",
+  "fn": "general_government"
+ },
+ "472": {
+  "name": "Brooklyn Community Board # 2",
+  "fn": "general_government"
+ },
+ "473": {
+  "name": "Brooklyn Community Board # 3",
+  "fn": "general_government"
+ },
+ "474": {
+  "name": "Brooklyn Community Board # 4",
+  "fn": "general_government"
+ },
+ "475": {
+  "name": "Brooklyn Community Board # 5",
+  "fn": "general_government"
+ },
+ "476": {
+  "name": "Brooklyn Community Board # 6",
+  "fn": "general_government"
+ },
+ "477": {
+  "name": "Brooklyn Community Board # 7",
+  "fn": "general_government"
+ },
+ "478": {
+  "name": "Brooklyn Community Board # 8",
+  "fn": "general_government"
+ },
+ "479": {
+  "name": "Brooklyn Community Board # 9",
+  "fn": "general_government"
+ },
+ "480": {
+  "name": "Brooklyn Community Board # 10",
+  "fn": "general_government"
+ },
+ "481": {
+  "name": "Brooklyn Community Board # 11",
+  "fn": "general_government"
+ },
+ "482": {
+  "name": "Brooklyn Community Board # 12",
+  "fn": "general_government"
+ },
+ "483": {
+  "name": "Brooklyn Community Board # 13",
+  "fn": "general_government"
+ },
+ "484": {
+  "name": "Brooklyn Community Board # 14",
+  "fn": "general_government"
+ },
+ "485": {
+  "name": "Brooklyn Community Board # 15",
+  "fn": "general_government"
+ },
+ "486": {
+  "name": "Brooklyn Community Board # 16",
+  "fn": "general_government"
+ },
+ "487": {
+  "name": "Brooklyn Community Board # 17",
+  "fn": "general_government"
+ },
+ "488": {
+  "name": "Brooklyn Community Board # 18",
+  "fn": "general_government"
+ },
+ "491": {
+  "name": "Staten Island Community Board # 1",
+  "fn": "general_government"
+ },
+ "492": {
+  "name": "Staten Island Community Board # 2",
+  "fn": "general_government"
+ },
+ "493": {
+  "name": "Staten Island Community Board # 3",
+  "fn": "general_government"
+ },
+ "801": {
+  "name": "Department of Small Business Services",
+  "fn": "general_government"
+ },
+ "820": {
+  "name": "Office of Administrative Trials and Hearings\u2026",
+  "fn": "general_government"
+ },
+ "829": {
+  "name": "Business Integrity Commission",
+  "fn": "general_government"
+ },
+ "836": {
+  "name": "Department of Finance",
+  "fn": "general_government"
+ },
+ "850": {
+  "name": "Department of Design and Construction\u2026",
+  "fn": "general_government"
+ },
+ "856": {
+  "name": "Department of Citywide Administrative Services",
+  "fn": "general_government"
+ },
+ "858": {
+  "name": "Department of Information Technology and Telecommunications",
+  "fn": "general_government"
+ },
+ "860": {
+  "name": "Department of Records and Information Services",
+  "fn": "general_government"
+ },
+ "866": {
+  "name": "Department of Consumer & Worker Protection",
+  "fn": "general_government"
+ },
+ "017": {
+  "name": "Department of Emergency Management",
+  "fn": "public_safety"
+ },
+ "054": {
+  "name": "Civilian Complaint Review Board",
+  "fn": "public_safety"
+ },
+ "056": {
+  "name": "Police Department",
+  "fn": "public_safety"
+ },
+ "057": {
+  "name": "Fire Department",
+  "fn": "public_safety"
+ },
+ "072": {
+  "name": "Department of Correction",
+  "fn": "public_safety"
+ },
+ "073": {
+  "name": "Board of Correction",
+  "fn": "public_safety"
+ },
+ "128": {
+  "name": "Office of Criminal Justice",
+  "fn": "public_safety"
+ },
+ "156": {
+  "name": "NYC Taxi and Limousine Commission",
+  "fn": "public_safety"
+ },
+ "781": {
+  "name": "Department of Probation",
+  "fn": "public_safety"
+ },
+ "901": {
+  "name": "District Attorney\u2014 New York County",
+  "fn": "public_safety"
+ },
+ "902": {
+  "name": "District Attorney\u2014 Bronx County",
+  "fn": "public_safety"
+ },
+ "903": {
+  "name": "District Attorney\u2014 Kings County",
+  "fn": "public_safety"
+ },
+ "904": {
+  "name": "District Attorney\u2014 Queens County",
+  "fn": "public_safety"
+ },
+ "905": {
+  "name": "District Attorney\u2014 Richmond County",
+  "fn": "public_safety"
+ },
+ "906": {
+  "name": "Office of Prosecution\u2014 Special Narcotics",
+  "fn": "public_safety"
+ },
+ "941": {
+  "name": "Public Administrator\u2014 New York County",
+  "fn": "public_safety"
+ },
+ "942": {
+  "name": "Public Administrator\u2014 Bronx County",
+  "fn": "public_safety"
+ },
+ "943": {
+  "name": "Public Administrator\u2014 Kings County",
+  "fn": "public_safety"
+ },
+ "944": {
+  "name": "Public Administrator\u2014 Queens County",
+  "fn": "public_safety"
+ },
+ "945": {
+  "name": "Public Administrator\u2014 Richmond County",
+  "fn": "public_safety"
+ },
+ "040": {
+  "name": "Department of Education",
+  "fn": "education"
+ },
+ "042": {
+  "name": "City University of New York\u2014 Community Colleges",
+  "fn": "city_university"
+ },
+ "068": {
+  "name": "Administration for Children\u2019s Services",
+  "fn": "social_services"
+ },
+ "069": {
+  "name": "Department of Social Services",
+  "fn": "social_services"
+ },
+ "071": {
+  "name": "Department of Homeless Services",
+  "fn": "social_services"
+ },
+ "125": {
+  "name": "Department for the Aging",
+  "fn": "social_services"
+ },
+ "826": {
+  "name": "Department of Environmental Protection",
+  "fn": "environmental"
+ },
+ "827": {
+  "name": "Department of Sanitation",
+  "fn": "environmental"
+ },
+ "841": {
+  "name": "Department of Transportation",
+  "fn": "transportation"
+ },
+ "846": {
+  "name": "Department of Parks and Recreation",
+  "fn": "transportation"
+ },
+ "806": {
+  "name": "Housing Preservation and Development",
+  "fn": "housing"
+ },
+ "810": {
+  "name": "Department of Buildings",
+  "fn": "housing"
+ },
+ "816": {
+  "name": "Department of Health and Mental Hygiene",
+  "fn": "health"
+ },
+ "819": {
+  "name": "Health and Hospitals Corporation",
+  "fn": "health"
+ },
+ "035": {
+  "name": "New York Research Libraries",
+  "fn": "libraries"
+ },
+ "037": {
+  "name": "New York Public Library",
+  "fn": "libraries"
+ },
+ "038": {
+  "name": "Brooklyn Public Library",
+  "fn": "libraries"
+ },
+ "039": {
+  "name": "Queens Borough Public Library",
+  "fn": "libraries"
+ },
+ "095": {
+  "name": "Pension Contributions",
+  "fn": "pensions"
+ },
+ "126": {
+  "name": "Department of Cultural Affairs",
+  "fn": "parks"
+ }
+}

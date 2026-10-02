@@ -1,0 +1,53 @@
+{
+ "source": "IBO, Analysis of the 2027 Preliminary Budget (Mar 24 2026) p.9; DOF Annual Report FY2026 p.32; OMB FY2027 Preliminary Budget summary (Feb 2026) and Executive Budget (May 2026); Comptroller, Comments on the FY2027 Adopted Budget; NY Focus May 29 2026; Chapter 59 of 2026 Part HH; Chapter 127 of 2026 Part D; Local Law 153 of 2023; General City Model section 101; see research/02-who-controls-what.md",
+ "quote_ibo": "As IBO reported, the property tax is the only local tax where the City has authority to set the tax rates without State approval. The City Council, however, would have to agree to the Mayor's proposal for any change to occur.",
+ "quote_dof": "Because of the property tax's unique role in balancing the budget, it is the only tax over which the City has the discretion to determine the rate without prior legislation from the State.",
+ "property_tax": {
+  "albany": false,
+  "who": "City Hall and the Council set the levy and the class rates every year.",
+  "limits": "Albany wrote the four-class system, the class-share formula and its cap, the assessment caps, and the constitution limits the levy to 2.5% of full value. The unused room under that limit was $2.2 billion in fiscal 2026.",
+  "alone": "Raise or lower the overall rate. The February 2026 plan called a 9.5% increase, worth $3.7 billion a year, the path of last resort; the May budget dropped it."
+ },
+ "personal_income_tax": {
+  "albany": true,
+  "who": "Albany sets the rates and renews them; the current ones run through 2029.",
+  "limits": "The 2026 state budget declined the mayor's ask for 2 points more on incomes over $1 million, about $3 billion a year.",
+  "alone": "Nothing on rates."
+ },
+ "sales_tax": {
+  "albany": true,
+  "who": "Albany authorizes the city's 4.5 percent; the state collects it.",
+  "limits": "Broadening the base would take an amendment to state tax law.",
+  "alone": "Nothing."
+ },
+ "business_taxes": {
+  "albany": true,
+  "who": "Albany sets the corporation and unincorporated business tax rates; the current ones run through 2029.",
+  "limits": "Both houses backed city authority to raise corporate rates in March 2026; the budget signed in May left it out.",
+  "alone": "Nothing on the big ones. The commercial rent tax has been cut by local law."
+ },
+ "other_taxes": {
+  "albany": true,
+  "who": "Mostly Albany: the transfer and mortgage recording taxes are state law, and so are the thresholds, rates and 2031 sunset of the new second-home surcharge, about $500 million a year.",
+  "limits": "",
+  "alone": "The Council extends the hotel tax rate by local law, most recently to December 2027."
+ },
+ "state_aid": {
+  "albany": true,
+  "who": "The state budget.",
+  "limits": "",
+  "alone": "Lobby."
+ },
+ "federal_aid": {
+  "albany": true,
+  "who": "Washington.",
+  "limits": "",
+  "alone": "Nothing."
+ },
+ "fees_fines_other": {
+  "albany": false,
+  "who": "Mostly the city and its boards: fees, fines, water and sewer charges.",
+  "limits": "",
+  "alone": "Set most fees and fines."
+ }
+}

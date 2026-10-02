@@ -1,0 +1,50 @@
+{
+ "tax_year": 2022,
+ "source": "NYC Department of Finance, Statistical Profiles of New York City Business Income Taxes, Tax Year 2022 (August 2026), highlights p.1",
+ "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2022.pdf",
+ "caption": "Tax year 2022, business corporation, general corporation and unincorporated business taxes combined.",
+ "sectors": [
+  {
+   "key": "s1",
+   "label": "Finance and insurance",
+   "short": "Finance and insurance",
+   "tax_share": 38.7,
+   "color": "--c-biz"
+  },
+  {
+   "key": "s2",
+   "label": "Services",
+   "short": "Services",
+   "tax_share": 28.7,
+   "color": "--c-c2o"
+  },
+  {
+   "key": "s3",
+   "label": "Trade",
+   "short": "Trade",
+   "tax_share": 9.2,
+   "color": "--c-c3"
+  },
+  {
+   "key": "s4",
+   "label": "Information",
+   "short": "Information",
+   "tax_share": 8.6,
+   "color": "--c-c4"
+  },
+  {
+   "key": "s5",
+   "label": "Real estate",
+   "short": "Real estate",
+   "tax_share": 6.0,
+   "color": "--c-prop"
+  },
+  {
+   "key": "s6",
+   "label": "All other sectors",
+   "short": "All other",
+   "tax_share": 8.8,
+   "color": "--c-fees"
+  }
+ ]
+}

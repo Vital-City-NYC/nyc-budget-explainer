@@ -1,0 +1,26 @@
+{
+ "items": [
+  {
+   "k": "Capital budget",
+   "v": "$15.5 billion",
+   "p": "borrowed in fiscal 2025 for schools, roads, water mains and other projects. The buildings are not in the squares; the interest and principal are, as debt service.",
+   "src": "Comptroller, fiscal 2025 financial report, bonds issued",
+   "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf"
+  },
+  {
+   "k": "Debt outstanding",
+   "v": "$121 billion",
+   "p": "owed at the end of fiscal 2025, about $14,100 per resident, most of it general obligation and Transitional Finance Authority bonds.",
+   "src": "Comptroller, fiscal 2025 financial report, ratios of outstanding debt",
+   "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf"
+  },
+  {
+   "k": "The gap",
+   "v": "$6.4 billion",
+   "p": "is the hole the Comptroller sees in fiscal 2028, growing to $8.5 billion by 2030. The current year balances, as the law requires; the next ones do not yet.",
+   "src": "Comptroller, comments on the fiscal 2027 adopted budget, p. 46",
+   "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/Comments-on-New-York-Citys-Fiscal-Year-2027-Adopted-Budget.pdf"
+  }
+ ],
+ "note": "Also beside the budget: the Water Board, which bills for water and sewer service and pays the city for running the system; Health + Hospitals and the Housing Authority, which keep their own books and receive subsidies that do appear in the squares; and the MTA, a state authority. Figures and citations in the research notes."
+}

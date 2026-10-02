@@ -1,0 +1,64 @@
+{
+ "tax_year": 2023,
+ "source": "NYC Independent Budget Office, tables on New York City residents' income and income tax liability, tax year 2023 (released Feb 10, 2026), sheet 2 Summary",
+ "url": "https://a860-gpp.nyc.gov/concern/nyc_government_publications/pv63g542d",
+ "sub": "The income-tax squares, split by the filer's income. Tax year 2023, the latest, 3.9 million returns and $14.6 billion of liability before credits. Click a row to isolate it.",
+ "note": "The basics of the rates: the city income tax applies to residents only and has four rates, from 3.078 to 3.876 percent of taxable income. The top rate starts at $50,000 for a single filer, $60,000 for a head of household and $90,000 for a joint return, so above those levels it is flat: a resident making $60,000 and one making $5 billion pay the same 3.876 percent on their last dollar. It sits on top of the state income tax, which has the higher and more graduated rates. The mayor's 2026 ask was a fifth rate, 5.876 percent, on income over $1 million; Albany declined it. Income is New York adjusted gross income. Shares of the tax are liability before credits, the measure the budget office uses. After refundable credits the top band's share falls to 30 percent, almost entirely because of the pass-through entity tax credit, which refunds tax already paid at the business level. The 2021 peak, when filers over $1 million owed 48 percent, was capital gains, not a rate change.",
+ "bands": [
+  {
+   "key": "i1",
+   "label": "Under $50,000",
+   "filer_share": 54.3,
+   "income_share": 9.3,
+   "tax_share": 5.8,
+   "net_share": 3.8,
+   "color": "--c-i1"
+  },
+  {
+   "key": "i2",
+   "label": "$50,000 to $99,999",
+   "filer_share": 23.5,
+   "income_share": 15.1,
+   "tax_share": 13.4,
+   "net_share": 15.7,
+   "color": "--c-i2"
+  },
+  {
+   "key": "i3",
+   "label": "$100,000 to $199,999",
+   "filer_share": 13.7,
+   "income_share": 17.0,
+   "tax_share": 16.8,
+   "net_share": 19.6,
+   "color": "--c-i3"
+  },
+  {
+   "key": "i4",
+   "label": "$200,000 to $499,999",
+   "filer_share": 6.3,
+   "income_share": 16.8,
+   "tax_share": 17.6,
+   "net_share": 20.4,
+   "color": "--c-i4"
+  },
+  {
+   "key": "i5",
+   "label": "$500,000 to $999,999",
+   "filer_share": 1.4,
+   "income_share": 8.6,
+   "tax_share": 9.3,
+   "net_share": 10.5,
+   "color": "--c-i5"
+  },
+  {
+   "key": "i6",
+   "label": "$1 million and over",
+   "filer_share": 0.9,
+   "income_share": 33.3,
+   "tax_share": 37.1,
+   "net_share": 30.0,
+   "color": "--c-i6",
+   "note": "Filers over $1 million are 34,307 returns. After refundable credits their share is 30 percent."
+  }
+ ]
+}

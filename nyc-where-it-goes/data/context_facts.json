@@ -1,0 +1,157 @@
+{
+ "education": [
+  {
+   "fact": "New York City schools spent $35,796 per pupil in fiscal 2024, the most of the 100 largest districts and about double the national average of $17,619.",
+   "source": "Census Bureau, 2024 Annual Survey of School System Finances",
+   "url": "https://www.census.gov/newsroom/press-releases/2026/school-system-finances.html"
+  },
+  {
+   "fact": "Per-pupil current spending in fiscal 2024: New York City $35,796, Los Angeles $25,631, Chicago $24,330, Philadelphia $19,525, Houston $13,950.",
+   "source": "Census Bureau, school finance Table 18",
+   "url": "https://www2.census.gov/programs-surveys/school-finances/tables/2024/secondary-education-finance/elsec24_sumtables.xlsx"
+  },
+  {
+   "fact": "The Department of Education spent $37.7 billion in fiscal 2026 and had 152,698 staff; it serves nearly one million students in about 1,600 schools.",
+   "source": "Mayor's Management Report, Fiscal 2026",
+   "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf"
+  }
+ ],
+ "social_services": [
+  {
+   "fact": "An average of 85,066 people slept in Department of Homeless Services shelters each night in fiscal 2026, up from 45,563 in fiscal 2022.",
+   "source": "Mayor's Management Report, Fiscal 2026",
+   "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf"
+  },
+  {
+   "fact": "566,500 New Yorkers were receiving cash assistance in June 2026, 6 percent fewer than a year earlier.",
+   "source": "Mayor's Management Report, Fiscal 2026",
+   "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf"
+  },
+  {
+   "fact": "The city's own share of Medicaid is budgeted at $6.79 billion in fiscal 2027.",
+   "source": "NYC Comptroller, Comments on the FY2027 Adopted Budget",
+   "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/Comments-on-New-York-Citys-Fiscal-Year-2027-Adopted-Budget.pdf"
+  }
+ ],
+ "public_safety": [
+  {
+   "fact": "In March 2024 New York City had 32,910 full-time sworn police officers, Chicago 11,474, Los Angeles 8,979 and Philadelphia 5,433; against the populations in the same Census file that is about 3.9 officers per 1,000 residents in New York, 4.3 in Chicago, 3.5 in Philadelphia and 2.3 in Los Angeles.",
+   "source": "Census Bureau, 2024 Annual Survey of Public Employment and Payroll",
+   "url": "https://www2.census.gov/programs-surveys/apes/datasets/2024/2024_individual_unit_files.zip"
+  },
+  {
+   "fact": "The city's jails held an average of 6,954 people a day in fiscal 2026; the Comptroller's last full costing, for fiscal 2021, put the cost at $556,539 per incarcerated person per year.",
+   "source": "Mayor's Management Report, Fiscal 2026; NYC Comptroller, Dec. 2021",
+   "url": "https://comptroller.nyc.gov/newsroom/comptroller-stringer-cost-of-incarceration-per-person-in-new-york-city-skyrockets-to-all-time-high-2/"
+  },
+  {
+   "fact": "NYPD uniformed headcount was 34,018 in fiscal 2026, down from 35,910 in fiscal 2020.",
+   "source": "Mayor's Management Report, Fiscal 2026; Comptroller's ACFR FY2025",
+   "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf"
+  }
+ ],
+ "pensions": [
+  {
+   "fact": "City pension contributions are $8.7 billion in the $125.8 billion fiscal 2027 budget, down $1 billion from fiscal 2026 after the state let four of the five funds stretch out their unfunded liability.",
+   "source": "NYC Comptroller, Comments on the FY2027 Adopted Budget",
+   "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/Comments-on-New-York-Citys-Fiscal-Year-2027-Adopted-Budget.pdf"
+  },
+  {
+   "fact": "As of June 30, 2025 the five funds held assets covering 92.2 percent of liabilities for Police, 79.4 percent for Fire, 87.7 percent for NYCERS, 90.4 percent for Teachers and 102.6 percent for the Board of Education system.",
+   "source": "Comptroller's ACFR FY2025",
+   "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf"
+  },
+  {
+   "fact": "361,394 retirees and beneficiaries were drawing city pensions as of June 30, 2024, against 378,991 active members.",
+   "source": "Comptroller's ACFR FY2025",
+   "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf"
+  }
+ ],
+ "benefits": [
+  {
+   "fact": "Employee and retiree health insurance is budgeted at $10.9 billion for fiscal 2027, up from $10.6 billion in fiscal 2026.",
+   "source": "NYC Comptroller, Comments on the FY2027 Adopted Budget",
+   "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/Comments-on-New-York-Citys-Fiscal-Year-2027-Adopted-Budget.pdf"
+  },
+  {
+   "fact": "The retiree health plan covered 288,479 active workers and 260,016 retirees and beneficiaries as of June 30, 2024; its $101.7 billion liability was 5.1 percent funded at June 30, 2025.",
+   "source": "Comptroller's ACFR FY2025",
+   "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf"
+  },
+  {
+   "fact": "The city paid $1.38 billion in judgments and claims in fiscal 2025, against an adopted budget of $877 million; in fiscal 2024 it resolved 13,397 claims for $1.94 billion, the most ever.",
+   "source": "Comptroller's ACFR FY2025; NYC Comptroller claims release, April 2025",
+   "url": "https://comptroller.nyc.gov/newsroom/comptroller-landers-new-dashboard-tracks-city-claims-city-paid-nearly-2b-in-settlements-last-fiscal-year/"
+  }
+ ],
+ "debt_service": [
+  {
+   "fact": "Debt service took 10.2 percent of city tax revenues in fiscal 2025, under the city's 15 percent affordability ceiling, but is projected to reach about 14.2 percent by fiscal 2033.",
+   "source": "NYC Comptroller, Annual Report on Capital Debt and Obligations FY2026",
+   "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/Annual-Report-on-Capital-Debt-and-Obligations-Fiscal-Year-2026-1.pdf"
+  },
+  {
+   "fact": "Net debt was $121.0 billion at the end of fiscal 2025, and total primary-government debt worked out to $15,763 per resident.",
+   "source": "Comptroller's ACFR FY2025, Ratios of Outstanding Debt",
+   "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf"
+  },
+  {
+   "fact": "Direct and overlapping debt per capita in fiscal 2024 was $12,402 in New York City, second among 14 peer cities after Washington ($21,712); Chicago was $6,659, Los Angeles $5,360, Philadelphia $4,869 and Houston $4,410.",
+   "source": "NYC Comptroller, Annual Report on Capital Debt and Obligations FY2026, Table 19",
+   "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/Annual-Report-on-Capital-Debt-and-Obligations-Fiscal-Year-2026-1.pdf"
+  }
+ ],
+ "health": [
+  {
+   "fact": "The city gave NYC Health + Hospitals more than $2.4 billion in fiscal 2025, 145 percent more than in fiscal 2018.",
+   "source": "New York State Comptroller, Dec. 2025",
+   "url": "https://www.osc.ny.gov/files/reports/pdf/nyc-health-hospitals-strategic-initiatives.pdf"
+  },
+  {
+   "fact": "Health + Hospitals treated 1,170,529 unique patients in fiscal 2026, 215,554 of them uninsured, on spending of $13.2 billion.",
+   "source": "Mayor's Management Report, Fiscal 2026",
+   "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf"
+  },
+  {
+   "fact": "The Department of Health and Mental Hygiene spent $2.84 billion in fiscal 2026.",
+   "source": "Mayor's Management Report, Fiscal 2026",
+   "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf"
+  }
+ ],
+ "general_government": [
+  {
+   "fact": "The city had 287,422 full-time employees in fiscal 2025, of whom 15,073 were in general government; the fiscal 2027 budget authorizes 307,199 full-time positions.",
+   "source": "Comptroller's ACFR FY2025; Comptroller, Comments on the FY2027 Adopted Budget",
+   "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf"
+  }
+ ],
+ "environmental": [
+  {
+   "fact": "Sanitation disposed of 3.13 million tons of refuse in fiscal 2026 and collected 719,000 tons of recycling, a 19.7 percent diversion rate.",
+   "source": "Mayor's Management Report, Fiscal 2026",
+   "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf"
+  },
+  {
+   "fact": "Water and sewer service is paid for off budget: the Water Board sets rates to cover the Water Authority's debt and collected over $4.8 billion in fiscal 2026, reimbursing the city about $1.5 billion a year for operations and rent.",
+   "source": "Comptroller's ACFR FY2025; Mayor's Management Report, Fiscal 2026",
+   "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf"
+  }
+ ],
+ "everything_else": [
+  {
+   "fact": "NYCHA houses 497,649 authorized residents in 177,565 apartments across 335 developments as of fiscal 2026.",
+   "source": "Mayor's Management Report, Fiscal 2026",
+   "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf"
+  },
+  {
+   "fact": "The Department of Transportation maintains 6,300 miles of streets, 809 bridges and four tunnels, and resurfaced 1,169 lane miles in fiscal 2026.",
+   "source": "Mayor's Management Report, Fiscal 2026",
+   "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf"
+  },
+  {
+   "fact": "CUNY enrolled 246,503 students in fiscal 2026, 81,883 of them at its seven community colleges, where tuition is $4,800; Parks cares for 2,000 parks and 12,000 acres of natural areas, and the three library systems run 220 branches.",
+   "source": "Mayor's Management Report, Fiscal 2026",
+   "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf"
+  }
+ ]
+}

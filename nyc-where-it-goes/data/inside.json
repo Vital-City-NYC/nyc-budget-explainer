@@ -1,0 +1,3173 @@
+{
+"source": "OMB, Adopted Budget Fiscal Year 2027, Supporting Schedules, Unit of Appropriation Summary (appropriation, adopted column, gross of intra-city sales)",
+"url": "https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/ss6-26.pdf",
+"fiscal_year": 2027,
+"agencies": {
+"002": {
+"name": "Mayoralty",
+"total": 198937800,
+"pages": [
+14,
+103
+],
+"rows": [
+[
+"Office Of Mgmt And Budget",
+67566993
+],
+[
+"Office Of The Mayor",
+51394719
+],
+[
+"Mayor'S Office Of Contract Services",
+40255847
+],
+[
+"Off Of Labor Relations",
+25297722
+],
+[
+"Office Of Operations",
+6667355
+],
+[
+"Office Of Mass Engagement",
+5511551
+],
+[
+"Everything else in the agency",
+2243613
+]
+]
+},
+"003": {
+"name": "Board Of Elections",
+"total": 212330829,
+"pages": [
+112,
+118
+],
+"rows": [
+[
+"Agency-wide personal services",
+126953711
+],
+[
+"Agency-wide other than personal services",
+85377118
+]
+]
+},
+"004": {
+"name": "Campaign Finance Board",
+"total": 104408742,
+"pages": [
+126,
+136
+],
+"rows": [
+[
+"Agency-wide other than personal services",
+58536715
+],
+[
+"Agency-wide personal services",
+28588019
+],
+[
+"Election Funding",
+17284008
+]
+]
+},
+"008": {
+"name": "Office Of The Actuary",
+"total": 8483139,
+"pages": [
+141,
+145
+],
+"rows": [
+[
+"Personal Service",
+6434598
+],
+[
+"Other Than Personal Service",
+2048541
+]
+]
+},
+"010": {
+"name": "Borough President - Manhattan",
+"total": 6079019,
+"pages": [
+150,
+154
+],
+"rows": [
+[
+"Agency-wide personal services",
+5048889
+],
+[
+"Agency-wide other than personal services",
+1030130
+]
+]
+},
+"011": {
+"name": "Borough President Bronx",
+"total": 7214568,
+"pages": [
+160,
+165
+],
+"rows": [
+[
+"Agency-wide personal services",
+5791546
+],
+[
+"Agency-wide other than personal services",
+1423022
+]
+]
+},
+"012": {
+"name": "Borough President - Brooklyn",
+"total": 7884159,
+"pages": [
+172,
+176
+],
+"rows": [
+[
+"Agency-wide personal services",
+6357628
+],
+[
+"Agency-wide other than personal services",
+1526531
+]
+]
+},
+"013": {
+"name": "Borough President - Queens",
+"total": 6773772,
+"pages": [
+182,
+186
+],
+"rows": [
+[
+"Agency-wide personal services",
+5069893
+],
+[
+"Agency-wide other than personal services",
+1703879
+]
+]
+},
+"014": {
+"name": "Borough President Staten Island",
+"total": 5247332,
+"pages": [
+192,
+196
+],
+"rows": [
+[
+"Agency-wide personal services",
+4233535
+],
+[
+"Agency-wide other than personal services",
+1013797
+]
+]
+},
+"015": {
+"name": "Office Of The Comptroller",
+"total": 135704644,
+"pages": [
+201,
+243
+],
+"rows": [
+[
+"First Deputy Compt",
+60306129
+],
+[
+"Third Deputy Compt",
+46935624
+],
+[
+"Second Deputy Compt",
+24852839
+],
+[
+"Executive management",
+3610052
+]
+]
+},
+"017": {
+"name": "Department Of Emergency Management",
+"total": 47314837,
+"pages": [
+252,
+269
+],
+"rows": [
+[
+"Agency-wide other than personal services",
+32389364
+],
+[
+"Agency-wide personal services",
+14925473
+]
+]
+},
+"021": {
+"name": "Office Of Administrative Tax Appeals",
+"total": 7845238,
+"pages": [
+275,
+279
+],
+"rows": [
+[
+"Agency-wide personal services",
+7110897
+],
+[
+"Other Than Personal Service",
+734341
+]
+]
+},
+"025": {
+"name": "Law Department",
+"total": 382959168,
+"pages": [
+301,
+317
+],
+"rows": [
+[
+"Agency-wide personal services",
+214087765
+],
+[
+"Agency-wide other than personal services",
+168871403
+]
+]
+},
+"030": {
+"name": "Department Of City Planning",
+"total": 58779229,
+"pages": [
+330,
+345
+],
+"rows": [
+[
+"Agency-wide personal services",
+38783367
+],
+[
+"Agency-wide other than personal services",
+16888292
+],
+[
+"Geographic Systems",
+3107570
+]
+]
+},
+"032": {
+"name": "Department Of Investigation",
+"total": 59970638,
+"pages": [
+357,
+379
+],
+"rows": [
+[
+"Agency-wide other than personal services",
+27021414
+],
+[
+"Agency-wide personal services",
+25101488
+],
+[
+"Inspector General",
+7847736
+]
+]
+},
+"035": {
+"name": "New York Research Libraries",
+"total": 39532947,
+"pages": [
+385,
+385
+],
+"rows": [
+[
+"Lump Sum Appropriation",
+39532947
+]
+]
+},
+"037": {
+"name": "New York Public Library",
+"total": 195918186,
+"pages": [
+389,
+399
+],
+"rows": [
+[
+"Systemwide Services",
+130944447
+],
+[
+"Lump Sum-Boro Of Manhattan",
+27211319
+],
+[
+"Lump Sum- Boro Of Bronx",
+25152688
+],
+[
+"Lump Sum-Boro Of Staten Isl",
+11247604
+],
+[
+"Consultant & Advisory Svcs",
+1362128
+]
+]
+},
+"038": {
+"name": "Brooklyn Public Library",
+"total": 148491175,
+"pages": [
+405,
+405
+],
+"rows": [
+[
+"Lump Sum",
+148491175
+]
+]
+},
+"039": {
+"name": "Queens Borough Public Library",
+"total": 154132707,
+"pages": [
+410,
+410
+],
+"rows": [
+[
+"Lump Sum",
+154132707
+]
+]
+},
+"040": {
+"name": "Department Of Education",
+"total": 38603762678,
+"pages": [
+422,
+612
+],
+"rows": [
+[
+"General education instruction and school leadership",
+9559344199
+],
+[
+"Special education",
+8330178918
+],
+[
+"Fringe benefits for school staff",
+5175073543
+],
+[
+"Charter school payments",
+3744490013
+],
+[
+"Pre-K and early childhood",
+2891498816
+],
+[
+"Buildings, energy and leases",
+2514556190
+],
+[
+"Everything else in the agency",
+6388620999
+]
+]
+},
+"042": {
+"name": "City University Of New York",
+"total": 1643149265,
+"pages": [
+641,
+665
+],
+"rows": [
+[
+"Community College",
+1584257800
+],
+[
+"Senior College",
+35000000
+],
+[
+"Hunter Schools",
+23891465
+]
+]
+},
+"054": {
+"name": "Civilian Complaint Review Board",
+"total": 32869874,
+"pages": [
+671,
+676
+],
+"rows": [
+[
+"Ccrb",
+32869874
+]
+]
+},
+"056": {
+"name": "Police Department",
+"total": 6556410640,
+"pages": [
+693,
+939
+],
+"rows": [
+[
+"Patrol",
+1821581302
+],
+[
+"Chief of Department",
+814740210
+],
+[
+"Detective Bureau",
+766352071
+],
+[
+"Administration",
+535888410
+],
+[
+"Executive management",
+333654382
+],
+[
+"Transit police",
+319765821
+],
+[
+"Everything else in the agency",
+1964428444
+]
+]
+},
+"057": {
+"name": "Fire Department",
+"total": 2717020972,
+"pages": [
+966,
+1064
+],
+"rows": [
+[
+"Fire extinguishing and emergency response",
+1895078369
+],
+[
+"Emergency medical services",
+422005784
+],
+[
+"Executive administration",
+315200542
+],
+[
+"Fire prevention",
+57971182
+],
+[
+"Fire investigation",
+26765095
+]
+]
+},
+"058": {
+"name": "Office Of Community Safety",
+"total": 3078000,
+"pages": [
+1069,
+1071
+],
+"rows": [
+[
+"Community Safety",
+3078000
+]
+]
+},
+"063": {
+"name": "Department Of Veterans' Services",
+"total": 7691236,
+"pages": [
+1077,
+1082
+],
+"rows": [
+[
+"Agency-wide personal services",
+4938043
+],
+[
+"Agency-wide other than personal services",
+2753193
+]
+]
+},
+"068": {
+"name": "Admin For Children'S Services",
+"total": 3523754410,
+"pages": [
+1104,
+1180
+],
+"rows": [
+[
+"Child welfare",
+1332893582
+],
+[
+"Head Start and child care",
+849170857
+],
+[
+"Agency-wide personal services",
+404691115
+],
+[
+"Juvenile justice",
+314400589
+],
+[
+"Adoption subsidy",
+261869773
+],
+[
+"Agency-wide other than personal services",
+161302134
+],
+[
+"Everything else in the agency",
+199426360
+]
+]
+},
+"069": {
+"name": "Department Of Social Services",
+"total": 14988964204,
+"pages": [
+1194,
+1327
+],
+"rows": [
+[
+"Medicaid (medical assistance)",
+6917185686
+],
+[
+"Public assistance",
+5785482737
+],
+[
+"Administration",
+737409515
+],
+[
+"Legal services",
+474128226
+],
+[
+"Adult services",
+416470022
+],
+[
+"Domestic violence services",
+277402168
+],
+[
+"Everything else in the agency",
+380885850
+]
+]
+},
+"071": {
+"name": "Department Of Homeless Services",
+"total": 4240114207,
+"pages": [
+1348,
+1389
+],
+"rows": [
+[
+"Shelter intake and programs",
+3716126645
+],
+[
+"Street programs",
+450545655
+],
+[
+"Administration",
+73441907
+]
+]
+},
+"072": {
+"name": "Department Of Correction",
+"total": 1263375301,
+"pages": [
+1398,
+1462
+],
+"rows": [
+[
+"Jail operations",
+733532403
+],
+[
+"Operations",
+324998774
+],
+[
+"Administration",
+103896419
+],
+[
+"Health and programs",
+52088808
+],
+[
+"Transportation",
+37718704
+],
+[
+"Training",
+11140193
+]
+]
+},
+"073": {
+"name": "Board Of Correction",
+"total": 3637881,
+"pages": [
+1468,
+1472
+],
+"rows": [
+[
+"Agency-wide personal services",
+3347088
+],
+[
+"Other Than Personal Service",
+290793
+]
+]
+},
+"095": {
+"name": "Pension Contributions",
+"total": 8819414850,
+"pages": [
+1478,
+1483
+],
+"rows": [
+[
+"City Actuarial Pensions",
+8694660832
+],
+[
+"Non-City Pensions",
+124404018
+],
+[
+"Non - Actuarial Pensions",
+350000
+]
+]
+},
+"098": {
+"name": "Miscellaneous",
+"total": 15250082691,
+"pages": [
+1487,
+1496
+],
+"rows": [
+[
+"Fringe Benefits",
+9531506438
+],
+[
+"Agency-wide other than personal services",
+5375737344
+],
+[
+"Reserve For Collective Bargaining",
+342838909
+]
+]
+},
+"099": {
+"name": "Debt Service",
+"total": 7368393796,
+"pages": [
+1502,
+1509
+],
+"rows": [
+[
+"Funded Debt-W/O Const Limit",
+4130998902
+],
+[
+"Nyc Transitional Finance Authority",
+3129229495
+],
+[
+"Lease Purch & City Guar Debt",
+108165399
+],
+[
+"Budget Stabilization Account",
+0
+]
+]
+},
+"101": {
+"name": "Public Advocate",
+"total": 6250447,
+"pages": [
+1513,
+1517
+],
+"rows": [
+[
+"Agency-wide personal services",
+5704624
+],
+[
+"Agency-wide other than personal services",
+545823
+]
+]
+},
+"102": {
+"name": "City Council",
+"total": 127061862,
+"pages": [
+1522,
+1686
+],
+"rows": [
+[
+"Council Members",
+35664500
+],
+[
+"Committee Staffing",
+32126566
+],
+[
+"Council Services Division",
+27270724
+],
+[
+"Otps Central Staff",
+20200000
+],
+[
+"Otps Council Members",
+11800000
+],
+[
+"Hospitals",
+2
+],
+[
+"Everything else in the agency",
+70
+]
+]
+},
+"103": {
+"name": "City Clerk",
+"total": 7479961,
+"pages": [
+1691,
+1695
+],
+"rows": [
+[
+"Agency-wide personal services",
+4811558
+],
+[
+"Agency-wide other than personal services",
+2668403
+]
+]
+},
+"125": {
+"name": "Department For The Aging",
+"total": 635796796,
+"pages": [
+1706,
+1758
+],
+"rows": [
+[
+"Centers And Home Delivered Meals",
+385969584
+],
+[
+"In Home Services",
+136234588
+],
+[
+"Out-Of-Home Services",
+78172208
+],
+[
+"Executive & Admin Mgmt",
+21677314
+],
+[
+"Community Programs",
+7850081
+],
+[
+"Community Services",
+5893021
+]
+]
+},
+"126": {
+"name": "Department Of Cultural Affairs",
+"total": 323845740,
+"pages": [
+1767,
+1825
+],
+"rows": [
+[
+"Cultural Programs",
+107387111
+],
+[
+"Other Cultural Institutions",
+61043441
+],
+[
+"Metropolitan Museum Of Art",
+33893229
+],
+[
+"Amer Museum Natural History",
+24731501
+],
+[
+"The Wildlife Conservation Soc.",
+24506758
+],
+[
+"Brooklyn Museum",
+14103062
+],
+[
+"Everything else in the agency",
+58180638
+]
+]
+},
+"127": {
+"name": "Financial Information Service Agency",
+"total": 125054479,
+"pages": [
+1831,
+1838
+],
+"rows": [
+[
+"Agency-wide other than personal services",
+67833901
+],
+[
+"Agency-wide personal services",
+57220578
+]
+]
+},
+"128": {
+"name": "Office Of Criminal Justice",
+"total": 942938589,
+"pages": [
+1845,
+1868
+],
+"rows": [
+[
+"Indigent Defense",
+570043503
+],
+[
+"Programs",
+360551785
+],
+[
+"Office Of Criminal Justice",
+10154811
+],
+[
+"Office Of Special Enforcement",
+2188490
+]
+]
+},
+"131": {
+"name": "Office Of Payroll Administration",
+"total": 17150942,
+"pages": [
+1874,
+1879
+],
+"rows": [
+[
+"Personal Service",
+15575371
+],
+[
+"Other Than Personal Service",
+1575571
+]
+]
+},
+"132": {
+"name": "Independent Budget Office",
+"total": 8445874,
+"pages": [
+1884,
+1888
+],
+"rows": [
+[
+"Personal Service",
+6250514
+],
+[
+"Other Than Personal Service",
+2195360
+]
+]
+},
+"133": {
+"name": "Equal Employment Practices Commission",
+"total": 1607246,
+"pages": [
+1893,
+1896
+],
+"rows": [
+[
+"Agency-wide personal services",
+1520691
+],
+[
+"Agency-wide other than personal services",
+86555
+]
+]
+},
+"134": {
+"name": "Civil Service Commission",
+"total": 1217197,
+"pages": [
+1901,
+1904
+],
+"rows": [
+[
+"Agency-wide personal services",
+1168394
+],
+[
+"Agency-wide other than personal services",
+48803
+]
+]
+},
+"136": {
+"name": "Landmarks Preservation Comm.",
+"total": 8113711,
+"pages": [
+1911,
+1917
+],
+"rows": [
+[
+"Agency-wide personal services",
+7162526
+],
+[
+"Agency-wide other than personal services",
+951185
+]
+]
+},
+"156": {
+"name": "Nyc Taxi And Limousine Comm",
+"total": 69723377,
+"pages": [
+1925,
+1931
+],
+"rows": [
+[
+"Personal Service",
+43314628
+],
+[
+"Other Than Personal Service",
+26408749
+]
+]
+},
+"213": {
+"name": "Office Of Racial Equity",
+"total": 7212397,
+"pages": [
+1936,
+1940
+],
+"rows": [
+[
+"Ps - Racial Equity",
+5416957
+],
+[
+"Otps - Racial Equity",
+1795440
+]
+]
+},
+"215": {
+"name": "Commission On Racial Equity",
+"total": 7179741,
+"pages": [
+1945,
+1949
+],
+"rows": [
+[
+"Agency-wide other than personal services",
+4710479
+],
+[
+"Agency-wide personal services",
+2469262
+]
+]
+},
+"226": {
+"name": "Commission On Human Rights",
+"total": 14996984,
+"pages": [
+1955,
+1969
+],
+"rows": [
+[
+"Community Develop",
+7825099
+],
+[
+"Agency-wide personal services",
+5222361
+],
+[
+"Comm Develop",
+1760096
+],
+[
+"Agency-wide other than personal services",
+189428
+]
+]
+},
+"260": {
+"name": "Department Of Youth & Community Dev",
+"total": 1801365094,
+"pages": [
+1976,
+2041
+],
+"rows": [
+[
+"Agency-wide other than personal services",
+959940449
+],
+[
+"Youth Workforce And Career Training",
+316461636
+],
+[
+"Office Of Neighborhood Safety",
+221998843
+],
+[
+"Community Development",
+163577313
+],
+[
+"Runaway And Homeless Youth",
+62789027
+],
+[
+"Executive And Administrative Mgmt",
+32073950
+],
+[
+"Everything else in the agency",
+44523876
+]
+]
+},
+"312": {
+"name": "Conflicts Of Interest Board",
+"total": 3009386,
+"pages": [
+2046,
+2050
+],
+"rows": [
+[
+"Agency-wide personal services",
+2867682
+],
+[
+"Agency-wide other than personal services",
+141704
+]
+]
+},
+"313": {
+"name": "Office Of Collective Bargaining",
+"total": 2825196,
+"pages": [
+2055,
+2058
+],
+"rows": [
+[
+"Agency-wide personal services",
+2542970
+],
+[
+"Agency-wide other than personal services",
+282226
+]
+]
+},
+"341": {
+"name": "Manhattan Community Board #1",
+"total": 302305,
+"pages": [
+2063,
+2067
+],
+"rows": [
+[
+"Agency-wide personal services",
+275060
+],
+[
+"Agency-wide other than personal services",
+27245
+]
+]
+},
+"342": {
+"name": "Manhattan Community Board #2",
+"total": 399132,
+"pages": [
+2072,
+2078
+],
+"rows": [
+[
+"Agency-wide personal services",
+279985
+],
+[
+"Rent And Energy",
+100540
+],
+[
+"Agency-wide other than personal services",
+18607
+]
+]
+},
+"343": {
+"name": "Manhattan Community Board #3",
+"total": 473207,
+"pages": [
+2083,
+2089
+],
+"rows": [
+[
+"Agency-wide personal services",
+295073
+],
+[
+"Rent And Energy",
+163714
+],
+[
+"Agency-wide other than personal services",
+14420
+]
+]
+},
+"344": {
+"name": "Manhattan Community Board #4",
+"total": 449041,
+"pages": [
+2094,
+2099
+],
+"rows": [
+[
+"Agency-wide personal services",
+283594
+],
+[
+"Rent",
+156007
+],
+[
+"Agency-wide other than personal services",
+9440
+]
+]
+},
+"345": {
+"name": "Manhattan Community Board #5",
+"total": 432970,
+"pages": [
+2104,
+2110
+],
+"rows": [
+[
+"Agency-wide personal services",
+280449
+],
+[
+"Rent And Energy",
+128765
+],
+[
+"Agency-wide other than personal services",
+23756
+]
+]
+},
+"346": {
+"name": "Manhattan Community Board #6",
+"total": 485081,
+"pages": [
+2115,
+2121
+],
+"rows": [
+[
+"Agency-wide personal services",
+283085
+],
+[
+"Rent",
+179522
+],
+[
+"Agency-wide other than personal services",
+22474
+]
+]
+},
+"347": {
+"name": "Manhattan Community Board #7",
+"total": 485944,
+"pages": [
+2126,
+2131
+],
+"rows": [
+[
+"Agency-wide personal services",
+281893
+],
+[
+"Rent",
+171660
+],
+[
+"Agency-wide other than personal services",
+32391
+]
+]
+},
+"348": {
+"name": "Manhattan Community Board #8",
+"total": 477314,
+"pages": [
+2136,
+2142
+],
+"rows": [
+[
+"Agency-wide personal services",
+284230
+],
+[
+"Rent And Energy",
+163530
+],
+[
+"Agency-wide other than personal services",
+29554
+]
+]
+},
+"349": {
+"name": "Manhattan Community Board #9",
+"total": 438352,
+"pages": [
+2147,
+2152
+],
+"rows": [
+[
+"Agency-wide personal services",
+251436
+],
+[
+"Rent And Energy",
+139339
+],
+[
+"Agency-wide other than personal services",
+47577
+]
+]
+},
+"350": {
+"name": "Manhattan Community Board #10",
+"total": 514822,
+"pages": [
+2157,
+2162
+],
+"rows": [
+[
+"Agency-wide personal services",
+238428
+],
+[
+"Rent",
+228519
+],
+[
+"Agency-wide other than personal services",
+47875
+]
+]
+},
+"351": {
+"name": "Manhattan Community Board #11",
+"total": 409946,
+"pages": [
+2167,
+2173
+],
+"rows": [
+[
+"Agency-wide personal services",
+277325
+],
+[
+"Rent And Energy",
+100168
+],
+[
+"Agency-wide other than personal services",
+32453
+]
+]
+},
+"352": {
+"name": "Manhattan Community Board #12",
+"total": 506489,
+"pages": [
+2178,
+2184
+],
+"rows": [
+[
+"Agency-wide personal services",
+268718
+],
+[
+"Rent",
+202510
+],
+[
+"Agency-wide other than personal services",
+35261
+]
+]
+},
+"381": {
+"name": "Bronx Community Board #1",
+"total": 388771,
+"pages": [
+2189,
+2195
+],
+"rows": [
+[
+"Agency-wide personal services",
+268805
+],
+[
+"Rent",
+73185
+],
+[
+"Agency-wide other than personal services",
+46781
+]
+]
+},
+"382": {
+"name": "Bronx Community Board #2",
+"total": 415815,
+"pages": [
+2200,
+2206
+],
+"rows": [
+[
+"Agency-wide personal services",
+263152
+],
+[
+"Rent And Energy",
+81078
+],
+[
+"Agency-wide other than personal services",
+71585
+]
+]
+},
+"383": {
+"name": "Bronx Community Board #3",
+"total": 348852,
+"pages": [
+2211,
+2216
+],
+"rows": [
+[
+"Agency-wide personal services",
+262292
+],
+[
+"Rent",
+62934
+],
+[
+"Agency-wide other than personal services",
+23626
+]
+]
+},
+"384": {
+"name": "Bronx Community Board #4",
+"total": 313241,
+"pages": [
+2221,
+2226
+],
+"rows": [
+[
+"Agency-wide personal services",
+282445
+],
+[
+"Rent",
+16002
+],
+[
+"Agency-wide other than personal services",
+14794
+]
+]
+},
+"385": {
+"name": "Bronx Community Board #5",
+"total": 282857,
+"pages": [
+2231,
+2234
+],
+"rows": [
+[
+"Agency-wide personal services",
+244884
+],
+[
+"Agency-wide other than personal services",
+37973
+]
+]
+},
+"386": {
+"name": "Bronx Community Board #6",
+"total": 297220,
+"pages": [
+2239,
+2243
+],
+"rows": [
+[
+"Agency-wide personal services",
+255746
+],
+[
+"Agency-wide other than personal services",
+41474
+]
+]
+},
+"387": {
+"name": "Bronx Community Board #7",
+"total": 394710,
+"pages": [
+2248,
+2254
+],
+"rows": [
+[
+"Agency-wide personal services",
+263716
+],
+[
+"Rent And Energy",
+86731
+],
+[
+"Agency-wide other than personal services",
+44263
+]
+]
+},
+"388": {
+"name": "Bronx Community Board #8",
+"total": 365828,
+"pages": [
+2259,
+2265
+],
+"rows": [
+[
+"Agency-wide personal services",
+260050
+],
+[
+"Rent And Energy",
+83294
+],
+[
+"Agency-wide other than personal services",
+22484
+]
+]
+},
+"389": {
+"name": "Bronx Community Board #9",
+"total": 410090,
+"pages": [
+2270,
+2275
+],
+"rows": [
+[
+"Agency-wide personal services",
+294779
+],
+[
+"Rent",
+93758
+],
+[
+"Agency-wide other than personal services",
+21553
+]
+]
+},
+"390": {
+"name": "Bronx Community Board #10",
+"total": 389147,
+"pages": [
+2280,
+2286
+],
+"rows": [
+[
+"Agency-wide personal services",
+268389
+],
+[
+"Rent And Energy",
+89888
+],
+[
+"Agency-wide other than personal services",
+30870
+]
+]
+},
+"391": {
+"name": "Bronx Community Board #11",
+"total": 375542,
+"pages": [
+2291,
+2297
+],
+"rows": [
+[
+"Agency-wide personal services",
+286925
+],
+[
+"Rent",
+71362
+],
+[
+"Agency-wide other than personal services",
+17255
+]
+]
+},
+"392": {
+"name": "Bronx Community Board #12",
+"total": 296002,
+"pages": [
+2302,
+2305
+],
+"rows": [
+[
+"Agency-wide personal services",
+275995
+],
+[
+"Agency-wide other than personal services",
+20007
+]
+]
+},
+"431": {
+"name": "Queens Community Board #1",
+"total": 341878,
+"pages": [
+2310,
+2316
+],
+"rows": [
+[
+"Agency-wide personal services",
+234829
+],
+[
+"Agency-wide other than personal services",
+56270
+],
+[
+"Rent",
+50779
+]
+]
+},
+"432": {
+"name": "Queens Community Board #2",
+"total": 416566,
+"pages": [
+2321,
+2327
+],
+"rows": [
+[
+"Agency-wide personal services",
+275476
+],
+[
+"Rent",
+123680
+],
+[
+"Agency-wide other than personal services",
+17410
+]
+]
+},
+"433": {
+"name": "Queens Community Board #3",
+"total": 416288,
+"pages": [
+2332,
+2338
+],
+"rows": [
+[
+"Agency-wide personal services",
+271303
+],
+[
+"Rent",
+108704
+],
+[
+"Agency-wide other than personal services",
+36281
+]
+]
+},
+"434": {
+"name": "Queens Community Board #4",
+"total": 360742,
+"pages": [
+2343,
+2349
+],
+"rows": [
+[
+"Agency-wide personal services",
+285104
+],
+[
+"Rent And Energy",
+52641
+],
+[
+"Agency-wide other than personal services",
+22997
+]
+]
+},
+"435": {
+"name": "Queens Community Board #5",
+"total": 351905,
+"pages": [
+2354,
+2360
+],
+"rows": [
+[
+"Agency-wide personal services",
+280173
+],
+[
+"Rent And Energy",
+51147
+],
+[
+"Agency-wide other than personal services",
+20585
+]
+]
+},
+"436": {
+"name": "Queens Community Board #6",
+"total": 388906,
+"pages": [
+2365,
+2371
+],
+"rows": [
+[
+"Agency-wide personal services",
+289469
+],
+[
+"Rent And Energy",
+85197
+],
+[
+"Agency-wide other than personal services",
+14240
+]
+]
+},
+"437": {
+"name": "Queens Community Board #7",
+"total": 394912,
+"pages": [
+2376,
+2381
+],
+"rows": [
+[
+"Agency-wide personal services",
+284113
+],
+[
+"Rent",
+102770
+],
+[
+"Agency-wide other than personal services",
+8029
+]
+]
+},
+"438": {
+"name": "Queens Community Board #8",
+"total": 408354,
+"pages": [
+2386,
+2391
+],
+"rows": [
+[
+"Agency-wide personal services",
+277838
+],
+[
+"Rent",
+120488
+],
+[
+"Agency-wide other than personal services",
+10028
+]
+]
+},
+"439": {
+"name": "Queens Community Board #9",
+"total": 295279,
+"pages": [
+2396,
+2401
+],
+"rows": [
+[
+"Agency-wide personal services",
+256637
+],
+[
+"Agency-wide other than personal services",
+30706
+],
+[
+"Rent And Energy",
+7936
+]
+]
+},
+"440": {
+"name": "Queens Community Board #10",
+"total": 346056,
+"pages": [
+2406,
+2412
+],
+"rows": [
+[
+"Agency-wide personal services",
+260873
+],
+[
+"Rent",
+59973
+],
+[
+"Agency-wide other than personal services",
+25210
+]
+]
+},
+"441": {
+"name": "Queens Community Board #11",
+"total": 378709,
+"pages": [
+2417,
+2422
+],
+"rows": [
+[
+"Agency-wide personal services",
+276555
+],
+[
+"Rent",
+84302
+],
+[
+"Agency-wide other than personal services",
+17852
+]
+]
+},
+"442": {
+"name": "Queens Community Board #12",
+"total": 379125,
+"pages": [
+2427,
+2433
+],
+"rows": [
+[
+"Agency-wide personal services",
+273306
+],
+[
+"Rent And Energy",
+82473
+],
+[
+"Agency-wide other than personal services",
+23346
+]
+]
+},
+"443": {
+"name": "Queens Community Board #13",
+"total": 362342,
+"pages": [
+2438,
+2443
+],
+"rows": [
+[
+"Agency-wide personal services",
+255220
+],
+[
+"Rent",
+80713
+],
+[
+"Agency-wide other than personal services",
+26409
+]
+]
+},
+"444": {
+"name": "Queens Community Board #14",
+"total": 305916,
+"pages": [
+2448,
+2453
+],
+"rows": [
+[
+"Agency-wide personal services",
+248628
+],
+[
+"Rent And Energy",
+35998
+],
+[
+"Agency-wide other than personal services",
+21290
+]
+]
+},
+"471": {
+"name": "Brooklyn Community Board #1",
+"total": 393167,
+"pages": [
+2458,
+2463
+],
+"rows": [
+[
+"Agency-wide personal services",
+270669
+],
+[
+"Rent And Energy",
+112302
+],
+[
+"Agency-wide other than personal services",
+10196
+]
+]
+},
+"472": {
+"name": "Brooklyn Community Board #2",
+"total": 369267,
+"pages": [
+2468,
+2474
+],
+"rows": [
+[
+"Agency-wide personal services",
+272964
+],
+[
+"Rent",
+78947
+],
+[
+"Agency-wide other than personal services",
+17356
+]
+]
+},
+"473": {
+"name": "Brooklyn Community Board #3",
+"total": 323680,
+"pages": [
+2479,
+2484
+],
+"rows": [
+[
+"Agency-wide personal services",
+226307
+],
+[
+"Rent And Energy",
+55259
+],
+[
+"Agency-wide other than personal services",
+42114
+]
+]
+},
+"474": {
+"name": "Brooklyn Community Board #4",
+"total": 349003,
+"pages": [
+2489,
+2495
+],
+"rows": [
+[
+"Agency-wide personal services",
+256628
+],
+[
+"Rent",
+60968
+],
+[
+"Agency-wide other than personal services",
+31407
+]
+]
+},
+"475": {
+"name": "Brooklyn Community Board #5",
+"total": 292874,
+"pages": [
+2500,
+2504
+],
+"rows": [
+[
+"Agency-wide personal services",
+274829
+],
+[
+"Agency-wide other than personal services",
+18045
+]
+]
+},
+"476": {
+"name": "Brooklyn Community Board #6",
+"total": 399467,
+"pages": [
+2509,
+2515
+],
+"rows": [
+[
+"Agency-wide personal services",
+276536
+],
+[
+"Rent",
+108655
+],
+[
+"Agency-wide other than personal services",
+14276
+]
+]
+},
+"477": {
+"name": "Brooklyn Community Board #7",
+"total": 300927,
+"pages": [
+2520,
+2524
+],
+"rows": [
+[
+"Agency-wide personal services",
+278228
+],
+[
+"Agency-wide other than personal services",
+22699
+]
+]
+},
+"478": {
+"name": "Brooklyn Community Board #8",
+"total": 385981,
+"pages": [
+2529,
+2535
+],
+"rows": [
+[
+"Agency-wide personal services",
+270520
+],
+[
+"Rent And Energy",
+87693
+],
+[
+"Agency-wide other than personal services",
+27768
+]
+]
+},
+"479": {
+"name": "Brooklyn Community Board #9",
+"total": 426985,
+"pages": [
+2540,
+2546
+],
+"rows": [
+[
+"Agency-wide personal services",
+258006
+],
+[
+"Rent And Energy",
+127253
+],
+[
+"Agency-wide other than personal services",
+41726
+]
+]
+},
+"480": {
+"name": "Brooklyn Community Board #10",
+"total": 393430,
+"pages": [
+2551,
+2556
+],
+"rows": [
+[
+"Agency-wide personal services",
+279829
+],
+[
+"Rent And Energy",
+95423
+],
+[
+"Agency-wide other than personal services",
+18178
+]
+]
+},
+"481": {
+"name": "Brooklyn Community Board #11",
+"total": 391802,
+"pages": [
+2561,
+2566
+],
+"rows": [
+[
+"Agency-wide personal services",
+249540
+],
+[
+"Rent And Energy",
+102311
+],
+[
+"Agency-wide other than personal services",
+39951
+]
+]
+},
+"482": {
+"name": "Brooklyn Community Board #12",
+"total": 421926,
+"pages": [
+2571,
+2577
+],
+"rows": [
+[
+"Agency-wide personal services",
+262600
+],
+[
+"Rent And Energy",
+100170
+],
+[
+"Agency-wide other than personal services",
+59156
+]
+]
+},
+"483": {
+"name": "Brooklyn Community Board #13",
+"total": 419510,
+"pages": [
+2582,
+2588
+],
+"rows": [
+[
+"Agency-wide personal services",
+285516
+],
+[
+"Rent",
+110303
+],
+[
+"Agency-wide other than personal services",
+23691
+]
+]
+},
+"484": {
+"name": "Brooklyn Community Board #14",
+"total": 447532,
+"pages": [
+2593,
+2599
+],
+"rows": [
+[
+"Agency-wide personal services",
+284666
+],
+[
+"Rent And Energy",
+119184
+],
+[
+"Agency-wide other than personal services",
+43682
+]
+]
+},
+"485": {
+"name": "Brooklyn Community Board #15",
+"total": 280971,
+"pages": [
+2604,
+2607
+],
+"rows": [
+[
+"Agency-wide personal services",
+234785
+],
+[
+"Agency-wide other than personal services",
+46186
+]
+]
+},
+"486": {
+"name": "Brooklyn Community Board #16",
+"total": 313065,
+"pages": [
+2612,
+2618
+],
+"rows": [
+[
+"Agency-wide personal services",
+241040
+],
+[
+"Rent",
+41003
+],
+[
+"Agency-wide other than personal services",
+31022
+]
+]
+},
+"487": {
+"name": "Brooklyn Community Board #17",
+"total": 414659,
+"pages": [
+2623,
+2629
+],
+"rows": [
+[
+"Agency-wide personal services",
+273274
+],
+[
+"Rent And Energy",
+118098
+],
+[
+"Agency-wide other than personal services",
+23287
+]
+]
+},
+"488": {
+"name": "Brooklyn Community Board #18",
+"total": 292201,
+"pages": [
+2634,
+2637
+],
+"rows": [
+[
+"Agency-wide personal services",
+251809
+],
+[
+"Agency-wide other than personal services",
+40392
+]
+]
+},
+"491": {
+"name": "Staten Island Community Board #1",
+"total": 371667,
+"pages": [
+2642,
+2647
+],
+"rows": [
+[
+"Agency-wide personal services",
+285191
+],
+[
+"Rent",
+73264
+],
+[
+"Agency-wide other than personal services",
+13212
+]
+]
+},
+"492": {
+"name": "Staten Island Community Board #2",
+"total": 325687,
+"pages": [
+2652,
+2657
+],
+"rows": [
+[
+"Agency-wide personal services",
+269630
+],
+[
+"Rent",
+40002
+],
+[
+"Agency-wide other than personal services",
+16055
+]
+]
+},
+"493": {
+"name": "Staten Island Community Board #3",
+"total": 435825,
+"pages": [
+2662,
+2668
+],
+"rows": [
+[
+"Agency-wide personal services",
+287496
+],
+[
+"Rent And Energy",
+135816
+],
+[
+"Agency-wide other than personal services",
+12513
+]
+]
+},
+"781": {
+"name": "Department Of Probation",
+"total": 105686038,
+"pages": [
+2674,
+2698
+],
+"rows": [
+[
+"Probation Services",
+94041341
+],
+[
+"Executive management",
+11644697
+]
+]
+},
+"801": {
+"name": "Department Of Small Business Services",
+"total": 275174517,
+"pages": [
+2711,
+2775
+],
+"rows": [
+[
+"Workforce Investment Act",
+79655480
+],
+[
+"Dept. Of Business",
+78248881
+],
+[
+"Economic Development Corp.",
+66163998
+],
+[
+"Trust For Governor'S Island And Nyc & Co",
+41078963
+],
+[
+"Contract Comp & Bus Opp",
+10027195
+]
+]
+},
+"806": {
+"name": "Housing Preservation And Development",
+"total": 1843848390,
+"pages": [
+2802,
+2948
+],
+"rows": [
+[
+"Rental Subsidy Programs",
+789310885
+],
+[
+"City Assistance To Nyc Housing Authority",
+410003106
+],
+[
+"City Housing Assistance Program",
+175000000
+],
+[
+"Office Of Housing Preservation",
+158637192
+],
+[
+"Office Of Development",
+98964270
+],
+[
+"Emergency Shelter Operations",
+86662024
+],
+[
+"Everything else in the agency",
+125270913
+]
+]
+},
+"810": {
+"name": "Department Of Buildings",
+"total": 233104951,
+"pages": [
+2981,
+3016
+],
+"rows": [
+[
+"Agencywide Operations",
+132654869
+],
+[
+"Enforcement And Development",
+86913190
+],
+[
+"Sustainability",
+13536892
+]
+]
+},
+"816": {
+"name": "Department Of Health And Mental Hygiene",
+"total": 2769563680,
+"pages": [
+3025,
+3278
+],
+"rows": [
+[
+"Mental health",
+697043488
+],
+[
+"Early intervention",
+370832181
+],
+[
+"Disease control",
+355671554
+],
+[
+"Administration",
+299838993
+],
+[
+"Family and child health",
+286084896
+],
+[
+"Alcohol and drug use prevention and treatment",
+182711976
+],
+[
+"Everything else in the agency",
+577380592
+]
+]
+},
+"819": {
+"name": "Health And Hospitals Corp",
+"total": 1745016699,
+"pages": [
+3289,
+3289
+],
+"rows": [
+[
+"Lump Sum",
+1745016699
+]
+]
+},
+"820": {
+"name": "Office Of Admin Trials & Hearings",
+"total": 82469036,
+"pages": [
+3295,
+3304
+],
+"rows": [
+[
+"Off Of Adm. Trials & Hearings",
+61058579
+],
+[
+"Office Of Admin. Trials & Hearings",
+21410457
+]
+]
+},
+"826": {
+"name": "Department Of Environmental Protect.",
+"total": 1832544802,
+"pages": [
+3322,
+3472
+],
+"rows": [
+[
+"Utility",
+963986992
+],
+[
+"Water Sup. & Wastewater Coll",
+280244270
+],
+[
+"Wastewater Treatment",
+250706827
+],
+[
+"Central Utility",
+98409517
+],
+[
+"Executive & Support",
+87799857
+],
+[
+"Executive And Support",
+68170348
+],
+[
+"Everything else in the agency",
+83226991
+]
+]
+},
+"827": {
+"name": "Department Of Sanitation",
+"total": 2136988620,
+"pages": [
+3488,
+3580
+],
+"rows": [
+[
+"Cleaning and collection",
+1070652938
+],
+[
+"Waste disposal",
+582233088
+],
+[
+"Executive administration",
+247950939
+],
+[
+"Motor equipment",
+111042813
+],
+[
+"Snow",
+90749512
+],
+[
+"Building management",
+34359330
+]
+]
+},
+"829": {
+"name": "Business Integrity Commission",
+"total": 8820536,
+"pages": [
+3586,
+3591
+],
+"rows": [
+[
+"Agency-wide personal services",
+6783369
+],
+[
+"Agency-wide other than personal services",
+2037167
+]
+]
+},
+"836": {
+"name": "Department Of Finance",
+"total": 380585084,
+"pages": [
+3602,
+3672
+],
+"rows": [
+[
+"Administration",
+155582238
+],
+[
+"Operations",
+64827464
+],
+[
+"City Sheriff",
+60132289
+],
+[
+"Property",
+40230308
+],
+[
+"Audit",
+39430271
+],
+[
+"Parking Violations Bureau",
+12687351
+],
+[
+"Everything else in the agency",
+7695163
+]
+]
+},
+"841": {
+"name": "Department Of Transportation",
+"total": 1636737065,
+"pages": [
+3701,
+3879
+],
+"rows": [
+[
+"Otps-Traffic Operations",
+549739347
+],
+[
+"Highway Operations",
+252366339
+],
+[
+"Traffic Operations",
+167164837
+],
+[
+"Otps-Highway Operations",
+157505234
+],
+[
+"Otps-Exec And Administration",
+135481713
+],
+[
+"Bureau Of Bridges",
+126960976
+],
+[
+"Everything else in the agency",
+247518619
+]
+]
+},
+"846": {
+"name": "Department Of Parks And Recreation",
+"total": 708928004,
+"pages": [
+3889,
+4046
+],
+"rows": [
+[
+"Maintenance & Operations",
+372883919
+],
+[
+"Maint & Operations",
+131496360
+],
+[
+"Design & Engineering",
+60778972
+],
+[
+"Recreation Services",
+49298164
+],
+[
+"Exec Mgt/Admin Svcs",
+44999252
+],
+[
+"Urban Park Service",
+38881197
+],
+[
+"Everything else in the agency",
+10590140
+]
+]
+},
+"850": {
+"name": "Department Of Design & Construction",
+"total": 164441963,
+"pages": [
+4087,
+4116
+],
+"rows": [
+[
+"Design & Engineering",
+143625005
+],
+[
+"Exec, Admin & Capital Planning",
+20816958
+]
+]
+},
+"856": {
+"name": "Department Of Citywide Admin Service",
+"total": 1988913517,
+"pages": [
+4128,
+4274
+],
+"rows": [
+[
+"Energy Management",
+1389153886
+],
+[
+"Asset Management-Public Facilities",
+354106926
+],
+[
+"Citywide Fleet Services",
+53967199
+],
+[
+"Executive And Operations Support",
+46428542
+],
+[
+"Office Of Citywide Purchasing",
+41992899
+],
+[
+"Human Capital",
+39062972
+],
+[
+"Everything else in the agency",
+64201093
+]
+]
+},
+"858": {
+"name": "Department Of Info Tech & Telecomm",
+"total": 740224915,
+"pages": [
+4289,
+4369
+],
+"rows": [
+[
+"311",
+740224915
+]
+]
+},
+"860": {
+"name": "Department Of Records & Information Svs",
+"total": 17147717,
+"pages": [
+4378,
+4383
+],
+"rows": [
+[
+"Agency-wide other than personal services",
+11908535
+],
+[
+"Agency-wide personal services",
+5239182
+]
+]
+},
+"866": {
+"name": "Dept Of Consumer & Worker Protection",
+"total": 139531289,
+"pages": [
+4391,
+4408
+],
+"rows": [
+[
+"Other Than Personal Service",
+97161150
+],
+[
+"Licensing/Enforcement",
+22835669
+],
+[
+"Administration",
+19534470
+]
+]
+},
+"901": {
+"name": "District Attorney New York County",
+"total": 183740560,
+"pages": [
+4419,
+4430
+],
+"rows": [
+[
+"Agency-wide personal services",
+165063923
+],
+[
+"Agency-wide other than personal services",
+18676637
+]
+]
+},
+"902": {
+"name": "District Attorney Bronx County",
+"total": 145127896,
+"pages": [
+4439,
+4449
+],
+"rows": [
+[
+"Agency-wide personal services",
+131334674
+],
+[
+"Agency-wide other than personal services",
+13793222
+]
+]
+},
+"903": {
+"name": "District Attorney Kings County",
+"total": 169141430,
+"pages": [
+4460,
+4472
+],
+"rows": [
+[
+"Agency-wide personal services",
+131061360
+],
+[
+"Agency-wide other than personal services",
+38080070
+]
+]
+},
+"904": {
+"name": "District Attorney Queens County",
+"total": 110041779,
+"pages": [
+4479,
+4487
+],
+"rows": [
+[
+"Agency-wide personal services",
+94555479
+],
+[
+"Agency-wide other than personal services",
+15486300
+]
+]
+},
+"905": {
+"name": "District Attorney Richmond County",
+"total": 27986289,
+"pages": [
+4494,
+4501
+],
+"rows": [
+[
+"Agency-wide personal services",
+23280764
+],
+[
+"Agency-wide other than personal services",
+4705525
+]
+]
+},
+"906": {
+"name": "Office Of Prosecution Spec Narco",
+"total": 31933198,
+"pages": [
+4510,
+4514
+],
+"rows": [
+[
+"Agency-wide personal services",
+29384688
+],
+[
+"Agency-wide other than personal services",
+2548510
+]
+]
+},
+"941": {
+"name": "Public Administrator-New York County",
+"total": 1225861,
+"pages": [
+4519,
+4522
+],
+"rows": [
+[
+"Agency-wide personal services",
+1024810
+],
+[
+"Agency-wide other than personal services",
+201051
+]
+]
+},
+"942": {
+"name": "Public Administrator-Bronx County",
+"total": 896365,
+"pages": [
+4527,
+4530
+],
+"rows": [
+[
+"Agency-wide personal services",
+833188
+],
+[
+"Agency-wide other than personal services",
+63177
+]
+]
+},
+"943": {
+"name": "Public Administrator-Kings County",
+"total": 1163261,
+"pages": [
+4535,
+4538
+],
+"rows": [
+[
+"Agency-wide personal services",
+1108248
+],
+[
+"Agency-wide other than personal services",
+55013
+]
+]
+},
+"944": {
+"name": "Public Administrator- Queens County",
+"total": 701586,
+"pages": [
+4543,
+4546
+],
+"rows": [
+[
+"Agency-wide personal services",
+685873
+],
+[
+"Agency-wide other than personal services",
+15713
+]
+]
+},
+"945": {
+"name": "Public Administrator-Richmond County",
+"total": 657628,
+"pages": [
+4551,
+4554
+],
+"rows": [
+[
+"Agency-wide personal services",
+622523
+],
+[
+"Agency-wide other than personal services",
+35105
+]
+]
+}
+}
+}
