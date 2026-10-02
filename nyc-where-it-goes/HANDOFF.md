@@ -8,9 +8,16 @@ Started 2026-10-02 as the companion to `../nyc-who-pays/`. Same card system, sam
 - Method table; tile to the companion.
 - Movement 3 (what the mayor can change without Albany on the spending side) renders only if `data/control.json` exists: keys = bucket keys, each {fixed:bool, setter, who, alone, limits}, plus optional sub, quote, quote_cite, finding ("{city}" is replaced), note. Research for it: research/02 (agent, in progress).
 
+## Added Oct 2 (later)
+- Click state now shows three lists in the key: agency split (or unit-of-appropriation split for single-agency lines), inside the biggest agency (OMB ss6-26 units, data/inside.json, research/04), and who pays for it (city/state/federal/other from the same schedules, data/funding_by_bucket.json, research/05). A separate "who pays for what" page was built and then cut at Josh's request; this is where it lives now.
+- Four parts total now: who pays, where it goes, since 2000, what it builds.
+
 ## Data
 - `spending_per_100.json` built by the script in this session from `nyc-budget-per-capita/data.json`, `data/out/omb_agencies.json` and `data/out/acfr_raw.csv` (agency-to-function map derived from the FY2025 ACFR schedule headings, saved as `data/agency_map.json`). Provenance with page numbers: research/01.
 - Caveat on the page: the budget's Miscellaneous line (098) inflates the benefits bucket in 2026-27 relative to the audited years.
+
+## Published
+Live since 2026-10-02 at https://vital-city-nyc.github.io/nyc-budget-explainer/nyc-where-it-goes/ (repo Vital-City-NYC/nyc-budget-explainer, Pages from main, the five part folders at the repo root plus a root redirect and .nojekyll). To redeploy: copy the five folders into a checkout of that repo and push with the vitalcity-nyc token. The nav strip links all five parts by relative path, so folder names must stay the same.
 
 ## Open
 - Fill `data/control.json` and `data/context_facts.json` from research/02 and 03 once verified; every fact needs URL + quote.

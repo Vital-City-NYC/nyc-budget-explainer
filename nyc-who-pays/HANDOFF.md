@@ -14,6 +14,9 @@ Updated 2026-10-02 (second session). Companion page: `../nyc-where-it-goes/` (wh
 - `property_tax_by_class.json` (research/01), `pit_by_income.json` (research/04), `business_by_sector.json` (research/04 D), `aid_by_function.json` (research/05 A, by-function rows), `control.json` (research/02, including the verification pass at the bottom).
 - Still UNVERIFIED and not on the page: CBC effective rates, hotel tax state enabling statute, UBT credit cut.
 
+## Published
+Live since 2026-10-02 at https://vital-city-nyc.github.io/nyc-budget-explainer/nyc-who-pays/ (repo Vital-City-NYC/nyc-budget-explainer, Pages from main, the five part folders at the repo root plus a root redirect and .nojekyll). To redeploy: copy the five folders into a checkout of that repo and push with the vitalcity-nyc token. The nav strip links all five parts by relative path, so folder names must stay the same.
+
 ## Open
 - Not pushed. Confirm the account (joshgreenman1973 Pages unless Josh says Vital City) before pushing; then reply with the live URL.
 - Preview: `experiments-root` launch entry serves /Users/joshgreenman/Experiments on 8977; this session edited in the worktree and mirrored files into the main checkout so that URL showed changes. Keep both in sync or stop mirroring once merged.
