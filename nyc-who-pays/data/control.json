@@ -22,8 +22,8 @@
  },
  "business_taxes": {
   "albany": true,
-  "who": "Albany sets the corporation and unincorporated business tax rates; the current ones run through 2029.",
-  "limits": "Both houses backed city authority to raise corporate rates in March 2026; the budget signed in May left it out.",
+  "who": "Albany sets the corporation and unincorporated business tax rates.",
+  "limits": "Both houses' March 2026 budget resolutions backed city authority to raise corporate rates, as New York Focus reported; the budget signed in May left it out.",
   "alone": "Nothing on the big ones. The commercial rent tax has been cut by local law."
  },
  "other_taxes": {

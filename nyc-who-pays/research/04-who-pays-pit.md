@@ -120,3 +120,5 @@ UNVERIFIED / superseded: NYC Open Data "Tax Liability By AGI Range" (https://dat
 - Residents only: the IBO tables and press release cover "tax returns ... filled by New York City residents"; the tax is imposed on "every city resident individual" (Admin Code 11-1701, quoted in research/02 verification item 3).
 - The 2026 ask: IBO Mar 2026 p.9, "which would raise the topmarginal rate from 3.876% to 5.876%"; declined per NY Focus May 29 2026 (research/02).
 - The sentence that the state's rates are "higher and more graduated" rests on the state's published schedule (top rate above the city's 3.876), which this session did not download; verify against tax.ny.gov before publishing or soften to "the state income tax, which is separate".
+
+Blind-check note (2026-10-02): the state schedule has nine rates from 4 to 10.9 percent (top bracket at $25 million), per Form IT-201 instructions read by the checker; the page now says so. Of the $1,699 million drop in the top band's liability after refundable credits, $1,575 million is the PTET credit and $125 million the UBT credit (IBO workbook), so "mostly," not "almost entirely."

@@ -554,5 +554,25 @@
  "126": {
   "name": "Department of Cultural Affairs",
   "fn": "parks"
+ },
+ "058": {
+  "name": "Office of Community Safety",
+  "fn": "public_safety"
+ },
+ "094": {
+  "name": "Department of Employment",
+  "fn": "social_services"
+ },
+ "130": {
+  "name": "Department of Juvenile Justice",
+  "fn": "public_safety"
+ },
+ "817": {
+  "name": "Department of Mental Health, Mental Retardation and Alcoholism Services",
+  "fn": "health"
+ },
+ "264": {
+  "name": "Educational Aid",
+  "fn": "education"
  }
 }

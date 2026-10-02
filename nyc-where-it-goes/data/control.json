@@ -14,14 +14,14 @@
  "social_services": {
   "fixed": false,
   "setter": "Mixed",
-  "who": "The state capped the city's Medicaid bill at a fixed sum, about $6.8 billion. A 1981 consent decree requires shelter for anyone eligible.",
+  "who": "The state capped the city's Medicaid bill at its 2015 level; the fiscal 2027 appropriation is $6.8 billion. The 1981 Callahan consent decree requires shelter for homeless men, extended to women and families by later cases.",
   "alone": "Manage shelter cost per bed, exits and prevention; set CityFHEPS rules within its settlement.",
   "limits": "Cannot refuse eligible shelter applicants or trim the Medicaid payment."
  },
  "public_safety": {
   "fixed": false,
   "setter": "City Hall",
-  "who": "Headcount and overtime are the mayor's. A federal court now runs the jails through a remediation manager the city must pay.",
+  "who": "Headcount and overtime are the mayor's. A federal court has put a remediation manager over the jails, whom the city must pay.",
   "alone": "Add or cut officers, firefighters and overtime.",
   "limits": "The Comptroller expects overtime to run $589 million over budget in fiscal 2027."
  },
@@ -42,7 +42,7 @@
  "debt_service": {
   "fixed": true,
   "setter": "Bond contracts",
-  "who": "The state constitution requires the payment and gives property tax revenue to bondholders first.",
+  "who": "The state constitution requires the payment to be appropriated every year, and under state law property tax receipts are deposited into the debt service fund, run by the State Comptroller, ahead of other spending.",
   "alone": "Nothing on existing debt. Slowing the capital plan curbs future growth.",
   "limits": ""
  },

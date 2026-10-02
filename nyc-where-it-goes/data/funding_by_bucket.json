@@ -1,5 +1,5 @@
 {
- "source": "OMB, Adopted Budget Fiscal Year 2027, Supporting Schedules (ss6-26.pdf), Unit of Appropriation Summary pages, Funding Summary, adopted column. Intra-city sales excluded; Capital IFA counted with city funds; other categorical grants shown as other.",
+ "source": "OMB, Adopted Budget Fiscal Year 2027, Supporting Schedules (ss6-26.pdf), Unit of Appropriation Summary pages, Funding Summary, adopted column. Intra-city sales excluded; Capital IFA counted with city funds; other categorical grants shown as other. The Miscellaneous budget's OTPS unit is apportioned to everything else (transit subsidies) and debt service (HYIC, TFA retained building aid) in proportion to those lines, with its funding mix.",
  "url": "https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/ss6-26.pdf",
  "fiscal_year": 2027,
  "buckets": {
@@ -16,10 +16,10 @@
    "other": 343688729
   },
   "everything_else": {
-   "city": 5338785327,
-   "state": 480412561,
-   "federal": 983346070,
-   "other": 43993069
+   "city": 6542685764.691923,
+   "state": 949028070.176954,
+   "federal": 983346070.0,
+   "other": 88714990.13112289
   },
   "education": {
    "city": 21353166162,
@@ -40,16 +40,16 @@
    "other": 0
   },
   "benefits": {
-   "city": 12956999417,
-   "state": 1752070264,
-   "federal": 272892449,
-   "other": 181660786
+   "city": 10680730466.416994,
+   "state": 866037748.4323697,
+   "federal": 272892449.0,
+   "other": 97103029.1506356
   },
   "debt_service": {
-   "city": 7030451667,
-   "state": 4499000,
-   "federal": 82693129,
-   "other": 250750000
+   "city": 8102820179.891083,
+   "state": 421916006.39067626,
+   "federal": 82693129.0,
+   "other": 290585835.7182415
   },
   "health": {
    "city": 3289491730,

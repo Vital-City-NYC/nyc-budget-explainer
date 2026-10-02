@@ -51,14 +51,14 @@
     "fees_fines_other": 4146642.0
    },
    "per_100": {
-    "property_tax": 20.72,
-    "personal_income_tax": 14.16,
-    "sales_tax": 10.98,
-    "business_taxes": 9.47,
-    "other_taxes": 3.42,
-    "state_aid": 18.64,
-    "federal_aid": 11.66,
-    "fees_fines_other": 10.95
+    "property_tax": 20.7207,
+    "personal_income_tax": 14.1604,
+    "sales_tax": 10.9806,
+    "business_taxes": 9.4736,
+    "other_taxes": 3.4195,
+    "state_aid": 18.6401,
+    "federal_aid": 11.6597,
+    "fees_fines_other": 10.9455
    },
    "ungrouped": []
   },
@@ -75,14 +75,14 @@
     "fees_fines_other": 4703808.0
    },
    "per_100": {
-    "property_tax": 20.5,
-    "personal_income_tax": 14.31,
-    "sales_tax": 10.43,
+    "property_tax": 20.4952,
+    "personal_income_tax": 14.3097,
+    "sales_tax": 10.4285,
     "business_taxes": 9.16,
-    "other_taxes": 3.3,
-    "state_aid": 19.31,
-    "federal_aid": 11.31,
-    "fees_fines_other": 11.69
+    "other_taxes": 3.2985,
+    "state_aid": 19.3075,
+    "federal_aid": 11.3089,
+    "fees_fines_other": 11.6917
    },
    "ungrouped": []
   },
@@ -99,14 +99,14 @@
     "fees_fines_other": 5020082.0
    },
    "per_100": {
-    "property_tax": 21.44,
-    "personal_income_tax": 11.15,
-    "sales_tax": 9.68,
-    "business_taxes": 7.81,
-    "other_taxes": 3.07,
-    "state_aid": 19.65,
-    "federal_aid": 14.92,
-    "fees_fines_other": 12.28
+    "property_tax": 21.4384,
+    "personal_income_tax": 11.1465,
+    "sales_tax": 9.684,
+    "business_taxes": 7.8112,
+    "other_taxes": 3.065,
+    "state_aid": 19.6512,
+    "federal_aid": 14.9191,
+    "fees_fines_other": 12.2845
    },
    "ungrouped": []
   },
@@ -123,14 +123,14 @@
     "fees_fines_other": 7049491.0
    },
    "per_100": {
-    "property_tax": 22.69,
-    "personal_income_tax": 10.13,
-    "sales_tax": 9.75,
-    "business_taxes": 7.08,
-    "other_taxes": 3.03,
-    "state_aid": 18.76,
-    "federal_aid": 12.67,
-    "fees_fines_other": 15.9
+    "property_tax": 22.6923,
+    "personal_income_tax": 10.1318,
+    "sales_tax": 9.7451,
+    "business_taxes": 7.0761,
+    "other_taxes": 3.0333,
+    "state_aid": 18.756,
+    "federal_aid": 12.6686,
+    "fees_fines_other": 15.8969
    },
    "ungrouped": []
   },
@@ -147,14 +147,14 @@
     "fees_fines_other": 5262483.0
    },
    "per_100": {
-    "property_tax": 24.49,
-    "personal_income_tax": 12.71,
-    "sales_tax": 10.74,
-    "business_taxes": 7.8,
-    "other_taxes": 3.8,
-    "state_aid": 17.88,
-    "federal_aid": 11.45,
-    "fees_fines_other": 11.13
+    "property_tax": 24.4885,
+    "personal_income_tax": 12.7124,
+    "sales_tax": 10.7433,
+    "business_taxes": 7.8035,
+    "other_taxes": 3.8022,
+    "state_aid": 17.8751,
+    "federal_aid": 11.4486,
+    "fees_fines_other": 11.1264
    },
    "ungrouped": []
   },
@@ -171,14 +171,14 @@
     "fees_fines_other": 6452450.0
    },
    "per_100": {
-    "property_tax": 22.0,
-    "personal_income_tax": 12.61,
-    "sales_tax": 11.03,
-    "business_taxes": 8.79,
-    "other_taxes": 4.03,
-    "state_aid": 16.71,
-    "federal_aid": 12.6,
-    "fees_fines_other": 12.22
+    "property_tax": 22.002,
+    "personal_income_tax": 12.6079,
+    "sales_tax": 11.029,
+    "business_taxes": 8.7898,
+    "other_taxes": 4.0346,
+    "state_aid": 16.7114,
+    "federal_aid": 12.6034,
+    "fees_fines_other": 12.2217
    },
    "ungrouped": []
   },
@@ -195,14 +195,14 @@
     "fees_fines_other": 4963543.0
    },
    "per_100": {
-    "property_tax": 23.4,
-    "personal_income_tax": 14.21,
-    "sales_tax": 11.09,
-    "business_taxes": 10.24,
-    "other_taxes": 4.41,
-    "state_aid": 17.75,
-    "federal_aid": 9.71,
-    "fees_fines_other": 9.19
+    "property_tax": 23.399,
+    "personal_income_tax": 14.2135,
+    "sales_tax": 11.0856,
+    "business_taxes": 10.243,
+    "other_taxes": 4.4085,
+    "state_aid": 17.7498,
+    "federal_aid": 9.7094,
+    "fees_fines_other": 9.1911
    },
    "ungrouped": []
   },
@@ -219,14 +219,14 @@
     "fees_fines_other": 5212852.0
    },
    "per_100": {
-    "property_tax": 22.33,
-    "personal_income_tax": 13.55,
-    "sales_tax": 10.91,
-    "business_taxes": 12.68,
-    "other_taxes": 4.92,
-    "state_aid": 17.43,
-    "federal_aid": 9.31,
-    "fees_fines_other": 8.87
+    "property_tax": 22.328,
+    "personal_income_tax": 13.549,
+    "sales_tax": 10.9098,
+    "business_taxes": 12.6781,
+    "other_taxes": 4.9216,
+    "state_aid": 17.435,
+    "federal_aid": 9.309,
+    "fees_fines_other": 8.8695
    },
    "ungrouped": []
   },
@@ -243,14 +243,14 @@
     "fees_fines_other": 6262184.0
    },
    "per_100": {
-    "property_tax": 21.31,
-    "personal_income_tax": 15.75,
-    "sales_tax": 10.05,
-    "business_taxes": 10.95,
-    "other_taxes": 4.23,
-    "state_aid": 18.43,
-    "federal_aid": 9.18,
-    "fees_fines_other": 10.1
+    "property_tax": 21.3051,
+    "personal_income_tax": 15.7549,
+    "sales_tax": 10.0497,
+    "business_taxes": 10.9475,
+    "other_taxes": 4.2263,
+    "state_aid": 18.4285,
+    "federal_aid": 9.1838,
+    "fees_fines_other": 10.1043
    },
    "ungrouped": []
   },
@@ -267,14 +267,14 @@
     "fees_fines_other": 6233790.0
    },
    "per_100": {
-    "property_tax": 24.08,
-    "personal_income_tax": 12.5,
-    "sales_tax": 8.81,
-    "business_taxes": 10.95,
-    "other_taxes": 3.28,
-    "state_aid": 20.15,
-    "federal_aid": 9.87,
-    "fees_fines_other": 10.36
+    "property_tax": 24.0767,
+    "personal_income_tax": 12.4959,
+    "sales_tax": 8.8117,
+    "business_taxes": 10.9498,
+    "other_taxes": 3.2835,
+    "state_aid": 20.1494,
+    "federal_aid": 9.873,
+    "fees_fines_other": 10.3601
    },
    "ungrouped": []
   },
@@ -291,14 +291,14 @@
     "fees_fines_other": 6266762.0
    },
    "per_100": {
-    "property_tax": 26.06,
-    "personal_income_tax": 12.09,
-    "sales_tax": 8.93,
-    "business_taxes": 9.08,
-    "other_taxes": 3.06,
+    "property_tax": 26.0605,
+    "personal_income_tax": 12.0877,
+    "sales_tax": 8.9335,
+    "business_taxes": 9.0849,
+    "other_taxes": 3.0582,
     "state_aid": 18.54,
-    "federal_aid": 12.26,
-    "fees_fines_other": 9.98
+    "federal_aid": 12.2586,
+    "fees_fines_other": 9.9768
    },
    "ungrouped": []
   },
@@ -315,14 +315,14 @@
     "fees_fines_other": 5968067.0
    },
    "per_100": {
-    "property_tax": 26.16,
-    "personal_income_tax": 12.5,
-    "sales_tax": 9.48,
-    "business_taxes": 10.27,
-    "other_taxes": 3.37,
-    "state_aid": 17.23,
-    "federal_aid": 11.86,
-    "fees_fines_other": 9.14
+    "property_tax": 26.1582,
+    "personal_income_tax": 12.5015,
+    "sales_tax": 9.4768,
+    "business_taxes": 10.2653,
+    "other_taxes": 3.3708,
+    "state_aid": 17.2311,
+    "federal_aid": 11.8596,
+    "fees_fines_other": 9.1367
    },
    "ungrouped": []
   },
@@ -339,14 +339,14 @@
     "fees_fines_other": 6758676.0
    },
    "per_100": {
-    "property_tax": 27.11,
-    "personal_income_tax": 12.78,
-    "sales_tax": 9.72,
-    "business_taxes": 9.7,
-    "other_taxes": 3.56,
-    "state_aid": 16.59,
-    "federal_aid": 10.45,
-    "fees_fines_other": 10.09
+    "property_tax": 27.1085,
+    "personal_income_tax": 12.7751,
+    "sales_tax": 9.7222,
+    "business_taxes": 9.7025,
+    "other_taxes": 3.5617,
+    "state_aid": 16.5923,
+    "federal_aid": 10.4474,
+    "fees_fines_other": 10.0903
    },
    "ungrouped": []
   },
@@ -363,14 +363,14 @@
     "fees_fines_other": 5859453.0
    },
    "per_100": {
-    "property_tax": 26.71,
-    "personal_income_tax": 13.82,
-    "sales_tax": 9.9,
-    "business_taxes": 10.21,
-    "other_taxes": 3.74,
-    "state_aid": 15.52,
-    "federal_aid": 11.86,
-    "fees_fines_other": 8.25
+    "property_tax": 26.7068,
+    "personal_income_tax": 13.8181,
+    "sales_tax": 9.9005,
+    "business_taxes": 10.2051,
+    "other_taxes": 3.7398,
+    "state_aid": 15.5245,
+    "federal_aid": 11.8557,
+    "fees_fines_other": 8.2494
    },
    "ungrouped": []
   },
@@ -387,14 +387,14 @@
     "fees_fines_other": 6821965.0
    },
    "per_100": {
-    "property_tax": 27.72,
-    "personal_income_tax": 13.96,
-    "sales_tax": 10.43,
-    "business_taxes": 9.9,
-    "other_taxes": 4.36,
-    "state_aid": 14.98,
-    "federal_aid": 9.29,
-    "fees_fines_other": 9.36
+    "property_tax": 27.7194,
+    "personal_income_tax": 13.9593,
+    "sales_tax": 10.4335,
+    "business_taxes": 9.8996,
+    "other_taxes": 4.3646,
+    "state_aid": 14.9781,
+    "federal_aid": 9.2851,
+    "fees_fines_other": 9.3605
    },
    "ungrouped": []
   },
@@ -411,14 +411,14 @@
     "fees_fines_other": 7212916.0
    },
    "per_100": {
-    "property_tax": 27.57,
-    "personal_income_tax": 14.47,
-    "sales_tax": 10.32,
-    "business_taxes": 9.74,
-    "other_taxes": 4.45,
-    "state_aid": 15.5,
-    "federal_aid": 8.69,
-    "fees_fines_other": 9.24
+    "property_tax": 27.5746,
+    "personal_income_tax": 14.4738,
+    "sales_tax": 10.317,
+    "business_taxes": 9.7418,
+    "other_taxes": 4.4541,
+    "state_aid": 15.502,
+    "federal_aid": 8.6935,
+    "fees_fines_other": 9.2431
    },
    "ungrouped": []
   },
@@ -435,14 +435,14 @@
     "fees_fines_other": 6168980.0
    },
    "per_100": {
-    "property_tax": 28.98,
-    "personal_income_tax": 14.24,
-    "sales_tax": 10.68,
-    "business_taxes": 8.69,
-    "other_taxes": 4.45,
-    "state_aid": 16.25,
-    "federal_aid": 9.0,
-    "fees_fines_other": 7.71
+    "property_tax": 28.9806,
+    "personal_income_tax": 14.243,
+    "sales_tax": 10.677,
+    "business_taxes": 8.686,
+    "other_taxes": 4.4505,
+    "state_aid": 16.2549,
+    "federal_aid": 8.9954,
+    "fees_fines_other": 7.7125
    },
    "ungrouped": []
   },
@@ -459,14 +459,14 @@
     "fees_fines_other": 7087838.0
    },
    "per_100": {
-    "property_tax": 29.57,
-    "personal_income_tax": 13.49,
-    "sales_tax": 9.94,
-    "business_taxes": 8.53,
-    "other_taxes": 3.96,
-    "state_aid": 16.76,
-    "federal_aid": 9.26,
-    "fees_fines_other": 8.49
+    "property_tax": 29.5674,
+    "personal_income_tax": 13.4875,
+    "sales_tax": 9.9396,
+    "business_taxes": 8.5309,
+    "other_taxes": 3.9633,
+    "state_aid": 16.7609,
+    "federal_aid": 9.2587,
+    "fees_fines_other": 8.4916
    },
    "ungrouped": []
   },
@@ -483,14 +483,14 @@
     "fees_fines_other": 6611684.0
    },
    "per_100": {
-    "property_tax": 30.03,
-    "personal_income_tax": 15.25,
-    "sales_tax": 9.84,
-    "business_taxes": 8.33,
-    "other_taxes": 3.76,
-    "state_aid": 16.44,
-    "federal_aid": 8.83,
-    "fees_fines_other": 7.52
+    "property_tax": 30.0304,
+    "personal_income_tax": 15.2512,
+    "sales_tax": 9.8372,
+    "business_taxes": 8.3343,
+    "other_taxes": 3.7591,
+    "state_aid": 16.4359,
+    "federal_aid": 8.8332,
+    "fees_fines_other": 7.5187
    },
    "ungrouped": []
   },
@@ -507,14 +507,14 @@
     "fees_fines_other": 7798614.0
    },
    "per_100": {
-    "property_tax": 30.38,
-    "personal_income_tax": 14.57,
-    "sales_tax": 9.9,
-    "business_taxes": 8.08,
-    "other_taxes": 4.07,
-    "state_aid": 16.31,
-    "federal_aid": 8.2,
-    "fees_fines_other": 8.5
+    "property_tax": 30.3807,
+    "personal_income_tax": 14.5743,
+    "sales_tax": 9.8958,
+    "business_taxes": 8.0801,
+    "other_taxes": 4.0669,
+    "state_aid": 16.3103,
+    "federal_aid": 8.1952,
+    "fees_fines_other": 8.4967
    },
    "ungrouped": []
   },
@@ -531,14 +531,14 @@
     "fees_fines_other": 7239780.0
    },
    "per_100": {
-    "property_tax": 31.37,
-    "personal_income_tax": 14.3,
-    "sales_tax": 8.92,
-    "business_taxes": 8.27,
-    "other_taxes": 3.52,
-    "state_aid": 16.13,
-    "federal_aid": 9.88,
-    "fees_fines_other": 7.62
+    "property_tax": 31.366,
+    "personal_income_tax": 14.2978,
+    "sales_tax": 8.9189,
+    "business_taxes": 8.2707,
+    "other_taxes": 3.5162,
+    "state_aid": 16.1311,
+    "federal_aid": 9.8831,
+    "fees_fines_other": 7.6162
    },
    "ungrouped": []
   },
@@ -555,14 +555,14 @@
     "fees_fines_other": 7016632.0
    },
    "per_100": {
-    "property_tax": 31.59,
-    "personal_income_tax": 15.2,
-    "sales_tax": 7.63,
+    "property_tax": 31.5949,
+    "personal_income_tax": 15.2031,
+    "sales_tax": 7.6342,
     "business_taxes": 8.63,
-    "other_taxes": 2.74,
-    "state_aid": 14.66,
-    "federal_aid": 12.49,
-    "fees_fines_other": 7.05
+    "other_taxes": 2.7432,
+    "state_aid": 14.6575,
+    "federal_aid": 12.4913,
+    "fees_fines_other": 7.0457
    },
    "ungrouped": []
   },
@@ -579,14 +579,14 @@
     "fees_fines_other": 6736999.0
    },
    "per_100": {
-    "property_tax": 27.59,
-    "personal_income_tax": 15.61,
-    "sales_tax": 9.33,
-    "business_taxes": 8.88,
-    "other_taxes": 3.5,
-    "state_aid": 14.78,
-    "federal_aid": 14.03,
-    "fees_fines_other": 6.28
+    "property_tax": 27.588,
+    "personal_income_tax": 15.6055,
+    "sales_tax": 9.3336,
+    "business_taxes": 8.8813,
+    "other_taxes": 3.4967,
+    "state_aid": 14.7791,
+    "federal_aid": 14.033,
+    "fees_fines_other": 6.2828
    },
    "ungrouped": []
   },
@@ -603,14 +603,14 @@
     "fees_fines_other": 7757020.0
    },
    "per_100": {
-    "property_tax": 29.24,
-    "personal_income_tax": 13.7,
-    "sales_tax": 9.78,
-    "business_taxes": 11.75,
-    "other_taxes": 3.39,
-    "state_aid": 15.77,
-    "federal_aid": 9.22,
-    "fees_fines_other": 7.17
+    "property_tax": 29.2363,
+    "personal_income_tax": 13.7004,
+    "sales_tax": 9.7794,
+    "business_taxes": 11.7452,
+    "other_taxes": 3.3864,
+    "state_aid": 15.7705,
+    "federal_aid": 9.2151,
+    "fees_fines_other": 7.1667
    },
    "ungrouped": []
   },
@@ -627,14 +627,14 @@
     "fees_fines_other": 8112694.0
    },
    "per_100": {
-    "property_tax": 29.24,
-    "personal_income_tax": 12.46,
-    "sales_tax": 9.46,
-    "business_taxes": 11.32,
-    "other_taxes": 3.28,
-    "state_aid": 17.05,
-    "federal_aid": 10.01,
-    "fees_fines_other": 7.19
+    "property_tax": 29.2401,
+    "personal_income_tax": 12.4565,
+    "sales_tax": 9.4552,
+    "business_taxes": 11.321,
+    "other_taxes": 3.2784,
+    "state_aid": 17.0464,
+    "federal_aid": 10.0112,
+    "fees_fines_other": 7.1912
    },
    "ungrouped": []
   },
@@ -651,14 +651,14 @@
     "fees_fines_other": 8239286.0
    },
    "per_100": {
-    "property_tax": 29.54,
-    "personal_income_tax": 13.69,
-    "sales_tax": 9.57,
-    "business_taxes": 12.0,
-    "other_taxes": 3.46,
-    "state_aid": 17.02,
-    "federal_aid": 7.72,
-    "fees_fines_other": 7.0
+    "property_tax": 29.5402,
+    "personal_income_tax": 13.6856,
+    "sales_tax": 9.5735,
+    "business_taxes": 12.0002,
+    "other_taxes": 3.4612,
+    "state_aid": 17.0169,
+    "federal_aid": 7.7197,
+    "fees_fines_other": 7.0026
    },
    "ungrouped": []
   },
@@ -675,14 +675,14 @@
     "fees_fines_other": 10679190
    },
    "per_100": {
-    "property_tax": 27.9,
-    "personal_income_tax": 16.34,
-    "sales_tax": 9.47,
-    "business_taxes": 9.1,
-    "other_taxes": 4.68,
+    "property_tax": 27.9047,
+    "personal_income_tax": 16.3425,
+    "sales_tax": 9.4716,
+    "business_taxes": 9.101,
+    "other_taxes": 4.6814,
     "state_aid": 16.3,
-    "federal_aid": 7.78,
-    "fees_fines_other": 8.42
+    "federal_aid": 7.7772,
+    "fees_fines_other": 8.4214
    },
    "ungrouped": [],
    "basis": "OMB FY2026 budget as modified, June 2026",
@@ -701,14 +701,14 @@
     "fees_fines_other": 9381315
    },
    "per_100": {
-    "property_tax": 29.46,
-    "personal_income_tax": 16.39,
-    "sales_tax": 9.96,
-    "business_taxes": 9.51,
-    "other_taxes": 4.92,
-    "state_aid": 16.49,
-    "federal_aid": 5.84,
-    "fees_fines_other": 7.43
+    "property_tax": 29.4594,
+    "personal_income_tax": 16.3876,
+    "sales_tax": 9.9619,
+    "business_taxes": 9.508,
+    "other_taxes": 4.9246,
+    "state_aid": 16.4864,
+    "federal_aid": 5.8409,
+    "fees_fines_other": 7.4312
    },
    "ungrouped": [],
    "basis": "OMB FY2027 adopted budget, June 2026",

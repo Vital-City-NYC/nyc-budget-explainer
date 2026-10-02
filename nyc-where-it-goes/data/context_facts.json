@@ -1,7 +1,7 @@
 {
  "education": [
   {
-   "fact": "New York City schools spent $35,796 per pupil in fiscal 2024, the most of the 100 largest districts and about double the national average of $17,619.",
+   "fact": "New York City's school system spent $35,796 per pupil in fiscal 2024, the highest current spending among the 100 largest school systems and about double the national average of $17,619.",
    "source": "Census Bureau, 2024 Annual Survey of School System Finances",
    "url": "https://www.census.gov/newsroom/press-releases/2026/school-system-finances.html"
   },
@@ -91,7 +91,7 @@
    "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/Annual-Report-on-Capital-Debt-and-Obligations-Fiscal-Year-2026-1.pdf"
   },
   {
-   "fact": "Net debt was $121.0 billion at the end of fiscal 2025, and total primary-government debt worked out to $15,763 per resident.",
+   "fact": "The city had $121.0 billion of bonds and notes outstanding at the end of fiscal 2025, including premiums; counting all primary-government debt, that is $15,763 per resident.",
    "source": "Comptroller's ACFR FY2025, Ratios of Outstanding Debt",
    "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf"
   },
@@ -139,7 +139,7 @@
  ],
  "everything_else": [
   {
-   "fact": "NYCHA houses 497,649 authorized residents in 177,565 apartments across 335 developments as of fiscal 2026.",
+   "fact": "The Housing Authority serves 497,649 authorized residents, about 331,700 of them in its 177,565 apartments across 335 developments; the rest hold Section 8 vouchers in private housing.",
    "source": "Mayor's Management Report, Fiscal 2026",
    "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf"
   },
@@ -149,7 +149,7 @@
    "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf"
   },
   {
-   "fact": "CUNY enrolled 246,503 students in fiscal 2026, 81,883 of them at its seven community colleges, where tuition is $4,800; Parks cares for 2,000 parks and 12,000 acres of natural areas, and the three library systems run 220 branches.",
+   "fact": "The three library systems run 220 local library locations, including five research centers.",
    "source": "Mayor's Management Report, Fiscal 2026",
    "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf"
   }

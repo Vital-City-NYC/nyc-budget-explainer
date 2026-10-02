@@ -7,3 +7,5 @@ Bonds issued: ACFR governmental funds statement, fiscal 2025 PDF p. 426, "Princi
 Caveat on the page: these are cash expenditures in the year, not commitments; the capital commitment plan the city announces ($117.1 billion for fiscal 2026-2030 per the Comptroller's June 2026 report, see ../nyc-where-it-goes/research/02) is a different measure. Figures nominal.
 
 Self-audit: HIGH for every number (extracted cells with page numbers, sums asserted). Editorial: labels (schools and CUNY; housing and buildings; water, sewers and sanitation; streets, bridges and transit).
+
+Blind-check note (2026-10-02): the per-capita repo records refunding debt issued as 0 for 2024 and 2025; the ACFR shows 1,697,190 and 6,970,750 (thousands). The page does not display refunding debt. The FY2005 CAFR labels the fiscal 2000 bonds line "Proceeds from sale of bonds" (3,125,230).
