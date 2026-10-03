@@ -22,3 +22,13 @@ Live since 2026-10-02 at https://vital-city-nyc.github.io/nyc-budget-explainer/n
 ## Open
 - Fill `data/control.json` and `data/context_facts.json` from research/02 and 03 once verified; every fact needs URL + quote.
 - Not pushed; same account rule as the companion.
+
+## Design pass, Oct 3 2026
+- All four pages now load one shared stylesheet and script: `nyc-who-pays/shared/budget.css` and `budget.js` (other parts reference `../nyc-who-pays/shared/`). Bump the `?v=` stamp on those links in all four index.html files whenever either changes.
+- Phone layout: the waffle becomes a 20-by-5 strip pinned to the top of the screen while the key scrolls (`.lay.main` with `.wcol{display:contents}` and `position:sticky`).
+- Click-splits use shades of the clicked line's own colour (`B.ramp`), never other lines' colours. Income bands run light to dark.
+- Big blocks are labelled on the waffle on desktop (`B.labels`); key rows preview on hover and work from the keyboard.
+- Trend lines and bars start at zero (Josh's standing rule), so no zero toggle is needed.
+- Long caveats sit in `<details class="more">`; bucket tables are folded in the method.
+- Part one has a "Four numbers behind the fair-share argument" strip (two numbers for each side: 37% from 0.9% of filers and 93% of corporate tax from 1,912 firms; the flat 3.876% top rate from $50,000 and homes' 14% of property tax on 50% of value). Part two has "Schools and the safety net, in four numbers" (`data/headline_stats.json`). Keep both strips balanced if editing.
+- Part three shades each row: lighter squares are the 2000 level, darker are added since. Part four has a clickable bar chart of capital spending by year in fiscal 2025 dollars.

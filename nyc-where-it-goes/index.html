@@ -2,81 +2,17 @@
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Where New York City's money goes</title>
-<meta name="description" content="For every $100 the city spends, what it buys, what is inside each line, what sits off the budget and what the mayor can change.">
-<link rel="prefetch" href="../nyc-who-pays/index.html"><link rel="prefetch" href="../nyc-who-pays/data/revenue_per_100.json">
+<meta name="description" content="For every $100 the city spends, what it buys, what is inside each line, who pays for it, what sits off the budget and what the mayor can change.">
+<meta property="og:title" content="Where New York City's money goes"><meta property="og:description" content="For every $100 the city spends: what it buys, what is inside each line, who pays for it and what the mayor can change."><meta property="og:type" content="article"><meta name="twitter:card" content="summary">
+<link rel="prefetch" href="../nyc-who-pays/index.html"><link rel="prefetch" href="../nyc-budget-since-2000/index.html">
 <link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
 <link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/tokens/tokens.css">
 <link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/charts/chart-theme.css">
-<style>
-@font-face{font-family:'GascogneTS';src:url('https://vital-city-nyc.github.io/vital-city-design-system/fonts/GascogneTS-Light.ttf') format('truetype');font-weight:300;font-style:normal;font-display:swap}
-:root{--c-edu:#217ebe;--c-soc:#e7466d;--c-saf:#394882;--c-pen:#ff7c53;--c-ben:#cea9be;--c-debt:#050507;--c-hlth:#dde44c;--c-gov:#9b9fbc;--c-env:#707175;--c-else:#c9c9cb;
- --vc-sans:"halyard-text","Helvetica Neue",Arial,sans-serif;--vc-serif:"GascogneTS",Georgia,serif;--vc-paper:#f7f7f4;--ink:#050507;--mute:#707175;--rule:#dddddd;
- --c-prop:#ff7c53;--c-pit:#217ebe;--c-sales:#dde44c;--c-biz:#e7466d;--c-oth:#cea9be;--c-state:#394882;--c-fed:#9b9fbc;--c-fees:#707175;
- --c-c1:#ff7c53;--c-c2r:#e7466d;--c-c2o:#cea9be;--c-c3:#9b9fbc;--c-c4:#394882;
- --c-i1:#dde44c;--c-i2:#cea9be;--c-i3:#9b9fbc;--c-i4:#217ebe;--c-i5:#394882;--c-i6:#050507}
-@view-transition{navigation:auto}
-::view-transition-old(root),::view-transition-new(root){animation-duration:.28s}
-.nav{view-transition-name:nav}
-*{box-sizing:border-box}html,body{margin:0;background:#fff;color:var(--ink)}
-body{font-family:var(--vc-sans);font-weight:300;padding:24px 16px}
-.card{max-width:880px;margin:0 auto;border:1px solid var(--ink);background:#fff}
-body.embed{padding:0}body.embed .card{border:none;max-width:none}
-.nav{display:flex;border-bottom:1px solid var(--ink);background:#fff;overflow-x:auto;-webkit-overflow-scrolling:touch}.nav a{flex:1 0 auto;min-width:0;text-align:center;text-decoration:none;color:var(--mute);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:11px 10px;border-right:1px solid var(--ink)}.nav a:last-child{border-right:0}.nav a.on{background:var(--ink);color:#fff}.nav a:not(.on):hover{background:var(--vc-paper);color:var(--ink)}.nav a b{display:block;font-family:var(--vc-serif);font-weight:300;font-size:1rem;letter-spacing:0;text-transform:none;margin-top:3px;white-space:nowrap}
-@media(max-width:640px){.nav a{padding:9px 12px}.nav a b{font-size:.92rem}}
-.head{padding:22px 24px 18px;border-bottom:1px solid var(--rule)}
-h1{min-height:2.4em;font-family:var(--vc-sans);font-weight:900;font-size:1.5rem;line-height:1.2;margin:0 0 6px;max-width:34ch}
-.dek{font-weight:300;font-size:.95rem;line-height:1.5;color:var(--mute);margin:0;max-width:62ch}.dek b{color:var(--ink);font-weight:700}
-.sec{padding:20px 24px;border-bottom:1px solid var(--rule)}.sec:last-child{border-bottom:0}
-.sec h2{font-family:var(--vc-sans);font-weight:900;font-size:1.25rem;line-height:1.25;margin:0 0 4px;max-width:62ch}
-.sub{font-weight:200;font-size:.95rem;color:var(--mute);margin:0 0 14px;max-width:62ch;line-height:1.45}
-.lay{display:grid;grid-template-columns:minmax(0,360px) minmax(240px,1fr);gap:28px;align-items:start}
-.waf{display:grid;grid-template-columns:repeat(10,1fr);gap:3px;aspect-ratio:1;align-content:start}
-.waf i{aspect-ratio:1;display:block;background:var(--rule);position:relative;transition:background .4s,opacity .4s}
-.waf i.dim{background:#ececec!important}
-.waf i:hover{outline:2px solid var(--ink);z-index:1}
-.key{border-top:1px solid var(--ink);min-height:370px}
-.key .row{display:grid;grid-template-columns:12px minmax(0,1fr) auto;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid var(--rule);cursor:pointer}
-.key .row:hover,.key .row.on{background:var(--vc-paper)}
-.key .sw{width:12px;height:12px;display:block}
-.key .nm{font-weight:700;font-size:.9rem}
-.key .num{font-family:var(--vc-serif);font-weight:300;font-size:1.55rem;line-height:1;font-variant-numeric:tabular-nums}
-.key .row.dim .nm,.key .row.dim .num{color:#b9b9ba}.key .row.dim .sw{opacity:.3}
-.waf i.pop{animation:pop .5s both}@keyframes pop{0%{transform:scale(.4);opacity:.2}100%{transform:scale(1);opacity:1}}
-.subkey{grid-column:1/-1;margin:2px 0 4px;font-size:.82rem}.subkey div{display:grid;grid-template-columns:11px minmax(0,1fr) auto;gap:8px;align-items:center;padding:3px 0}.subkey .sw{width:11px;height:11px;display:block}.subkey .n{font-family:var(--vc-serif);font-size:1.1rem;font-variant-numeric:tabular-nums}.subkey a{display:block;margin-top:4px;color:var(--mute);font-size:.75rem}.subkey.ins{border-top:1px solid var(--rule);padding-top:6px}.subkey .k{font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:0 0 4px}
-.spark{grid-column:1/-1;height:56px;max-width:100%;display:none;margin:2px 0 4px;overflow:visible}.row.on .spark{display:block}
-.yr{display:flex;gap:10px;align-items:center;margin-top:14px;font-size:.8rem;color:var(--mute)}.yr label{white-space:nowrap}
-.yr input{flex:1;accent-color:#ff7c53}.yr b{font-family:var(--vc-serif);font-weight:300;font-size:1.3rem;color:var(--ink)}
-.hist{font-size:.9rem;line-height:1.45;margin:10px 0 0;min-height:1.4em}.hist b{font-weight:700}
-.play{font:inherit;font-weight:700;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--ink);background:#fff;padding:5px 10px;cursor:pointer}.play:hover{background:#dde44c}
-.tip{position:fixed;pointer-events:none;background:var(--ink);color:#fff;font-size:.78rem;padding:5px 8px;z-index:5;display:none;max-width:220px;line-height:1.35}
-.alb{display:none;margin-top:10px;font-size:.82rem;color:var(--mute)}.alb label{display:flex;gap:6px;align-items:center;cursor:pointer}
-.note{font-size:.75rem;color:var(--mute);border-top:1px solid var(--rule);padding-top:8px;margin-top:14px;line-height:1.45}.note a{color:var(--mute)}
-.seg{display:inline-flex;border:1px solid var(--ink);margin:0 0 14px}.seg button{font:inherit;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border:0;background:#fff;cursor:pointer}.seg button.on{background:var(--ink);color:#fff}
-table.t{width:100%;border-collapse:collapse;font-size:.88rem}
-.t th{font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);text-align:left;padding:6px 8px 6px 0;border-bottom:1px solid var(--ink)}
-.t td{padding:8px 8px 8px 0;border-bottom:1px solid var(--rule);vertical-align:top;line-height:1.4}
-.t td.n,.t th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}.t td.b{font-weight:700}
-.t .sw{width:11px;height:11px;display:inline-block;margin-right:7px;vertical-align:-1px}
-.t tbody tr.on td{background:var(--vc-paper)}.t.pick tbody tr{cursor:pointer}
-.t td.who{font-weight:700}.t tr.albrow td.who{color:var(--mute)}
-.lay.c{grid-template-columns:minmax(0,300px) 1fr;align-items:center;margin-bottom:18px}.hist.big{font-size:1.05rem;line-height:1.5;margin:0;max-width:40ch}
-.ctl th:nth-child(1){width:26%}.ctl th:nth-child(2){width:32%}
-@media(max-width:640px){.ctl thead{display:none}.ctl tbody tr{display:block;padding:8px 0;border-bottom:1px solid var(--rule)}.ctl td{display:block;border:0;padding:2px 0}}
-.t .sub2{display:block;color:var(--mute);font-weight:300}
-.m-only{display:none}
-.pull{font-size:.95rem;line-height:1.5;max-width:66ch;margin:0 0 14px;padding-left:12px;border-left:3px solid #ff7c53}
-.pull cite{display:block;font-style:normal;font-size:.75rem;color:var(--mute);margin-top:4px}
-.method{font-size:.82rem;color:var(--ink);line-height:1.5;max-width:70ch}.method p{margin:0 0 10px}.method a{color:var(--mute)}
-.method table{font-size:.8rem;margin:0 0 12px}.method td,.method th{padding:5px 10px 5px 0;vertical-align:top}
-@media(max-width:640px){.lay,.lay.c{grid-template-columns:1fr}.hist.big{font-size:.95rem;max-width:none}.head,.sec{padding-left:16px;padding-right:16px}.hide-m{display:none}.m-only{display:block;font-size:.8rem;color:var(--mute);font-weight:300;margin-top:2px}}
-
-.facts{margin:10px 0 0;padding:0;list-style:none;font-size:.85rem;line-height:1.45}.facts li{padding:6px 0 6px 12px;border-left:3px solid var(--rule)}.facts li a{color:var(--mute);font-size:.75rem;white-space:nowrap}
-.strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:14px 0 6px}.strip .k{font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:0 0 4px}.strip .v{font-family:var(--vc-serif);font-weight:300;font-size:1.9rem;line-height:1;margin:0 0 6px}.strip p{font-size:.82rem;line-height:1.45;margin:0;color:var(--ink)}.strip p a{color:var(--mute)}
-@media(max-width:640px){.strip{grid-template-columns:1fr}}
-.tile{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center;text-decoration:none;color:var(--ink);border:1px solid var(--ink);padding:14px 16px;margin-top:4px}.tile:hover{background:var(--vc-paper)}.tile .mini{display:grid;grid-template-columns:repeat(10,1fr);gap:1px}.tile .mini i{aspect-ratio:1;display:block}.tile .k{font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:0 0 3px;display:block}.tile .h{font-weight:900;font-size:1.05rem;line-height:1.25;margin:0 0 3px;display:block}.tile p{margin:0;font-size:.85rem;color:var(--mute)}
-</style></head>
+<link rel="stylesheet" href="../nyc-who-pays/shared/budget.css?v=1003d">
+<style>.key{min-height:370px}</style>
+</head>
 <body><div class="card">
-<nav class="nav"><a href="../nyc-who-pays/index.html" class="">Part one<b>Who pays</b></a><a href="../nyc-where-it-goes/index.html" class="on">Part two<b>Where it goes</b></a><a href="../nyc-budget-since-2000/index.html" class="">Part three<b>Since 2000</b></a><a href="../nyc-what-the-city-builds/index.html" class="">Part four<b>The capital budget</b></a></nav>
+<nav class="nav" aria-label="Parts"><a href="../nyc-who-pays/index.html">Part one<b>Who pays</b></a><a href="../nyc-where-it-goes/index.html" class="on" aria-current="page">Part two<b>Where it goes</b></a><a href="../nyc-budget-since-2000/index.html">Part three<b>Since 2000</b></a><a href="../nyc-what-the-city-builds/index.html">Part four<b>The capital budget</b></a></nav>
 <div class="head">
 <h1 id="finding"></h1>
 <p class="dek" id="lede"></p>
@@ -84,26 +20,33 @@ table.t{width:100%;border-collapse:collapse;font-size:.88rem}
 
 <section class="sec">
 <h2>For every $100 the city spends, what does it buy?</h2>
-<p class="sub">One square is one dollar in a hundred. Audited through fiscal 2025; 2026 and 2027 are budgeted. Click a line to open it.</p>
-<div class="lay">
- <div><div class="waf" id="w"></div>
+<p class="sub">One square is one dollar in a hundred. Click a line to open it: which agencies, what is inside the biggest one, and who pays. Audited through fiscal 2025; 2026 and 2027 are budgeted.</p>
+<div class="lay main">
+ <div class="wcol"><div class="waf" id="w"></div>
  <div class="yr"><label for="y">Fiscal year</label><input type="range" id="y" min="2000" max="2027" value="2025"><b id="yv">2025</b><span id="bflag"></span><button class="play" id="play">Play</button></div>
  <p class="hist" id="hist"></p>
  <ul class="facts" id="facts"></ul></div>
  <div class="key" id="key"></div>
 </div>
 <div class="tip" id="tip"></div>
-<p class="note">Source: New York City Comptroller, annual comprehensive financial reports, General Fund expenditures and transfers by function and agency, fiscal 2000 to 2025; Office of Management and Budget, adopted budget for fiscal 2027, June 2026. Buckets listed in the method note.</p>
+<p class="note">Source: New York City Comptroller, annual comprehensive financial reports, General Fund expenditures and transfers by function and agency, fiscal 2000 to 2025; Office of Management and Budget, adopted budget for fiscal 2027 and its supporting schedules, June 2026. Buckets listed in the method note.</p>
+</section>
+
+<section class="sec" id="sec-s" hidden>
+<h2>Schools and the safety net, in four numbers</h2>
+<p class="sub">The two biggest lines, measured by what they deliver.</p>
+<div class="stats" id="stats4"></div>
+<p class="note" id="statsnote"></p>
 </section>
 
 <section class="sec" id="sec-c" hidden>
 <h2>What can the mayor change without Albany?</h2>
 <p class="sub" id="subc"></p>
-<p class="pull" id="pull"></p>
 <div class="lay c">
- <div><div class="waf" id="cw"></div></div>
- <p class="hist big" id="chist"></p>
+ <div><div class="waf static" id="cw"></div></div>
+ <div><div class="big2" id="big2"></div><p class="hist big" id="chist"></p></div>
 </div>
+<p class="pull" id="pull"></p>
 <table class="t ctl"><thead><tr><th>Line</th><th>Who sets it</th><th>What City Hall can do alone</th></tr></thead><tbody id="ct"></tbody></table>
 <p class="note" id="cnote"></p>
 </section>
@@ -111,81 +54,88 @@ table.t{width:100%;border-collapse:collapse;font-size:.88rem}
 <section class="sec">
 <h2>What the squares leave out</h2>
 <p class="sub">The operating budget must balance every year, by state law. Three things sit beside it.</p>
-<div class="strip" id="strip"></div>
+<div class="stats c3" id="strip"></div>
 <p class="note" id="offnote"></p>
 </section>
 
 <section class="sec"><h2>Method</h2><div class="method" id="method"></div></section>
-<section class="sec"><a class="tile" href="../nyc-budget-since-2000/index.html" id="tile"><span class="mini" id="mini"></span><span><span class="k">Next</span><span class="h">How has it changed since 2000?</span><p>Each line in real dollars per resident, fiscal 2000 to 2027.</p></span></a></section>
+<section class="sec"><a class="tile" href="../nyc-budget-since-2000/index.html"><span class="mini" id="mini"></span><span><span class="k">Next</span><span class="h">How has it changed since 2000?</span><p>Each line in real dollars per resident, fiscal 2000 to 2027.</p></span></a></section>
 </div>
+<script src="../nyc-who-pays/shared/budget.js?v=1003d"></script>
 <script>
-if(new URLSearchParams(location.search).get('embed')==='1'){document.body.classList.add('embed');const ph=()=>{const el=document.querySelector('.card');if(!el||innerWidth<50)return;const h=Math.ceil(el.getBoundingClientRect().height);if(h>0)parent.postMessage({type:'vc-embed-height',id:'nyc-where-it-goes',height:h},'*');};addEventListener('load',ph);addEventListener('resize',ph);let n=0;const t=setInterval(()=>{ph();if(++n>20)clearInterval(t);},300);}
-
-const LABEL={education:['Schools','--c-edu'],social_services:['Social services','--c-soc'],public_safety:['Police, fire, jails and prosecutors','--c-saf'],pensions:['Pensions','--c-pen'],benefits:['Health insurance, claims and other benefits','--c-ben'],debt_service:['Debt service','--c-debt'],health:['Health and hospitals','--c-hlth'],general_government:['General government','--c-gov'],environmental:['Sanitation, water and sewers','--c-env'],everything_else:['Housing, transportation, CUNY, parks, libraries','--c-else']};
-const EXPLAIN={pensions:'Contributions to the five city pension systems, set each year by the Chief Actuary under state law.',benefits:'Health insurance for workers and retirees, other fringe benefits, judgments and claims, lease payments and the Miscellaneous budget.',debt_service:'Interest and principal on past borrowing for schools, roads, water and other capital projects.'};
-const PAL=['--c-saf','--c-soc','--c-pen','--c-edu','--c-hlth','--c-gov'];
-const $=id=>document.getElementById(id);
-const Y0=(()=>{const m=location.hash.match(/y=(\d{4})/);return m?+m[1]:2025;})();
-let D,CUR=2025,SEL=null,CTRL=null,FACTS=null,INSIDE=null,FUND=null,timer=null;
-const SRC={city:['City funds','--c-pen'],state:['State grants','--c-saf'],federal:['Federal grants','--c-gov'],other:['Other grants','--c-else']};
+B.embed('nyc-where-it-goes');
+const {$,alloc}=B;
+const LABEL={education:['Schools','--c-edu'],social_services:['Social services','--c-soc'],public_safety:['Police, fire, jails and prosecutors','--c-saf'],pensions:['Pensions','--c-pen'],benefits:['Health insurance, claims and other benefits','--c-ben',1],debt_service:['Debt service','--c-debt'],health:['Health and hospitals','--c-hlth',1],general_government:['General government','--c-gov',1],environmental:['Sanitation, water and sewers','--c-env'],everything_else:['Housing, transportation, CUNY, parks, libraries','--c-else',1]};
+const SHORT={education:'Schools',social_services:'Social services',public_safety:'Police, fire, jails',pensions:'Pensions',benefits:'Benefits',debt_service:'Debt service',health:'Health',general_government:'Government',environmental:'Sanitation',everything_else:'Everything else'};
+const EXPLAIN={pensions:'Contributions to the five city pension systems, set each year by the Chief Actuary under state law.',benefits:'Health insurance for workers and retirees, other fringe benefits, judgments and claims, lease payments and reserves.',debt_service:'Interest and principal on past borrowing for schools, roads, jails and other capital projects.'};
 const TOPAG={education:'040',social_services:'069',public_safety:'056',health:'816',general_government:'856',environmental:'827',everything_else:'806'};
+const SRC={city:['City funds','#050507'],state:['State grants','#707175'],federal:['Federal grants','#b9b9ba'],other:['Other grants','#dddddd']};
+let D,CUR=2025,SEL=null,CTRL=null,FACTS=null,INSIDE=null,FUND=null,SQ=[];
 const YEARS=()=>Object.keys(D.years).map(Number).sort();
-function alloc(items,N=100){const tot=items.reduce((a,x)=>a+x[1],0)||1;let c=items.map(([k,v])=>{const e=v/tot*N;return [k,Math.floor(e),e%1];});let used=c.reduce((a,x)=>a+x[1],0);c.slice().sort((a,b)=>b[2]-a[2]).slice(0,N-used).forEach(x=>x[1]++);return c;}
-function grid(id){const w=$(id);for(let i=0;i<100;i++){const c=document.createElement('i');c.dataset.i=i;c.style.transitionDelay=(i*3)+'ms';w.appendChild(c);}return [...w.children];}
-function insideRows(k){const c=TOPAG[k],a=INSIDE&&INSIDE.agencies[c];if(!a)return null;const tot=a.rows.reduce((s,x)=>s+x[1],0);return {name:a.name.replace(/'S/g,"'s"),pages:a.pages,rows:a.rows.map((x,i)=>({key:'u'+i,label:x[0],share:x[1]/tot*100,amt:x[1]/1000,color:x[0].startsWith('Everything else')?'--c-else':PAL[i%PAL.length]}))};}
-function agencyRows(k,y){const a=D.years[y].agencies[k];if(!a||!a.length)return null;const tot=a.reduce((s,x)=>s+x[1],0);const top=a.slice(0,5),rest=a.slice(5).reduce((s,x)=>s+x[1],0);const r=top.map((x,i)=>({key:'a'+i,label:x[0],share:x[1]/tot*100,amt:x[1],color:PAL[i]}));if(rest>0)r.push({key:'a5',label:'Everything else in this line',share:rest/tot*100,amt:rest,color:'--c-else'});return r.length>1?r:null;}
+const clamp=y=>Math.min(2027,Math.max(2000,y));
 
-fetch('data/spending_per_100.json').then(r=>r.json()).then(d=>{D=d;grid('w');draw(Math.min(2027,Math.max(2000,Y0)));method();tile();
- fetch('data/funding_by_bucket.json').then(r=>r.ok?r.json():null).then(x=>{if(x){FUND=x;if(SEL)draw(CUR);}}).catch(()=>{});
- fetch('data/inside.json').then(r=>r.ok?r.json():null).then(x=>{if(x){INSIDE=x;if(SEL)draw(CUR);}}).catch(()=>{});
- fetch('data/context_facts.json').then(r=>r.ok?r.json():null).then(f=>{if(f){FACTS=f;facts();}}).catch(()=>{});
- fetch('data/control.json').then(r=>r.ok?r.json():null).then(c=>{if(c){CTRL=c;movement3();}}).catch(()=>{});
- fetch('data/offbudget.json').then(r=>r.ok?r.json():null).then(o=>{if(o)strip(o);}).catch(()=>{});});
+fetch('data/spending_per_100.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{D=d;SQ=B.grid('w');draw(clamp(B.Y0));method();tile();
+ B.player({years:YEARS,cur:()=>CUR,draw,range:$('y'),btn:$('play')});
+ const J=u=>fetch(u,{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null);
+ J('data/funding_by_bucket.json').then(x=>{if(x){FUND=x;if(SEL)draw(CUR);}});
+ J('data/inside.json').then(x=>{if(x){INSIDE=x;if(SEL)draw(CUR);}});
+ J('data/context_facts.json').then(f=>{if(f){FACTS=f;facts();}});
+ J('data/headline_stats.json').then(o=>{if(o)stats4(o);});
+ J('data/control.json').then(c=>{if(c){CTRL=c;movement3();}});
+ J('data/offbudget.json').then(o=>{if(o)strip(o);});});
 
 function cells(y){const p=D.years[y].per_100;return alloc(Object.keys(LABEL).map(k=>[k,p[k]]));}
-function spark(k){const ys=YEARS(),v=ys.map(y=>D.years[y].per_100[k]);const W=Math.max(220,Math.round($('key').clientWidth||300)),H=56,L=2,R=40,T=8,B=16;const lo=Math.max(0,Math.floor(Math.min(...v)/5)*5),hi=Math.ceil(Math.max(...v)/5)*5;
- const X=i=>L+i/(ys.length-1)*(W-L-R),Y=x=>T+(1-(x-lo)/(hi-lo||1))*(H-T-B);const aud=ys.filter(y=>!D.years[y].budgeted).length;
- const path=v.map((x,i)=>(i?'L':'M')+X(i).toFixed(1)+','+Y(x).toFixed(1)).join(' ');const ci=ys.indexOf(CUR);const solid=(X(aud-1)-L).toFixed(0);const f='font-family="halyard-text,sans-serif"';
- return `<svg class="spark" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}"><line x1="${L}" x2="${W-R}" y1="${Y(lo)}" y2="${Y(lo)}" stroke="#dddddd"/><path d="${path}" fill="none" stroke="var(${LABEL[k][1]})" stroke-width="2" stroke-dasharray="${solid} 999"/><path d="${path}" fill="none" stroke="var(${LABEL[k][1]})" stroke-width="2" stroke-dasharray="0 ${solid} 3 3"/><circle cx="${X(ci)}" cy="${Y(v[ci])}" r="3.5" fill="#050507"/><text x="${W-R+6}" y="${Y(v[ci])+4}" font-size="12" ${f} fill="#050507">$${v[ci].toFixed(0)}</text><text x="${L}" y="${H-3}" font-size="10" fill="#707175" ${f}>${ys[0]}</text><text x="${W-R}" y="${H-3}" text-anchor="end" font-size="10" fill="#707175" ${f}>${ys[ys.length-1]}</text></svg>`;}
-function draw(y){CUR=y;const yr=D.years[y],p=yr.per_100,c=cells(y);const arows=SEL?agencyRows(SEL,y):null,ins=SEL?insideRows(SEL):null;const rows=arows||(ins&&ins.rows)||null;const usedInside=!arows&&!!ins;
- const sq=[...$('w').children];let i=0;
- c.forEach(([k,n])=>{if(rows&&k===SEL){alloc(rows.map(r=>[r.key,r.share]),n).forEach(([rk,m])=>{const r=rows.find(x=>x.key===rk);for(let j=0;j<m;j++){const e=sq[i++];e.style.background=`var(${r.color})`;e.dataset.k=k;e.dataset.sub=rk;e.classList.remove('dim');e.classList.add('pop');}});return;}
-  for(let j=0;j<n;j++){const e=sq[i++];e.style.background=`var(${LABEL[k][1]})`;e.dataset.k=k;delete e.dataset.sub;e.classList.remove('pop');e.classList.toggle('dim',SEL&&SEL!==k);}});
- const insList=ins&&!usedInside?`<div class="subkey ins"><p class="k">Inside the ${ins.name}, fiscal ${INSIDE.fiscal_year} budget</p>${ins.rows.map(r=>`<div><i class="sw" style="background:var(${r.color})"></i><span>${r.label}</span><span class="n">${r.share.toFixed(0)}%</span></div>`).join('')}<a href="${INSIDE.url}" target="_blank" rel="noopener">Units of appropriation, OMB supporting schedules, pp. ${ins.pages[0]}-${ins.pages[1]}.</a></div>`:'';
- const fb=FUND&&FUND.buckets[SEL],ft=fb&&Object.values(fb).reduce((a,b)=>a+b,0);const fundList=fb?`<div class="subkey ins"><p class="k">Who pays for it, fiscal ${FUND.fiscal_year} budget</p>${Object.keys(SRC).filter(k=>fb[k]/ft>=0.005).map(k=>`<div><i class="sw" style="background:var(${SRC[k][1]})"></i><span>${SRC[k][0]}</span><span class="n">${(fb[k]/ft*100).toFixed(0)}%</span></div>`).join('')}<a href="${FUND.url}" target="_blank" rel="noopener">Funding summary of each unit of appropriation, OMB supporting schedules.</a></div>`:'';
- const subkey=SEL?`<div class="subkey">${rows?rows.map(r=>`<div><i class="sw" style="background:var(${r.color})"></i><span>${r.label}</span><span class="n">${usedInside?r.share.toFixed(0)+'%':'$'+(p[SEL]*r.share/100).toFixed(1)}</span></div>`).join(''):''}<a${usedInside?` href="${INSIDE.url}" target="_blank" rel="noopener"`:''}>${usedInside?`Inside the ${ins.name}: fiscal ${INSIDE.fiscal_year} budget by unit of appropriation, OMB supporting schedules, pp. ${ins.pages[0]}-${ins.pages[1]}.`:rows?`Fiscal ${y}, by agency, ${yr.budgeted?'from the adopted budget':'from the audited books'}.`:(EXPLAIN[SEL]||'')}</a></div>${insList}${fundList}`:'';
- $('key').innerHTML=c.map(([k])=>`<div class="row${SEL===k?' on':SEL?' dim':''}" data-k="${k}"><i class="sw" style="background:var(${LABEL[k][1]})"></i><span class="nm">${LABEL[k][0]}</span><span class="num">$${p[k].toFixed(0)}</span>${SEL===k?spark(k)+subkey:''}</div>`).join('');
+function shade(k,rows){const cols=B.ramp(LABEL[k][1],rows.length,{light:LABEL[k][2]});return rows.map((r,i)=>Object.assign(r,{color:r.rest?'#c9c9cb':cols[i]}));}
+function agencyRows(k,y){const a=D.years[y].agencies[k];if(!a||a.length<2)return null;const tot=a.reduce((s,x)=>s+x[1],0),top=a.slice(0,5),rest=a.slice(5).reduce((s,x)=>s+x[1],0);const r=top.map((x,i)=>({key:'a'+i,label:x[0],share:x[1]/tot*100,amt:x[1]}));if(rest>0)r.push({key:'a5',label:'Everything else in this line',share:rest/tot*100,amt:rest,rest:1});return shade(k,r);}
+function insideRows(k){const a=INSIDE&&INSIDE.agencies[TOPAG[k]];if(!a)return null;const tot=a.rows.reduce((s,x)=>s+x[1],0);return {name:a.name.replace(/'S/g,"'s").replace(/\b(Of|And|For)\b/g,m=>m.toLowerCase()),pages:a.pages,rows:shade(k,a.rows.map((x,i)=>({key:'u'+i,label:x[0],share:x[1]/tot*100,amt:x[1]/1000,rest:x[0].startsWith('Everything else')})))};}
+function spark(k){const ys=YEARS();return B.spark({ys,vals:ys.map(y=>D.years[y].per_100[k]),cur:CUR,color:`var(${LABEL[k][1]})`,aud:ys.filter(y=>!D.years[y].budgeted).length,width:$('key').clientWidth});}
+function draw(y){CUR=y;const yr=D.years[y],p=yr.per_100,c=cells(y);const arows=SEL?agencyRows(SEL,y):null,ins=SEL?insideRows(SEL):null,rows=arows||(ins&&ins.rows)||null,usedInside=!arows&&!!ins;
+ let i=0;const blocks=[];
+ c.forEach(([k,n])=>{blocks.push({start:i,n,text:SHORT[k],dark:!!LABEL[k][2],color:`var(${LABEL[k][1]})`});
+  if(rows&&k===SEL){alloc(rows.map(r=>[r.key,r.share]),n).forEach(([rk,m])=>{const r=rows.find(x=>x.key===rk);for(let j=0;j<m;j++){const e=SQ[i++];e.style.background=r.color;e.dataset.k=k;e.dataset.sub=rk;e.classList.remove('dim');e.classList.add('pop');}});return;}
+  for(let j=0;j<n;j++){const e=SQ[i++];e.style.background=`var(${LABEL[k][1]})`;e.dataset.k=k;delete e.dataset.sub;e.classList.remove('pop');e.classList.toggle('dim',!!SEL&&SEL!==k);}});
+ B.labels('w',SQ,blocks,!SEL);
+ let sub='';
+ if(SEL){const list=rows?rows.map(r=>`<div><i class="sw" style="background:${r.color}"></i><span>${r.label}</span><span class="n">${usedInside?r.share.toFixed(0)+'%':'$'+(p[SEL]*r.share/100).toFixed(1)}</span></div>`).join(''):'';
+  const cap=usedInside?`<a href="${INSIDE.url}" target="_blank" rel="noopener">Inside the ${ins.name}: fiscal ${INSIDE.fiscal_year} budget by unit of appropriation, OMB supporting schedules, pp. ${ins.pages[0]}-${ins.pages[1]}.</a>`:`<span class="cap">${rows?`Fiscal ${y}, by agency, ${yr.budgeted?'from the adopted budget':'from the audited books'}.`:(EXPLAIN[SEL]||'')}</span>`;
+  const insList=ins&&!usedInside?`<div class="subkey ins"><p class="k">Inside the ${ins.name}, fiscal ${INSIDE.fiscal_year} budget</p>${(()=>{const mx=Math.max(...ins.rows.map(r=>r.share));return ins.rows.map(r=>`<div class="mb"><span>${r.label}</span><span class="b"><i style="width:${(r.share/mx*100).toFixed(0)}%"></i></span><span class="n">${r.share.toFixed(0)}%</span></div>`).join('');})()}<a href="${INSIDE.url}" target="_blank" rel="noopener">Units of appropriation, OMB supporting schedules, pp. ${ins.pages[0]}-${ins.pages[1]}.</a></div>`:'';
+  const fb=FUND&&FUND.buckets[SEL],ft=fb&&Object.values(fb).reduce((a,b)=>a+b,0),ks=fb?Object.keys(SRC).filter(k=>fb[k]/ft>=0.005):[];
+  const fund=fb?`<div class="subkey ins"><p class="k">Who pays for it, fiscal ${FUND.fiscal_year} budget</p><div class="stack" role="img" aria-label="${ks.map(k=>SRC[k][0]+' '+(fb[k]/ft*100).toFixed(0)+'%').join(', ')}">${ks.map(k=>`<i style="width:${(fb[k]/ft*100).toFixed(1)}%;background:${SRC[k][1]}"></i>`).join('')}</div><div class="stackkey">${ks.map(k=>`<span><i style="background:${SRC[k][1]}"></i>${SRC[k][0]} ${(fb[k]/ft*100).toFixed(0)}%</span>`).join('')}</div><a href="${FUND.url}" target="_blank" rel="noopener">Funding summaries, OMB supporting schedules.</a></div>`:'';
+  sub=`<div class="subkey">${list}${cap}</div>${insList}${fund}`;}
+ $('key').innerHTML=c.map(([k])=>`<div class="row${SEL===k?' on':SEL?' dim':''}" data-k="${k}" role="button" tabindex="0" aria-pressed="${SEL===k}"><i class="sw" style="background:var(${LABEL[k][1]})"></i><span class="nm">${LABEL[k][0]}</span><span class="num">$${p[k].toFixed(0)}</span>${SEL===k?spark(k)+sub:''}</div>`).join('');
  const sch=Math.round(p.education),soc=Math.round(p.social_services),fixed=Math.round(p.pensions+p.benefits+p.debt_service),safe=Math.round(p.public_safety+p.health+p.environmental);
  $('finding').textContent=`Of every $100 New York City spends, $${sch} goes to its schools and $${soc} to social services. Pensions, benefits and debt take $${fixed}.`;
- $('lede').innerHTML=`In fiscal ${y} the city spent <b>$${(yr.total/1e6).toFixed(0)} billion</b>${yr.budgeted?' (budgeted)':''}. Schools alone were <b>$${sch}</b> of every hundred, ${sch>safe?'more':'less'} than police, fire, jails, prosecutors, hospitals and sanitation combined. Move the slider or press play to see any year since 2000.`;
- $('yv').textContent=y;$('y').value=y;document.querySelectorAll('.nav a').forEach(a=>{a.href=a.getAttribute('href').split('#')[0]+'#y='+y;});history.replaceState(null,'','#y='+y);$('bflag').textContent=yr.budgeted?'budgeted':'audited';
+ $('lede').innerHTML=`In fiscal ${y} the city spent <b>$${(yr.total/1e6).toFixed(0)} billion</b>${yr.budgeted?' (budgeted)':''}. Schools alone were <b>$${sch}</b> of every hundred, ${sch>safe?'more':'less'} than police, fire, jails, prosecutors, hospitals and sanitation combined.`;
+ $('yv').textContent=y;$('y').value=y;$('bflag').textContent=yr.budgeted?'budgeted':'audited';B.carry(y);
  hist();facts();}
 function hist(){const h=$('hist');if(!SEL){h.innerHTML='Click a line to follow it across the years and open what is inside it.';return;}
  const ys=YEARS(),f=ys[0],v0=D.years[f].per_100[SEL],v=D.years[CUR].per_100[SEL],aud=ys.filter(y=>!D.years[y].budgeted),pk=aud.reduce((a,y)=>D.years[y].per_100[SEL]>D.years[a].per_100[SEL]?y:a,aud[0]),lo=aud.reduce((a,y)=>D.years[y].per_100[SEL]<D.years[a].per_100[SEL]?y:a,aud[0]);
- const r0=Math.round(v0),r1=Math.round(v),dir=CUR===f?'the first year of the series':r1===r0?'about the same as':r1>r0?`up from $${r0}`:`down from $${r0}`;
- h.innerHTML=`<b>${LABEL[SEL][0]}</b>: $${v.toFixed(0)} of every $100 in fiscal ${CUR}${CUR===f?', '+dir:', '+dir+' in '+f}. Audited high $${D.years[pk].per_100[SEL].toFixed(0)} in ${pk}, low $${D.years[lo].per_100[SEL].toFixed(0)} in ${lo}. The dotted tail is budgeted.`;}
-function facts(){const u=$('facts');const f=SEL&&FACTS&&FACTS[SEL];if(!f||!f.length){u.innerHTML='';return;}u.innerHTML=f.map(x=>`<li>${x.fact} <a href="${x.url}" target="_blank" rel="noopener">${x.source}</a></li>`).join('');}
-$('key').addEventListener('click',e=>{const r=e.target.closest('.row');if(!r)return;SEL=SEL===r.dataset.k?null:r.dataset.k;draw(CUR);});
-$('w').addEventListener('click',e=>{const k=e.target.dataset.k;if(!k)return;SEL=SEL===k?null:k;draw(CUR);});
-const tip=$('tip');
-$('w').addEventListener('mousemove',e=>{const k=e.target.dataset.k;if(!k){tip.style.display='none';return;}const yr=D.years[CUR];tip.style.display='block';tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY+12)+'px';const sb=e.target.dataset.sub,rows=sb&&(agencyRows(k,CUR)||(insideRows(k)||{}).rows),r=rows&&rows.find(x=>x.key===sb);tip.innerHTML=r?`<b>${r.label}</b><br>$${(r.amt/1e6).toFixed(2)} billion${sb.startsWith('u')?' in the fiscal '+INSIDE.fiscal_year+' budget':' in fiscal '+CUR}, ${r.share.toFixed(0)}% of this line`:`<b>${LABEL[k][0]}</b><br>$${yr.per_100[k].toFixed(1)} of every $100 in fiscal ${CUR}<br>One square is about $${(yr.total/100/1e6).toFixed(2)} billion`;});
-$('w').addEventListener('mouseleave',()=>tip.style.display='none');
-$('play').addEventListener('click',e=>{if(timer){clearInterval(timer);timer=null;e.target.textContent='Play';return;}const ys=YEARS();let i=CUR>=ys[ys.length-1]?0:ys.indexOf(CUR);e.target.textContent='Pause';draw(ys[i]);timer=setInterval(()=>{i++;if(i>=ys.length){clearInterval(timer);timer=null;e.target.textContent='Play';return;}draw(ys[i]);},600);});
-$('y').addEventListener('input',e=>{if(timer){clearInterval(timer);timer=null;$('play').textContent='Play';}draw(+e.target.value);});
-let rz;addEventListener('resize',()=>{if(!SEL)return;clearTimeout(rz);rz=setTimeout(()=>draw(CUR),120);});
+ const r0=Math.round(v0),r1=Math.round(v),dir=CUR===f?'the first year of the series':r1===r0?'about the same as in '+f:r1>r0?`up from $${r0} in ${f}`:`down from $${r0} in ${f}`;
+ h.innerHTML=`<b>${LABEL[SEL][0]}</b>: $${v.toFixed(0)} of every $100 in fiscal ${CUR}, ${dir}. Audited high $${D.years[pk].per_100[SEL].toFixed(0)} in ${pk}, low $${D.years[lo].per_100[SEL].toFixed(0)} in ${lo}. The dotted tail is budgeted.`;}
+function facts(){const u=$('facts'),f=SEL&&FACTS&&FACTS[SEL];u.innerHTML=f&&f.length?f.map(x=>`<li>${x.fact} <a href="${x.url}" target="_blank" rel="noopener">${x.source}</a></li>`).join(''):'';}
+function pick(k){SEL=SEL===k?null:k;draw(CUR);const r=$('key').querySelector(`.row[data-k="${k}"]`);if(r&&document.activeElement&&document.activeElement!==document.body)r.focus({preventScroll:true});}
+B.act($('key'),'.row',(r,e)=>{if(e.target.closest('a'))return;pick(r.dataset.k);});
+$('w').addEventListener('click',e=>{const k=e.target.dataset.k;if(k)pick(k);});
+B.peek($('key'),()=>SQ,()=>!!SEL);
+B.tipper($('w'),$('tip'),t=>{const k=t.dataset.k;if(!k)return '';const yr=D.years[CUR],sb=t.dataset.sub,rows=sb&&(agencyRows(k,CUR)||(insideRows(k)||{}).rows),r=rows&&rows.find(x=>x.key===sb);
+ return r?`<b>${r.label}</b><br>$${(r.amt/1e6).toFixed(2)} billion${sb[0]==='u'?' in the fiscal '+INSIDE.fiscal_year+' budget':' in fiscal '+CUR}, ${r.share.toFixed(0)}% of this line`:`<b>${LABEL[k][0]}</b><br>$${yr.per_100[k].toFixed(1)} of every $100 in fiscal ${CUR}<br>One square is about $${(yr.total/100/1e6).toFixed(2)} billion`;});
+let rz;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>draw(CUR),150);});
 
-function movement3(){const sq=grid('cw'),y=2027,p=D.years[y].per_100;let city=0,i=0;
+function stats4(o){$('sec-s').hidden=false;$('stats4').innerHTML=o.items.map(x=>`<div><p class="k">${x.k}</p><p class="v">${x.v}</p><p>${x.p}</p></div>`).join('');const seen={};$('statsnote').innerHTML='Sources: '+o.items.filter(x=>!seen[x.src]&&(seen[x.src]=1)).map(x=>`<a href="${x.url}" target="_blank" rel="noopener">${x.src}</a>`).join('; ')+'.';}
+function movement3(){const sq=B.grid('cw'),y=2027,p=D.years[y].per_100;let city=0,i=0;
  $('sec-c').hidden=false;
  cells(y).forEach(([k,n])=>{const a=CTRL[k]&&CTRL[k].fixed;if(!a)city+=p[k];for(let j=0;j<n;j++){const e=sq[i++];e.style.background=`var(${LABEL[k][1]})`;e.classList.toggle('dim',!!a);}});
- $('subc').textContent=CTRL.sub||`The same $100, fiscal ${y} budget, with the lines that state law, contracts or court orders fix greyed out.`;
+ $('subc').textContent=CTRL.sub;
+ $('big2').innerHTML=`<div><p class="v">$${Math.round(city)}</p><p class="k">sits in lines City Hall can resize without a state law, a contract or a court</p></div><div><p class="v mutev">$${100-Math.round(city)}</p><p class="k">is spoken for before the year starts: pensions, health insurance and debt service</p></div>`;
+ $('chist').innerHTML=CTRL.finding2||'';
  if(CTRL.quote)$('pull').innerHTML=`"${CTRL.quote}"<cite>${CTRL.quote_cite}</cite>`;else $('pull').style.display='none';
- $('chist').innerHTML=CTRL.finding?CTRL.finding.replace('{city}',Math.round(city)):`About <b>$${Math.round(city)}</b> of every $100 sits in lines City Hall can resize on its own.`;
  $('ct').innerHTML=Object.keys(LABEL).map(k=>{const r=CTRL[k];if(!r)return '';const what=r.alone+(r.limits?` <span style="color:var(--mute)">${r.limits}</span>`:'');return `<tr class="${r.fixed?'albrow':''}"><td><i class="sw" style="background:var(${LABEL[k][1]})"></i>${LABEL[k][0]}<span style="color:var(--mute)"> $${p[k].toFixed(0)}</span></td><td class="who">${r.setter}<span class="sub2">${r.who}</span></td><td>${what}</td></tr>`;}).join('');
  $('cnote').textContent=CTRL.note||'';}
-function strip(o){$('strip').innerHTML=o.items.map(x=>`<div><p class="k">${x.k}</p><p class="v">${x.v}</p><p>${x.p} <a href="${x.url}" target="_blank" rel="noopener">${x.src}</a></p></div>`).join('');$('offnote').innerHTML=o.note||'';}
-function method(){const rows=[['Schools','Department of Education','Department of Education (040)'],['Social services','Social Services, Homeless Services, Children\'s Services, Aging','same agencies'],['Police, fire, jails and prosecutors','Police, Fire, Correction, district attorneys, Criminal Justice, Probation, courts and related offices','same agencies, plus the new Office of Community Safety'],['Pensions','Pension contributions (095)','Pension contributions (095)'],['Health insurance, claims and other benefits','Fringe benefits and other benefit payments, judgments and claims, lease payments, Miscellaneous (098)','Miscellaneous budget (098), which also carries reserves and other citywide costs'],['Debt service','Transfers to the General Debt Service Fund and nonmajor debt service funds, including Building Aid Revenue Bonds and Future Tax Secured bonds','Debt service (099)'],['Health and hospitals','Health and Mental Hygiene, Health + Hospitals subsidy, Medical Examiner','same agencies'],['General government','Mayoralty, Citywide Administrative Services, Technology, Finance, Law, Elections, Council, 59 community boards and about 30 other offices','same agencies'],['Sanitation, water and sewers','Sanitation, Environmental Protection','same agencies'],['Housing, transportation, CUNY, parks, libraries','Housing Preservation, Buildings, Transportation, CUNY community colleges, Parks, Cultural Affairs, the three library systems','same agencies']];
- $('method').innerHTML=`<p>Each square is one percent of General Fund spending for the year, operating expenditures plus transfers for debt service, rounded to whole squares with the largest remainders filled first. Fiscal 2000 to 2025 are audited figures from the Comptroller's <a href="https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf">annual comprehensive financial reports</a> (General Fund expenditures by function and agency, statistical section). Fiscal 2026 and 2027 are the Office of Management and Budget's <a href="https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/erc6-26.pdf">June 2026 adopted budget</a>, fiscal 2026 as modified and fiscal 2027 as adopted, with each agency assigned to a function by the audited report's own classification. The ten buckets:</p>
- <table class="t"><thead><tr><th>Bucket</th><th>Audited report lines</th><th>Budget lines</th></tr></thead><tbody>${rows.map(r=>`<tr><td class="b">${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</tbody></table>
- <p>Agency splits inside a line are the same schedules' agency rows: the five largest and everything else. The unit-of-appropriation shares and the who-pays-for-it split come from the fiscal 2027 adopted budget's <a href="https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/ss6-26.pdf">supporting schedules</a>: every unit carries an appropriation and a funding summary (city funds, state grants, federal grants, other grants, intra-city sales). Intra-city sales are left out and capital inter-fund agreements are counted with city funds. Citywide, that puts city funds at $77 of every $100, state grants at $16 and federal grants at $6. For 2026 and 2027 the budget's Miscellaneous line (098) is split by what it holds: fringe benefits, the collective-bargaining reserve, judgments and the general reserve stay in benefits; transit subsidies move to everything else, where the audited books file the Transit Authority payment; and the building-aid bond and Hudson Yards costs move to debt service, where the audited books file them. The companion page's <a href="../nyc-who-pays/research/">research notes</a> and this page's <a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-where-it-goes/research">notes</a> carry a URL and quotation for every figure shown.</p>`;}
-function tile(){fetch('../nyc-budget-since-2000/data/real_per_resident.json').then(r=>r.json()).then(d=>{const C={education:'#217ebe',social_services:'#e7466d',public_safety:'#394882',pensions:'#ff7c53',benefits:'#cea9be',debt_service:'#050507',health:'#dde44c',general_government:'#9b9fbc',environmental:'#707175',everything_else:'#c9c9cb'};const p=d.years['2025'].real_per_resident;$('mini').innerHTML=alloc(Object.keys(C).map(k=>[k,p[k]])).map(([k,n])=>`<i style="background:${C[k]}"></i>`.repeat(n)).join('');}).catch(()=>{});}
+function strip(o){$('strip').innerHTML=o.items.map(x=>`<div><p class="k">${x.k}</p><p class="v">${x.v}</p><p>${x.p} <a href="${x.url}" target="_blank" rel="noopener" style="color:var(--mute);font-size:.75rem">${x.src}</a></p></div>`).join('');$('offnote').innerHTML=o.note||'';}
+function tile(){fetch('../nyc-budget-since-2000/data/real_per_resident.json').then(r=>r.json()).then(d=>{const p=d.years['2025'].real_per_resident;B.mini('mini',Object.keys(B.SPE).map(k=>[B.SPE[k],p[k]]));}).catch(()=>{});}
+function method(){const rows=[['Schools','Department of Education','Department of Education (040)'],['Social services','Social Services, Homeless Services, Children\'s Services, Aging','same agencies'],['Police, fire, jails and prosecutors','Police, Fire, Correction, the five district attorneys and special narcotics prosecutor, Criminal Justice, Probation, Emergency Management, the Civilian Complaint Review Board and related offices (the courts themselves are state-funded)','same agencies, plus the new Office of Community Safety'],['Pensions','Pension contributions (095)','Pension contributions (095)'],['Health insurance, claims and other benefits','Fringe benefits and other benefit payments, judgments and claims, lease payments, Miscellaneous (098)','Miscellaneous budget (098) except its transit and bond lines'],['Debt service','Transfers to the General Debt Service Fund and nonmajor debt service funds, including Building Aid Revenue Bonds and Future Tax Secured bonds','Debt service (099), plus the Miscellaneous budget\'s building-aid and Hudson Yards lines'],['Health and hospitals','Health and Mental Hygiene, Health + Hospitals subsidy, Medical Examiner','same agencies'],['General government','Mayoralty, Citywide Administrative Services, Technology, Finance, Law, Elections, Council, 59 community boards and about 30 other offices','same agencies'],['Sanitation, water and sewers','Sanitation, Environmental Protection','same agencies'],['Housing, transportation, CUNY, parks, libraries','Housing Preservation, Buildings, Transportation and the transit subsidy, CUNY community colleges, Parks, Cultural Affairs, the three library systems','same agencies, plus the Miscellaneous budget\'s transit subsidies']];
+ $('method').innerHTML=`<p>Each square is one percent of General Fund spending for the year, operating expenditures plus transfers for debt service, rounded to whole squares with the largest remainders filled first. Fiscal 2000 to 2025 are audited figures from the Comptroller's <a href="https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf">annual comprehensive financial reports</a> (General Fund expenditures by function and agency). Fiscal 2026 and 2027 are the Office of Management and Budget's <a href="https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/erc6-26.pdf">June 2026 adopted budget</a>, fiscal 2026 as modified and fiscal 2027 as adopted, with each agency assigned to a function by the audited report's own classification. Trend lines start at zero.</p>
+ <details class="more"><summary>The ten buckets, line by line</summary><table class="t"><thead><tr><th>Bucket</th><th>Audited report lines</th><th>Budget lines</th></tr></thead><tbody>${rows.map(r=>`<tr><td class="b">${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</tbody></table></details>
+ <p>Agency splits inside a line are the same schedules' agency rows: the five largest and everything else. The unit-of-appropriation shares and the who-pays-for-it split come from the fiscal 2027 adopted budget's <a href="https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/ss6-26.pdf">supporting schedules</a>: every unit carries an appropriation and a funding summary (city funds, state grants, federal grants, other grants, intra-city sales). Intra-city sales are left out and capital inter-fund agreements are counted with city funds. Citywide, that puts city funds at $77 of every $100, state grants at $16 and federal grants at $6.</p>
+ <p>For 2026 and 2027 the budget's Miscellaneous line (098) is split by what it holds: fringe benefits, the collective-bargaining reserve, judgments and the general reserve stay in benefits; transit subsidies move to everything else, where the audited books file the Transit Authority payment; and the building-aid bond and Hudson Yards costs move to debt service, where the audited books file them. This page's <a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-where-it-goes/research">research notes</a> carry a URL and quotation for every figure shown, and every figure was re-derived from the primary documents in a blind check.</p>`;}
 </script></body></html>

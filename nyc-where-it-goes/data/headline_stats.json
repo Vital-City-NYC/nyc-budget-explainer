@@ -1,0 +1,32 @@
+{
+ "items": [
+  {
+   "k": "Schools",
+   "v": "$35,796",
+   "p": "spent per pupil in fiscal 2024, about double the national average of $17,619 and the highest among the 100 largest school systems.",
+   "src": "Census Bureau, school finances",
+   "url": "https://www.census.gov/newsroom/press-releases/2026/school-system-finances.html"
+  },
+  {
+   "k": "Shelter",
+   "v": "85,066",
+   "p": "people slept in city shelters on an average night in fiscal 2026, up from 45,563 in fiscal 2022.",
+   "src": "Mayor's Management Report",
+   "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf"
+  },
+  {
+   "k": "Cash assistance",
+   "v": "566,500",
+   "p": "New Yorkers were receiving cash assistance in June 2026, 6 percent fewer than a year earlier.",
+   "src": "Mayor's Management Report",
+   "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf"
+  },
+  {
+   "k": "Medicaid",
+   "v": "$6.8 billion",
+   "p": "is the city's own share of Medicaid in fiscal 2027. The state capped it at the 2015 level and pays the growth.",
+   "src": "Comptroller, fiscal 2027 budget comments",
+   "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/Comments-on-New-York-Citys-Fiscal-Year-2027-Adopted-Budget.pdf"
+  }
+ ]
+}

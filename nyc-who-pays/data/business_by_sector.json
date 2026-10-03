@@ -46,5 +46,15 @@
    "tax_share": 8.8,
    "color": "--c-fees"
   }
- ]
+ ],
+ "finance_taxpayer_share": 5.4,
+ "taxpayers": 391778,
+ "total_liability_m": 8587.1,
+ "cor_top1_share": 93,
+ "cor_top1_firms": 1912,
+ "cor_top1_amount_bn": 4.24,
+ "quotes": {
+  "top1": "The top 1 percent of taxpayers, or 1,912 firms, accounted for $4.24 billion, or 93 percent of total liability. (Business Corporation Tax, highlights p.1)",
+  "finance": "Finance & Insurance 21,308 5.4 % $3,319,281 38.7 % (Table 1)"
+ }
 }

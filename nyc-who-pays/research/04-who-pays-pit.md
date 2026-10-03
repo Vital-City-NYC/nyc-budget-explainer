@@ -122,3 +122,5 @@ UNVERIFIED / superseded: NYC Open Data "Tax Liability By AGI Range" (https://dat
 - The sentence that the state's rates are "higher and more graduated" rests on the state's published schedule (top rate above the city's 3.876), which this session did not download; verify against tax.ny.gov before publishing or soften to "the state income tax, which is separate".
 
 Blind-check note (2026-10-02): the state schedule has nine rates from 4 to 10.9 percent (top bracket at $25 million), per Form IT-201 instructions read by the checker; the page now says so. Of the $1,699 million drop in the top band's liability after refundable credits, $1,575 million is the PTET credit and $125 million the UBT credit (IBO workbook), so "mostly," not "almost entirely."
+
+Fair-share strip (added Oct 3 2026): 37% / 0.9% / 33% from table B above; 3.876% top rate from $50,000 single from section F; 93% and 1,912 firms from section D ("The top 1 percent of taxpayers, or 1,912 firms, accounted for $4.24 billion, or 93 percent of total liability", re-read in the DOF PDF Oct 3); 14% of levy on 50% of market value from research/01 table A.

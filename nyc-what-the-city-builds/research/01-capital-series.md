@@ -9,3 +9,5 @@ Caveat on the page: these are cash expenditures in the year, not commitments; th
 Self-audit: HIGH for every number (extracted cells with page numbers, sums asserted). Editorial: labels (schools and CUNY; housing and buildings; water, sewers and sanitation; streets, bridges and transit).
 
 Blind-check note (2026-10-02): the per-capita repo records refunding debt issued as 0 for 2024 and 2025; the ACFR shows 1,697,190 and 6,970,750 (thousands). The page does not display refunding debt. The FY2005 CAFR labels the fiscal 2000 bonds line "Proceeds from sale of bonds" (3,125,230).
+
+Year bars (added Oct 3 2026): capital_total x that year's deflator from the same BLS New York-area CPI series as part three (fiscal 2000 deflator 1.89553): fiscal 2000 $4,809,483 thousand = $9.1 billion in fiscal 2025 dollars; fiscal 2025 $15.6 billion; ratio 1.7. CPI is a general price index, not a construction-cost index; the heading says "after general inflation."
