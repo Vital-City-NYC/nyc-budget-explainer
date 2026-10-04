@@ -130,3 +130,6 @@ table.t{width:100%;border-collapse:collapse;font-size:.88rem}
  .rrow{grid-template-columns:96px minmax(0,1fr) 92px;gap:8px}.rrow .nm{font-size:.74rem}.rrow .num{font-size:1.1rem}.rrow .num small{font-size:.6rem;white-space:nowrap}.bar i{width:7px;height:7px}
  .big2 .v{font-size:2.1rem}
 }
+
+@media(prefers-reduced-motion:reduce){.waf i,.bar i{transition:none!important;transition-delay:0s!important}.waf i.pop{animation:none}::view-transition-old(root),::view-transition-new(root){animation:none}}
+.getdata{font-size:.8rem;margin:0 0 10px}.getdata a{margin-right:12px}

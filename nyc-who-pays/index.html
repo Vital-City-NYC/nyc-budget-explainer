@@ -3,12 +3,12 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Who pays for New York City</title>
 <meta name="description" content="For every $100 the city takes in, where the money comes from, who pays each tax, and what the mayor can change without Albany.">
-<meta property="og:title" content="Who pays for New York City"><meta property="og:description" content="For every $100 the city takes in: where it comes from, who pays each tax, and what the mayor can change without Albany."><meta property="og:type" content="article"><meta name="twitter:card" content="summary">
+<meta property="og:title" content="Who pays for New York City"><meta property="og:description" content="For every $100 the city takes in: where it comes from, who pays each tax, and what the mayor can change without Albany."><meta property="og:type" content="article"><meta property="og:image" content="https://vital-city-nyc.github.io/nyc-budget-explainer/nyc-who-pays/shared/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://vital-city-nyc.github.io/nyc-budget-explainer/nyc-who-pays/shared/og.png">
 <link rel="prefetch" href="../nyc-where-it-goes/index.html"><link rel="prefetch" href="../nyc-where-it-goes/data/spending_per_100.json">
 <link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
 <link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/tokens/tokens.css">
 <link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/charts/chart-theme.css">
-<link rel="stylesheet" href="shared/budget.css?v=1003d">
+<link rel="stylesheet" href="shared/budget.css?v=1003f">
 </head>
 <body><div class="card">
 <nav class="nav" aria-label="Parts"><a href="../nyc-who-pays/index.html" class="on" aria-current="page">Part one<b>Who pays</b></a><a href="../nyc-where-it-goes/index.html">Part two<b>Where it goes</b></a><a href="../nyc-budget-since-2000/index.html">Part three<b>Since 2000</b></a><a href="../nyc-what-the-city-builds/index.html">Part four<b>The capital budget</b></a></nav>
@@ -32,8 +32,8 @@
 </section>
 
 <section class="sec" id="sec-k" hidden>
-<h2>Four numbers behind the fair-share argument</h2>
-<p class="sub">Each from the latest year the city has published.</p>
+<h2>How concentrated is each tax?</h2>
+<p class="sub">Four numbers, each from the latest year the city has published.</p>
 <div class="stats" id="conc"></div>
 <p class="note" id="concnote"></p>
 </section>
@@ -78,7 +78,7 @@
 <section class="sec"><h2>Method</h2><div class="method" id="method"></div></section>
 <section class="sec"><a class="tile" href="../nyc-where-it-goes/index.html"><span class="mini" id="mini"></span><span><span class="k">Next</span><span class="h">Where the money goes</span><p>The same $100, by what it buys: schools, social services, police, pensions, debt, and what sits off the budget.</p></span></a></section>
 </div>
-<script src="shared/budget.js?v=1003d"></script>
+<script src="shared/budget.js?v=1003f"></script>
 <script>
 B.embed('nyc-who-pays');
 const {$,alloc}=B;
@@ -90,7 +90,7 @@ let D,CUR=2025,SEL=null,CTRL=null,SQ=[],PT=null,IT=null,BIZ=null;const BREAK={};
 const YEARS=()=>Object.keys(D.years).map(Number).sort();
 const clamp=y=>Math.min(2027,Math.max(2000,y));
 
-fetch('data/revenue_per_100.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{D=d;SQ=B.grid('w');draw(clamp(B.Y0));method();tile();
+fetch('data/revenue_per_100.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{D=d;SQ=B.grid('w');if(B.K0&&LABEL[B.K0])SEL=B.K0;draw(clamp(B.Y0));method();tile();
  B.player({years:YEARS,cur:()=>CUR,draw,range:$('y'),btn:$('play')});
  const J=u=>fetch(u,{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null);
  J('data/control.json').then(c=>{if(c){CTRL=c;$('alb').style.display='block';movement3();draw(CUR);}});
@@ -119,7 +119,7 @@ function draw(y){CUR=y;const yr=D.years[y],p=yr.per_100,c=cells(y),alb=CTRL&&$('
  const own=Math.round(p.property_tax+p.personal_income_tax+p.sales_tax+p.business_taxes+p.other_taxes),aid=Math.round(p.state_aid+p.federal_aid),prop=Math.round(p.property_tax);
  $('finding').textContent=`New York City collects $${own} of every $100 through its own taxes. Albany writes the rates on most of them.`;
  $('lede').innerHTML=`In fiscal ${y} the city took in <b>$${(yr.total/1e6).toFixed(0)} billion</b>${yr.budgeted?' (budgeted)':''}. State and federal aid supplied <b>$${aid}</b> of every hundred, and fees and fines most of the rest. Only the property tax, <b>$${prop}</b>, has a rate City Hall and the Council can set on their own.`;
- $('yv').textContent=y;$('y').value=y;$('bflag').textContent=yr.budgeted?'budgeted':'audited';B.carry(y);
+ $('yv').textContent=y;$('y').value=y;$('bflag').textContent=yr.budgeted?'budgeted':'audited';B.carry(y,SEL);
  hist();}
 function hist(){const h=$('hist');if(!SEL){h.innerHTML='Click a source to follow it across the years and see who pays it.';return;}
  const ys=YEARS(),f=ys[0],v0=D.years[f].per_100[SEL],v=D.years[CUR].per_100[SEL],aud=ys.filter(y=>!D.years[y].budgeted),pk=aud.reduce((a,y)=>D.years[y].per_100[SEL]>D.years[a].per_100[SEL]?y:a,aud[0]),lo=aud.reduce((a,y)=>D.years[y].per_100[SEL]<D.years[a].per_100[SEL]?y:a,aud[0]);
@@ -198,5 +198,6 @@ function method(){const rows=[['Property tax','Real estate taxes','General prope
  $('method').innerHTML=`<p>Each square is one percent of General Fund revenue for the year, rounded to whole squares with the largest remainders filled first. Fiscal 2000 to 2025 are audited figures from the Comptroller's <a href="https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf">annual comprehensive financial reports</a> (ten-year revenue trend, statistical section). Fiscal 2026 and 2027 are the Office of Management and Budget's <a href="https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/erc6-26.pdf">June 2026 adopted budget</a>, fiscal 2026 as modified and fiscal 2027 as adopted. Trend lines start at zero.</p>
  <details class="more"><summary>The eight buckets, line by line</summary><table class="t"><thead><tr><th>Bucket</th><th>Audited report lines</th><th>Budget lines</th></tr></thead><tbody>${rows.map(r=>`<tr><td class="b">${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</tbody></table></details>
  <p>The one break between audited and budgeted years: the audited report counts the pass-through entity tax (about $2 of every $100 in fiscal 2025) as a business tax, while the budget counts it as personal income tax. That, not a policy change, is most of why business taxes fall and income tax rises between 2025 and 2026. Tax audit revenue is folded into each tax in the audited report and is a separate budget line, filed here under other taxes.</p>
- <p>Who pays each tax: property tax by class is the Department of Finance's <a href="https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf">annual report on the real property tax</a>, fiscal 2026; income tax by income band is the Independent Budget Office's <a href="https://a860-gpp.nyc.gov/concern/nyc_government_publications/pv63g542d">tables on residents' income and tax liability</a>, tax year 2023; business taxes by sector are the Department of Finance's <a href="https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2022.pdf">statistical profiles of the business income taxes</a>, tax year 2022. When a source is opened in the first chart, its squares are split with those latest shares whatever year the slider is on. Who controls each source draws on the Independent Budget Office, the Department of Finance and the Comptroller. The project's <a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-who-pays/research">research notes</a> carry a URL and quotation for every figure on this page, and every figure was re-derived from the primary documents in a blind check.</p>`;}
+ <p>Who pays each tax: property tax by class is the Department of Finance's <a href="https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf">annual report on the real property tax</a>, fiscal 2026; income tax by income band is the Independent Budget Office's <a href="https://a860-gpp.nyc.gov/concern/nyc_government_publications/pv63g542d">tables on residents' income and tax liability</a>, tax year 2023; business taxes by sector are the Department of Finance's <a href="https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2022.pdf">statistical profiles of the business income taxes</a>, tax year 2022. When a source is opened in the first chart, its squares are split with those latest shares whatever year the slider is on. Who controls each source draws on the Independent Budget Office, the Department of Finance and the Comptroller. The project's <a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-who-pays/research">research notes</a> carry a URL and quotation for every figure on this page, and every figure was re-derived from the primary documents in a blind check. Documents were downloaded and read on October 2 and 3, 2026.</p>
+ <p class="getdata"><b>Get the data:</b> <a href="data/revenue_per_100.json">revenue by source, 2000-2027</a><a href="data/property_tax_by_class.json">property tax by class</a><a href="data/pit_by_income.json">income tax by band</a><a href="data/business_by_sector.json">business taxes by sector</a><a href="data/aid_by_function.json">aid by purpose</a><a href="https://github.com/Vital-City-NYC/nyc-budget-explainer">code and method</a></p>`;}
 </script></body></html>

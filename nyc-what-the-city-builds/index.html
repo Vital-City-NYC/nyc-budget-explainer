@@ -3,12 +3,12 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>New York City's capital budget</title>
 <meta name="description" content="The capital budget, fiscal 2000 to 2025: for every $100 of building, what it buys, and how it is paid for.">
-<meta property="og:title" content="New York City's capital budget"><meta property="og:description" content="For every $100 the city builds: what it buys, and how it is paid for."><meta property="og:type" content="article"><meta name="twitter:card" content="summary">
+<meta property="og:title" content="New York City's capital budget"><meta property="og:description" content="For every $100 the city builds: what it buys, and how it is paid for."><meta property="og:type" content="article"><meta property="og:image" content="https://vital-city-nyc.github.io/nyc-budget-explainer/nyc-who-pays/shared/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://vital-city-nyc.github.io/nyc-budget-explainer/nyc-who-pays/shared/og.png">
 <link rel="prefetch" href="../nyc-who-pays/index.html">
 <link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
 <link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/tokens/tokens.css">
 <link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/charts/chart-theme.css">
-<link rel="stylesheet" href="../nyc-who-pays/shared/budget.css?v=1003d">
+<link rel="stylesheet" href="../nyc-who-pays/shared/budget.css?v=1003f">
 <style>.key{min-height:370px}</style>
 </head>
 <body><div class="card">
@@ -36,14 +36,14 @@
 <section class="sec"><h2>Method</h2><div class="method" id="method"></div></section>
 <section class="sec"><a class="tile" href="../nyc-who-pays/index.html"><span class="mini" id="mini"></span><span><span class="k">Back to the start</span><span class="h">Who pays</span><p>The $100 of revenue, and who pays each tax.</p></span></a></section>
 </div>
-<script src="../nyc-who-pays/shared/budget.js?v=1003d"></script>
+<script src="../nyc-who-pays/shared/budget.js?v=1003f"></script>
 <script>
 B.embed('nyc-what-the-city-builds');
 const {$,alloc}=B;
 const LABEL={education:['Schools and CUNY','--c-edu'],housing:['Housing and buildings','--c-soc'],environmental:['Water, sewers and sanitation','--c-env'],transportation:['Streets, bridges and transit','--c-saf'],general_government:['General government','--c-gov',1],public_safety:['Police, fire and jails','--c-debt'],parks:['Parks, recreation and culture','--c-hlth',1],health:['Health and hospitals','--c-ben',1],social_services:['Social services','--c-pen'],libraries:['Libraries','--c-else',1],other_capital:['Other','--c-else',1]};
 const SHORT={education:'Schools',housing:'Housing',environmental:'Water and sewers',transportation:'Streets and transit',general_government:'Government',public_safety:'Police, fire, jails',parks:'Parks',health:'Health',social_services:'Social services',libraries:'Libraries',other_capital:'Other'};
 let D,CUR=2025,SEL=null,SQ=[];const YEARS=()=>Object.keys(D.years).map(Number).sort();
-fetch('data/capital_per_100.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{D=d;SQ=B.grid('w');cols();draw(Math.min(2025,Math.max(2000,B.Y0)));method();tile();
+fetch('data/capital_per_100.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{D=d;SQ=B.grid('w');cols();if(B.K0&&LABEL[B.K0])SEL=B.K0;draw(Math.min(2025,Math.max(2000,B.Y0)));method();tile();
  B.player({years:YEARS,cur:()=>CUR,draw,range:$('y'),btn:$('play')});});
 const real=y=>D.years[y].total*D.years[y].deflator/1e6;
 function cells(y){const p=D.years[y].per_100;return alloc(Object.keys(LABEL).map(k=>[k,p[k]||0]));}
@@ -58,7 +58,7 @@ function draw(y){CUR=y;const yr=D.years[y],p=yr.per_100,c=cells(y);let i=0;const
  const bn=yr.total/1e6,bonds=(yr.borrowing&&yr.borrowing.bonds_issued||0)/1e6,ds=yr.debt_service/yr.operating_total*100;
  $('finding').textContent=`New York City spent $${bn.toFixed(1)} billion on construction and equipment in fiscal ${y}. Schools took $${Math.round(p.education)} of every $100 and housing $${Math.round(p.housing)}.`;
  $('lede').innerHTML=`That sits beside the $${(yr.operating_total/1e6).toFixed(0)} billion operating budget in part two. The city sold <b>$${bonds.toFixed(1)} billion</b> of bonds that year, and paying off earlier bonds took <b>$${ds.toFixed(0)}</b> of every $100 it spent on operations.`;
- $('yv').textContent=y;$('y').value=y;B.carry(y);
+ $('yv').textContent=y;$('y').value=y;B.carry(y,SEL);
  [...$('cols').children].forEach(e=>e.classList.toggle('on',+e.dataset.y===y));
  $('strip').innerHTML=[['Capital spending',`$${bn.toFixed(1)} billion`,`in fiscal ${y}, in that year's dollars${y<2025?`; $${real(y).toFixed(1)} billion in 2025 dollars`:''}.`],['Bonds sold',`$${bonds.toFixed(1)} billion`,`of new long-term debt that year, before refundings.`],['Debt service',`$${ds.toFixed(1)} of $100`,`of operating spending went to interest and principal on earlier borrowing.`]].map(x=>`<div><p class="k">${x[0]}</p><p class="v">${x[1]}</p><p>${x[2]}</p></div>`).join('');
  $('hist').innerHTML=SEL?`<b>${LABEL[SEL][0]}</b>: $${(p[SEL]||0).toFixed(0)} of every $100 of capital spending in fiscal ${y}, about $${((p[SEL]||0)/100*bn).toFixed(2)} billion.`:'Click a line to follow it across the years.';}
@@ -68,6 +68,7 @@ $('w').addEventListener('click',e=>{const k=e.target.dataset.k;if(k)pick(k);});
 B.peek($('key'),()=>SQ,()=>!!SEL);
 B.tipper($('w'),$('tip'),t=>{const k=t.dataset.k;if(!k)return '';const yr=D.years[CUR];return `<b>${LABEL[k][0]}</b><br>$${(yr.per_100[k]||0).toFixed(1)} of every $100 in fiscal ${CUR}<br>One square is about $${(yr.total/100/1e6).toFixed(2)} billion`;});
 let rz;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>draw(CUR),150);});
-function method(){$('method').innerHTML=`<p>Capital spending is the Comptroller's Capital Projects Fund expenditure schedule by function, fiscal 2000 to 2025, from the <a href="https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf">annual comprehensive financial reports</a> (the 2005, 2015 and 2025 editions cover the series). It is cash spent in the year, not commitments, so it runs below the capital commitment plan the city announces. Schools include CUNY; housing is Housing Preservation and Development plus Buildings; water, sewers and sanitation are Environmental Protection and Sanitation; streets, bridges and transit are Transportation. The water system's own borrowing is not in the bonds figure. Bonds sold are the governmental funds' "principal amount of bonds issued" (labelled "proceeds from sale of bonds" in the older reports), before refundings. Debt service is the General Fund transfer to the debt service funds, as in part two. The yearly bars are converted to fiscal 2025 dollars with the same New York-area consumer price index as part three; the squares and the strip are in each year's own dollars. Bars and trend lines start at zero. Citations by page in the <a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-what-the-city-builds/research">research notes</a>.</p>`;}
+function method(){$('method').innerHTML=`<p>Capital spending is the Comptroller's Capital Projects Fund expenditure schedule by function, fiscal 2000 to 2025, from the <a href="https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf">annual comprehensive financial reports</a> (the 2005, 2015 and 2025 editions cover the series). It is cash spent in the year, not commitments, so it runs below the capital commitment plan the city announces. Schools include CUNY; housing is Housing Preservation and Development plus Buildings; water, sewers and sanitation are Environmental Protection and Sanitation; streets, bridges and transit are Transportation. The water system's own borrowing is not in the bonds figure. Bonds sold are the governmental funds' "principal amount of bonds issued" (labelled "proceeds from sale of bonds" in the older reports), before refundings. Debt service is the General Fund transfer to the debt service funds, as in part two. The yearly bars are converted to fiscal 2025 dollars with the same New York-area consumer price index as part three; the squares and the strip are in each year's own dollars. Bars and trend lines start at zero. Citations by page in the <a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-what-the-city-builds/research">research notes</a>. Documents were downloaded and read on October 2 and 3, 2026.</p>
+ <p class="getdata"><b>Get the data:</b> <a href="data/capital_per_100.json">capital spending by function, 2000-2025</a><a href="https://github.com/Vital-City-NYC/nyc-budget-explainer">code and method</a></p>`;}
 function tile(){fetch('../nyc-who-pays/data/revenue_per_100.json').then(r=>r.json()).then(d=>{const p=d.years['2025'].per_100;B.mini('mini',Object.keys(B.REV).map(k=>[B.REV[k],p[k]]));}).catch(()=>{});}
 </script></body></html>

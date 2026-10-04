@@ -16,23 +16,23 @@
   "fn": "general_government"
  },
  "010": {
-  "name": "Borough President\u2014 Manhattan",
+  "name": "Borough President— Manhattan",
   "fn": "general_government"
  },
  "011": {
-  "name": "Borough President\u2014 Bronx",
+  "name": "Borough President— Bronx",
   "fn": "general_government"
  },
  "012": {
-  "name": "Borough President\u2014 Brooklyn",
+  "name": "Borough President— Brooklyn",
   "fn": "general_government"
  },
  "013": {
-  "name": "Borough President\u2014 Queens",
+  "name": "Borough President— Queens",
   "fn": "general_government"
  },
  "014": {
-  "name": "Borough President\u2014 Staten Island",
+  "name": "Borough President— Staten Island",
   "fn": "general_government"
  },
  "015": {
@@ -364,7 +364,7 @@
   "fn": "general_government"
  },
  "820": {
-  "name": "Office of Administrative Trials and Hearings\u2026",
+  "name": "Office of Administrative Trials and Hearings…",
   "fn": "general_government"
  },
  "829": {
@@ -376,7 +376,7 @@
   "fn": "general_government"
  },
  "850": {
-  "name": "Department of Design and Construction\u2026",
+  "name": "Department of Design and Construction…",
   "fn": "general_government"
  },
  "856": {
@@ -432,47 +432,47 @@
   "fn": "public_safety"
  },
  "901": {
-  "name": "District Attorney\u2014 New York County",
+  "name": "District Attorney— New York County",
   "fn": "public_safety"
  },
  "902": {
-  "name": "District Attorney\u2014 Bronx County",
+  "name": "District Attorney— Bronx County",
   "fn": "public_safety"
  },
  "903": {
-  "name": "District Attorney\u2014 Kings County",
+  "name": "District Attorney— Kings County",
   "fn": "public_safety"
  },
  "904": {
-  "name": "District Attorney\u2014 Queens County",
+  "name": "District Attorney— Queens County",
   "fn": "public_safety"
  },
  "905": {
-  "name": "District Attorney\u2014 Richmond County",
+  "name": "District Attorney— Richmond County",
   "fn": "public_safety"
  },
  "906": {
-  "name": "Office of Prosecution\u2014 Special Narcotics",
+  "name": "Office of Prosecution— Special Narcotics",
   "fn": "public_safety"
  },
  "941": {
-  "name": "Public Administrator\u2014 New York County",
+  "name": "Public Administrator— New York County",
   "fn": "public_safety"
  },
  "942": {
-  "name": "Public Administrator\u2014 Bronx County",
+  "name": "Public Administrator— Bronx County",
   "fn": "public_safety"
  },
  "943": {
-  "name": "Public Administrator\u2014 Kings County",
+  "name": "Public Administrator— Kings County",
   "fn": "public_safety"
  },
  "944": {
-  "name": "Public Administrator\u2014 Queens County",
+  "name": "Public Administrator— Queens County",
   "fn": "public_safety"
  },
  "945": {
-  "name": "Public Administrator\u2014 Richmond County",
+  "name": "Public Administrator— Richmond County",
   "fn": "public_safety"
  },
  "040": {
@@ -480,11 +480,11 @@
   "fn": "education"
  },
  "042": {
-  "name": "City University of New York\u2014 Community Colleges",
+  "name": "City University of New York— Community Colleges",
   "fn": "city_university"
  },
  "068": {
-  "name": "Administration for Children\u2019s Services",
+  "name": "Administration for Children’s Services",
   "fn": "social_services"
  },
  "069": {
@@ -511,9 +511,13 @@
   "name": "Department of Transportation",
   "fn": "transportation"
  },
+ "126": {
+  "name": "Department of Cultural Affairs",
+  "fn": "parks"
+ },
  "846": {
   "name": "Department of Parks and Recreation",
-  "fn": "transportation"
+  "fn": "parks"
  },
  "806": {
   "name": "Housing Preservation and Development",
@@ -550,10 +554,6 @@
  "095": {
   "name": "Pension Contributions",
   "fn": "pensions"
- },
- "126": {
-  "name": "Department of Cultural Affairs",
-  "fn": "parks"
  },
  "058": {
   "name": "Office of Community Safety",

@@ -3,12 +3,12 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>New York City's budget since 2000</title>
 <meta name="description" content="Each spending line in real dollars per resident, fiscal 2000 to 2027: what grew, what shrank.">
-<meta property="og:title" content="New York City's budget since 2000"><meta property="og:description" content="Each spending line in real dollars per resident, fiscal 2000 to 2027."><meta property="og:type" content="article"><meta name="twitter:card" content="summary">
+<meta property="og:title" content="New York City's budget since 2000"><meta property="og:description" content="Each spending line in real dollars per resident, fiscal 2000 to 2027."><meta property="og:type" content="article"><meta property="og:image" content="https://vital-city-nyc.github.io/nyc-budget-explainer/nyc-who-pays/shared/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://vital-city-nyc.github.io/nyc-budget-explainer/nyc-who-pays/shared/og.png">
 <link rel="prefetch" href="../nyc-what-the-city-builds/index.html"><link rel="prefetch" href="../nyc-where-it-goes/index.html">
 <link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
 <link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/tokens/tokens.css">
 <link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/charts/chart-theme.css">
-<link rel="stylesheet" href="../nyc-who-pays/shared/budget.css?v=1003d">
+<link rel="stylesheet" href="../nyc-who-pays/shared/budget.css?v=1003f">
 </head>
 <body><div class="card">
 <nav class="nav" aria-label="Parts"><a href="../nyc-who-pays/index.html">Part one<b>Who pays</b></a><a href="../nyc-where-it-goes/index.html">Part two<b>Where it goes</b></a><a href="../nyc-budget-since-2000/index.html" class="on" aria-current="page">Part three<b>Since 2000</b></a><a href="../nyc-what-the-city-builds/index.html">Part four<b>The capital budget</b></a></nav>
@@ -25,7 +25,7 @@
 <section class="sec"><h2>Method</h2><div class="method" id="method"></div></section>
 <section class="sec"><a class="tile" href="../nyc-what-the-city-builds/index.html"><span class="mini" id="mini"></span><span><span class="k">Next</span><span class="h">The capital budget</span><p>What the city builds: $15.6 billion a year of schools, housing, water mains and roads, paid for by borrowing.</p></span></a></section>
 </div>
-<script src="../nyc-who-pays/shared/budget.js?v=1003d"></script>
+<script src="../nyc-who-pays/shared/budget.js?v=1003f"></script>
 <script>
 B.embed('nyc-budget-since-2000');
 const {$}=B;
@@ -33,7 +33,7 @@ const LABEL={education:['Schools','--c-edu'],social_services:['Social services',
 let D,CUR=2025,SEL=null,MAX=0;
 const YEARS=()=>Object.keys(D.years).map(Number).sort();
 const money=x=>'$'+Math.round(x).toLocaleString();
-fetch('data/real_per_resident.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{D=d;MAX=Math.max(...YEARS().map(y=>Math.max(...Object.values(D.years[y].real_per_resident))));build();draw(Math.min(2027,Math.max(2000,B.Y0)));method();tile();
+fetch('data/real_per_resident.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{D=d;MAX=Math.max(...YEARS().map(y=>Math.max(...Object.values(D.years[y].real_per_resident))));build();if(B.K0&&LABEL[B.K0])SEL=B.K0;draw(Math.min(2027,Math.max(2000,B.Y0)));method();tile();
  B.player({years:YEARS,cur:()=>CUR,draw,range:$('y'),btn:$('play')});});
 function build(){const n=Math.ceil(MAX/100);$('rows').innerHTML=Object.keys(LABEL).map(k=>`<div class="rrow" data-k="${k}" role="button" tabindex="0"><span class="nm"><i class="sw" style="background:var(${LABEL[k][1]})"></i>${LABEL[k][0]}</span><span class="bar" id="b-${k}">${'<i class="ghost"></i>'.repeat(n)}</span><span class="num" id="n-${k}"></span></div>`).join('');
  document.querySelectorAll('.bar i').forEach((e,i)=>{e.style.transitionDelay=((i%60)*4)+'ms';});}
@@ -47,11 +47,12 @@ function draw(y){CUR=y;const yr=D.years[y],p=yr.real_per_resident,p0=D.years[200
  $('finding').textContent=y===2000?`In fiscal 2000 New York City spent ${money(tot)} per resident, in today's dollars.`:`New York City spends ${money(tot)} per resident, ${Math.round(Math.abs(ch)*100)}% ${ch>=0?'more':'less'} than in 2000 after inflation${yr.budgeted?' (budgeted, not yet adjusted)':''}.`;
  $('lede').innerHTML=y===2000?`Move the slider forward to watch each line grow. Population in 2000: <b>${yr.population.toLocaleString()}</b>.`:`Fiscal ${y}, <b>${yr.population.toLocaleString()}</b> residents. Per resident, <b>${LABEL[top[0]][0].toLowerCase()}</b> grew the most since 2000 (${top[1]>=0?'+':''}${Math.round(top[1]*100)}%) and <b>${LABEL[bot[0]][0].toLowerCase()}</b> the least (${bot[1]>=0?'+':''}${Math.round(bot[1]*100)}%).${top[0]==='pensions'?' Pension contributions in 2000 were unusually low, so that comparison starts from a trough.':''}`;
  $('lgnote').textContent=yr.budgeted?'Budget years are in nominal dollars and use the 2025 population, so their growth is overstated by inflation.':'';
- $('yv').textContent=y;$('y').value=y;$('bflag').textContent=yr.budgeted?'budgeted':'audited';B.carry(y);
+ $('yv').textContent=y;$('y').value=y;$('bflag').textContent=yr.budgeted?'budgeted':'audited';B.carry(y,SEL);
  const ys=YEARS();
  $('hist').innerHTML=SEL?`<b>${LABEL[SEL][0]}</b>: ${money(p[SEL])} per resident in fiscal ${y}, from ${money(p0[SEL])} in 2000.`+B.spark({ys,vals:ys.map(z=>D.years[z].real_per_resident[SEL]),cur:y,color:`var(${LABEL[SEL][1]})`,aud:ys.filter(z=>!D.years[z].budgeted).length,width:Math.min(520,$('rows').clientWidth),right:56,max:Math.ceil(Math.max(...ys.map(z=>D.years[z].real_per_resident[SEL]))/500)*500,fmt:money,show:1}):'Click a row to follow it across the years.';}
 B.act($('rows'),'.rrow',r=>{SEL=SEL===r.dataset.k?null:r.dataset.k;draw(CUR);});
 let rz;addEventListener('resize',()=>{if(!SEL)return;clearTimeout(rz);rz=setTimeout(()=>draw(CUR),150);});
-function method(){$('method').innerHTML=`<p>Each line is the same General Fund spending as part two, divided by the five boroughs' population that year (Census Bureau intercensal estimates for 2000 to 2019 and the vintage-2025 estimates from 2020 on) and converted to fiscal 2025 dollars with the Bureau of Labor Statistics consumer price index for the New York metropolitan area (series CUURS12ASA0), averaged over each July-to-June fiscal year. A square is $100 per resident; the trend line starts at zero. Fiscal 2026 and 2027 are budget figures: they are not deflated, and they use the 2025 population, so treat their change as a ceiling. Pension contributions were at a low point in fiscal 2000, which makes their growth since look larger than it would from 1999 or 2001. Debt service here is the cash the city pays on past borrowing, not a measure of debt. Citations in the <a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-budget-since-2000/research">research notes</a>.</p>`;}
+function method(){$('method').innerHTML=`<p>Each line is the same General Fund spending as part two, divided by the five boroughs' population that year (Census Bureau intercensal estimates for 2000 to 2019 and the vintage-2025 estimates from 2020 on) and converted to fiscal 2025 dollars with the Bureau of Labor Statistics consumer price index for the New York metropolitan area (series CUURS12ASA0), averaged over each July-to-June fiscal year. A square is $100 per resident; the trend line starts at zero. Fiscal 2026 and 2027 are budget figures: they are not deflated, and they use the 2025 population, so treat their change as a ceiling. Pension contributions were at a low point in fiscal 2000, which makes their growth since look larger than it would from 1999 or 2001. Debt service here is the cash the city pays on past borrowing, not a measure of debt. Citations in the <a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-budget-since-2000/research">research notes</a>. Documents were downloaded and read on October 2 and 3, 2026.</p>
+ <p class="getdata"><b>Get the data:</b> <a href="data/real_per_resident.json">real spending per resident, 2000-2027</a><a href="https://github.com/Vital-City-NYC/nyc-budget-explainer">code and method</a></p>`;}
 function tile(){fetch('../nyc-what-the-city-builds/data/capital_per_100.json').then(r=>r.json()).then(d=>{const p=d.years['2025'].per_100;const C={education:'#217ebe',housing:'#e7466d',environmental:'#707175',transportation:'#394882',general_government:'#9b9fbc',public_safety:'#050507',parks:'#dde44c',health:'#cea9be',social_services:'#ff7c53',libraries:'#c9c9cb'};B.mini('mini',Object.keys(C).map(k=>[C[k],p[k]||0]));}).catch(()=>{});}
 </script></body></html>

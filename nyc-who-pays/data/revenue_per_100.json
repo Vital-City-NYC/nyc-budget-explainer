@@ -1,5 +1,5 @@
 {
- "source": "NYC Comptroller ACFR, General Fund Revenues (statistical section), as extracted in nyc-budget-per-capita/nyc-budget-fy2000-fy2025.csv",
+ "source": "NYC Comptroller ACFR, General Fund Revenues (statistical section), as extracted in nyc-budget-per-capita",
  "unit": "thousands of dollars, nominal",
  "grouping": {
   "property_tax": [
@@ -37,6 +37,7 @@
    "disallowances"
   ]
  },
+ "budget_years_source": "OMB adopted budget FY2027 (erc6-26.pdf) as parsed in nyc-budget-per-capita/data.json (budget_years). OMB lines are mapped to the audited buckets: PTET sits inside personal income tax; mortgage and cigarette taxes sit inside sales; other_revenues is OMB miscellaneous plus other categorical grants and inter-fund revenue, less intra-city revenue and disallowances.",
  "years": {
   "2000": {
    "total": 37884571.0,
@@ -714,6 +715,5 @@
    "basis": "OMB FY2027 adopted budget, June 2026",
    "budgeted": true
   }
- },
- "budget_years_source": "OMB budget documents as parsed in nyc-budget-per-capita/data.json (budget_years). OMB conventions differ from the ACFR: PTET sits inside personal income tax; mortgage and cigarette taxes sit inside sales; \"other_revenues\" is OMB miscellaneous plus other categorical grants and inter-fund revenue."
+ }
 }

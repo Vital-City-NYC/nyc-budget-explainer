@@ -3,12 +3,12 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Where New York City's money goes</title>
 <meta name="description" content="For every $100 the city spends, what it buys, what is inside each line, who pays for it, what sits off the budget and what the mayor can change.">
-<meta property="og:title" content="Where New York City's money goes"><meta property="og:description" content="For every $100 the city spends: what it buys, what is inside each line, who pays for it and what the mayor can change."><meta property="og:type" content="article"><meta name="twitter:card" content="summary">
+<meta property="og:title" content="Where New York City's money goes"><meta property="og:description" content="For every $100 the city spends: what it buys, what is inside each line, who pays for it and what the mayor can change."><meta property="og:type" content="article"><meta property="og:image" content="https://vital-city-nyc.github.io/nyc-budget-explainer/nyc-who-pays/shared/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://vital-city-nyc.github.io/nyc-budget-explainer/nyc-who-pays/shared/og.png">
 <link rel="prefetch" href="../nyc-who-pays/index.html"><link rel="prefetch" href="../nyc-budget-since-2000/index.html">
 <link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
 <link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/tokens/tokens.css">
 <link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/charts/chart-theme.css">
-<link rel="stylesheet" href="../nyc-who-pays/shared/budget.css?v=1003d">
+<link rel="stylesheet" href="../nyc-who-pays/shared/budget.css?v=1003f">
 <style>.key{min-height:370px}</style>
 </head>
 <body><div class="card">
@@ -61,7 +61,7 @@
 <section class="sec"><h2>Method</h2><div class="method" id="method"></div></section>
 <section class="sec"><a class="tile" href="../nyc-budget-since-2000/index.html"><span class="mini" id="mini"></span><span><span class="k">Next</span><span class="h">How has it changed since 2000?</span><p>Each line in real dollars per resident, fiscal 2000 to 2027.</p></span></a></section>
 </div>
-<script src="../nyc-who-pays/shared/budget.js?v=1003d"></script>
+<script src="../nyc-who-pays/shared/budget.js?v=1003f"></script>
 <script>
 B.embed('nyc-where-it-goes');
 const {$,alloc}=B;
@@ -74,7 +74,7 @@ let D,CUR=2025,SEL=null,CTRL=null,FACTS=null,INSIDE=null,FUND=null,SQ=[];
 const YEARS=()=>Object.keys(D.years).map(Number).sort();
 const clamp=y=>Math.min(2027,Math.max(2000,y));
 
-fetch('data/spending_per_100.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{D=d;SQ=B.grid('w');draw(clamp(B.Y0));method();tile();
+fetch('data/spending_per_100.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{D=d;SQ=B.grid('w');if(B.K0&&LABEL[B.K0])SEL=B.K0;draw(clamp(B.Y0));method();tile();
  B.player({years:YEARS,cur:()=>CUR,draw,range:$('y'),btn:$('play')});
  const J=u=>fetch(u,{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null);
  J('data/funding_by_bucket.json').then(x=>{if(x){FUND=x;if(SEL)draw(CUR);}});
@@ -106,7 +106,7 @@ function draw(y){CUR=y;const yr=D.years[y],p=yr.per_100,c=cells(y);const arows=S
  const sch=Math.round(p.education),soc=Math.round(p.social_services),fixed=Math.round(p.pensions+p.benefits+p.debt_service),safe=Math.round(p.public_safety+p.health+p.environmental);
  $('finding').textContent=`Of every $100 New York City spends, $${sch} goes to its schools and $${soc} to social services. Pensions, benefits and debt take $${fixed}.`;
  $('lede').innerHTML=`In fiscal ${y} the city spent <b>$${(yr.total/1e6).toFixed(0)} billion</b>${yr.budgeted?' (budgeted)':''}. Schools alone were <b>$${sch}</b> of every hundred, ${sch>safe?'more':'less'} than police, fire, jails, prosecutors, hospitals and sanitation combined.`;
- $('yv').textContent=y;$('y').value=y;$('bflag').textContent=yr.budgeted?'budgeted':'audited';B.carry(y);
+ $('yv').textContent=y;$('y').value=y;$('bflag').textContent=yr.budgeted?'budgeted':'audited';B.carry(y,SEL);
  hist();facts();}
 function hist(){const h=$('hist');if(!SEL){h.innerHTML='Click a line to follow it across the years and open what is inside it.';return;}
  const ys=YEARS(),f=ys[0],v0=D.years[f].per_100[SEL],v=D.years[CUR].per_100[SEL],aud=ys.filter(y=>!D.years[y].budgeted),pk=aud.reduce((a,y)=>D.years[y].per_100[SEL]>D.years[a].per_100[SEL]?y:a,aud[0]),lo=aud.reduce((a,y)=>D.years[y].per_100[SEL]<D.years[a].per_100[SEL]?y:a,aud[0]);
@@ -137,5 +137,6 @@ function method(){const rows=[['Schools','Department of Education','Department o
  $('method').innerHTML=`<p>Each square is one percent of General Fund spending for the year, operating expenditures plus transfers for debt service, rounded to whole squares with the largest remainders filled first. Fiscal 2000 to 2025 are audited figures from the Comptroller's <a href="https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf">annual comprehensive financial reports</a> (General Fund expenditures by function and agency). Fiscal 2026 and 2027 are the Office of Management and Budget's <a href="https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/erc6-26.pdf">June 2026 adopted budget</a>, fiscal 2026 as modified and fiscal 2027 as adopted, with each agency assigned to a function by the audited report's own classification. Trend lines start at zero.</p>
  <details class="more"><summary>The ten buckets, line by line</summary><table class="t"><thead><tr><th>Bucket</th><th>Audited report lines</th><th>Budget lines</th></tr></thead><tbody>${rows.map(r=>`<tr><td class="b">${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</tbody></table></details>
  <p>Agency splits inside a line are the same schedules' agency rows: the five largest and everything else. The unit-of-appropriation shares and the who-pays-for-it split come from the fiscal 2027 adopted budget's <a href="https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/ss6-26.pdf">supporting schedules</a>: every unit carries an appropriation and a funding summary (city funds, state grants, federal grants, other grants, intra-city sales). Intra-city sales are left out and capital inter-fund agreements are counted with city funds. Citywide, that puts city funds at $77 of every $100, state grants at $16 and federal grants at $6.</p>
- <p>For 2026 and 2027 the budget's Miscellaneous line (098) is split by what it holds: fringe benefits, the collective-bargaining reserve, judgments and the general reserve stay in benefits; transit subsidies move to everything else, where the audited books file the Transit Authority payment; and the building-aid bond and Hudson Yards costs move to debt service, where the audited books file them. This page's <a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-where-it-goes/research">research notes</a> carry a URL and quotation for every figure shown, and every figure was re-derived from the primary documents in a blind check.</p>`;}
+ <p>For 2026 and 2027 the budget's Miscellaneous line (098) is split by what it holds: fringe benefits, the collective-bargaining reserve, judgments and the general reserve stay in benefits; transit subsidies move to everything else, where the audited books file the Transit Authority payment; and the building-aid bond and Hudson Yards costs move to debt service, where the audited books file them. This page's <a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-where-it-goes/research">research notes</a> carry a URL and quotation for every figure shown, and every figure was re-derived from the primary documents in a blind check. Documents were downloaded and read on October 2 and 3, 2026.</p>
+ <p class="getdata"><b>Get the data:</b> <a href="data/spending_per_100.json">spending by line and agency, 2000-2027</a><a href="data/inside.json">units of appropriation</a><a href="data/funding_by_bucket.json">who pays for each line</a><a href="data/context_facts.json">context facts</a><a href="https://github.com/Vital-City-NYC/nyc-budget-explainer">code and method</a></p>`;}
 </script></body></html>

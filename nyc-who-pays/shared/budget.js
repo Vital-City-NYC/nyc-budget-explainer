@@ -4,9 +4,12 @@ const $=id=>document.getElementById(id);
 // allocate N squares to items by largest remainder
 function alloc(items,N=100){const tot=items.reduce((a,x)=>a+x[1],0)||1;const c=items.map(([k,v])=>{const e=v/tot*N;return [k,Math.floor(e),e%1];});const used=c.reduce((a,x)=>a+x[1],0);c.slice().sort((a,b)=>b[2]-a[2]).slice(0,N-used).forEach(x=>x[1]++);return c;}
 function grid(id,n=100){const w=$(id);w.innerHTML='';const out=[];for(let i=0;i<n;i++){const c=document.createElement('i');c.dataset.i=i;c.style.transitionDelay=(i*3)+'ms';w.appendChild(c);out.push(c);}return out;}
+const EMB=new URLSearchParams(location.search).get('embed')==='1';
 const Y0=(()=>{const m=location.hash.match(/y=(\d{4})/);return m?+m[1]:2025;})();
-function carry(y){document.querySelectorAll('.nav a').forEach(a=>{a.href=a.getAttribute('href').split('#')[0]+'#y='+y;});try{history.replaceState(null,'','#y='+y);}catch(e){}}
-function embed(id){if(new URLSearchParams(location.search).get('embed')!=='1')return;document.body.classList.add('embed');const ph=()=>{const el=document.querySelector('.card');if(!el||innerWidth<50)return;const h=Math.ceil(el.getBoundingClientRect().height);if(h>0)parent.postMessage({type:'vc-embed-height',id:id,height:h},'*');};addEventListener('load',ph);addEventListener('resize',ph);let n=0;const t=setInterval(()=>{ph();if(++n>20)clearInterval(t);},300);}
+const K0=(()=>{const m=location.hash.match(/k=([a-z_]+)/);return m?m[1]:null;})();
+// keep the year (and an open line) in the address, and keep embed mode when moving between parts
+function carry(y,k){const h='#y='+y;document.querySelectorAll('.nav a,.tile').forEach(a=>{a.href=a.getAttribute('href').split('#')[0].split('?')[0]+(EMB?'?embed=1':'')+h;});try{history.replaceState(null,'',location.pathname+location.search+h+(k?'&k='+k:''));}catch(e){}}
+function embed(id){if(!EMB)return;document.body.classList.add('embed');const el=()=>document.querySelector('.card');let last=0;const ph=()=>{const c=el();if(!c||innerWidth<50)return;const h=Math.ceil(c.getBoundingClientRect().height);if(h>0&&h!==last){last=h;[id,'nyc-budget-explainer'].forEach(i=>parent.postMessage({type:'vc-embed-height',id:i,height:h},'*'));}};addEventListener('load',ph);addEventListener('resize',ph);let n=0;const t=setInterval(()=>{ph();if(++n>20)clearInterval(t);},300);addEventListener('load',()=>{if(window.ResizeObserver&&el())new ResizeObserver(ph).observe(el());});}
 // n shades of one colour, dark to light (or reversed)
 function ramp(v,n,o={}){const a=o.light?-0.5:-0.3,b=o.light?0.25:0.5,out=[];for(let i=0;i<n;i++){let t=n===1?0.3:i/(n-1);if(o.reverse)t=1-t;const w=a+(b-a)*t;out.push(w<0?`color-mix(in srgb, var(${v}) ${Math.round((1+w)*100)}%, #050507)`:`color-mix(in srgb, var(${v}) ${Math.round((1-w)*100)}%, #fff)`);}return out;}
 // trend line, always from zero
@@ -25,4 +28,4 @@ function tipper(waf,tip,html){waf.addEventListener('mousemove',e=>{const t=e.tar
 function peek(keyEl,sq,active){keyEl.addEventListener('mouseover',e=>{const r=e.target.closest('.row');if(!r||active())return;sq().forEach(q=>q.classList.toggle('peek',q.dataset.k!==r.dataset.k));});keyEl.addEventListener('mouseleave',()=>sq().forEach(q=>q.classList.remove('peek')));}
 const REV={property_tax:'#ff7c53',personal_income_tax:'#217ebe',sales_tax:'#dde44c',business_taxes:'#e7466d',other_taxes:'#cea9be',state_aid:'#394882',federal_aid:'#9b9fbc',fees_fines_other:'#707175'};
 const SPE={education:'#217ebe',social_services:'#e7466d',public_safety:'#394882',pensions:'#ff7c53',benefits:'#cea9be',debt_service:'#050507',health:'#dde44c',general_government:'#9b9fbc',environmental:'#707175',everything_else:'#c9c9cb'};
-return {$,alloc,grid,Y0,carry,embed,ramp,spark,labels,act,mini,player,tipper,peek,REV,SPE};})();
+return {$,alloc,grid,Y0,K0,EMB,carry,embed,ramp,spark,labels,act,mini,player,tipper,peek,REV,SPE};})();
