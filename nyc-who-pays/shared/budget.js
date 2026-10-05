@@ -26,6 +26,8 @@ function player(o){let timer=null;const stop=()=>{if(timer){clearInterval(timer)
  o.range.addEventListener('input',e=>{stop();o.draw(+e.target.value);});return {stop};}
 function tipper(waf,tip,html){waf.addEventListener('mousemove',e=>{const t=e.target.closest('i');const h=t&&html(t);if(!h){tip.style.display='none';return;}tip.style.display='block';tip.style.left=Math.min(e.clientX+12,innerWidth-232)+'px';tip.style.top=(e.clientY+14)+'px';tip.innerHTML=h;});waf.addEventListener('mouseleave',()=>tip.style.display='none');}
 function peek(keyEl,sq,active){keyEl.addEventListener('mouseover',e=>{const r=e.target.closest('.row');if(!r||active())return;sq().forEach(q=>q.classList.toggle('peek',q.dataset.k!==r.dataset.k));});keyEl.addEventListener('mouseleave',()=>sq().forEach(q=>q.classList.remove('peek')));}
+// distinct colours for the parts of a split, strongest contrast between neighbours; the remainder is grey
+const CAT=['#394882','#e7466d','#ff7c53','#217ebe','#dde44c','#9b9fbc','#cea9be'],REST='#c9c9cb';
 const REV={property_tax:'#ff7c53',personal_income_tax:'#217ebe',sales_tax:'#dde44c',business_taxes:'#e7466d',other_taxes:'#cea9be',state_aid:'#394882',federal_aid:'#9b9fbc',fees_fines_other:'#707175'};
 const SPE={education:'#217ebe',social_services:'#e7466d',public_safety:'#394882',pensions:'#ff7c53',benefits:'#cea9be',debt_service:'#050507',health:'#dde44c',general_government:'#9b9fbc',environmental:'#707175',everything_else:'#c9c9cb'};
-return {$,alloc,grid,Y0,K0,EMB,carry,embed,ramp,spark,labels,act,mini,player,tipper,peek,REV,SPE};})();
+return {$,alloc,grid,Y0,K0,EMB,carry,embed,ramp,CAT,REST,spark,labels,act,mini,player,tipper,peek,REV,SPE};})();

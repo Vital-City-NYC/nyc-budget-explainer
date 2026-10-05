@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
 <link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/tokens/tokens.css">
 <link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/charts/chart-theme.css">
-<link rel="stylesheet" href="../nyc-who-pays/shared/budget.css?v=1003f">
+<link rel="stylesheet" href="../nyc-who-pays/shared/budget.css?v=1005b">
 <style>.key{min-height:370px}</style>
 </head>
 <body><div class="card">
@@ -61,7 +61,7 @@
 <section class="sec"><h2>Method</h2><div class="method" id="method"></div></section>
 <section class="sec"><a class="tile" href="../nyc-budget-since-2000/index.html"><span class="mini" id="mini"></span><span><span class="k">Next</span><span class="h">How has it changed since 2000?</span><p>Each line in real dollars per resident, fiscal 2000 to 2027.</p></span></a></section>
 </div>
-<script src="../nyc-who-pays/shared/budget.js?v=1003f"></script>
+<script src="../nyc-who-pays/shared/budget.js?v=1005b"></script>
 <script>
 B.embed('nyc-where-it-goes');
 const {$,alloc}=B;
@@ -85,7 +85,7 @@ fetch('data/spending_per_100.json',{cache:'no-cache'}).then(r=>r.json()).then(d=
  J('data/offbudget.json').then(o=>{if(o)strip(o);});});
 
 function cells(y){const p=D.years[y].per_100;return alloc(Object.keys(LABEL).map(k=>[k,p[k]]));}
-function shade(k,rows){const cols=B.ramp(LABEL[k][1],rows.length,{light:LABEL[k][2]});return rows.map((r,i)=>Object.assign(r,{color:r.rest?'#c9c9cb':cols[i]}));}
+function shade(k,rows){return rows.map((r,i)=>Object.assign(r,{color:r.rest?B.REST:B.CAT[i%B.CAT.length]}));}
 function agencyRows(k,y){const a=D.years[y].agencies[k];if(!a||a.length<2)return null;const tot=a.reduce((s,x)=>s+x[1],0),top=a.slice(0,5),rest=a.slice(5).reduce((s,x)=>s+x[1],0);const r=top.map((x,i)=>({key:'a'+i,label:x[0],share:x[1]/tot*100,amt:x[1]}));if(rest>0)r.push({key:'a5',label:'Everything else in this line',share:rest/tot*100,amt:rest,rest:1});return shade(k,r);}
 function insideRows(k){const a=INSIDE&&INSIDE.agencies[TOPAG[k]];if(!a)return null;const tot=a.rows.reduce((s,x)=>s+x[1],0);return {name:a.name.replace(/'S/g,"'s").replace(/\b(Of|And|For)\b/g,m=>m.toLowerCase()),pages:a.pages,rows:shade(k,a.rows.map((x,i)=>({key:'u'+i,label:x[0],share:x[1]/tot*100,amt:x[1]/1000,rest:x[0].startsWith('Everything else')})))};}
 function spark(k){const ys=YEARS();return B.spark({ys,vals:ys.map(y=>D.years[y].per_100[k]),cur:CUR,color:`var(${LABEL[k][1]})`,aud:ys.filter(y=>!D.years[y].budgeted).length,width:$('key').clientWidth});}

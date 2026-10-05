@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
 <link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/tokens/tokens.css">
 <link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/charts/chart-theme.css">
-<link rel="stylesheet" href="shared/budget.css?v=1003f">
+<link rel="stylesheet" href="shared/budget.css?v=1005b">
 </head>
 <body><div class="card">
 <nav class="nav" aria-label="Parts"><a href="../nyc-who-pays/index.html" class="on" aria-current="page">Part one<b>Who pays</b></a><a href="../nyc-where-it-goes/index.html">Part two<b>Where it goes</b></a><a href="../nyc-budget-since-2000/index.html">Part three<b>Since 2000</b></a><a href="../nyc-what-the-city-builds/index.html">Part four<b>The capital budget</b></a></nav>
@@ -78,7 +78,7 @@
 <section class="sec"><h2>Method</h2><div class="method" id="method"></div></section>
 <section class="sec"><a class="tile" href="../nyc-where-it-goes/index.html"><span class="mini" id="mini"></span><span><span class="k">Next</span><span class="h">Where the money goes</span><p>The same $100, by what it buys: schools, social services, police, pensions, debt, and what sits off the budget.</p></span></a></section>
 </div>
-<script src="shared/budget.js?v=1003f"></script>
+<script src="shared/budget.js?v=1005b"></script>
 <script>
 B.embed('nyc-who-pays');
 const {$,alloc}=B;
@@ -96,7 +96,7 @@ fetch('data/revenue_per_100.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>
  J('data/control.json').then(c=>{if(c){CTRL=c;$('alb').style.display='block';movement3();draw(CUR);}});
  J('data/property_tax_by_class.json').then(t=>{if(t){PT=t;movementP(t);conc();}});
  J('data/pit_by_income.json').then(t=>{if(t){IT=t;movementI(t);conc();}});
- J('data/business_by_sector.json').then(t=>{if(t){BIZ=t;BREAK.business_taxes={rows:t.sectors.map(s=>Object.assign({},s,{rest:s.key==='s6'})),key:'tax_share',caption:t.caption,src:t.url,srcname:'Department of Finance'};if(SEL==='business_taxes')draw(CUR);conc();}});
+ J('data/business_by_sector.json').then(t=>{if(t){BIZ=t;BREAK.business_taxes={rows:t.sectors.map(s=>Object.assign({},s,{rest:s.key==='s6',color:undefined})),key:'tax_share',caption:t.caption,src:t.url,srcname:'Department of Finance'};if(SEL==='business_taxes')draw(CUR);conc();}});
  J('data/aid_by_function.json').then(t=>{if(!t)return;const mk=kind=>yr=>{const v=t.years[yr];if(!v)return null;const o=v[kind],tot=Object.values(o).reduce((a,b)=>a+b,0),rows=Object.entries(o).sort((a,b)=>b[1]-a[1]);const top=rows.slice(0,5),rest=rows.slice(5).reduce((a,x)=>a+x[1],0);const r=top.map(([l,x],i)=>({key:'f'+i,label:l,short:l,share:x/tot*100}));if(rest>0)r.push({key:'f5',label:'Everything else',short:'Everything else',share:rest/tot*100,rest:1});return r;};
   const cap=yr=>t.years[yr]?`Fiscal ${yr}, by what the grants fund.`:'The split by purpose is published for fiscal 2016 on; pick one of those years.';
   BREAK.state_aid={rows:mk('state'),key:'share',caption:cap,src:t.url,srcname:'Comptroller, annual financial report, state grants by function'};
@@ -105,7 +105,7 @@ fetch('data/revenue_per_100.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>
 
 // ---- the $100
 function cells(y){const p=D.years[y].per_100;return alloc(Object.keys(LABEL).map(k=>[k,p[k]]));}
-function rowsFor(k,y){const b=BREAK[k];if(!b)return null;const r=typeof b.rows==='function'?b.rows(y):b.rows;if(!r)return null;const cols=B.ramp(LABEL[k][1],r.length,{light:LABEL[k][2],reverse:b.reverse});return r.map((x,i)=>Object.assign({},x,{color:x.rest?'#c9c9cb':cols[i]}));}
+function rowsFor(k,y){const b=BREAK[k];if(!b)return null;const r=typeof b.rows==='function'?b.rows(y):b.rows;if(!r)return null;return r.map((x,i)=>Object.assign({},x,{color:x.color||(x.rest?B.REST:B.CAT[i%B.CAT.length])}));}
 function spark(k){const ys=YEARS();return B.spark({ys,vals:ys.map(y=>D.years[y].per_100[k]),cur:CUR,color:`var(${LABEL[k][1]})`,aud:ys.filter(y=>!D.years[y].budgeted).length,width:$('key').clientWidth});}
 function draw(y){CUR=y;const yr=D.years[y],p=yr.per_100,c=cells(y),alb=CTRL&&$('albx').checked;const b0=SEL&&BREAK[SEL],rows=SEL?rowsFor(SEL,y):null;
  let i=0;const blocks=[];
@@ -155,8 +155,8 @@ function split(cfg){const sq=B.grid(cfg.w);let view=cfg.views[0][0],sel=null;con
   $(cfg.hist).innerHTML=sel?cfg.one(rows.find(x=>x.key===sel)):cfg.all(view);}
  go();}
 
-function movementP(PT){const NICE={c1:'1-3 family homes',c2r:'Rental buildings',c2o:'Co-ops and condos',c3:'Utilities',c4:'Commercial'};const cols=B.ramp('--c-prop',PT.classes.length);
- PT.classes.forEach((x,i)=>{x.short=NICE[x.key]||x.label;x.color=cols[i];});
+function movementP(PT){const NICE={c1:'1-3 family homes',c2r:'Rental buildings',c2o:'Co-ops and condos',c3:'Utilities',c4:'Commercial'};const cols={c1:'#ff7c53',c2r:'#e7466d',c2o:'#cea9be',c3:'#dde44c',c4:'#394882'};
+ PT.classes.forEach(x=>{x.short=NICE[x.key]||x.label;x.color=cols[x.key];});
  BREAK.property_tax={rows:PT.classes,key:'levy_share',anchor:'sec-p',caption:`Fiscal ${PT.fiscal_year} split.`};if(SEL==='property_tax')draw(CUR);
  const c=PT.classes,g=k=>c.find(x=>x.key===k),home=g('c1'),rent=g('c2r'),own=g('c2o'),com=g('c4');
  $('sec-p').hidden=false;
@@ -169,8 +169,8 @@ function movementP(PT){const NICE={c1:'1-3 family homes',c2r:'Rental buildings',
   one:x=>`<b>${x.label}</b> carry ${x.levy_share.toFixed(0)}% of the levy, $${bn(x.levy_m)} billion, on ${x.mv_share.toFixed(0)}% of the city's taxable market value.${x.note?' '+x.note:''}`,
   all:v=>v==='levy_share'?`One-to-three-family homes pay <b>$${home.levy_share.toFixed(0)}</b> of every $100 of property tax. Rental buildings pay <b>$${rent.levy_share.toFixed(0)}</b>, co-ops and condos <b>$${own.levy_share.toFixed(0)}</b>, commercial property <b>$${com.levy_share.toFixed(0)}</b>.`:`Those same homes are <b>${home.mv_share.toFixed(0)}%</b> of the city's taxable market value. Rentals are <b>${rent.mv_share.toFixed(0)}%</b>, commercial property <b>${com.mv_share.toFixed(0)}%</b>. The squares that move between the two views are the gap.`});}
 
-function movementI(IT){const c=IT.bands,top=c[c.length-1],bot=c[0];const cols=B.ramp('--c-pit',c.length,{reverse:true});c.forEach((x,i)=>{x.color=cols[i];});
- BREAK.personal_income_tax={rows:c,key:'tax_share',anchor:'sec-i',caption:`Tax year ${IT.tax_year} split, by the filer's income.`,reverse:true};if(SEL==='personal_income_tax')draw(CUR);
+function movementI(IT){const c=IT.bands,top=c[c.length-1],bot=c[0];const cols=['#dde44c','#e7466d','#9b9fbc','#217ebe','#394882','#ff7c53'];c.forEach((x,i)=>{x.color=cols[i];});
+ BREAK.personal_income_tax={rows:c,key:'tax_share',anchor:'sec-i',caption:`Tax year ${IT.tax_year} split, by the filer's income.`};if(SEL==='personal_income_tax')draw(CUR);
  $('sec-i').hidden=false;
  $('subi').textContent=IT.sub;
  $('rates').innerHTML=[['The rates','3.078% to 3.876%','Four rates on taxable income. Residents only; it sits on top of the state income tax, which has nine rates from 4 to 10.9 percent.'],['Where the top rate starts','$50,000','for a single filer, $60,000 for a head of household and $90,000 for a joint return. Above that the city tax is flat.'],['The 2026 ask','5.876%','on income over $1 million, a fifth rate the mayor sought, worth about $3 billion a year. Albany declined it.']].map(x=>`<div><p class="k">${x[0]}</p><p class="v">${x[1]}</p><p>${x[2]}</p></div>`).join('');
@@ -198,6 +198,6 @@ function method(){const rows=[['Property tax','Real estate taxes','General prope
  $('method').innerHTML=`<p>Each square is one percent of General Fund revenue for the year, rounded to whole squares with the largest remainders filled first. Fiscal 2000 to 2025 are audited figures from the Comptroller's <a href="https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf">annual comprehensive financial reports</a> (ten-year revenue trend, statistical section). Fiscal 2026 and 2027 are the Office of Management and Budget's <a href="https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/erc6-26.pdf">June 2026 adopted budget</a>, fiscal 2026 as modified and fiscal 2027 as adopted. Trend lines start at zero.</p>
  <details class="more"><summary>The eight buckets, line by line</summary><table class="t"><thead><tr><th>Bucket</th><th>Audited report lines</th><th>Budget lines</th></tr></thead><tbody>${rows.map(r=>`<tr><td class="b">${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</tbody></table></details>
  <p>The one break between audited and budgeted years: the audited report counts the pass-through entity tax (about $2 of every $100 in fiscal 2025) as a business tax, while the budget counts it as personal income tax. That, not a policy change, is most of why business taxes fall and income tax rises between 2025 and 2026. Tax audit revenue is folded into each tax in the audited report and is a separate budget line, filed here under other taxes.</p>
- <p>Who pays each tax: property tax by class is the Department of Finance's <a href="https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf">annual report on the real property tax</a>, fiscal 2026; income tax by income band is the Independent Budget Office's <a href="https://a860-gpp.nyc.gov/concern/nyc_government_publications/pv63g542d">tables on residents' income and tax liability</a>, tax year 2023; business taxes by sector are the Department of Finance's <a href="https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2022.pdf">statistical profiles of the business income taxes</a>, tax year 2022. When a source is opened in the first chart, its squares are split with those latest shares whatever year the slider is on. Who controls each source draws on the Independent Budget Office, the Department of Finance and the Comptroller. The project's <a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-who-pays/research">research notes</a> carry a URL and quotation for every figure on this page, and every figure was re-derived from the primary documents in a blind check. Documents were downloaded and read on October 2 and 3, 2026.</p>
+ <p>Who pays each tax: property tax by class is the Department of Finance's <a href="https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf">annual report on the real property tax</a>, fiscal 2026; income tax by income band is the Independent Budget Office's <a href="https://a860-gpp.nyc.gov/concern/nyc_government_publications/pv63g542d">tables on residents' income and tax liability</a>, tax year 2023; business taxes by sector are the Department of Finance's <a href="https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2022.pdf">statistical profiles of the business income taxes</a>, tax year 2022. When a source is opened in the first chart, its squares are split with those latest shares whatever year the slider is on; the colours inside a split are only to tell its parts apart and do not refer to the sources in the main key. Who controls each source draws on the Independent Budget Office, the Department of Finance and the Comptroller. The project's <a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-who-pays/research">research notes</a> carry a URL and quotation for every figure on this page, and every figure was re-derived from the primary documents in a blind check. Documents were downloaded and read on October 2 and 3, 2026.</p>
  <p class="getdata"><b>Get the data:</b> <a href="data/revenue_per_100.json">revenue by source, 2000-2027</a><a href="data/property_tax_by_class.json">property tax by class</a><a href="data/pit_by_income.json">income tax by band</a><a href="data/business_by_sector.json">business taxes by sector</a><a href="data/aid_by_function.json">aid by purpose</a><a href="https://github.com/Vital-City-NYC/nyc-budget-explainer">code and method</a></p>`;}
 </script></body></html>

@@ -25,9 +25,16 @@ Live since 2026-10-02 at https://vital-city-nyc.github.io/nyc-budget-explainer/n
 ## Design pass, Oct 3 2026
 - All four pages now load one shared stylesheet and script: `nyc-who-pays/shared/budget.css` and `budget.js` (other parts reference `../nyc-who-pays/shared/`). Bump the `?v=` stamp on those links in all four index.html files whenever either changes.
 - Phone layout: the waffle becomes a 20-by-5 strip pinned to the top of the screen while the key scrolls (`.lay.main` with `.wcol{display:contents}` and `position:sticky`).
-- Click-splits use shades of the clicked line's own colour (`B.ramp`), never other lines' colours. Income bands run light to dark.
+- Colours inside a split are DISTINCT hues (`B.CAT`, remainder grey), not shades of one colour. Josh rejected single-hue shading on Oct 5 2026 because neighbouring bands and classes could not be told apart. Keep every adjacent pair clearly different (do not put mauve next to lilac). Income bands: yellow, magenta, lilac, cerulean, navy, orange for $1 million and over. Property classes: orange, magenta, mauve, yellow, navy.
 - Big blocks are labelled on the waffle on desktop (`B.labels`); key rows preview on hover and work from the keyboard.
 - Trend lines and bars start at zero (Josh's standing rule), so no zero toggle is needed.
 - Long caveats sit in `<details class="more">`; bucket tables are folded in the method.
 - Part one has a "Four numbers behind the fair-share argument" strip (two numbers for each side: 37% from 0.9% of filers and 93% of corporate tax from 1,912 firms; the flat 3.876% top rate from $50,000 and homes' 14% of property tax on 50% of value). Part two has "Schools and the safety net, in four numbers" (`data/headline_stats.json`). Keep both strips balanced if editing.
 - Part three shades each row: lighter squares are the 2000 level, darker are added since. Part four has a clickable bar chart of capital spending by year in fiscal 2025 dollars.
+
+## Publication plumbing, Oct 3 2026
+- `scripts/build_budget_data.py` rebuilds every derived data file for all four parts from the per-capita repo's extraction outputs and OMB's ss6-26.pdf, with assertions (bucket sums, agency rows, unit totals). Run it rather than editing derived JSON by hand. `scripts/make_og.py` renders `shared/og.png`, the share image.
+- `EMBED.md` has the Ghost HTML card. One card carries all four parts: links keep `?embed=1`, and every part posts its height under the shared id `nyc-budget-explainer` whenever the card resizes.
+- Deep links: `#y=2012&k=personal_income_tax` opens a year and a line. Keys are the data bucket keys.
+- Strip heading on part one is the neutral "How concentrated is each tax?" (Josh's choice).
+- Not done: the source folders are not yet merged to Experiments main or pushed to joshgreenman1973/experiments; they live on branch `claude/nyc-who-pays` in this worktree and mirrored (uncommitted) in the main checkout. The public copy is Vital-City-NYC/nyc-budget-explainer.
