@@ -1,78 +1,78 @@
 {
- "sub": "The same $100, fiscal 2027 budget. Greyed squares are lines whose size is set by state law, labor contracts, bond covenants or court orders. The coloured ones City Hall can resize on its own, though most carry mandates inside them.",
+ "sub": "The $100 again, this time for the fiscal 2027 adopted budget, so the shares differ from the audited 2025 figures above. Gray squares are lines whose size is set by state law, labor contracts, promises to bondholders or court orders. City Hall can resize the colored ones, though most carry state or court mandates inside them.",
  "quote": "As shown in Table 15, most of the growth in spending over the Plan period comes from PS-related costs, including salaries and wages, pension, and health insurance. PS costs are budgeted to grow at an annual average rate of 2.7 percent while OTPS costs are budgeted to grow by 1.0 percent from FY 2027 to FY 2030. Debt service costs are projected to grow at an annual average rate of 10.2 percent.",
  "quote_cite": "New York City Comptroller, comments on the fiscal 2027 adopted budget, August 2026, p. 46",
- "finding": "About <b>${city}</b> of every $100 sits in lines City Hall can resize without a state law, a contract or a court. Pensions, health insurance and debt service are spoken for before the year starts, and the biggest coloured lines carry floors: a state maintenance-of-effort rule under schools, a capped Medicaid bill and a court-ordered right to shelter under social services.",
- "note": "Sources: Comptroller, comments on the fiscal 2027 adopted budget; OMB, Message of the Mayor, May 2026; Education Law sections 2576, 2853 and 2856; Callahan v. Carey consent decree (1981); Nunez v. City of New York order of May 13, 2025; the 2014 and 2018 health savings agreements; New York Constitution article VIII. Citations and quotations in research/02.",
+ "note": "Sources: Comptroller, comments on the fiscal 2027 adopted budget; Office of Management and Budget, Message of the Mayor, May 2026; Education Law sections 2576, 2853 and 2856; Callahan v. Carey consent decree (1981); Nunez v. City of New York order of May 13, 2025; the 2014 and 2018 health savings agreements; New York Constitution article VIII. Citations and quotations are in the research notes linked in the method.",
  "education": {
   "fixed": false,
   "setter": "Mixed",
-  "who": "Albany sets Foundation Aid, a floor on city funds, the class-size law and charter tuition. City Hall sets everything above the floor.",
-  "alone": "Add above the floor. Cut only to last year's city amount, and only in step with a fall in total city funds.",
-  "limits": "Charter tuition and rent are formulas in state law; about 120,800 students attend charters."
+  "who": "Albany sets Foundation Aid, the state's main school-aid formula, along with a floor on the city's own school spending, the class-size law and charter school tuition. City Hall decides everything above the floor.",
+  "alone": "Spend more than the floor. The city cannot spend less of its own money on schools than the year before, not counting pensions and debt service, unless its total city funds shrink, and then only by the same percentage.",
+  "limits": "Charter tuition is a state formula, and state law requires the city to find space, or help pay rent, for charter schools that opened or grew since 2014 and ask for it. About 120,800 students are expected to attend charter schools in fiscal 2027."
  },
  "social_services": {
   "fixed": false,
   "setter": "Mixed",
   "who": "The state capped the city's Medicaid bill at its 2015 level; the fiscal 2027 appropriation is $6.8 billion. The 1981 Callahan consent decree requires shelter for homeless men, extended to women and families by later cases.",
-  "alone": "Manage shelter cost per bed, exits and prevention; set CityFHEPS rules within its settlement.",
+  "alone": "Manage shelter costs, exits and prevention, including CityFHEPS (the City Fighting Homelessness and Eviction Prevention Supplement), a rental voucher paid for entirely with city money.",
   "limits": "Cannot refuse eligible shelter applicants or trim the Medicaid payment."
  },
  "public_safety": {
   "fixed": false,
   "setter": "City Hall",
-  "who": "Headcount and overtime are the mayor's. A federal court has put a remediation manager over the jails, whom the city must pay.",
+  "who": "Headcount and overtime are the mayor's. A federal judge has appointed an outside remediation manager to fix safety and use-of-force problems in the jails, and the city must pay the manager's costs.",
   "alone": "Add or cut officers, firefighters and overtime.",
-  "limits": "The Comptroller expects overtime to run $589 million over budget in fiscal 2027."
+  "limits": "The Comptroller expects citywide overtime to run $589 million over budget in fiscal 2027, $241 million of it at the Police Department."
  },
  "pensions": {
   "fixed": true,
-  "setter": "Albany and the Actuary",
-  "who": "Benefits are set in state law; the contribution is the Chief Actuary's number, made as required by statute.",
-  "alone": "Nothing on the bill once set. The 2026 cut came from a state re-amortization law and trustee votes.",
+  "setter": "Albany and the city's actuary",
+  "who": "Benefits are set in state law. The yearly contribution is calculated by the city's chief actuary, and state law requires the city to pay it.",
+  "alone": "Nothing on the bill once set. A 2026 state law, approved by four of the five pension boards, stretched out payments on the funds' shortfall, lowering the city's bills through 2032 and raising them from 2033 to 2037.",
   "limits": ""
  },
  "benefits": {
   "fixed": true,
-  "setter": "Labor contracts",
-  "who": "Health insurance and other fringe benefits are collectively bargained with the Municipal Labor Committee; judgments are set by courts and settlements.",
-  "alone": "Negotiate savings, as in 2014 and 2018. Cannot impose premiums or plan changes.",
+  "setter": "Labor contracts and law",
+  "who": "Health insurance is bargained with the Municipal Labor Committee, the umbrella group of city unions. Social Security and workers' compensation are set by federal and state law, and judgments come from courts and settlements. The line also holds the budget's reserves.",
+  "alone": "Negotiate savings with the unions, as in 2014 and 2018 and in the switch to a new employee health plan in January 2026. Cannot impose premiums or plan changes on its own.",
   "limits": ""
  },
  "debt_service": {
   "fixed": true,
-  "setter": "Bond contracts",
-  "who": "The state constitution requires the payment to be appropriated every year, and under state law property tax receipts are deposited into the debt service fund, run by the State Comptroller, ahead of other spending.",
-  "alone": "Nothing on existing debt. Slowing the capital plan curbs future growth.",
+  "setter": "Bond contracts and state law",
+  "who": "The state constitution requires the city to budget for its debt payments every year. Property tax receipts go first into a fund run by the state comptroller that pays the city's general obligation bonds; Transitional Finance Authority bonds are paid first from income tax receipts.",
+  "alone": "Cannot skip or cut payments. Can refinance when interest rates fall, as it did in fiscal 2025 for $593 million in savings over the life of the bonds, and can slow the capital plan to curb future growth.",
   "limits": ""
  },
  "health": {
   "fixed": false,
   "setter": "City Hall",
-  "who": "The Health Department budget and the subsidy to Health + Hospitals, a state-chartered public benefit corporation.",
-  "alone": "Raise or lower the subsidy and the department's budget.",
+  "who": "The Health Department and the city's payments to NYC Health + Hospitals, the public hospital system, a separate corporation created by state law. Those payments cover health care in the jails and other services it runs for the city.",
+  "alone": "Set the Health Department's budget and what the city pays Health + Hospitals.",
   "limits": ""
  },
  "general_government": {
   "fixed": false,
   "setter": "City Hall",
-  "who": "The mayor's own agencies, the Council and the boards.",
-  "alone": "Discretionary; the 2.5 percent agency savings targets apply here.",
+  "who": "Youth and community programs, the city's central administrative agencies, the Council, other elected officials' offices, the Board of Elections and the 59 community boards.",
+  "alone": "Discretionary.",
   "limits": ""
  },
  "environmental": {
   "fixed": false,
   "setter": "City Hall",
-  "who": "Sanitation is a city agency with uniformed-union contracts. Water and sewer operations are paid by the Water Board, off budget.",
+  "who": "Sanitation is a city agency with uniformed-union contracts. The Department of Environmental Protection's water and sewer costs are in this line too, but the Water Board, funded by water and sewer bills, pays the city back for them.",
   "alone": "Set pickup schedules, headcount and contracts.",
   "limits": ""
  },
  "everything_else": {
   "fixed": false,
   "setter": "City Hall",
-  "who": "Subsidies to the libraries, cultural institutions and CUNY community colleges; Parks, Transportation and Housing budgets.",
-  "alone": "Discretionary; this is where the Council's annual fights happen.",
-  "limits": "State aid formulas sit under CUNY; federal Section 8 sits inside housing."
+  "who": "Subsidies to the libraries, cultural institutions and City University of New York (CUNY) community colleges; about $1.7 billion of payments to the Metropolitan Transportation Authority (MTA); and the budgets of the Parks, Transportation and Buildings departments and Housing Preservation and Development.",
+  "alone": "Mostly discretionary; the June 2026 budget agreement added money here for cultural institutions and CUNY. The MTA payments are harder to control: the Comptroller expects the city to owe $213 million more than budgeted in fiscal 2027.",
+  "limits": "State aid covers part of the community colleges' costs; federal Section 8 vouchers sit inside housing."
  },
- "finding2": "The biggest coloured lines still carry floors: a state maintenance-of-effort rule under schools, a capped Medicaid bill and a court-ordered right to shelter under social services. The 2.5 percent yearly savings targets the administration announced in July 2026 are aimed at agency budgets."
+ "finding2": "That $77 is less flexible than it looks. Union contracts set the pay behind about $28 of it, and state law or court orders set floors under about $12 more: Medicaid, charter school tuition and shelter. Much of it is also state and federal grants that must be spent on set purposes. The $23 is an undercount: counting the $5.2 billion of benefits the schools line pays for its own staff and the $2 billion of 2027 debt service paid early in 2026, about $29 of every $100 is spoken for. The 2.5% yearly savings targets the administration announced in July 2026 apply to agency budgets; the Comptroller estimates they could save about $1.5 billion a year.",
+ "quote_gloss": "PS, or personal services, is the budget's term for salaries, wages and benefits; OTPS, other than personal services, is everything else, from contracts and supplies to Medicaid and cash assistance."
 }

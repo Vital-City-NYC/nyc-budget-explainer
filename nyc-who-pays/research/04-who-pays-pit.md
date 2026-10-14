@@ -124,3 +124,11 @@ UNVERIFIED / superseded: NYC Open Data "Tax Liability By AGI Range" (https://dat
 Blind-check note (2026-10-02): the state schedule has nine rates from 4 to 10.9 percent (top bracket at $25 million), per Form IT-201 instructions read by the checker; the page now says so. Of the $1,699 million drop in the top band's liability after refundable credits, $1,575 million is the PTET credit and $125 million the UBT credit (IBO workbook), so "mostly," not "almost entirely."
 
 Fair-share strip (added Oct 3 2026): 37% / 0.9% / 33% from table B above; 3.876% top rate from $50,000 single from section F; 93% and 1,912 firms from section D ("The top 1 percent of taxpayers, or 1,912 firms, accounted for $4.24 billion, or 93 percent of total liability", re-read in the DOF PDF Oct 3); 14% of levy on 50% of market value from research/01 table A.
+
+## State income tax rates, tax year 2026 (checked 2026-10-14)
+New York State Department of Taxation and Finance, Instructions for Form IT-2105 (2026), New York State tax rate schedule, single filers: "$0 $8,500 3.90% of line 5"; "8,500 11,700 $332 plus 4.40% of the excess over $8,500"; top row "plus 10.9%" over $25,000,000. https://www.tax.ny.gov/pdf/current_forms/it/it2105i.pdf. Supports the page's "nine rates from 3.9 to 10.9 percent in tax year 2026" (the bottom rate was 4 percent before the 2026 cut).
+
+## Oct. 14, 2026 review
+- IBO highlights (https://www.ibo.nyc.gov/assets/ibo/downloads/pdf/taxes-and-other-revenues/2026/2026-february-pit-highlights.pdf): "Liability is calculated before credits are applied"; shares "hit a high in 2021 at 43% and 48%... driven largely by realized capital gains"; "33% and 37% in 2023"; p. 4, "every additional dollar is taxed by the City at the same rate."
+- Pass-through entity tax credit mechanism, NYS Tax Department (https://www.tax.ny.gov/bus/ptet/city.htm): "The NYC PTET is an optional tax that city partnerships or city resident New York S corporations may annually elect to pay"; "Each eligible credit claimant's NYC PTET credit is equal to its direct share of the NYC PTET."
+- Business tax bucket coverage: ACFR FY2025 p. 293, "Pass-through Entity Tax ... 2,363,772,380"; with the utility and nonresident employee taxes, about 22% of the fiscal 2025 business tax bucket is outside the sector data.

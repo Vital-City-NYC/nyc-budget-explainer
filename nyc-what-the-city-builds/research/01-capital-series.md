@@ -11,3 +11,10 @@ Self-audit: HIGH for every number (extracted cells with page numbers, sums asser
 Blind-check note (2026-10-02): the per-capita repo records refunding debt issued as 0 for 2024 and 2025; the ACFR shows 1,697,190 and 6,970,750 (thousands). The page does not display refunding debt. The FY2005 CAFR labels the fiscal 2000 bonds line "Proceeds from sale of bonds" (3,125,230).
 
 Year bars (added Oct 3 2026): capital_total x that year's deflator from the same BLS New York-area CPI series as part three (fiscal 2000 deflator 1.89553): fiscal 2000 $4,809,483 thousand = $9.1 billion in fiscal 2025 dollars; fiscal 2025 $15.6 billion; ratio 1.7. CPI is a general price index, not a construction-cost index; the heading says "after general inflation."
+
+## Oct. 14, 2026 review
+- Construction prices: BEA NIPA table 3.9.4 line 36, price index for state and local government investment in structures (FRED B842RG3Q086SBEA), fiscal-year averages 50.993 (2000) and 144.722 (2025), 2.84 times; consumer prices 1.90 times. On the construction index, fiscal 2000 = $13.6 billion in 2025 prices, ratio 1.14; fiscal 2025 is below 2002, 2008, 2009 and 2010. Rechecked from FRED Oct. 14, 2026.
+- Housing capital is HPD alone: ACFR FY2025 p. 464, 2,875,769; FY2005 CAFR p. 298, "HOUSING: Department of Housing Preservation and Development."
+- Water and sewer: ACFR FY2025 p. 462, Environmental Protection 2,025,988 (thousands); p. 119, "The Water Authority issues debt to finance the cost of capital improvements to the System"; p. 121, Capital Projects Fund resources include "payments from the Water Authority."
+- General government capital: ACFR FY2025 p. 462, Citywide Administrative Services 980,482; Small Business Services 387,167; Information Technology and Telecommunications 78,644; total 1,446,293.
+- Debt service share: 8,080,015 / 117,690,172 = 6.87%.

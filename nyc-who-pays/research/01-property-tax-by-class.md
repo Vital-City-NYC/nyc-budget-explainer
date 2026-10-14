@@ -75,3 +75,9 @@ The Furman figures (39.3% / 24.7%) differ slightly from DOF FY2025 (39.1% levy s
 - Assessment caps (Appendix A). Class 1: "Assessment increases cannot exceed 6 percent annually and 20 percent over any five-year period." Class 2 buildings under 11 units: "cannot exceed 8 percent annually and 30 percent over any five-year period." Larger Class 2 and Class 4: no cap, but increases "must be phased-in over a five-year period."
 - Levy versus revenue, FY2026 (Table 21): levy $37,976.6M, estimated revenue $35,491.0M, "93.5" percent of levy.
 - The 2.5% constitutional operating limit (Table 22, FY2026): operating limit $34,989.2M, expenses subject to the limit $32,746.1M, unused margin $2,243.2M (6.4%). Note 2: "Computed by taking 2.5% of NYS ORPTS full market valuations for the last completed assessment roll and the four preceding assessment rolls."
+
+## Oct. 14, 2026 review
+- Assessment ratios, DOF FY2026 annual report Fast Facts: Class 1 market value $781,307.8 million, taxable actual assessed value $26,947.4 million (3.4%); Class 2 $395,059.1 / $128,502.8 (33%); Class 4 $334,815.9 / $145,768.2 (44%). Appendix A: "Assessment increases cannot exceed 6 percent annually and 20 percent over any five-year period."
+- Net levy billed (Table 4): 36,184.2; homes 5,306.9 (14.7%), co-ops and condos 6,451.8 (17.8%). Expected collections (Table 21): revenue 35,491.0 of levy 37,976.6 (93.5%).
+- Rentals' tax per $100 of value: levy 7,628.1 / market value 234,126.0 (Table 1: Rentals 137,243.0 + Conrentals 18,785.7 + 4-10 Family Rentals 78,097.3) = $3.26.
+- Rent Guidelines Board, 2026 Price Index of Operating Costs (https://rentguidelinesboard.cityofnewyork.us/wp-content/uploads/2026/04/2026-PIOC.pdf): "The Taxes component of the PIOC is based entirely on real estate taxes and accounts for 27.9% of the overall price index."

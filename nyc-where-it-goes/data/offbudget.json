@@ -1,26 +1,26 @@
 {
  "items": [
   {
-   "k": "Capital budget",
+   "k": "Capital borrowing",
    "v": "$15.5 billion",
-   "p": "of new general obligation and Transitional Finance Authority bonds sold in fiscal 2025 for schools, jails, roads and other projects. The water system borrows separately. The buildings are not in the squares; the interest and principal are, as debt service.",
+   "p": "of new bonds sold in fiscal 2025 to pay for schools, jails, roads and other construction, not counting $7 billion sold to refinance older debt. Most are general obligation bonds, backed by the property tax, or bonds of the Transitional Finance Authority, a borrowing agency the state created for the city that is backed by the income tax. The water system borrows separately. What the bonds build is not in the squares; the yearly interest and principal are, as debt service.",
    "src": "Comptroller, fiscal 2025 financial report, bonds issued",
    "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf"
   },
   {
    "k": "Debt outstanding",
    "v": "$121 billion",
-   "p": "of bonds and notes outstanding at the end of fiscal 2025, mostly general obligation and Transitional Finance Authority bonds. Counting all primary-government debt, $15,763 per resident.",
+   "p": "of bonds and notes outstanding at the end of fiscal 2025, mostly general obligation and Transitional Finance Authority bonds. Counting long-term leases and other obligations too, the Comptroller puts the city's debt at $134 billion, or $15,763 a resident.",
    "src": "Comptroller, fiscal 2025 financial report, ratios of bonded debt",
    "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf"
   },
   {
    "k": "The gap",
    "v": "$6.4 billion",
-   "p": "is the hole the Comptroller sees in fiscal 2028, growing to $8.5 billion by 2030. The current year balances, as the law requires; the next ones do not yet.",
-   "src": "Comptroller, comments on the fiscal 2027 adopted budget, p. 46",
+   "p": "is the shortfall the city's own financial plan projects for fiscal 2028, growing to $8.5 billion by 2030. The Comptroller's estimates differ: $7.3 billion in 2028, easing to $6.8 billion in 2030, plus a $743 million shortfall that could open this year. Each budget must balance before it is adopted, so these are the amounts future budgets will have to close.",
+   "src": "Comptroller, comments on the fiscal 2027 adopted budget, pp. 46 and 48",
    "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/Comments-on-New-York-Citys-Fiscal-Year-2027-Adopted-Budget.pdf"
   }
  ],
- "note": "Also beside the budget: the Water Board, which bills for water and sewer service and pays the city for running the system; Health + Hospitals and the Housing Authority, which keep their own books and receive subsidies that do appear in the squares; and the MTA, a state authority. Figures and citations in the research notes."
+ "note": "Also beside the budget: the New York City Water Board, which bills for water and sewer service and pays the city for running the system ($2.4 billion in fiscal 2027); NYC Health + Hospitals and the New York City Housing Authority, separate public corporations that keep their own books and receive city money that appears in the squares; and the Metropolitan Transportation Authority (MTA), a state authority whose city payments, about $1.7 billion, also appear in the squares. Figures and citations in the research notes."
 }

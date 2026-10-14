@@ -4,33 +4,33 @@
  "quote_dof": "Because of the property tax's unique role in balancing the budget, it is the only tax over which the City has the discretion to determine the rate without prior legislation from the State.",
  "property_tax": {
   "albany": false,
-  "who": "City Hall and the Council set the levy and the class rates every year.",
-  "limits": "Albany wrote the four-class system, the class-share formula and its cap, the assessment caps, and the constitution limits the levy to 2.5% of full value. The unused room under that limit was $2.2 billion in fiscal 2026.",
-  "alone": "Raise or lower the overall rate. The February 2026 plan called a 9.5% increase, worth $3.7 billion a year, the path of last resort; the May budget dropped it."
+  "who": "City Hall and the City Council set the levy, the total tax billed, and the rate for each class every year.",
+  "limits": "State law set up the four property classes and the caps on yearly assessment increases, as well as the formula that sets each class's share of the tax and limits how fast a share can grow. The state constitution caps the property tax raised for operating costs, not counting debt payments, at 2.5% of the average full value of taxable property over five years. In fiscal 2026 the city was $2.2 billion under that cap, which is recalculated each year.",
+  "alone": "Raise or lower the overall rate, with the City Council's agreement. As a last resort, the mayor's February 2026 preliminary budget proposed raising the average rate 9.5%, from $12.283 to $13.450 per $100 of assessed value, worth about $3.7 billion a year. His May executive budget dropped it."
  },
  "personal_income_tax": {
   "albany": true,
-  "who": "Albany sets the rates and renews them; the current ones run through 2029.",
-  "limits": "The 2026 state budget declined the mayor's ask for 2 points more on incomes over $1 million, about $3 billion a year.",
-  "alone": "Nothing on rates."
+  "who": "Albany sets the rates and must renew them periodically; the current rates run through tax year 2029.",
+  "limits": "The state budget enacted in May 2026 left out the mayor's request for 2 percentage points more on incomes over $1 million, worth about $3 billion a year by the Independent Budget Office's estimate.",
+  "alone": "Nothing on rates. It can adjust some credits by local law: an August 2026 law trimmed the credit residents get for unincorporated business tax, worth about $68 million in fiscal 2027."
  },
  "sales_tax": {
   "albany": true,
-  "who": "Albany authorizes the city's 4.5 percent; the state collects it.",
-  "limits": "Broadening the base would take an amendment to state tax law.",
+  "who": "Albany authorizes the city's 4.5% rate, and the state collects the tax and sends it to the city.",
+  "limits": "Broadening what is taxed would take a change to state tax law. These squares also hold the mortgage recording tax, whose rates are in state law.",
   "alone": "Nothing."
  },
  "business_taxes": {
   "albany": true,
   "who": "Albany sets the corporation and unincorporated business tax rates.",
-  "limits": "Both houses' March 2026 budget resolutions backed city authority to raise corporate rates, as New York Focus reported; the budget signed in May left it out.",
-  "alone": "Nothing on the big ones. The commercial rent tax has been cut by local law."
+  "limits": "In March 2026 the state Senate and Assembly each backed the mayor's request to let the city raise its own corporate tax rates, New York Focus reported; the state budget signed in May left it out.",
+  "alone": "Nothing on rates."
  },
  "other_taxes": {
   "albany": true,
-  "who": "Mostly Albany: the transfer and mortgage recording taxes are state law, and so are the thresholds, rates and 2031 sunset of the new second-home surcharge, about $500 million a year.",
-  "limits": "",
-  "alone": "The Council extends the hotel tax rate by local law, most recently to December 2027."
+  "who": "Mostly Albany: the real property transfer tax is set in state law, and so are the thresholds, rates and June 2031 expiration of the new second-home surcharge, budgeted at $500 million a year.",
+  "limits": "These squares are grayed as a group, though the hotel and commercial rent taxes in them are set by local law.",
+  "alone": "The City Council sets the hotel tax rate by local law: it raised the rate to 5.875% in 2009 and most recently extended it through November 2027. It has also cut the commercial rent tax by local law."
  },
  "state_aid": {
   "albany": true,
@@ -46,7 +46,7 @@
  },
  "fees_fines_other": {
   "albany": false,
-  "who": "Mostly the city and its boards: fees, fines, water and sewer charges.",
+  "who": "Mostly the city and its boards: fees, fines and water and sewer charges.",
   "limits": "",
   "alone": "Set most fees and fines."
  }

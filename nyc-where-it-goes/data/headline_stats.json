@@ -3,30 +3,30 @@
   {
    "k": "Schools",
    "v": "$35,796",
-   "p": "spent per pupil in fiscal 2024, about double the national average of $17,619 and the highest among the 100 largest school systems.",
+   "p": "was spent per pupil in the 2023-24 school year, about double the national average of $17,619 and the most among the 100 largest school systems. The Census count includes federal, state and city money and employee benefits, but not construction or debt.",
    "src": "Census Bureau, school finances",
    "url": "https://www.census.gov/newsroom/press-releases/2026/school-system-finances.html"
   },
   {
    "k": "Shelter",
    "v": "85,066",
-   "p": "people slept in Department of Homeless Services shelters on an average night in fiscal 2026, up from 45,563 in fiscal 2022.",
+   "p": "people a day were in shelters run by the Department of Homeless Services in fiscal 2026, down 2% from the year before but up from 45,563 in fiscal 2022, before asylum seekers began arriving. The count leaves out shelters run by other agencies, such as those for survivors of domestic violence.",
    "src": "Mayor's Management Report",
    "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf"
   },
   {
    "k": "Cash assistance",
    "v": "566,500",
-   "p": "New Yorkers were receiving cash assistance in June 2026, 6 percent fewer than a year earlier.",
+   "p": "New Yorkers were receiving cash assistance (welfare) in June 2026, 6% fewer than a year earlier, partly because work and job-search requirements resumed.",
    "src": "Mayor's Management Report",
    "url": "https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf"
   },
   {
    "k": "Medicaid",
-   "v": "$6.8 billion",
-   "p": "is the city's own share of Medicaid in fiscal 2027. The state capped it at the 2015 level and pays the growth.",
-   "src": "Comptroller, fiscal 2027 budget comments",
-   "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/Comments-on-New-York-Citys-Fiscal-Year-2027-Adopted-Budget.pdf"
+   "v": "3.6 million",
+   "p": "New York City residents were enrolled in Medicaid in fiscal 2026. The city budgets $6.8 billion for it in fiscal 2027: about $5.4 billion is its share of patients' care, which the state froze at the 2015 level, and the rest includes extra payments to the city's public hospitals, which the cap does not cover.",
+   "src": "State Comptroller, financial plan review",
+   "url": "https://www.osc.ny.gov/files/reports/osdc/pdf/report-4-2027.pdf"
   }
  ]
 }

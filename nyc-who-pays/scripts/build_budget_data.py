@@ -283,7 +283,7 @@ for b in D['budget_years']:
 dump('nyc-budget-since-2000/data/real_per_resident.json', rp)
 
 # ---------------------------------------------------------------- part four: capital spending by function
-cap = {'source': 'NYC Comptroller ACFR, Capital Projects Fund expenditures by function, fiscal 2000-2025; bonds issued from the governmental funds statement.', 'labels': D['labels']['capital'], 'years': {}}
+cap = {'source': 'NYC Comptroller ACFR, Capital Projects Fund expenditures by function, fiscal 2000-2025; bonds issued from the governmental funds statement.', 'labels': dict(D['labels']['capital'], housing='Housing (Housing Preservation and Development)', public_safety='Police, fire and jails'), 'years': {}}  # the ledger's labels overstate both lines (no Buildings or courts capital in them)
 for y in D['years']:
     assert abs(sum(y['capital'].values()) - y['capital_total']) < 2
     cap['years'][str(y['fy'])] = {'total': y['capital_total'], 'groups': y['capital'], 'per_100': {k: round(v / y['capital_total'] * 100, 2) for k, v in y['capital'].items()},

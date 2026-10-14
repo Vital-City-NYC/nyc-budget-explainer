@@ -1,6 +1,6 @@
 {
  "fiscal_year": 2026,
- "source": "NYC Department of Finance, Annual Report on the NYC Real Property Tax FY2026 (July 2026), Fast Facts p.1, Tables 1, 4, 19, 20",
+ "source": "Department of Finance, Annual Report of the New York City Real Property Tax, Fiscal Year 2026 (July 2026), Fast Facts p. 1 and Tables 1, 4, 19 and 20",
  "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
  "levy_total_m": 37976.6,
  "market_value_total_m": 1574378.8,
@@ -25,9 +25,9 @@
    "levy_share": 20.09,
    "mv_share": 14.87,
    "rate": 12.439,
-   "levy_over_mv": null,
+   "levy_over_mv": 3.26,
    "color": "--c-c2r",
-   "note": "Rentals, conrentals and 4-10 family rentals, grouped from DOF Table 4. Renters pay this through rent; how much passes through is not settled."
+   "note": "Large rental buildings, rental condominium buildings and 4-to-10-family rentals, grouped from the Department of Finance's Table 4. Landlords get the bill; how much of it reaches tenants through rent is not settled."
   },
   {
    "key": "c2o",
