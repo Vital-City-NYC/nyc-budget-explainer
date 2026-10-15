@@ -1,0 +1,762 @@
+{
+ "fiscal_year": 2027,
+ "total": 126241596044,
+ "source": "Office of Management and Budget, Adopted Budget Fiscal Year 2027, Expense Revenue Contract (erc6-26.pdf), June 2026: each agency's note 1 (\"associated costs\"), Pension Contributions (095) p. 115E, Miscellaneous (098) pp. 117E-119E, Debt Service (099) p. 120E",
+ "url": "https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/erc6-26.pdf",
+ "unit": "dollars",
+ "order": [
+  "education",
+  "social_services",
+  "public_safety",
+  "health",
+  "general_government",
+  "environmental",
+  "everything_else",
+  "unassigned"
+ ],
+ "lines": {
+  "education": {
+   "base": 38572733319,
+   "fringe": 279495563,
+   "pension": 2671540796,
+   "debt": 2772812000,
+   "agencies": [
+    {
+     "code": "040",
+     "name": "Department of Education",
+     "page": "54E",
+     "fringe": 279495563,
+     "pension": 2671540796,
+     "debt": 2772812000
+    }
+   ],
+   "total": 44296581678
+  },
+  "social_services": {
+   "base": 23374910193,
+   "fringe": 829460296,
+   "pension": 237580287,
+   "debt": 69050820,
+   "agencies": [
+    {
+     "code": "069",
+     "name": "Department of Social Services",
+     "page": "97E",
+     "fringe": 481886695,
+     "pension": 134508590,
+     "debt": 69050820
+    },
+    {
+     "code": "068",
+     "name": "Administration for Children\u2019s Services",
+     "page": "91E",
+     "fringe": 261823615,
+     "pension": 78194707,
+     "debt": 0
+    },
+    {
+     "code": "071",
+     "name": "Department of Homeless Services",
+     "page": "104E",
+     "fringe": 71489850,
+     "pension": 20786749,
+     "debt": 0
+    },
+    {
+     "code": "125",
+     "name": "Department for the Aging",
+     "page": "142E",
+     "fringe": 14260136,
+     "pension": 4090241,
+     "debt": 0
+    }
+   ],
+   "total": 24511001596
+  },
+  "public_safety": {
+   "base": 12128739100,
+   "fringe": 5696861792,
+   "pension": 4707002693,
+   "debt": 630789383,
+   "agencies": [
+    {
+     "code": "056",
+     "name": "Police Department",
+     "page": "72E",
+     "fringe": 3290629005,
+     "pension": 2643822934,
+     "debt": 210846123
+    },
+    {
+     "code": "057",
+     "name": "Fire Department",
+     "page": "82E",
+     "fringe": 1164188003,
+     "pension": 1458480797,
+     "debt": 235035927
+    },
+    {
+     "code": "072",
+     "name": "Department of Correction",
+     "page": "108E",
+     "fringe": 977080154,
+     "pension": 508621875,
+     "debt": 184907333
+    },
+    {
+     "code": "901",
+     "name": "District Attorney\u2014 New York County",
+     "page": "392E",
+     "fringe": 53572407,
+     "pension": 22371308,
+     "debt": 0
+    },
+    {
+     "code": "903",
+     "name": "District Attorney\u2014 Kings County",
+     "page": "396E",
+     "fringe": 45766403,
+     "pension": 17178260,
+     "debt": 0
+    },
+    {
+     "code": "902",
+     "name": "District Attorney\u2014 Bronx County",
+     "page": "394E",
+     "fringe": 41215569,
+     "pension": 15281184,
+     "debt": 0
+    },
+    {
+     "code": "781",
+     "name": "Department of Probation",
+     "page": "305E",
+     "fringe": 37747452,
+     "pension": 9933793,
+     "debt": 0
+    },
+    {
+     "code": "904",
+     "name": "District Attorney\u2014 Queens County",
+     "page": "398E",
+     "fringe": 30532908,
+     "pension": 11789687,
+     "debt": 0
+    },
+    {
+     "code": "156",
+     "name": "NYC Taxi and Limousine Commission",
+     "page": "170E",
+     "fringe": 17894384,
+     "pension": 4683752,
+     "debt": 0
+    },
+    {
+     "code": "906",
+     "name": "Office of Prosecution\u2014 Special Narcotics",
+     "page": "402E",
+     "fringe": 8877122,
+     "pension": 3720218,
+     "debt": 0
+    },
+    {
+     "code": "054",
+     "name": "Civilian Complaint Review Board",
+     "page": "68E",
+     "fringe": 8435454,
+     "pension": 2838215,
+     "debt": 0
+    },
+    {
+     "code": "905",
+     "name": "District Attorney\u2014 Richmond County",
+     "page": "400E",
+     "fringe": 7325465,
+     "pension": 3235022,
+     "debt": 0
+    },
+    {
+     "code": "017",
+     "name": "Department of Emergency Management",
+     "page": "31E",
+     "fringe": 7041824,
+     "pension": 3061270,
+     "debt": 0
+    },
+    {
+     "code": "128",
+     "name": "Office of Criminal Justice",
+     "page": "157E",
+     "fringe": 3248853,
+     "pension": 1125204,
+     "debt": 0
+    },
+    {
+     "code": "073",
+     "name": "Board of Correction",
+     "page": "113E",
+     "fringe": 1233780,
+     "pension": 364934,
+     "debt": 0
+    },
+    {
+     "code": "943",
+     "name": "Public Administrator\u2014 Kings County",
+     "page": "408E",
+     "fringe": 476959,
+     "pension": 136722,
+     "debt": 0
+    },
+    {
+     "code": "941",
+     "name": "Public Administrator\u2014 New York County",
+     "page": "404E",
+     "fringe": 392592,
+     "pension": 123151,
+     "debt": 0
+    },
+    {
+     "code": "944",
+     "name": "Public Administrator\u2014 Queens County",
+     "page": "410E",
+     "fringe": 375237,
+     "pension": 82438,
+     "debt": 0
+    },
+    {
+     "code": "058",
+     "name": "Office of Community Safety",
+     "page": "86E",
+     "fringe": 374914,
+     "pension": 0,
+     "debt": 0
+    },
+    {
+     "code": "945",
+     "name": "Public Administrator\u2014 Richmond County",
+     "page": "412E",
+     "fringe": 277452,
+     "pension": 76421,
+     "debt": 0
+    },
+    {
+     "code": "942",
+     "name": "Public Administrator\u2014 Bronx County",
+     "page": "406E",
+     "fringe": 175855,
+     "pension": 75508,
+     "debt": 0
+    }
+   ],
+   "total": 23163392968
+  },
+  "health": {
+   "base": 4403882036,
+   "fringe": 317181902,
+   "pension": 78100607,
+   "debt": 357370071,
+   "agencies": [
+    {
+     "code": "816",
+     "name": "Department of Health and Mental Hygiene",
+     "page": "322E",
+     "fringe": 252591956,
+     "pension": 78100607,
+     "debt": 64252668
+    },
+    {
+     "code": "819",
+     "name": "Health and Hospitals Corporation",
+     "page": "333E",
+     "fringe": 64589946,
+     "pension": 0,
+     "debt": 293117403
+    }
+   ],
+   "total": 5156534616
+  },
+  "general_government": {
+   "base": 5715598047,
+   "fringe": 653869143,
+   "pension": 218911617,
+   "debt": 860440825,
+   "agencies": [
+    {
+     "code": "856",
+     "name": "Department of Citywide Administrative Services",
+     "page": "373E",
+     "fringe": 92470616,
+     "pension": 29574503,
+     "debt": 715995212
+    },
+    {
+     "code": "801",
+     "name": "Department of Small Business Services",
+     "page": "308E",
+     "fringe": 13502293,
+     "pension": 4023958,
+     "debt": 144445613
+    },
+    {
+     "code": "836",
+     "name": "Department of Finance",
+     "page": "352E",
+     "fringe": 82974666,
+     "pension": 22470506,
+     "debt": 0
+    },
+    {
+     "code": "858",
+     "name": "Department of Information Technology and Telecommunications",
+     "page": "382E",
+     "fringe": 63099660,
+     "pension": 22286714,
+     "debt": 0
+    },
+    {
+     "code": "025",
+     "name": "Law Department",
+     "page": "35E",
+     "fringe": 62376060,
+     "pension": 21185909,
+     "debt": 0
+    },
+    {
+     "code": "850",
+     "name": "Department of Design and Construction\u2026",
+     "page": "369E",
+     "fringe": 54062231,
+     "pension": 15614772,
+     "debt": 0
+    },
+    {
+     "code": "002",
+     "name": "Mayoralty",
+     "page": "4E",
+     "fringe": 41362118,
+     "pension": 16998229,
+     "debt": 0
+    },
+    {
+     "code": "003",
+     "name": "Board of Elections",
+     "page": "11E",
+     "fringe": 28635145,
+     "pension": 16242827,
+     "debt": 0
+    },
+    {
+     "code": "015",
+     "name": "Office of the Comptroller",
+     "page": "27E",
+     "fringe": 32521242,
+     "pension": 9753362,
+     "debt": 0
+    },
+    {
+     "code": "102",
+     "name": "City Council",
+     "page": "132E",
+     "fringe": 28638757,
+     "pension": 10203300,
+     "debt": 0
+    },
+    {
+     "code": "260",
+     "name": "Department of Youth and Community Development",
+     "page": "178E",
+     "fringe": 24182331,
+     "pension": 7640196,
+     "debt": 0
+    },
+    {
+     "code": "127",
+     "name": "Financial Information Services Agency",
+     "page": "155E",
+     "fringe": 20074594,
+     "pension": 7089197,
+     "debt": 0
+    },
+    {
+     "code": "820",
+     "name": "Office of Administrative Trials and Hearings\u2026",
+     "page": "335E",
+     "fringe": 18809826,
+     "pension": 7207692,
+     "debt": 0
+    },
+    {
+     "code": "866",
+     "name": "Department of Consumer & Worker Protection",
+     "page": "389E",
+     "fringe": 16564369,
+     "pension": 4256975,
+     "debt": 0
+    },
+    {
+     "code": "030",
+     "name": "Department of City Planning",
+     "page": "37E",
+     "fringe": 13824395,
+     "pension": 4178388,
+     "debt": 0
+    },
+    {
+     "code": "032",
+     "name": "Department of Investigation",
+     "page": "40E",
+     "fringe": 10525949,
+     "pension": 3545470,
+     "debt": 0
+    },
+    {
+     "code": "004",
+     "name": "Campaign Finance Board",
+     "page": "13E",
+     "fringe": 7460170,
+     "pension": 2458148,
+     "debt": 0
+    },
+    {
+     "code": "131",
+     "name": "Office of Payroll Administration",
+     "page": "160E",
+     "fringe": 5902731,
+     "pension": 2101974,
+     "debt": 0
+    },
+    {
+     "code": "226",
+     "name": "Commission on Human Rights",
+     "page": "176E",
+     "fringe": 4208148,
+     "pension": 1317254,
+     "debt": 0
+    },
+    {
+     "code": "136",
+     "name": "Landmarks Preservation Commission",
+     "page": "168E",
+     "fringe": 2590702,
+     "pension": 857111,
+     "debt": 0
+    },
+    {
+     "code": "829",
+     "name": "Business Integrity Commission",
+     "page": "349E",
+     "fringe": 2451914,
+     "pension": 794394,
+     "debt": 0
+    },
+    {
+     "code": "013",
+     "name": "Borough President\u2014 Queens",
+     "page": "23E",
+     "fringe": 2411381,
+     "pension": 749279,
+     "debt": 0
+    },
+    {
+     "code": "012",
+     "name": "Borough President\u2014 Brooklyn",
+     "page": "21E",
+     "fringe": 2361789,
+     "pension": 756011,
+     "debt": 0
+    },
+    {
+     "code": "008",
+     "name": "Office of the Actuary",
+     "page": "15E",
+     "fringe": 2368099,
+     "pension": 670365,
+     "debt": 0
+    },
+    {
+     "code": "011",
+     "name": "Borough President\u2014 Bronx",
+     "page": "19E",
+     "fringe": 2264861,
+     "pension": 688371,
+     "debt": 0
+    },
+    {
+     "code": "103",
+     "name": "City Clerk",
+     "page": "140E",
+     "fringe": 2230911,
+     "pension": 592896,
+     "debt": 0
+    },
+    {
+     "code": "021",
+     "name": "Office of Administrative Tax Appeals",
+     "page": "33E",
+     "fringe": 2030362,
+     "pension": 681982,
+     "debt": 0
+    },
+    {
+     "code": "860",
+     "name": "Department of Records and Information Services",
+     "page": "387E",
+     "fringe": 2022924,
+     "pension": 641099,
+     "debt": 0
+    },
+    {
+     "code": "132",
+     "name": "Independent Budget Office",
+     "page": "162E",
+     "fringe": 1775874,
+     "pension": 776357,
+     "debt": 0
+    },
+    {
+     "code": "010",
+     "name": "Borough President\u2014 Manhattan",
+     "page": "17E",
+     "fringe": 1891710,
+     "pension": 655524,
+     "debt": 0
+    },
+    {
+     "code": "101",
+     "name": "Public Advocate",
+     "page": "125E",
+     "fringe": 1671143,
+     "pension": 662960,
+     "debt": 0
+    },
+    {
+     "code": "014",
+     "name": "Borough President\u2014 Staten Island",
+     "page": "25E",
+     "fringe": 1501230,
+     "pension": 355377,
+     "debt": 0
+    },
+    {
+     "code": "063",
+     "name": "Department of Veterans Services",
+     "page": "88E",
+     "fringe": 1299279,
+     "pension": 488920,
+     "debt": 0
+    },
+    {
+     "code": "213",
+     "name": "Office of Racial Equity",
+     "page": "172E",
+     "fringe": 984335,
+     "pension": 308465,
+     "debt": 0
+    },
+    {
+     "code": "313",
+     "name": "Office of Collective Bargaining",
+     "page": "185E",
+     "fringe": 813774,
+     "pension": 315648,
+     "debt": 0
+    },
+    {
+     "code": "312",
+     "name": "Conflicts of Interest Board",
+     "page": "183E",
+     "fringe": 708519,
+     "pension": 337057,
+     "debt": 0
+    },
+    {
+     "code": "133",
+     "name": "Equal Employment Practices Commission",
+     "page": "164E",
+     "fringe": 497106,
+     "pension": 143659,
+     "debt": 0
+    },
+    {
+     "code": "215",
+     "name": "Commission of Racial Equity",
+     "page": "174E",
+     "fringe": 442991,
+     "pension": 142983,
+     "debt": 0
+    },
+    {
+     "code": "134",
+     "name": "Civil Service Commission",
+     "page": "166E",
+     "fringe": 354938,
+     "pension": 143785,
+     "debt": 0
+    }
+   ],
+   "total": 7448819632
+  },
+  "environmental": {
+   "base": 3960019033,
+   "fringe": 941920021,
+   "pension": 433562822,
+   "debt": 340481255,
+   "agencies": [
+    {
+     "code": "827",
+     "name": "Department of Sanitation",
+     "page": "344E",
+     "fringe": 636190220,
+     "pension": 348980744,
+     "debt": 288893589
+    },
+    {
+     "code": "826",
+     "name": "Department of Environmental Protection",
+     "page": "338E",
+     "fringe": 305729801,
+     "pension": 84582078,
+     "debt": 51587666
+    }
+   ],
+   "total": 5675983131
+  },
+  "everything_else": {
+   "base": 8563773925,
+   "fringe": 702260706,
+   "pension": 360462058,
+   "debt": 3681685953,
+   "agencies": [
+    {
+     "code": "806",
+     "name": "Housing Preservation and Development",
+     "page": "313E",
+     "fringe": 107317988,
+     "pension": 27715746,
+     "debt": 1823323770
+    },
+    {
+     "code": "841",
+     "name": "Department of Transportation",
+     "page": "359E",
+     "fringe": 309107691,
+     "pension": 88390650,
+     "debt": 981425494
+    },
+    {
+     "code": "846",
+     "name": "Department of Parks and Recreation",
+     "page": "365E",
+     "fringe": 210574298,
+     "pension": 65372240,
+     "debt": 489917483
+    },
+    {
+     "code": "126",
+     "name": "Department of Cultural Affairs",
+     "page": "147E",
+     "fringe": 2381043,
+     "pension": 12959141,
+     "debt": 241300723
+    },
+    {
+     "code": "042",
+     "name": "City University of New York\u2014 Community Colleges",
+     "page": "65E",
+     "fringe": 3533802,
+     "pension": 102074089,
+     "debt": 65064516
+    },
+    {
+     "code": "810",
+     "name": "Department of Buildings",
+     "page": "318E",
+     "fringe": 67068723,
+     "pension": 18679802,
+     "debt": 0
+    },
+    {
+     "code": "037",
+     "name": "New York Public Library",
+     "page": "45E",
+     "fringe": 0,
+     "pension": 15993115,
+     "debt": 30132322
+    },
+    {
+     "code": "038",
+     "name": "Brooklyn Public Library",
+     "page": "48E",
+     "fringe": 1135579,
+     "pension": 12317248,
+     "debt": 18824636
+    },
+    {
+     "code": "039",
+     "name": "Queens Borough Public Library",
+     "page": "50E",
+     "fringe": 1141582,
+     "pension": 13525875,
+     "debt": 14251556
+    },
+    {
+     "code": "035",
+     "name": "New York Research Libraries",
+     "page": "43E",
+     "fringe": 0,
+     "pension": 3434152,
+     "debt": 17445453
+    }
+   ],
+   "total": 13308182642
+  }
+ },
+ "unassigned": {
+  "total": 2681099112,
+  "parts": [
+   [
+    "claims",
+    "Legal judgments and claims",
+    1148189219
+   ],
+   [
+    "reserves",
+    "Reserves for unexpected costs and labor contracts not yet settled",
+    792838909
+   ],
+   [
+    "debt",
+    "Debt service the budget does not assign to an agency",
+    185384844
+   ],
+   [
+    "other",
+    "Other citywide costs",
+    554686140
+   ]
+  ],
+  "detail": {
+   "judgments_and_claims": 1148189219,
+   "unallocated_contingency_reserve": 450000000,
+   "reserve_for_collective_bargaining": 342838909,
+   "debt_not_itemized": 185384844,
+   "contractual_services_and_other_payments": 365778967,
+   "water_and_sewer": 136307647,
+   "preliminary_studies_for_capital_projects": 18102288,
+   "disaster_recovery": 10500000,
+   "fringe_not_itemized": 23997240,
+   "pension_rounding": -2
+  }
+ },
+ "note": "Base is each line as published on this page (agency net totals). Fringe, pension and debt are the amounts each agency's note says are appropriated in the Miscellaneous budget, the Pension Contribution agency and the Debt Service agency. For the Department of Education, $86,459,775 of fringe and $112,253,972 of pensions are left out because the note says they are already paid from the department's own units 442 and 482. Education's own fringe benefits (unit 461, $5,175,073,543) are already in its base. Unassigned is what the citywide lines hold beyond the agency notes. Rounding in the page's base figures leaves the total within a few hundred dollars of the budget's $126,241,596,044.",
+ "per_100": {
+  "education": 35.0887,
+  "social_services": 19.4159,
+  "public_safety": 18.3485,
+  "health": 4.0847,
+  "general_government": 5.9004,
+  "environmental": 4.4961,
+  "everything_else": 10.5418,
+  "unassigned": 2.1238
+ }
+}

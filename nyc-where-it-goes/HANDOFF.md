@@ -32,3 +32,9 @@ Live since 2026-10-02 at https://vital-city-nyc.github.io/nyc-budget-explainer/n
 - Long caveats sit in `<details class="more">`; bucket tables are folded in the method.
 - Part one has a "Four numbers behind the fair-share argument" strip (two numbers for each side: 37% from 0.9% of filers and 93% of corporate tax from 1,912 firms; the flat 3.876% top rate from $50,000 and homes' 14% of property tax on 50% of value). Part two has "Schools and the safety net, in four numbers" (`data/headline_stats.json`). Keep both strips balanced if editing.
 - Part three shades each row: lighter squares are the 2000 level, darker are added since. Part four has a clickable bar chart of capital spending by year in fiscal 2025 dollars.
+
+## Switch added Oct 14 2026 (published the same day)
+- Under the year slider: "Count pensions, benefits and debt with each service", off by default. When on, the waffle shows fiscal 2027 only (slider and Play are disabled), with each agency's pension, fringe and debt amounts from the note on its page in OMB's erc6-26 added to its line, and a striped "Not assigned to an agency" block ($2.68 billion: judgments and claims, reserves, $185 million of debt service, other citywide costs). Data: `data/loaded_2027.json`; research and all 79 agency notes verbatim: `research/06-pooled-costs-by-agency.md`.
+- Schools: unit 461 fringe is already in the line; the Education Department's intra-city fringe ($86,459,775, unit 442) and pensions ($112,253,972, unit 482) are subtracted from its note so nothing counts twice.
+- Fiscal 2025 is not offered: the audited books have no agency breakdown, and the 2025 budget's notes overshoot the audited pension line and are more than double that year's debt appropriation. The note under the chart keeps the 2025 estimate, labeled as one.
+- Shared budget.js and budget.css were not changed, so the ?v= stamps stay at 1005b. Page-only styles are in the inline style block.
