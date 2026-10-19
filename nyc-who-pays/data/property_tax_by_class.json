@@ -8,14 +8,15 @@
  "classes": [
   {
    "key": "c1",
-   "label": "1-, 2- and 3-family homes",
+   "label": "Class 1, mostly 1-, 2- and 3-family homes",
    "class": "Class 1",
    "levy_m": 5430.3,
    "levy_share": 14.299,
    "mv_share": 49.63,
    "rate": 19.843,
    "levy_over_mv": 0.7,
-   "color": "--c-c1"
+   "color": "--c-c1",
+   "note": "Class 1 is mostly one-, two- and three-family homes; it also holds some small condominiums and vacant residential land."
   },
   {
    "key": "c2r",

@@ -2,7 +2,7 @@
  "tax_year": 2022,
  "source": "Department of Finance, Statistical Profiles of New York City Business Income Taxes, Tax Year 2022 (August 2026), highlights p. 1",
  "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2022.pdf",
- "caption": "Tax year 2022 shares of the business corporation, general corporation and unincorporated business taxes. In fiscal 2025 about a fifth of these squares (the pass-through entity, utility and smaller taxes) are not covered by the sector data.",
+ "caption": "Tax year 2022 liability for the business corporation, general corporation and unincorporated business taxes. These three taxes were 78% of this group in fiscal 2025; the pass-through entity, utility and smaller taxes in it have no sector data.",
  "sectors": [
   {
    "key": "s1",

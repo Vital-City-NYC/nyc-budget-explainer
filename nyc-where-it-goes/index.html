@@ -28,7 +28,7 @@
 
 <section class="sec">
 <h2>For every $100 the city spends, what does it buy?</h2>
-<p class="sub">One square is $1 of every $100. Click a line to see which agencies spend it, what one of its largest agencies spends money on and who pays for it. The city's fiscal year runs from July 1 to June 30. Figures through fiscal 2025 are audited, meaning what the city actually spent; 2026 and 2027 are budget plans.</p>
+<p class="sub">One square is $1 of every $100. Click a line to see which agencies spend it, what one of its largest agencies spends money on and who pays for it. The city's fiscal year runs from July 1 to June 30. Figures through fiscal 2025 are actual spending as reported in the Comptroller's annual financial reports; 2026 and 2027 are budget plans.</p>
 <div class="lay main">
  <div class="wcol"><div class="waf" id="w"></div>
  <div class="yr"><label for="y">Fiscal year</label><input type="range" id="y" min="2000" max="2027" value="2025"><b id="yv">2025</b><span id="bflag"></span><button class="play" id="play">Play</button></div>
@@ -131,7 +131,7 @@ function draw(y){if(LOADED)y=2027;CUR=y;const yr=D.years[y],p=yr.per_100,c=cells
  const cnt=pc,sch=cnt.education,soc=cnt.social_services,fixed=cnt.pensions+cnt.benefits+cnt.debt_service,safe=cnt.public_safety+cnt.health+cnt.environmental;
  $('finding').textContent=`Of every $100 New York City spends on day-to-day operations, $${sch} goes to its schools and $${soc} to social services. Pensions, benefits and debt take $${fixed}.`;
  $('lede').innerHTML=`In fiscal ${y} the city ${yr.budgeted?'budgeted':'spent'} <b>$${(yr.total/1e6).toFixed(0)} billion</b>. Schools alone ${yr.budgeted?'get':'got'} <b>$${sch}</b> of every $100, ${sch>safe?'more':'less'} than police, fire, jails, prosecutors, public health, hospitals, sanitation, water and sewers combined.${yr.budgeted?' Budget plans leave out the state and federal grants, overtime and other costs usually added during the year: in fiscal 2025 the city adopted a budget of about $112 billion and spent $117.7 billion, so some lines look smaller in budget years than they turn out to be.':''}`;
- $('yv').textContent=y;$('y').value=y;$('bflag').textContent=yr.budgeted?'budgeted':'audited';B.carry(y,SEL);
+ $('yv').textContent=y;$('y').value=y;$('bflag').textContent=yr.budgeted?'budgeted':'actual';B.carry(y,SEL);
  hist();facts();}
 function hist(){const h=$('hist');
  if(LOADED){const lc=Object.fromEntries(cells(2027)),pc=Object.fromEntries(cells(2027,1));

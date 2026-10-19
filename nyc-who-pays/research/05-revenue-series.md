@@ -89,3 +89,9 @@ Cross-check with the Comptroller's reproduction of the same plan (research/03, T
 - HIGH: every FY2025 cell above (read from the ACFR PDF, page numbers given) and every OMB line (read from erc6-26.pdf p.5).
 - Derived: per-$100 shares, bucket sums.
 - Editorial: the eight buckets and the decision to file PTET where each source files it rather than restate either.
+
+## Oct. 19, 2026 independent review (changes made)
+An outside review (reviewer's report kept outside the repo) re-derived the revenue and aid files exactly from the upstream repo and confirmed the headline figures. Changes it prompted:
+- "Audited, meaning what the city actually collected" replaced with "actual revenue as reported in the Comptroller's annual financial reports." The ten-year table is in the statistical section, which the auditor's report (ACFR FY2025, printed p. 5) excludes from its opinion; governmental-fund revenue is on a modified accrual basis (Note A.3, printed p. 89), not cash received. Year tag now reads "actual." Same tag and sentence fixed in parts two and three.
+- Payer snapshots no longer split the first chart's squares for property, income or business taxes. Those shares are one year's billed or owed tax (FY2026 levy, TY2023 liability before credits, TY2022 liability), not the selected fiscal year's revenue, and the business data cover only 78% of the bucket in FY2025 (corporation and unincorporated business lines $11,028,201 thousand of $14,119,409 thousand). The key now lists the snapshot's percentages to one decimal. State and federal aid still split in place: those figures divide each year's own aid.
+- A visible note in the income and business trend text flags the 2025-2026 PTET step (FY2025 PTET $2,363,772 thousand, 2.0 per $100).

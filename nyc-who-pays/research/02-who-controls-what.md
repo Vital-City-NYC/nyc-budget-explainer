@@ -78,3 +78,9 @@ Blind-check note (2026-10-02): Chapter 127 of 2026 Part D extends to 2029 the PI
 - Aid earmarking: ACFR FY2025 p. 52, "Unrestricted Federal and State aid ... 52,693" (thousands) against categorical aid of 29,894,787; OMB erc6-26 p. iii, state education aid $15.1 billion of $20.8 billion in state aid for fiscal 2027.
 - Pandemic aid: State Comptroller report 12-2025, p. 14: "Through FY 2023, the City realized a total of $22 billion in federal aid ... to respond to the impacts of COVID-19." Federal aid share 14.0 per $100 in fiscal 2022 (revenue_per_100.json).
 - Budget totals: Comptroller FY27 comments p. 24, "The Adopted Budget for FY 2027 totals $125.84 billion"; OMB erc6-26 net total $126,241,596,044; the difference matches the Prior Year Payable Adjustment.
+
+## Oct. 19, 2026 independent review (changes made)
+- The two-way city/Albany split is now three-way (`level` in data/control.json): city (property tax), mixed (other taxes: hotel and commercial rent set or changed by local law beside the state-set transfer tax and second-home surcharge; fees, fines and other: city-set fees and fines beside interest, unrestricted aid and inter-fund transfers, per OMB erc6-26 revenue summary), state (income, sales, business taxes, state and federal aid).
+- The "$36 / $64" big numbers were removed. The key now gives each group's unrounded share rounded on its own (FY2027: city 29.46, mixed 12.36, state 58.18 per $100), with a note that the three can add to $99 or $101. The reviewer noted that the earlier $36 came from adding two separately rounded square counts (36.89 unrounded).
+- Added: these are shares of current revenue, not a measure of how much more the city could raise.
+- Property: Class 1 relabeled "Class 1, mostly 1-, 2- and 3-family homes" (DOF Table 4 shows some condominiums and vacant land in Class 1); value column now "Of taxable value," with the RPTL 581 caveat moved from the folded notes into the visible intro.
