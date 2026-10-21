@@ -38,3 +38,11 @@ Live since 2026-10-02 at https://vital-city-nyc.github.io/nyc-budget-explainer/n
 - Deep links: `#y=2012&k=personal_income_tax` opens a year and a line. Keys are the data bucket keys.
 - Strip heading on part one is the neutral "How concentrated is each tax?" (Josh's choice).
 - Not done: the source folders are not yet merged to Experiments main or pushed to joshgreenman1973/experiments; they live on branch `claude/nyc-who-pays` in this worktree and mirrored (uncommitted) in the main checkout. The public copy is Vital-City-NYC/nyc-budget-explainer.
+
+## Audit trail, Oct 19 2026
+- `scripts/sources.lock.json` pins the upstream nyc-budget-per-capita commit (4c124ba1, Aug 10 2026) and the checksums of every source PDF. `build_budget_data.py` now refuses another upstream commit unless `ALLOW_UNPINNED=1`; after a deliberate update, record the new commit and hashes.
+- `python3 scripts/check_audit_trail.py --fetch` checks the pin, the checksums, the period/basis/coverage fields on the four payer files, and that every split the first chart draws partitions its parent (aid by function = state and federal aid, every year), plus the line-by-line control sort in `research/02-control-lines-fy2027.json`. Run it before every push. The IBO workbook cannot be fetched by script and is listed as not checked.
+- A rebuild into a scratch folder on Oct 19 reproduced every derived file byte for byte; only aid_by_function.json changed, by its three new fields.
+
+## Blind review, Oct 21 2026
+Five independent checkers (barred from research/) re-derived every number on the page from the primary documents; all revenue, property, income and sector figures reproduced. Fixes: trend sentences now print square counts for the high, low and 2000 years so they match the key; "audited" wording replaced with "annual report"/"Comptroller's report" in the method; Class 1 assessment ratio "about 3.5%"; business "All other" 8.9%; transfer tax "capped by" state law; unrestricted aid named as such; UBT-credit trim scoped to $1 million-plus incomes; DOF source line adds Tables 21 and 22. Open: the chapter that extended the city income tax rates to tax year 2029 (the Senate's law database shows the June 12, 2026 revision; S10609 shows passed Senate only). Details at the foot of research/01, 02, 04 and 05.

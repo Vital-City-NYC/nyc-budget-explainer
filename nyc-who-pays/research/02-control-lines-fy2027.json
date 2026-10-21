@@ -1,0 +1,75 @@
+{
+ "about": "Line-by-line sort of the two groups data/control.json marks as mixed (other_taxes, fees_fines_other), fiscal 2027 adopted budget. Not used by the page. Checked by scripts/check_audit_trail.py, which requires each group's lines to add to the group total in data/revenue_per_100.json. Narrative and quotes: research/02-who-controls-what.md, section 'Line-by-line control sort'. In quotes, dot leaders are shortened to ' . . . ' and each quote stops at the fiscal 2027 column.",
+ "classes": {
+  "city": "rate or amount set by City Hall, the Council or a city board",
+  "state": "rate set or capped in state law (or follows a state-set rate)",
+  "none": "no rate: interest, aid, grants, transfers, audit and refund flows, accounting adjustments",
+  "intra": "intra-city revenue, added and then subtracted; nets to zero",
+  "unsorted": "gap between the adopted line and the May executive budget's sub-line detail; no adopted sub-line detail is published"
+ },
+ "sources": {
+  "erc": {"name": "OMB, Adopted Budget Fiscal Year 2027, Expense Revenue Contract (erc6-26.pdf), revenue summary, PDF pp. 5-6 (printed ii-iii), FY2027 adopted column, dollars", "url": "https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/erc6-26.pdf"},
+  "mm": {"name": "OMB, Executive Budget Fiscal Year 2027, Budget and Financial Plan Summary (mm5-26.pdf), May 2026; printed p. 57 (PDF 62) other taxes table and printed p. 62 (PDF 67) fine revenue table, FY2027 executive column, thousands of dollars", "url": "https://nyc.gov/assets/omb/downloads/pdf/exec26/mm5-26.pdf"},
+  "compt": {"name": "NYC Comptroller, Comments on New York City's Fiscal Year 2027 Adopted Budget, Table A1 (PDF p. 59) and footnote 7 (PDF p. 25)", "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/Comments-on-New-York-Citys-Fiscal-Year-2027-Adopted-Budget.pdf"}
+ },
+ "groups": {
+  "other_taxes": {
+   "total": 6216947000,
+   "lines": [
+    {"line": "Commercial Occupancy (commercial rent tax)", "amount": 974000000, "class": "city", "src": "erc", "quote": "Commercial Occupancy . . . 951,000,000 950,000,000 (-) 1,000,000 974,000,000"},
+    {"line": "Hotel", "amount": 843000000, "class": "city", "src": "erc", "quote": "Hotel . . . 811,000,000 810,000,000 (-) 1,000,000 843,000,000"},
+    {"line": "City Tax Programs (UBT credit cut, Local Law 133 of 2026)", "amount": 68000000, "class": "city", "src": "erc", "quote": "City Tax Programs. . . --- --- --- 68,000,000 (+) 68,000,000", "note": "a credit changed by local law, not a rate"},
+    {"line": "Second Home Surcharge", "amount": 500000000, "class": "state", "src": "erc", "quote": "Second Home Surcharge . . . --- --- --- 500,000,000 500,000,000"},
+    {"line": "Real Property Transfer", "amount": 1514000000, "class": "state", "src": "erc", "quote": "Real Property Transfer . . . 1,334,000,000 1,493,000,000 (+) 159,000,000 1,514,000,000"},
+    {"line": "Cannabis Tax", "amount": 32000000, "class": "state", "src": "erc", "quote": "Cannabis Tax. . . 23,000,000 25,000,000 (+) 2,000,000 32,000,000"},
+    {"line": "Tax Audit Revenues", "amount": 928666000, "class": "none", "src": "erc", "quote": "Tax Audit Revenues . . . 808,666,000 1,148,666,000 (+) 340,000,000 928,666,000", "note": "enforcement collections spread across all taxes, mostly state-set ones"},
+    {"line": "Other: STAR reimbursement (derived)", "amount": 110000000, "class": "none", "src": "compt", "quote": "Real Property $37,300 (Table A1) against OMB General Property $37,190,000,000; footnote 7: \"Property tax revenues are inclusive of the NY State reimbursement of STAR exemptions.\"", "note": "derived as 37,300 - 37,190 ($ millions; the Comptroller rounds to the million, so +/- $0.5 million). STAR is state money for a state exemption"},
+    {"line": "Other: Auto Use", "amount": 30000000, "class": "state", "src": "mm", "quote": "Auto Use $29,000 $30,000 1,000 3.4%", "note": "Tax Law 1201(g): \"A tax not to exceed fifteen dollars per annum per vehicle\"; the city charges $15, the cap"},
+    {"line": "Other: Commercial Motor Vehicle", "amount": 67071000, "class": "state", "src": "mm", "quote": "Commercial Motor Vehicle 61,071 67,071 6,000 9.8%", "note": "authorized and capped by Tax Law 1201; rates against the cap not checked"},
+    {"line": "Other: Taxi Medallion Transfer", "amount": 800000, "class": "state", "src": "mm", "quote": "Taxi Medallion Transfer 800 800 — 0.0%", "note": "Tax Law 1201(j) cap of eight percent; city rate 0.5 percent. Who cut it in 2017 not checked"},
+    {"line": "Other: Beer and Liquor", "amount": 25000000, "class": "state", "src": "mm", "quote": "Beer and Liquor 24,000 25,000 1,000 4.2%"},
+    {"line": "Other: Liquor License Surcharge", "amount": 6000000, "class": "state", "src": "mm", "quote": "Liquor License Surcharge 6,500 6,000 (500) (7.7%)", "note": "Tax Law 1201(d) cap \"not in excess of twenty-five percent of the amount of license fees\"; OMB says the city charges 25 percent"},
+    {"line": "Other: Horse Race Admissions", "amount": 50000, "class": "state", "src": "mm", "quote": "Horse Race Admissions 50 50 — 0.0%", "note": "enabling statute not located"},
+    {"line": "Other: Medical Marijuana Excise Tax", "amount": 600000, "class": "state", "src": "mm", "quote": "Medical Marijuana Excise Tax 600 600 — 0.0%", "note": "a share of a state tax"},
+    {"line": "Other: Off-Track Betting Surtax", "amount": 760000, "class": "state", "src": "mm", "quote": "Off-Track Betting Surtax 760 760 — 0.0%", "note": "enabling statute not located"},
+    {"line": "Other: Section 1127 (waiver)", "amount": 240000000, "class": "state", "src": "mm", "quote": "Section 1127 (Waiver) 267,000 240,000 (27,000) (10.1%)", "note": "non-resident city employees pay what the resident income tax would be; follows state-set income tax rates"},
+    {"line": "Other: Payments in Lieu of Taxes (PILOTs)", "amount": 804000000, "class": "none", "src": "mm", "quote": "Payment in Lieu of Taxes (PILOTs) 912,000 804,000 (108,000) (11.8%)", "note": "contract payments through EDC, IDA, Battery Park City Authority, HYIC and the Port Authority"},
+    {"line": "Other: Penalty and Interest Real Estate (current year)", "amount": 38000000, "class": "city", "src": "mm", "quote": "Penalty and Interest Real Estate (Current Year) 46,000 38,000 (8,000) (17.4%)", "note": "interest rate on late property tax adopted by Council resolution, Admin Code 11-224.1 (source read through a search summary only)"},
+    {"line": "Other: Penalty and Interest Real Estate (prior year)", "amount": 80000000, "class": "city", "src": "mm", "quote": "Penalty and Interest Real Estate (Prior Year) 85,000 80,000 (5,000) (5.9%)", "note": "as above"},
+    {"line": "Other: Other Refunds", "amount": -52000000, "class": "none", "src": "mm", "quote": "Other Refunds (52,000) (52,000) — 0.0%"},
+    {"line": "Other: Penalty and Interest - Other Refunds", "amount": -8000000, "class": "none", "src": "mm", "quote": "Penalty and Interest - Other Refunds (8,000) (8,000) — 0.0%"},
+    {"line": "Other: adopted less STAR less May detail", "amount": 15000000, "class": "unsorted", "src": "erc", "quote": "Other . . . 1,359,281,000 1,509,831,000 (+) 150,550,000 1,357,281,000", "note": "1,357,281,000 - 110,000,000 (STAR) - 1,232,281,000 (May sub-lines). Comptroller Table A1 'All Other 1,247' agrees to the rounding"}
+   ]
+  },
+  "fees_fines_other": {
+   "total": 9381314821,
+   "lines": [
+    {"line": "Licenses, Franchises, etc.", "amount": 721930000, "class": "city", "src": "erc", "quote": "Licenses, Franchises, etc. . . . $722,288,000 $799,931,000 (+) $77,643,000 $721,930,000"},
+    {"line": "Charges for Services", "amount": 1051343958, "class": "city", "src": "erc", "quote": "Charges for Services . . . 1,037,849,958 1,102,178,958 (+) 64,329,000 1,051,343,958"},
+    {"line": "Water and Sewer Charges", "amount": 2392139000, "class": "city", "flag": "cost_reimbursement", "src": "erc", "quote": "Water and Sewer Charges . . . 2,323,884,000 2,310,781,000 (-) 13,103,000 2,392,139,000", "note": "rates set by the Water Board, appointed by the mayor, but what reaches this budget is a reimbursement: mm5-26 p. 62, \"The City is reimbursed only for its expenditures.\" Raising water rates would not raise this line"},
+    {"line": "Rental Income", "amount": 282978000, "class": "city", "src": "erc", "quote": "Rental Income . . . 257,479,000 289,645,534 (+) 32,166,534 282,978,000"},
+    {"line": "Fines: Parking Violations", "amount": 603913000, "class": "city", "src": "mm", "quote": "Parking Violations . . . $639,900 $603,913", "note": "DOF sets parking fines by rule under Admin Code 19-203; the state adds a $15 surcharge (VTL 1809-a)"},
+    {"line": "Fines: Environmental Control Board Violations", "amount": 123717000, "class": "city", "src": "mm", "quote": "Environmental Control Board Violations . . . 154,945 123,717"},
+    {"line": "Fines: Department of Buildings Penalties", "amount": 83700000, "class": "city", "src": "mm", "quote": "Department of Buildings Penalties . . . 130,000 83,700"},
+    {"line": "Fines: Department of Health Violations", "amount": 22000000, "class": "city", "src": "mm", "quote": "Department of Health Violations . . . 29,300 22,000"},
+    {"line": "Fines: Taxi and Limousine Commission Violations", "amount": 14800000, "class": "city", "src": "mm", "quote": "Taxi and Limousine Commission Violations . . . 10,300 14,800"},
+    {"line": "Fines: Department of Finance Late Penalties", "amount": 13500000, "class": "city", "src": "mm", "quote": "Department of Finance Late Penalties . . . 21,500 13,500"},
+    {"line": "Fines: Department of Consumer and Worker Protection", "amount": 10550000, "class": "city", "src": "mm", "quote": "Department of Consumer and Worker Protection . . . 12,050 10,550"},
+    {"line": "Fines: Speed Camera Violations", "amount": 233330000, "class": "state", "src": "mm", "quote": "Speed Camera Violations . . . 228,300 233,330", "note": "VTL 1180-b: \"shall not exceed fifty dollars for each violation\""},
+    {"line": "Fines: Bus Lane Violations", "amount": 59532000, "class": "state", "src": "mm", "quote": "Bus Lane Violations . . . 60,850 59,532", "note": "VTL 1111-c sets a $50 to $250 schedule"},
+    {"line": "Fines: Red Light Camera Violations", "amount": 59216000, "class": "state", "src": "mm", "quote": "Red Light Camera Violations . . . 41,811 59,216", "note": "VTL 1111-a: \"shall not exceed fifty dollars for each violation\""},
+    {"line": "Fines: State Court Fines", "amount": 4000000, "class": "state", "src": "mm", "quote": "State Court Fines . . . 2,400 4,000"},
+    {"line": "Fines: Other Sources", "amount": 94419000, "class": "unsorted", "src": "mm", "quote": "Other Sources . . . 81,302 94,419", "note": "includes the weigh-in-motion pilot ($1.3 million, state-authorized)"},
+    {"line": "Fines and Forfeitures: adopted less May detail", "amount": 11814000, "class": "unsorted", "src": "erc", "quote": "Fines and Forfeitures . . . 1,237,622,000 1,472,865,000 (+) 235,243,000 1,334,491,000", "note": "1,334,491,000 - 1,322,677,000 (May fine table); includes about $1.2 million of forfeitures"},
+    {"line": "Interest Income", "amount": 302140000, "class": "none", "src": "erc", "quote": "Interest Income . . . 350,460,000 421,023,000 (+) 70,563,000 302,140,000"},
+    {"line": "Miscellaneous", "amount": 701327008, "class": "none", "src": "erc", "quote": "289,319,008 2,121,878,008 (+) 1,832,559,000 701,327,008 (Miscellaneous)", "note": "the Comptroller shows Miscellaneous at $301 million and a $400 million Prior Year Payable Adjustment on the spending side, so about $400 million of this line is an accounting adjustment (inference from the two tables)"},
+    {"line": "Intra-City Revenue", "amount": 2184299067, "class": "intra", "src": "erc", "quote": "Intra-City Revenue . . . 1,884,163,949 2,418,737,686 (+) 534,573,737 2,184,299,067"},
+    {"line": "Less: Intra-City Revenue", "amount": -2184299067, "class": "intra", "src": "erc", "quote": "Less: Intra-City Revenue . . . ($1,884,163,949) ($2,418,737,686) (-) $534,573,737 ($2,184,299,067)"},
+    {"line": "Unrestricted Intergovernmental Aid", "amount": 651000000, "class": "none", "src": "erc", "quote": "Other Intergovernmental Aid . . . --- $119,449,128 (+) $119,449,128 651,000,000"},
+    {"line": "Disallowances Against Categorical Grants", "amount": -15000000, "class": "none", "src": "erc", "quote": "Disallowances Against Categorical Grants . . . (15,000,000) (15,000,000) --- (15,000,000)"},
+    {"line": "Other Categorical Grants", "amount": 1138091498, "class": "none", "src": "erc", "quote": "Other Categorical Grants . . . $1,125,051,431 $1,256,138,160 (+) $131,086,729 $1,138,091,498"},
+    {"line": "Transfers from Capital Budget", "amount": 820874357, "class": "none", "src": "erc", "quote": "Transfers from Capital Budget . . . $804,682,116 $800,300,472 (-) $4,381,644 $820,874,357"}
+   ]
+  }
+ }
+}

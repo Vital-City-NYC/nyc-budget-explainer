@@ -84,3 +84,105 @@ Blind-check note (2026-10-02): Chapter 127 of 2026 Part D extends to 2029 the PI
 - The "$36 / $64" big numbers were removed. The key now gives each group's unrounded share rounded on its own (FY2027: city 29.46, mixed 12.36, state 58.18 per $100), with a note that the three can add to $99 or $101. The reviewer noted that the earlier $36 came from adding two separately rounded square counts (36.89 unrounded).
 - Added: these are shares of current revenue, not a measure of how much more the city could raise.
 - Property: Class 1 relabeled "Class 1, mostly 1-, 2- and 3-family homes" (DOF Table 4 shows some condominiums and vacant land in Class 1); value column now "Of taxable value," with the RPTL 581 caveat moved from the folded notes into the visible intro.
+
+## Line-by-line control sort, fiscal 2027 (Oct. 19, 2026, second pass)
+
+Every fiscal 2027 line in the two groups `data/control.json` marks as mixed, sorted into **city** (rate or amount set by City Hall, the Council or a city board), **state** (rate set or capped in state law, or follows a state-set rate) and **none** (no rate: interest, aid, grants, transfers, audit and refund flows, accounting adjustments). The machine-readable copy, with a verbatim quote for every line, is `research/02-control-lines-fy2027.json`; `scripts/check_audit_trail.py` fails unless each group's lines add to the group total the first chart uses. Not on the page.
+
+Sources (all downloaded and read directly, checksums in `scripts/sources.lock.json`):
+- OMB, Adopted Budget FY2027, Expense Revenue Contract, revenue summary, PDF pp. 5-6 (printed ii-iii), FY2027 adopted column: https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/erc6-26.pdf. Identical (same SHA-256) to the copy the upstream repo extracts.
+- The adopted budget gives no detail under its "Other" taxes line or its "Fines and Forfeitures" line. The sub-lines come from OMB's May 2026 Executive Budget summary, printed p. 57 (other taxes) and printed p. 62 (fines), FY2027 executive column, in thousands: https://nyc.gov/assets/omb/downloads/pdf/exec26/mm5-26.pdf. The gap between the adopted line and the May detail is listed as **unsorted**.
+- Comptroller, Comments on the FY2027 Adopted Budget, Table A1 (PDF p. 59) and footnote 7 (PDF p. 25): https://comptroller.nyc.gov/wp-content/uploads/documents/Comments-on-New-York-Citys-Fiscal-Year-2027-Adopted-Budget.pdf
+
+### Other taxes: $6,216,947,000
+
+| Line | FY2027 | Class | Quote (FY2027 figure last) | Basis for the class |
+|---|---|---|---|---|
+| Commercial Occupancy (commercial rent tax) | $974,000,000 | city | erc: "Commercial Occupancy . . . 951,000,000 950,000,000 (-) 1,000,000 974,000,000" | Base cut by local law: state bill S10300 (2026) amends Admin Code 11-704 h(2) "as amended by local law number 63 for the year 1997" (https://legislation.nysenate.gov/pdf/bills/2025/S10300). DOF testimony, Feb. 13, 2017, on Council bills to change it: "The statutory rate is 6.0 percent of base rent ... the effective tax rate is 3.9 percent" (https://www.nyc.gov/assets/finance/downloads/pdf/press_release/hyman_testimony_crt_02.13.2017.pdf). Whether the city could raise the rate without Albany is still UNVERIFIED |
+| Hotel | $843,000,000 | city | erc: "Hotel . . . 811,000,000 810,000,000 (-) 1,000,000 843,000,000" | Local Law 153 of 2023 (verification item 6 above). State enabling statute still not located |
+| City Tax Programs | $68,000,000 | city | erc: "City Tax Programs. . . --- --- --- 68,000,000 (+) 68,000,000" | Local Law 133 of 2026, the cut to the income tax credit for unincorporated business tax (Oct. 14 review above). A credit, not a rate |
+| Second Home Surcharge | $500,000,000 | state | erc: "Second Home Surcharge . . . --- --- --- 500,000,000 500,000,000" | Chapter 59 of 2026, Part HH |
+| Real Property Transfer | $1,514,000,000 | state | erc: "Real Property Transfer . . . 1,334,000,000 1,493,000,000 (+) 159,000,000 1,514,000,000" | IBO 2024: a change "would require State legislation" |
+| Cannabis Tax | $32,000,000 | state | erc: "Cannabis Tax. . . 23,000,000 25,000,000 (+) 2,000,000 32,000,000" | Local cannabis rate is in state law (statute not re-read here) |
+| Tax Audit Revenues | $928,666,000 | none | erc: "Tax Audit Revenues . . . 808,666,000 1,148,666,000 (+) 340,000,000 928,666,000" | Enforcement collections across all taxes. mm5-26 p. 59: "the Department of Finance targets delinquent taxpayers through agency audit activities" |
+| Other | $1,357,281,000 | split below | erc: "Other . . . 1,359,281,000 1,509,831,000 (+) 150,550,000 1,357,281,000" | |
+
+Inside "Other" ($1,357,281,000):
+
+| Sub-line | FY2027 | Class | Quote | Basis |
+|---|---|---|---|---|
+| STAR reimbursement | about $110,000,000 | none | Comptroller Table A1 "Real Property $37,300" against OMB "General Property ... $37,190,000,000"; footnote 7: "Property tax revenues are inclusive of the NY State reimbursement of STAR exemptions." | Derived: 37,300 - 37,190, in millions (the Comptroller rounds, so plus or minus $0.5 million). State money for a state exemption. Table A1 "All Other 1,247" confirms: 1,357 - 110 = 1,247 |
+| Auto Use | $30,000,000 | state | mm5-26: "Auto Use $29,000 $30,000 1,000 3.4%" | Tax Law 1201(g) (via WebFetch): "A tax not to exceed fifteen dollars per annum per vehicle." OMB: "an annual rate of $15 per vehicle", the cap |
+| Commercial Motor Vehicle | $67,071,000 | state | "Commercial Motor Vehicle 61,071 67,071 6,000 9.8%" | Authorized and capped by Tax Law 1201; OMB's rates were not checked against the caps |
+| Taxi Medallion Transfer | $800,000 | state | "Taxi Medallion Transfer 800 800 — 0.0%" | Tax Law 1201(j) (via WebFetch): "at a rate not to exceed eight percent"; the city charges 0.5 percent. Who made the 2017 cut was not checked, so this is the line most likely to be city-set instead |
+| Beer and Liquor | $25,000,000 | state | "Beer and Liquor 24,000 25,000 1,000 4.2%" | Authorized by state law; per-gallon rates not checked against the statute |
+| Liquor License Surcharge | $6,000,000 | state | "Liquor License Surcharge 6,500 6,000 (500) (7.7%)" | Tax Law 1201(d) (via WebFetch): "not in excess of twenty-five percent of the amount of license fees"; OMB says the city charges "the rate of 25 percent" |
+| Horse Race Admissions | $50,000 | state | "Horse Race Admissions 50 50 — 0.0%" | Enabling statute not located |
+| Medical Marijuana Excise Tax | $600,000 | state | "Medical Marijuana Excise Tax 600 600 — 0.0%" | OMB p. 58: "50 percent of the New York State medical marijuana excise tax revenue collected in New York City" |
+| Off-Track Betting Surtax | $760,000 | state | "Off-Track Betting Surtax 760 760 — 0.0%" | Enabling statute not located |
+| Section 1127 (waiver) | $240,000,000 | state | "Section 1127 (Waiver) 267,000 240,000 (27,000) (10.1%)" | OMB p. 58: payments "in an amount equal to what their personal income tax liability would be if they were City residents", so it follows the state-set income tax rates |
+| PILOTs | $804,000,000 | none | "Payment in Lieu of Taxes (PILOTs) 912,000 804,000 (108,000) (11.8%)" | OMB p. 58: "PILOTs are contractual agreements between public agencies and private property owners" |
+| Penalty and Interest Real Estate, current year | $38,000,000 | city | "Penalty and Interest Real Estate (Current Year) 46,000 38,000 (8,000) (17.4%)" | Admin Code 11-224.1: the Council adopts the late-payment interest rates by resolution on the Banking Commission's advice. Read through a search summary only; spot-check before printing |
+| Penalty and Interest Real Estate, prior year | $80,000,000 | city | "Penalty and Interest Real Estate (Prior Year) 85,000 80,000 (5,000) (5.9%)" | Same |
+| Other Refunds | -$52,000,000 | none | "Other Refunds (52,000) (52,000) — 0.0%" | Refunds |
+| Penalty and Interest, Other Refunds | -$8,000,000 | none | "Penalty and Interest - Other Refunds (8,000) (8,000) — 0.0%" | Interest paid out |
+| Adopted less STAR less May detail | $15,000,000 | unsorted | | 1,357,281,000 - 110,000,000 - 1,232,281,000 (the May total: "Total $1,372,781 $1,232,281") |
+
+Other taxes by class: city $2,003.0 million; state $2,416.3 million; none $1,782.7 million; unsorted $15.0 million.
+
+### Fees, fines and other: $9,381,314,821
+
+| Line | FY2027 | Class | Quote | Basis |
+|---|---|---|---|---|
+| Licenses, Franchises, etc. | $721,930,000 | city | erc: "Licenses, Franchises, etc. . . . $722,288,000 $799,931,000 (+) $77,643,000 $721,930,000" | Licenses and permits are "issued and regulated by twelve City agencies" (mm5-26 p. 61, on permits). Some fees are capped in state law; not checked fee by fee |
+| Charges for Services | $1,051,343,958 | city | "Charges for Services . . . 1,037,849,958 1,102,178,958 (+) 64,329,000 1,051,343,958" | mm5-26 p. 60: "In the absence of State legislative authorization for the City to impose a specific fee, the City may, where otherwise allowed by law, impose a user fee to recover the cost of providing services." |
+| Water and Sewer Charges | $2,392,139,000 | city, flagged | "Water and Sewer Charges . . . 2,323,884,000 2,310,781,000 (-) 13,103,000 2,392,139,000" | The Water Board sets the rates, but this line is a reimbursement. mm5-26 p. 62: "The City is reimbursed only for its expenditures"; $2,081 million for operation and maintenance plus $312 million rent, which "is capped". Raising water rates would not raise this line |
+| Rental Income | $282,978,000 | city | "Rental Income . . . 257,479,000 289,645,534 (+) 32,166,534 282,978,000" | City as landlord |
+| Fines and Forfeitures | $1,334,491,000 | split below | "Fines and Forfeitures . . . 1,237,622,000 1,472,865,000 (+) 235,243,000 1,334,491,000" | |
+| Interest Income | $302,140,000 | none | "Interest Income . . . 350,460,000 421,023,000 (+) 70,563,000 302,140,000" | |
+| Miscellaneous | $701,327,008 | none | "289,319,008 2,121,878,008 (+) 1,832,559,000 701,327,008" (the row label prints separately at the foot of the page) | The Comptroller shows Miscellaneous at $301 million and a "Prior Year Payable Adjustment" of ($400) million on the spending side, so about $400 million of this line is an accounting adjustment (inference from the two tables) |
+| Intra-City Revenue, and Less: Intra-City Revenue | +$2,184,299,067 and -$2,184,299,067 | intra (nets to zero) | "Intra-City Revenue . . . 2,184,299,067"; "Less: Intra-City Revenue . . . ($2,184,299,067)" | |
+| Unrestricted Intergovernmental Aid | $651,000,000 | none | "Other Intergovernmental Aid . . . --- $119,449,128 (+) $119,449,128 651,000,000" | |
+| Disallowances Against Categorical Grants | -$15,000,000 | none | "Disallowances Against Categorical Grants . . . (15,000,000) (15,000,000) --- (15,000,000)" | |
+| Other Categorical Grants | $1,138,091,498 | none | "Other Categorical Grants . . . $1,125,051,431 $1,256,138,160 (+) $131,086,729 $1,138,091,498" | |
+| Transfers from Capital Budget | $820,874,357 | none | "Transfers from Capital Budget . . . $804,682,116 $800,300,472 (-) $4,381,644 $820,874,357" | |
+
+Inside Fines and Forfeitures ($1,334,491,000), from the May fine table (mm5-26 p. 62, "Fine Revenue ... 2027 Executive Budget", thousands):
+
+| Sub-line | FY2027 | Class | Quote | Basis |
+|---|---|---|---|---|
+| Parking Violations | $603,913,000 | city | "Parking Violations . . . $639,900 $603,913" | DOF sets parking fines by rule. DOF notice of rulemaking, 2009: "Pursuant to the power vested in me as Commissioner of Finance by sections 389(b) and 1043 of the New York City Charter, section 237 of the Vehicle and Traffic Law and section 19-203 of the Administrative Code" (https://www.nyc.gov/assets/finance/downloads/pdf/09pdf/parking_rule_idling.pdf). The same notice: a "$15.00 surcharge that is added to all parking fines by section 1809-a of the Vehicle and Traffic Law" |
+| Environmental Control Board | $123,717,000 | city | "Environmental Control Board Violations . . . 154,945 123,717" | Violations "of the City's Administrative Code" (mm5-26 p. 63) |
+| Department of Buildings | $83,700,000 | city | "Department of Buildings Penalties . . . 130,000 83,700" | |
+| Department of Health | $22,000,000 | city | "Department of Health Violations . . . 29,300 22,000" | |
+| Taxi and Limousine Commission | $14,800,000 | city | "Taxi and Limousine Commission Violations . . . 10,300 14,800" | |
+| Department of Finance late penalties | $13,500,000 | city | "Department of Finance Late Penalties . . . 21,500 13,500" | |
+| Consumer and Worker Protection | $10,550,000 | city | "Department of Consumer and Worker Protection . . . 12,050 10,550" | |
+| Speed Camera Violations | $233,330,000 | state | "Speed Camera Violations . . . 228,300 233,330" | VTL 1180-b (via WebFetch): "The liability of the owner pursuant to this section shall not exceed fifty dollars for each violation" (https://www.nysenate.gov/legislation/laws/VAT/1180-B) |
+| Bus Lane Violations | $59,532,000 | state | "Bus Lane Violations . . . 60,850 59,532" | VTL 1111-c (via WebFetch): "shall not exceed fifty dollars for a first violation", rising to $250 (https://www.nysenate.gov/legislation/laws/VAT/1111-C) |
+| Red Light Camera Violations | $59,216,000 | state | "Red Light Camera Violations . . . 41,811 59,216" | VTL 1111-a (via WebFetch): "shall not exceed fifty dollars for each violation" (https://www.nysenate.gov/legislation/laws/VAT/1111-A) |
+| State Court Fines | $4,000,000 | state | "State Court Fines . . . 2,400 4,000" | |
+| Other Sources | $94,419,000 | unsorted | "Other Sources . . . 81,302 94,419" | Includes the $1.3 million weigh-in-motion pilot (state-authorized) |
+| Adopted less May detail | $11,814,000 | unsorted | | 1,334,491,000 - 1,322,677,000 ("Total . . . $1,412,658 $1,322,677"); includes about $1.2 million of forfeitures |
+
+Fees, fines and other by class: city $5,320.6 million (of which water and sewer $2,392.1 million); state $356.1 million; none $3,598.4 million; unsorted $106.2 million; intra-city nets to zero.
+
+### Proposed (not applied): an exact city-set share
+
+The sort supports a single number in place of the three-way key, if the page wants one. Fiscal 2027, per $100 of the $126,241,596,044 budget:
+
+| | $ millions | Per $100 |
+|---|---|---|
+| City sets the rate: property tax ($37,190) plus the city lines above ($2,003.0 + $5,320.6) | 44,513.6 | **35.26** |
+| State sets or caps the rate: income, sales and business taxes ($45,267) plus the state lines above ($2,416.3 + $356.1) | 48,039.4 | 38.05 |
+| No rate: state and federal categorical aid ($28,186.3) plus the no-rate lines above ($1,782.7 + $3,598.4) | 33,567.4 | 26.59 |
+| Unsorted | 121.2 | 0.10 |
+
+Proposed wording: "About $35 of every $100 comes from taxes and charges whose rates City Hall and the City Council set; about $33 if water and sewer charges are left out, since that money only repays the city's cost of running the water system." The unsorted $121 million (10 cents per $100) cannot move either figure by more than a dime. The weakest calls, which together are under 30 cents per $100: the commercial rent and hotel taxes (the city sets them by local law, but the state enabling acts were not read), the small excise taxes filed under state (about $130 million) and the property tax interest lines (about $118 million, read through a search summary).
+
+This is a share of current revenue, not a measure of how much more the city could raise, the same caveat the page already carries.
+
+## Oct. 21, 2026 blind review (control claims)
+Changes made:
+- Real property transfer tax: Tax Law section 1201(b) authorizes a city of one million or more to impose the tax "at a rate not to exceed two and six hundred twenty-five one thousandths of one percent" above $500,000 (https://newyork.public.law/laws/n.y._tax_law_section_1201); the city imposes it by local law at the ceiling and could cut it alone. The control text now says the transfer tax is "capped by" state law rather than "set in" it. The mortgage recording tax rates are exact in section 253-a ($1.00, $1.125 and $1.75 per $100), so "in state law" stands for that one.
+Confirmed, no change (sources opened Oct. 21): sales tax 4.5% authorized by Tax Law section 1210(a)(1), collected by the state and paid to the city monthly under section 1261(c)(1), base must match article 28 under section 1210(b); the second-home surcharge is chapter 59 of 2026 Part HH, Tax Law article 30-C, "shall expire and be deemed repealed on June 30, 2031" (bill text A.10009-C p. 110); hotel tax 5.875% from March 1, 2009 under Local Law 65 of 2008 (Int. 0879-2008), extended to Nov. 30, 2027 by Local Law 153 of 2023 (Int. 1208-2023), DOF 2024 hotel tax report pp. 1-2; commercial rent tax cut by Local Laws 254 and 256 of 2017 and 121 of 2018; Water Board rate-setting statement at https://www.nyc.gov/site/nycwaterboard/index.page; the "two paths" and "last resort" wording in the mayor's Feb. 17, 2026 transcript and OMB sum2-26.pdf pp. 22-26; the executive budget reversal in mm5-26.pdf pp. 37 and 41 and the Comptroller's adopted-budget comments p. 7; the one-house budgets in New York Focus, March 10, 2026 (https://nysfocus.com/2026/03/10/senate-assembly-mamdani-tax-hikes); budget revenue bill signed May 28, 2026 (chapter 59). Note: the state budget's three-year corporate extension (Part E, 7.25% through 2029) is the state's rate; the city's 8.85% business corporation tax rate has no sunset.

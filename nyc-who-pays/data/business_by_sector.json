@@ -2,6 +2,9 @@
  "tax_year": 2022,
  "source": "Department of Finance, Statistical Profiles of New York City Business Income Taxes, Tax Year 2022 (August 2026), highlights p. 1",
  "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2022.pdf",
+ "period": "Tax year 2022, one year only",
+ "basis": "Liability by industry, from the Department of Finance statistical profiles. Tax owed for 2022, not fiscal-year revenue.",
+ "coverage": "Business corporation, general corporation and unincorporated business taxes only. Those lines were $11,028,201 thousand of the group's $14,119,409 thousand in fiscal 2025 (78%); the pass-through entity, utility and smaller taxes in the group have no sector data.",
  "caption": "Tax year 2022 liability for the business corporation, general corporation and unincorporated business taxes. These three taxes were 78% of this group in fiscal 2025; the pass-through entity, utility and smaller taxes in it have no sector data.",
  "sectors": [
   {
@@ -43,7 +46,7 @@
    "key": "s6",
    "label": "All other sectors",
    "short": "All other",
-   "tax_share": 8.8,
+   "tax_share": 8.9,
    "color": "--c-fees"
   }
  ],

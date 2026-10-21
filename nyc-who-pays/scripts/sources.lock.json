@@ -1,0 +1,25 @@
+{
+ "about": "Pins the inputs behind part one's numbers. scripts/build_budget_data.py refuses to run against any other upstream commit unless ALLOW_UNPINNED=1; scripts/check_audit_trail.py verifies the commit and every checksum below. Hashes recorded 2026-10-19 from fresh downloads; each matched the copy already on disk or the MD5 recorded in research/.",
+ "upstream": {
+  "repo": "https://github.com/joshgreenman1973/nyc-budget-per-capita",
+  "commit": "4c124ba1c2a3891a2b2b64a5eeb1d7fd359790e3",
+  "commit_date": "2026-08-10T14:05:58-04:00",
+  "files": {
+   "data.json": "a52d04cabab41b77c46d7815312adbda1abaa520768afff42cf373c7cf8f6ff6",
+   "data/out/acfr_raw.csv": "b64684a65d7ef474437926e24e104c4013a8072d0c1a7f814af11894675cc1d9",
+   "data/out/omb_agencies.json": "c7497f93636e9a134848a7e4926696bef1333686ea0aff1e400e2e6536f2dcdf"
+  }
+ },
+ "pdfs": [
+  {"name": "Comptroller ACFR FY2025", "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf", "upstream_path": "data/raw/acfr2025.pdf", "bytes": 4745590, "sha256": "3ab9e1e81d23d41c9051ffc24937caeef37e353d6755942d208147f7ac45022f", "md5": "972e533108e31b2da2be30d59d97264f", "feeds": "revenue_per_100 (2016-2025), aid_by_function"},
+  {"name": "Comptroller CAFR FY2015", "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/CAFR2015.pdf", "upstream_path": "data/raw/acfr2015.pdf", "bytes": 7595043, "sha256": "ba81e5ef2d1e37081e9ad0e034553c27d45806a192bacaa4a81336eb31a3723d", "md5": "c12bf9ac60a22c8bd5fd2613365b22d5", "feeds": "revenue_per_100 (2006-2015)"},
+  {"name": "Comptroller CAFR FY2005", "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/cafr2005.pdf", "upstream_path": "data/raw/acfr2005.pdf", "bytes": 1297567, "sha256": "7d953ff3d742981ee90a1e472cb145ff3134e3d06450185eba5b4c0c96e2a38d", "md5": "adda7a0e842ae77f1a87083e9a3799b7", "feeds": "revenue_per_100 (2000-2005)"},
+  {"name": "OMB Adopted Budget FY2027, Expense Revenue Contract (erc6-26)", "url": "https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/erc6-26.pdf", "upstream_path": "data/raw/omb_adopt_fy2027.pdf", "bytes": 12119311, "sha256": "406c1831a5490e8fd319d80689b981ecee7d9a7fe3ac8636d012eb9ed440581f", "md5": "0f2bc568af6f036d1f55b03e3a54afd2", "feeds": "revenue_per_100 (2026-2027), research/02-control-lines-fy2027.json"},
+  {"name": "OMB Adopted Budget FY2027, Supporting Schedules (ss6-26)", "url": "https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/ss6-26.pdf", "local_path": "scripts/ss6-26.pdf", "bytes": 6144576, "sha256": "97ad1684c35e3558b20adb7b70e5d0b8eb1723f59b65aceaf0766b95d64fa9fd", "md5": "23e29a9f9eab80edb932ba24bd8215b3", "feeds": "parts two and four (funding_by_bucket, inside)"},
+  {"name": "OMB Executive Budget FY2027, Budget and Financial Plan Summary (mm5-26)", "url": "https://nyc.gov/assets/omb/downloads/pdf/exec26/mm5-26.pdf", "bytes": 2938498, "md5": "e420a121efa5c0d78be77ee262a3af1c", "sha256": "19ddb9cebe2f3322a48997cbd5e6053f70baa9586afe1f71cb5e5b75d1a05c99", "feeds": "research/02-control-lines-fy2027.json (other taxes and fines sub-lines)"},
+  {"name": "Comptroller, Comments on the FY2027 Adopted Budget", "url": "https://comptroller.nyc.gov/wp-content/uploads/documents/Comments-on-New-York-Citys-Fiscal-Year-2027-Adopted-Budget.pdf", "bytes": 5295717, "md5": "3589fdd5b8e6880f37a3b804d447f974", "sha256": "931b9de238dd3816610e3c645c64afdff6ddf89fbf35eb78936e8f33bf7aadd8", "feeds": "research/02, research/03"},
+  {"name": "DOF Annual Report on the Real Property Tax FY2026", "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf", "bytes": 939029, "sha256": "982115948ca6dc54705b905ae83600df346775710cd4e97040e2553c4c9876b8", "md5": "c55874c9ccee61b461e1a4ee0c15b096", "feeds": "property_tax_by_class"},
+  {"name": "DOF Statistical Profiles of Business Income Taxes, Tax Year 2022", "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2022.pdf", "bytes": 667144, "sha256": "726a597314ed2ba322347d5e29aba263d7f787a9432717dfa1b5dd20f1bb4fbb", "md5": "284019ad8f82cce40159782e6f2609fb", "feeds": "business_by_sector"},
+  {"name": "IBO income tax tables, tax year 2023 (2023-pit-data.xlsx)", "url": "https://a860-gpp.nyc.gov/downloads/2227mv671", "bytes": 180968, "md5": "4db3713423d59a5627224ca038929f08", "browser_only": true, "feeds": "pit_by_income", "note": "a860-gpp.nyc.gov returns 403 to scripts; MD5 recorded Oct. 2026 from a browser download (research/04). Not re-verified by the check."}
+ ]
+}

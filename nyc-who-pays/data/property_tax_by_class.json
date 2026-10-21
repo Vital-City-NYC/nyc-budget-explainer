@@ -1,7 +1,10 @@
 {
  "fiscal_year": 2026,
- "source": "Department of Finance, Annual Report of the New York City Real Property Tax, Fiscal Year 2026 (July 2026), Fast Facts p. 1 and Tables 1, 4, 19 and 20",
+ "source": "Department of Finance, Annual Report of the New York City Real Property Tax, Fiscal Year 2026 (July 2026), Fast Facts p. 1 and Tables 1, 4, 19, 20, 21 and 22",
  "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+ "period": "Fiscal 2026 (July 1, 2025 to June 30, 2026), one year only",
+ "basis": "The levy, the tax billed, by class, as the Department of Finance reports it. A one-year snapshot of billed tax, not the selected year's revenue.",
+ "coverage": "All four tax classes: the whole fiscal 2026 levy of $37,976.6 million. Not the same total as the first chart's property tax line, which is revenue after refunds and reserves.",
  "levy_total_m": 37976.6,
  "market_value_total_m": 1574378.8,
  "citywide_rate": 12.283,

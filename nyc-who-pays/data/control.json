@@ -13,7 +13,7 @@
   "albany": true,
   "who": "Albany sets the rates and must renew them periodically; the current rates run through tax year 2029.",
   "limits": "The state budget enacted in May 2026 left out the mayor's request for 2 percentage points more on incomes over $1 million, worth about $3 billion a year by the Independent Budget Office's estimate.",
-  "alone": "Nothing on rates. It can adjust some credits by local law: an August 2026 law trimmed the credit residents get for unincorporated business tax, worth about $68 million in fiscal 2027.",
+  "alone": "Nothing on rates. It can adjust some credits by local law: an August 2026 local law trimmed the credit for unincorporated business tax for residents with taxable income of $1 million or more, worth about $68 million in fiscal 2027.",
   "level": "state"
  },
  "sales_tax": {
@@ -32,7 +32,7 @@
  },
  "other_taxes": {
   "albany": false,
-  "who": "Mixed. The real property transfer tax and the new second-home surcharge, budgeted at $500 million a year and set to expire in June 2031, are set in state law; the hotel and commercial rent taxes are set or changed by local law.",
+  "who": "Mixed. The new second-home surcharge, budgeted at $500 million a year and set to expire in June 2031, is set in state law, and the real property transfer tax is capped by it; the hotel and commercial rent taxes are set or changed by local law.",
   "limits": "",
   "alone": "The City Council sets the hotel tax rate by local law: it raised the rate to 5.875% in 2009 and most recently extended it through November 2027. It has also cut the commercial rent tax by local law.",
   "level": "mixed"

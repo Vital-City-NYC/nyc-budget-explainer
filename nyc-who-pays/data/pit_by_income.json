@@ -2,6 +2,9 @@
  "tax_year": 2023,
  "source": "Independent Budget Office, tables on New York City residents' income and income tax liability, tax year 2023 (released Feb. 10, 2026), sheet 2 Summary",
  "url": "https://a860-gpp.nyc.gov/concern/nyc_government_publications/pv63g542d",
+ "period": "Tax year 2023 (calendar 2023), one year only",
+ "basis": "Liability before credits, the Independent Budget Office's measure. Tax owed on 2023 returns, not fiscal-year collections.",
+ "coverage": "City residents' returns only: 3,905,234 returns and $14,630.6 million of liability before credits. Leaves out the pass-through entity tax paid by businesses, which the first chart counts in this line for 2026 and 2027, and refunds, audits and other collections.",
  "sub": "The income tax squares, split by the filer's income. Tax year 2023, the latest available: 3.9 million returns and $14.6 billion of tax owed before credits. Click a row to isolate it.",
  "bands": [
   {

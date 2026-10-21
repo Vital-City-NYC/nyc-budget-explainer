@@ -27,6 +27,14 @@ OUT = sys.argv[sys.argv.index('--out') + 1] if '--out' in sys.argv else ROOT
 SS_URL = 'https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/ss6-26.pdf'
 SS_PDF = os.environ.get('SS_PDF', os.path.join(HERE, 'ss6-26.pdf'))
 
+# The upstream extraction is pinned (scripts/sources.lock.json). Refuse any other commit, or uncommitted edits to the
+# files read below, unless ALLOW_UNPINNED=1; after a deliberate upstream update, rerun and record the new commit and hashes.
+LOCK = json.load(open(os.path.join(HERE, 'sources.lock.json')))
+_head = subprocess.run(['git', '-C', REPO, 'rev-parse', 'HEAD'], capture_output=True, text=True).stdout.strip()
+_dirty = subprocess.run(['git', '-C', REPO, 'status', '--porcelain', '--'] + list(LOCK['upstream']['files']), capture_output=True, text=True).stdout.strip()
+if (_head != LOCK['upstream']['commit'] or _dirty) and os.environ.get('ALLOW_UNPINNED') != '1':
+    sys.exit(f"upstream {REPO} is at {_head or '?'}{' with local edits' if _dirty else ''}; pinned {LOCK['upstream']['commit']}. Set ALLOW_UNPINNED=1 to build anyway.")
+
 def out(rel):
     p = os.path.join(OUT, rel); os.makedirs(os.path.dirname(p), exist_ok=True); return p
 def dump(rel, obj, **kw):
@@ -64,7 +72,11 @@ FN = {'general government': 'General government', 'public safety and judicial': 
       'parks, recreation and cultural activities': 'Parks and culture', 'housing': 'Housing', 'health': 'Health', 'libraries': 'Libraries',
       'city university': 'City University'}
 aid = {'source': 'NYC Comptroller, annual comprehensive financial reports, General Fund revenues ten-year trend, federal and state grants and contracts (categorical) by function',
-       'url': 'https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf', 'years': {}}
+       'url': 'https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf',
+       'period': 'Fiscal 2016 to 2025, one entry per fiscal year (July 1 to June 30)',
+       'basis': "Actual revenue as reported in the Comptroller's annual financial reports (modified accrual), the same basis as the first chart's squares for those years.",
+       'coverage': "All state and federal categorical grants in the General Fund schedule, by function. Each year's functions add to the printed totals, which equal the first chart's state and federal aid lines (scripts/check_audit_trail.py). No budget years.",
+       'years': {}}
 by = {}
 for r in RAW:
     if r['table'] == 'gf_revenues': by.setdefault((r['source'], r['fiscal_year']), []).append(r)
