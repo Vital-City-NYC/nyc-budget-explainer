@@ -1,0 +1,76 @@
+{
+ "source_census": "https://www2.census.gov/programs-surveys/school-finances/tables/2024/secondary-education-finance/elsec24_sumtables.xlsx",
+ "source_nysed": "https://data.nysed.gov/files/essa/24-25/SRC2025.zip",
+ "fiscal_year": 2024,
+ "rows": [
+  [
+   "Salaries and wages",
+   16218,
+   9685
+  ],
+  [
+   "Employee benefits",
+   8943,
+   4243
+  ],
+  [
+   "Services, supplies and everything else",
+   10635,
+   3691
+  ]
+ ],
+ "total": [
+  35796,
+  17619
+ ],
+ "ratio": [
+  1.7,
+  2.1,
+  2.9,
+  2.0
+ ],
+ "trend": {
+  "per_pupil_2016": 24109,
+  "per_pupil_2024": 35796,
+  "enrollment_2016": 981667,
+  "enrollment_2024": 845509,
+  "per_pupil_change_pct": 48.5,
+  "enrollment_change_pct": -13.9,
+  "per_pupil_real_change_pct": 18.5,
+  "total_real_change_pct": 2.1,
+  "share_of_real_rise_from_fewer_students": [
+   0.887,
+   0.868
+  ],
+  "charter_payments_2016": 1460584000,
+  "charter_payments_2024": 3409570000,
+  "charter_payments_real_change_pct": 86,
+  "total_with_charter_payments_real_change_pct": 7.0,
+  "cpi_fy2016": 261.619,
+  "cpi_fy2024": 327.676
+ },
+ "spread": {
+  "school_year": "2024-25",
+  "district_schools": 1531,
+  "median": 34254.0,
+  "q1": 30397.5,
+  "q3": 39602.0,
+  "lowest": [
+   [
+    "BRONX HIGH SCHOOL OF SCIENCE",
+    20981
+   ],
+   [
+    "BROOKLYN LATIN SCHOOL ",
+    21518
+   ],
+   [
+    "BROOKLYN TECHNICAL HS",
+    21533
+   ]
+  ],
+  "charter_schools_left_out": 280,
+  "d75_schools": 60,
+  "d75_median": 112990.0
+ }
+}

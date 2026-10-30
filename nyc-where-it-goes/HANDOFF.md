@@ -38,3 +38,8 @@ Live since 2026-10-02 at https://vital-city-nyc.github.io/nyc-budget-explainer/n
 - Schools: unit 461 fringe is already in the line; the Education Department's intra-city fringe ($86,459,775, unit 442) and pensions ($112,253,972, unit 482) are subtracted from its note so nothing counts twice.
 - Fiscal 2025 is not offered: the audited books have no agency breakdown, and the 2025 budget's notes overshoot the audited pension line and are more than double that year's debt appropriation. The note under the chart keeps the 2025 estimate, labeled as one.
 - Shared budget.js and budget.css were not changed, so the ?v= stamps stay at 1005b. Page-only styles are in the inline style block.
+
+## Schools per pupil, Oct. 30 2026 (published Oct. 30 after an independent fact-check; see research/03)
+- Schools click-state now has a "Per pupil, fiscal 2024" panel in the key (Census Tables 18 and 8: salaries, benefits, everything else, NYC vs. U.S.), and the facts list has two new items: the fiscal 2016-2024 trend with inflation and enrollment, and the 2024-25 school-by-school spread (NYSED report card data). The old first Census fact was dropped as a duplicate of the panel.
+- Data: `data/per_pupil.json`, built by `scripts/build_per_pupil.py` (raw Census summary tables, Census district files for 2024 and 2016, NYSED and BLS inputs as arguments; it fails unless the schools facts quote its numbers). Sources, quotes and the eight judgment calls: research/03, "Oct. 30, 2026". Reader-facing version: the "Schools per pupil" fold in the method.
+- Found while checking: the per-pupil project's "district schools" comparison set includes 280 charter schools (see research/03, call 5).

@@ -1,14 +1,19 @@
 {
  "education": [
   {
-   "fact": "New York City's school system spent $35,796 per pupil in the 2023-24 school year (fiscal 2024), the most among the 100 largest school systems and about double the national average of $17,619. The Census count includes federal, state and city money and employee benefits, but not construction or debt.",
-   "source": "Census Bureau, 2024 Annual Survey of School System Finances",
-   "url": "https://www.census.gov/newsroom/press-releases/2026/school-system-finances.html"
-  },
-  {
    "fact": "Per-pupil current spending in fiscal 2024: New York City $35,796, Los Angeles $25,631, Chicago $24,330, Philadelphia $19,525, Houston $13,950.",
    "source": "Census Bureau, school finance Table 18",
    "url": "https://www2.census.gov/programs-surveys/school-finances/tables/2024/secondary-education-finance/elsec24_sumtables.xlsx"
+  },
+  {
+   "fact": "From fiscal 2016 to 2024, spending per pupil rose 48.5 percent, from $24,109 to $35,796, while enrollment fell 13.9 percent, from 981,667 to 845,509. After New York-area inflation, spending per pupil rose 18.5 percent while total operating spending on district schools rose 2.1 percent, so most of the real rise per pupil came from spreading that money over fewer students. Those totals leave out the department's payments to charter schools, which rose 86 percent after inflation; counting them, the real total rose 7.0 percent.",
+   "source": "Census Bureau, school finance Table 18 and district files, 2016 and 2024; inflation: Bureau of Labor Statistics, New York-area consumer price index",
+   "url": "https://www2.census.gov/programs-surveys/school-finances/tables/2024/secondary-education-finance/elsec24_sumtables.xlsx"
+  },
+  {
+   "fact": "Spending varies widely by school. In the 2024-25 school year the median among the 1,531 schools in the city's 32 geographic districts was $34,254 per pupil, and the middle half ran from about $30,400 to $39,600. The lowest were three specialized high schools, Bronx Science, Brooklyn Latin and Brooklyn Tech, at about $21,000 to $21,500. The 60 schools of District 75, the citywide special education district, had a median of $112,990. The state's figures include each school's share of districtwide costs.",
+   "source": "State Education Department, 2024-25 report card data, expenditures per pupil",
+   "url": "https://data.nysed.gov/files/essa/24-25/SRC2025.zip"
   },
   {
    "fact": "The Department of Education spent about $37.7 billion in fiscal 2026 (the figure is not yet final) and had 152,698 staff; it serves nearly one million students in about 1,600 schools.",

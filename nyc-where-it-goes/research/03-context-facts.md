@@ -189,3 +189,54 @@ Not done. The Lincoln Institute's Fiscally Standardized Cities database (data th
 - Youth and Community Development: ACFR PDF pp. 440-441 files it under General Government; MMR PDF p. 307, COMPASS "serving nearly 116,300 participants," the Summer Youth Employment Program, runaway and homeless youth services and "192 community centers."
 - Housing Authority: MMR p. 432, spending $5,600.9M in fiscal 2026 (preliminary); erc6-26 HPD U/A 012, "CITY ASSISTANCE TO NYC HOUSING AUTHORITY ... $410,003,106."
 - Correction to section G: the fiscal 2027 benefits share is 9.44 per $100, not 10.80.
+
+## Oct. 30, 2026: schools per pupil, from the per-pupil spending project
+
+Added to the schools click-state at Josh's request, drawing on `../nyc-doe-per-pupil-spending/` (methodology.md there). Every figure was re-derived here from the primary files rather than copied; `scripts/build_per_pupil.py` writes `data/per_pupil.json` and fails unless the schools facts in `data/context_facts.json` quote its results. Raw files stay outside the repo (scratchpad copies, downloaded Oct. 30, 2026).
+
+Sources:
+- CENSUS-ED 2024 summary tables (above). Table 18, New York City row (rank 1): enrollment 845,509; current spending per pupil 35,795.73; salaries and wages 16,218.15; employee benefits 8,942.53. Table 8, "United States": total 17,619.39; salaries and wages 9,685.10; employee benefits 4,242.87. Table 18 notes: "Payments to other school systems are excluded in this table."
+- Census district file, `elsec24.xlsx` (https://www2.census.gov/programs-surveys/school-finances/tables/2024/secondary-education-finance/elsec24.xlsx), NCESID 3620580: V33 845,509; TCURELSC 34,591,210; V91 (payments to private schools) 916,029; V92 (payments to charter schools) 3,409,570 (thousands). (TCURELSC - V91 - V92) / V33 = $35,795.73, Table 18 to the cent.
+- Census Appendix A: Current Operation, "Direct expenditure for salaries, employee benefits, purchased professional and technical services, purchased property and other services, and supplies ... It excludes expenditure for debt service, capital outlay, and reimbursement to other governments (including other school systems)." Employee Benefit Expenditure: "Includes contributions on behalf of employees for retirement coverage, social security, group health and life insurance."
+- Census 2016 summary tables, `elsec16_sumtables.xls` (https://www2.census.gov/programs-surveys/school-finances/tables/2016/secondary-education-finance/elsec16_sumtables.xls), Table 18 New York City row: enrollment 981,667; per pupil 24,108.70.
+- BLS CPI-U, New York-Newark-Jersey City, all items, not seasonally adjusted, CUURS12ASA0, public API v2, July-June averages: fiscal 2016 261.619; fiscal 2024 327.676. Same series as part three.
+- NYSED report card database 2024-25 (https://data.nysed.gov/files/essa/24-25/SRC2025.zip), table Expenditures per Pupil, exported to `nyc-small-high-schools/raw/src/Expenditures_per_Pupil_2025.csv`; field PER_FED_STATE_LOCAL_EXP, rows with YEAR = 2025.
+- NYSED 2024-25 Financial Transparency Report, P.S. 307 (https://data.nysed.gov/expenditures.php?year=2025&instid=800000045541, saved in `nyc-doe-per-pupil-spending/data/three-schools/nysed/`): "Under the school column, entries 1 through 13 show per pupil expenditures attributable to the school ... Total spending (entry 13) represents all non-excluded per pupil expenditures." "The final section shows the following exclusions that were not included in the per pupil expenditure calculations above: Charter School Tuition, Debt Service, and Other Exclusions." Its school total, $52,349.02, matches the CSV's 52,349 for entity 331300010307.
+
+Figures and how each was derived:
+| Figure | Derivation |
+|---|---|
+| Per pupil by object, NYC vs. U.S.: $16,218 / $9,685; $8,943 / $4,243; $10,635 / $3,691; total $35,796 / $17,619 | Table 18 and Table 8, rounded; third row = rounded total minus rounded salaries and benefits, so rows add to the total |
+| 2.0x total, 1.7x salaries, 2.1x benefits, 2.9x everything else | rounded ratios of the rows above |
+| Per pupil +48.5% ($24,109 to $35,796); enrollment -13.9% (981,667 to 845,509) | Table 18, 2016 and 2024 |
+| +18.5% per pupil and +2.1% total after inflation | CPI ratio 327.676 / 261.619; total = per pupil x enrollment ($23.67 billion to $30.27 billion as spent) |
+| "Most of the real rise per pupil came from having fewer students" | Real rise $5,600 ($30,196 in FY2024 dollars to $35,796). FY2024 total over FY2016 enrollment: fewer students = 88.7% of the rise; FY2016 real total over FY2024 enrollment: 86.8%. Matches nyc-doe-per-pupil-spending methodology, Section 2 |
+| 1,531 district schools; median $34,254; middle half $30,397.50 to $39,602 (shown as about $30,400 to $39,600) | Entity codes CC DD 0001 NNNN with county 31-35 and NNNN not 0000 (district school type 0001); Python statistics.quantiles, inclusive method |
+| Lowest three: Bronx High School of Science $20,981, Brooklyn Latin School $21,518, Brooklyn Technical HS $21,533 | same set, sorted |
+| District 75: 60 schools, median $112,990 | entity codes beginning 3075, NNNN not 0000 |
+
+Judgment calls (also on the page, in the method's "Schools per pupil" fold):
+1. Census, not NYSED, for the national comparison: it measures every system the same way. Fiscal 2024 is its latest year, so the panel is fixed and labeled as such.
+2. "Everything else" is a residual; described with the Census definition of current operation (services and supplies).
+3. Per-pupil dollars are not presented as a slice of the schools squares. The Census numerator excludes charter and private-school payments ($4.33 billion in FY2024) that the General Fund schools line includes, and the General Fund leaves most pensions in the citywide line.
+4. Consumer prices, not a school-cost or wage index, to match part three; the caveat is on the page.
+5. School spread: district schools only. The 280 charter schools coded inside the geographic districts (type 0086) are left out because the department does not run them; District 75 is reported separately. Correction to the source project: `nyc-doe-per-pupil-spending/scripts/build_three_schools.py` counts all 1,811 entity codes in the 32 districts, which includes those 280 charters, so its "district schools" median ($33,032) and P.S. 321's rank (above 15 percent) are for district and charter schools together. District schools alone: median $34,254; P.S. 321 above 4.6 percent; P.S. 307 above 97.1 percent (unchanged in effect).
+6. NYSED and Census totals are never compared: different years (2024-25 vs. fiscal 2024), enrollment counts and definitions. The NYSED districtwide figure itself differs between the CSV (NYC Chancellor's Office, $35,496) and the school reports' districtwide column ($35,057.69); neither is used here.
+7. Left out: share of students with disabilities, class size and students per teacher. They bear on the gap with the national average, but the page does not apportion the gap among causes.
+8. Removed from the facts list: the first Census fact ($35,796, double the national average), now shown in the key panel with the breakdown.
+
+### Independent fact-check, Oct. 30, 2026
+
+A separate pass re-derived every figure from freshly downloaded files without reading this project's scripts or data. All numbers confirmed:
+- Table 18 and Table 8 values, ratios (1.67, 2.11, 2.88, 2.03) and NYC's rank (first of the 100; next are District of Columbia $31,529 and Atlanta $26,117). The cities fact (Los Angeles, Chicago, Philadelphia, Houston) matches Table 18 and the district file. Note for future use: Table 18's San Diego row repeats Chicago's figure; the district file gives San Diego $21,280. Do not quote San Diego from Table 18.
+- V91 and V92 per the district-file dictionary (school24doc.docx): "Exhibit - Payments to private schools" and "Exhibit - Payments to charter schools." (TCURELSC - V91 - V92) / V33 reproduces Table 18 for both 2016 and 2024.
+- Census fiscal 2016 district file, `elsec16.txt` (https://www2.census.gov/programs-surveys/school-finances/tables/2016/secondary-education-finance/elsec16.txt), NCESID 3620580: V92 1,460,584; V91 991,831; TCURELSC 26,119,129 (thousands).
+- Table 18's enrollment footnote says fall 2022, but the Common Core of Data sums NYC to 845,509 for fall 2023 (847,030 for fall 2022), so the figure is fall 2023, consistent with 2016's use of the fall of the fiscal year.
+- NYSED spread: 1,531 schools, no duplicate codes, no zero or blank values. The quartiles round to $30,400 and $39,600 under every common percentile method. 281 charter rows, 280 with a spending figure (Choice Charter School has none). No NYC school rows outside districts 1-32 and 75. The NYSED quotes appear verbatim on every Financial Transparency page (for example https://data.nysed.gov/expenditures.php?year=2025&instid=800000045625). The glossary (https://data.nysed.gov/glossary.php?report=expenditures) defines school spending as "average spending per pupil in the school, including a proportional share of central expenditures."
+
+Wording changed as a result:
+1. "Total spending on the district's own schools" overstated what the Census total covers, and the flat real total (+2.1 percent) holds only because charter payments are excluded. Those payments rose from $1.46 billion to $3.41 billion, 86 percent after inflation; with them counted the real total rose 7.0 percent. The fact now says "total operating spending on district schools" and gives both. `build_per_pupil.py` now reads the two district files and checks these figures too.
+2. The decomposition into "fewer students" is arithmetic, not causal; the method note now says so.
+3. District 75's median is 3.30 times the district-school median: "about three times" became "more than three times." The 280 charters are now described as those "that report spending."
+
+Noted, not added: from 2016 to 2024 per-pupil "everything else" rose 126 percent ($4,699 to $10,635), against 34 percent for salaries and 23 percent for benefits, and accounts for about half the nominal rise per pupil. NYSED and Census exclude different things (NYSED also drops $5.54 billion of "other" exclusions, including services to nonpublic and charter schools and community-organization pre-K), which is why the page never compares them.
