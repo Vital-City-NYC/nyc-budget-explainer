@@ -49,3 +49,9 @@ Five independent checkers (barred from research/) re-derived every number on the
 
 ## Methodology page, Oct 22 2026
 `methodology.html` is the reader-facing write-up: what the page shows, sources, every judgment call, limits, the four review rounds and open questions. Same card and nav as the infographic, shared/budget.css, tables stack on phones. Linked from index.html in three places (the first chart's source note, the top of the Method section, the Get-the-data row), each opening in a new tab so the Ghost embed is not navigated away. Keep it current: any change to a judgment call or a review pass goes here as well as in research/.
+
+
+## Expert comments, Nov. 16 2026
+- Budget experts' comments were worked in: the state's top income tax brackets, a qualified property-tax-control sentence, "the mayor and the City Council" for "City Hall", parallel state and federal aid rows, and a clearer mixed-groups paragraph. Sources in research/02, same date.
+- The method on the page and methodology.html no longer narrate each review round; they use general language (checked against sources, shared with experts and refined). Keep it that way: the detailed record belongs in research/.
+- methodology.html credits the Independent Budget Office's "NYC's Budget in $100" (September 2026) for the $100 device.

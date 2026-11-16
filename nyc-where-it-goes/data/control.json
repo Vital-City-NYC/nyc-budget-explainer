@@ -1,14 +1,14 @@
 {
- "sub": "The $100 again, this time for the fiscal 2027 adopted budget, so the shares differ from the audited 2025 figures above. Gray squares are lines whose size is set by state law, labor contracts, promises to bondholders or court orders. City Hall can resize the colored ones, though most carry state or court mandates inside them.",
+ "sub": "The $100 again, this time for the fiscal 2027 adopted budget, so the shares differ from the audited 2025 figures above. Gray squares are lines whose size is set by state law, labor contracts, promises to bondholders or court orders. The mayor and the City Council, which must adopt the budget, can resize the colored ones, though most carry state, federal or court mandates inside them.",
  "quote": "As shown in Table 15, most of the growth in spending over the Plan period comes from PS-related costs, including salaries and wages, pension, and health insurance. PS costs are budgeted to grow at an annual average rate of 2.7 percent while OTPS costs are budgeted to grow by 1.0 percent from FY 2027 to FY 2030. Debt service costs are projected to grow at an annual average rate of 10.2 percent.",
  "quote_cite": "New York City Comptroller, comments on the fiscal 2027 adopted budget, August 2026, p. 46",
- "note": "Sources: Comptroller, comments on the fiscal 2027 adopted budget; Office of Management and Budget, Message of the Mayor, May 2026; Education Law sections 2576, 2853 and 2856; Callahan v. Carey consent decree (1981); Nunez v. City of New York order of May 13, 2025; the 2014 and 2018 health savings agreements; New York Constitution article VIII. Citations and quotations are in the research notes linked in the method.",
+ "note": "Sources: Comptroller, comments on the fiscal 2027 adopted budget; Office of Management and Budget, Message of the Mayor, May 2026; Office of Management and Budget, adopted fiscal 2027 revenue plan and supporting schedules; City Council Finance Division, reports on the fiscal 2027 budget; Independent Budget Office, “A Slow Start,” December 2025; State Comptroller, review of federal categorical grants, 2025; Mayor's Management Report, fiscal 2026; Education Law sections 211-d, 701, 2576, 2853, 2856 and 4402; 20 U.S.C. section 1412; County Law section 722; Civil Service Law section 209; Judiciary Law section 39; Public Health Law section 616; New York Constitution article XIII, section 13; Callahan v. Carey consent decree (1981); Nunez v. City of New York order of May 13, 2025; the 2014 and 2018 health savings agreements; New York Constitution article VIII. Citations and quotations are in the research notes linked in the method.",
  "education": {
   "fixed": false,
   "setter": "Mixed",
-  "who": "Albany sets Foundation Aid, the state's main school-aid formula, along with a floor on the city's own school spending, the class-size law and charter school tuition. City Hall decides everything above the floor.",
-  "alone": "Spend more than the floor. The city cannot spend less of its own money on schools than the year before, not counting pensions and debt service, unless its total city funds shrink, and then only by the same percentage.",
-  "limits": "Charter tuition is a state formula, and state law requires the city to find space, or help pay rent, for charter schools that opened or grew since 2014 and ask for it. About 120,800 students are expected to attend charter schools in fiscal 2027."
+  "who": "Albany shapes much of this line. Foundation Aid, the state's main school-aid formula, is $11.0 billion of the $15.1 billion in state school aid the city budgets for fiscal 2027; most of the rest is tied to particular costs, including $879 million for busing, $786 million for pre-kindergarten and $544 million for preschool special education. State law also sets a floor on the city's own school spending, caps class sizes, sets charter school tuition and requires services such as busing for students with disabilities and textbook loans to private school students. Federal law, enforced through the state, requires a free appropriate education for every student with a disability.",
+  "alone": "Decide what is left after the mandates, and spend more than the floor. The city cannot spend less of its own money on schools than the year before, not counting pensions and debt service, unless its total city funds shrink, and then only by the same percentage.",
+  "limits": "Some mandates come with little or no money. The class-size law caps classes at 20 to 25 students, depending on the grade, by September 2030; the state's fiscal 2027 budget included no funding for it, and the Independent Budget Office estimated in December 2025, before the deadline was extended, that full compliance would take 16,300 more teachers at $1.5 billion to $1.7 billion a year. Federal special education aid, $291 million, covered 5.7% of the department's special education spending in the fiscal 2026 preliminary budget. Charter tuition is a state formula, and state law requires the city to find space, or help pay rent, for charter schools that opened or grew since 2014 and ask for it. About 120,800 students are expected to attend charter schools in fiscal 2027."
  },
  "social_services": {
   "fixed": false,
@@ -19,8 +19,8 @@
  },
  "public_safety": {
   "fixed": false,
-  "setter": "City Hall",
-  "who": "Headcount and overtime are the mayor's. A federal judge has appointed an outside remediation manager to fix safety and use-of-force problems in the jails, and the city must pay the manager's costs.",
+  "setter": "Mostly the mayor and City Council",
+  "who": "The mayor and the City Council set headcount and budgets for the Police, Fire and Correction departments. Other parts of the line are less in their hands. The five district attorneys are independently elected, though the city pays for their offices. State law requires the city to pay for lawyers for defendants who cannot afford one. When the city and a police or fire union cannot agree on a contract, a state arbitration panel's decision is binding. A federal judge has appointed an outside remediation manager to fix safety and use-of-force problems in the jails, and the city must pay the manager's costs. The courts themselves are run and paid for by the state and are not in this line.",
   "alone": "Add or cut officers, firefighters and overtime.",
   "limits": "The Comptroller expects citywide overtime to run $589 million over budget in fiscal 2027, $241 million of it at the Police Department."
  },
@@ -47,28 +47,28 @@
  },
  "health": {
   "fixed": false,
-  "setter": "City Hall",
-  "who": "The Health Department and the city's payments to NYC Health + Hospitals, the public hospital system, a separate corporation created by state law. Those payments cover health care in the jails and other services it runs for the city.",
+  "setter": "Mayor and City Council",
+  "who": "Two things are in this line. One is the Health Department, the city's public health agency; the state reimburses part of its spending on eligible public health services, and the 2026 state budget raised the city's rate from 20% to 36%, worth about $60 million a year. The other is the city's payments to NYC Health + Hospitals, a separate public corporation created by state law and the largest municipal health system in the country: 11 acute care hospitals, five nursing and post-acute care facilities and more than 30 community health centers, serving more than one million New Yorkers a year, about 70% of them adults on Medicaid or uninsured.",
   "alone": "Set the Health Department's budget and what the city pays Health + Hospitals.",
-  "limits": ""
+  "limits": "The largest of those payments in fiscal 2027 are $933 million for the hospital system's labor contracts, $330 million for health care in the jails, a $153 million general subsidy and $100 million for NYC Care, which serves people who cannot get or afford insurance. They do not include the city's share of Medicaid payments that flow to the hospitals, which is counted under social services."
  },
  "general_government": {
   "fixed": false,
-  "setter": "City Hall",
-  "who": "Youth and community programs, the city's central administrative agencies, the Council, other elected officials' offices, the Board of Elections and the 59 community boards.",
+  "setter": "Mayor and City Council",
+  "who": "Youth and community programs, the city's central administrative agencies, the Council, other elected officials' offices, the Board of Elections and the 59 community boards. The administrative agencies also maintain 31 court buildings; state law makes local governments responsible for providing and maintaining courthouses.",
   "alone": "Discretionary.",
   "limits": ""
  },
  "environmental": {
   "fixed": false,
-  "setter": "City Hall",
+  "setter": "Mayor and City Council",
   "who": "Sanitation is a city agency with uniformed-union contracts. The Department of Environmental Protection's water and sewer costs are in this line too, but the Water Board, funded by water and sewer bills, pays the city back for them.",
   "alone": "Set pickup schedules, headcount and contracts.",
   "limits": ""
  },
  "everything_else": {
   "fixed": false,
-  "setter": "City Hall",
+  "setter": "Mayor and City Council",
   "who": "Subsidies to the libraries, cultural institutions and City University of New York (CUNY) community colleges; about $1.7 billion of payments to the Metropolitan Transportation Authority (MTA); and the budgets of the Parks, Transportation and Buildings departments and Housing Preservation and Development.",
   "alone": "Mostly discretionary; the June 2026 budget agreement added money here for cultural institutions and CUNY. The MTA payments are harder to control: the Comptroller expects the city to owe $213 million more than budgeted in fiscal 2027.",
   "limits": "State aid covers part of the community colleges' costs; federal Section 8 vouchers sit inside housing."

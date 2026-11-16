@@ -18,3 +18,14 @@ Year bars (added Oct 3 2026): capital_total x that year's deflator from the same
 - Water and sewer: ACFR FY2025 p. 462, Environmental Protection 2,025,988 (thousands); p. 119, "The Water Authority issues debt to finance the cost of capital improvements to the System"; p. 121, Capital Projects Fund resources include "payments from the Water Authority."
 - General government capital: ACFR FY2025 p. 462, Citywide Administrative Services 980,482; Small Business Services 387,167; Information Technology and Telecommunications 78,644; total 1,446,293.
 - Debt service share: 8,080,015 / 117,690,172 = 6.87%.
+
+
+## Nov. 16, 2026: construction prices as the default for the yearly bars
+
+Budget experts who read the explainer said a construction cost index would represent capital spending better than consumer prices. The yearly bars now default to construction prices, with a switch to consumer prices; before, the bars used consumer prices and the construction comparison was a sentence.
+
+- Series: Bureau of Economic Analysis, price index for state and local government gross investment in structures, quarterly, FRED series B842RG3Q086SBEA, https://fred.stlouisfed.org/series/B842RG3Q086SBEA . FRED titles it "Government consumption expenditures and gross investment: State and local: Gross investment: Structures (chain-type price index)", "Index 2017=100, Seasonally Adjusted". Downloaded Nov. 16, 2026, from https://fred.stlouisfed.org/graph/fredgraph.csv?id=B842RG3Q086SBEA .
+- Method: fiscal-year average of the four quarters from July through June. Fiscal 2000 = 50.993 and fiscal 2025 = 144.722, matching the Oct. 14 figures above; ratio 2.838. All 26 fiscal-year values are in `data/construction_prices.json`, and `capital_per_100.json` carries each year's `construction_deflator` (fiscal 2025 index divided by that year's). The build script adds it and checks the fiscal 2000 value.
+- Results at fiscal 2025 construction prices: fiscal 2000 $13.6 billion, fiscal 2025 $15.6 billion, ratio 1.14 (shown as 1.1 times). Lowest year fiscal 2015 ($11.8 billion). Years above fiscal 2025: 2002 ($16.7 billion), 2008 ($16.3 billion), 2009 ($17.2 billion) and 2010 ($18.2 billion). With consumer prices the ratio is 1.71 and the lowest year is fiscal 2000, as before.
+- Limits stated on the page: the index is national, not specific to New York City.
+- The first line of the key and chart was "Schools and colleges"; it is now "Public schools and CUNY." The Comptroller's function is education, which holds the Department of Education's school construction and the City University's projects (labels in `capital_per_100.json`: "Education (incl. CUNY)").

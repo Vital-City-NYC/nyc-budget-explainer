@@ -1,12 +1,12 @@
 {
- "source": "IBO, Analysis of the 2027 Preliminary Budget (Mar 24 2026) p.9; DOF Annual Report FY2026 p.32; OMB FY2027 Preliminary Budget summary (Feb 2026) and Executive Budget (May 2026); Comptroller, Comments on the FY2027 Adopted Budget; NY Focus May 29 2026; Chapter 59 of 2026 Part HH; Chapter 127 of 2026 Part D; Local Law 153 of 2023; General City Model section 101; see research/02-who-controls-what.md",
+ "source": "IBO, Analysis of the 2027 Preliminary Budget (Mar 24 2026) p.9; DOF Annual Report FY2026 p.32; OMB FY2027 Preliminary Budget summary (Feb 2026) and Executive Budget (May 2026); Comptroller, Comments on the FY2027 Adopted Budget; NY Focus May 29 2026; Chapter 59 of 2026 Part HH; Chapter 127 of 2026 Part D; Local Law 153 of 2023; General City Model section 101; New York City Charter sections 254 and 1516; see research/02-who-controls-what.md",
  "quote_ibo": "As IBO reported, the property tax is the only local tax where the City has authority to set the tax rates without State approval. The City Council, however, would have to agree to the Mayor's proposal for any change to occur.",
  "quote_dof": "Because of the property tax's unique role in balancing the budget, it is the only tax over which the City has the discretion to determine the rate without prior legislation from the State.",
  "property_tax": {
   "albany": false,
-  "who": "City Hall and the City Council set the levy, the total tax billed, and the rate for each class every year.",
-  "limits": "State law set up the four property classes and the caps on yearly assessment increases, as well as the formula that sets each class's share of the tax and limits how fast a share can grow. The state constitution caps the property tax raised for operating costs, not counting debt payments, at 2.5% of the average full value of taxable property over five years. In fiscal 2026 the city was $2.2 billion under that cap, which is recalculated each year.",
-  "alone": "Raise or lower the overall rate, with the City Council's agreement. As a last resort, the mayor's February 2026 preliminary budget proposed raising the average rate 9.5%, from $12.283 to $13.450 per $100 of assessed value, worth about $3.7 billion a year. His May executive budget dropped it.",
+  "who": "The mayor and the City Council set the levy, the total tax billed, each year. The Council fixes the tax rates when it adopts the budget.",
+  "limits": "State law governs most of the rest. It set up the four property classes, the rules for valuing and assessing each of them and the caps on yearly assessment increases, as well as the formula that sets each class's share of the tax and limits how fast a share can grow. The state constitution caps the property tax raised for operating costs, not counting debt payments, at 2.5% of the average full value of taxable property over five years. In fiscal 2026 the city was $2.2 billion under that cap, which is recalculated each year.",
+  "alone": "Raise or lower the overall rate: the mayor proposes it and the City Council must vote for it. As a last resort, the mayor's February 2026 preliminary budget proposed raising the average rate 9.5%, from $12.283 to $13.450 per $100 of assessed value, worth about $3.7 billion a year. His May executive budget dropped it.",
   "level": "city"
  },
  "personal_income_tax": {
@@ -39,16 +39,16 @@
  },
  "state_aid": {
   "albany": true,
-  "who": "The state budget.",
+  "who": "The governor and the Legislature, in the state budget.",
   "limits": "",
-  "alone": "Lobby.",
+  "alone": "Nothing on its own. The city can lobby Albany for more.",
   "level": "state"
  },
  "federal_aid": {
   "albany": true,
-  "who": "Washington.",
+  "who": "Congress and federal agencies.",
   "limits": "",
-  "alone": "Nothing.",
+  "alone": "Nothing on its own. The city can lobby Washington for more.",
   "level": "state"
  },
  "fees_fines_other": {

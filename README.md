@@ -1,6 +1,6 @@
 # New York City's budget in $100
 
-Four linked visual explainers. Each is a static page; every number on a page has a URL and a verbatim quotation in that part's `research/` folder, and every number was re-derived from the primary documents in a blind check (October 2026).
+Four linked visual explainers. Each is a static page; every number on a page has a URL and a verbatim quotation in that part's `research/` folder, and every number was checked independently against the primary documents. The $100 device follows the Independent Budget Office's [NYC's Budget in $100](https://www.ibo.nyc.gov/content/publications/2026-september-nyc-budget-in-100).
 
 1. `nyc-who-pays/` Who pays. Revenue by source, fiscal 2000-2027; who pays the property, income and business taxes; what the mayor can change without Albany.
 2. `nyc-where-it-goes/` Where it goes. Spending by line, with agency and unit-of-appropriation splits, who pays for each line, context facts, what the mayor can change, and what sits off the budget.

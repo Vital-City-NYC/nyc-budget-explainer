@@ -301,6 +301,12 @@ for y in D['years']:
     cap['years'][str(y['fy'])] = {'total': y['capital_total'], 'groups': y['capital'], 'per_100': {k: round(v / y['capital_total'] * 100, 2) for k, v in y['capital'].items()},
                                   'borrowing': y.get('borrowing'), 'debt_service': y['debt_service'], 'operating_total': y['operating_total'] + y['debt_service'],
                                   'population': y['population'], 'deflator': y['deflator']}
+# Construction prices: BEA index for state and local government investment in structures, fiscal-year averages
+# (nyc-what-the-city-builds/data/construction_prices.json, from FRED series B842RG3Q086SBEA). Same form as 'deflator':
+# multiply a year's dollars by it to get fiscal 2025 construction prices.
+CP = json.load(open(os.path.join(ROOT, 'nyc-what-the-city-builds', 'data', 'construction_prices.json')))['fiscal_year_index']
+for fy, v in cap['years'].items(): v['construction_deflator'] = round(CP['2025'] / CP[fy], 5)
+assert abs(cap['years']['2000']['construction_deflator'] - 2.838) < 0.001
 dump('nyc-what-the-city-builds/data/capital_per_100.json', cap)
 
 # ---------------------------------------------------------------- summary of the numbers the pages lead with

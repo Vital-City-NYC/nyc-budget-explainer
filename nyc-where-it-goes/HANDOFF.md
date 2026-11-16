@@ -43,3 +43,10 @@ Live since 2026-10-02 at https://vital-city-nyc.github.io/nyc-budget-explainer/n
 - Schools click-state now has a "Per pupil, fiscal 2024" panel in the key (Census Tables 18 and 8: salaries, benefits, everything else, NYC vs. U.S.), and the facts list has two new items: the fiscal 2016-2024 trend with inflation and enrollment, and the 2024-25 school-by-school spread (NYSED report card data). The old first Census fact was dropped as a duplicate of the panel.
 - Data: `data/per_pupil.json`, built by `scripts/build_per_pupil.py` (raw Census summary tables, Census district files for 2024 and 2016, NYSED and BLS inputs as arguments; it fails unless the schools facts quote its numbers). Sources, quotes and the eight judgment calls: research/03, "Oct. 30, 2026". Reader-facing version: the "Schools per pupil" fold in the method.
 - Found while checking: the per-pupil project's "district schools" comparison set includes 280 charter schools (see research/03, call 5).
+
+
+## Expert comments, Nov. 16 2026
+- The schools, police, fire, jails and prosecutors, health and general government rows of data/control.json were rewritten with sourced detail on state and federal mandates, the independently elected district attorneys, courthouses and what the Health + Hospitals payments cover. Sources and quotes in research/02, same date.
+- The page credits the Independent Budget Office's "NYC's Budget in $100" under the first chart and in the method.
+- The budget-year note says budgets start smaller and are added to, not that they leave costs out. Schools and CUNY community colleges are named as paying most staff health insurance from their own budgets; pensions for both are in the citywide line.
+- Section heading is now "What can the city change on its own?"
