@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>How "Who pays for New York City" was built</title>
-<meta name="description" content="The sources, methods and judgment calls behind the $100 revenue explainer.">
-<meta property="og:title" content="How &quot;Who pays for New York City&quot; was built"><meta property="og:description" content="The sources, methods and judgment calls behind the $100 revenue explainer."><meta property="og:type" content="article"><meta property="og:image" content="https://vital-city-nyc.github.io/nyc-budget-explainer/nyc-who-pays/shared/og.png">
+<title>How the budget explainer was built</title>
+<meta name="description" content="The sources, methods and judgment calls behind all four parts of the New York City budget explainer.">
+<meta property="og:title" content="How the budget explainer was built"><meta property="og:description" content="The sources, methods and judgment calls behind all four parts of the New York City budget explainer."><meta property="og:type" content="article"><meta property="og:image" content="https://vital-city-nyc.github.io/nyc-budget-explainer/nyc-who-pays/shared/og.png">
 <link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
 <link rel="stylesheet" href="https://vital-city-nyc.github.io/vital-city-design-system/tokens/tokens.css">
 <link rel="stylesheet" href="shared/budget.css?v=1005b">
@@ -11,6 +11,8 @@
 .method{max-width:none}
 .method h3{font-family:var(--vc-sans);font-weight:900;font-size:1rem;line-height:1.3;margin:22px 0 6px}
 .method h3:first-child{margin-top:0}
+.method h2.part{font-family:var(--vc-sans);font-weight:900;font-size:1.35rem;line-height:1.25;margin:40px 0 2px}
+.method h2.part+p.k{font-size:.82rem;margin:0 0 4px}
 .method p,.method li{font-size:.9rem;line-height:1.55;max-width:74ch}
 .method ul{padding-left:18px;margin:0 0 10px}.method li{margin-bottom:5px}
 .method table.t{font-size:.86rem;margin:8px 0 16px}
@@ -23,15 +25,19 @@
 </style>
 </head>
 <body><div class="card">
-<nav class="nav" aria-label="Parts"><a href="index.html" class="on" aria-current="page">Part one<b>Who pays</b></a><a href="../nyc-where-it-goes/index.html">Part two<b>Where it goes</b></a><a href="../nyc-budget-since-2000/index.html">Part three<b>Since 2000</b></a><a href="../nyc-what-the-city-builds/index.html">Part four<b>The capital budget</b></a></nav>
+<nav class="nav" aria-label="Parts"><a href="index.html">Part one<b>Who pays</b></a><a href="../nyc-where-it-goes/index.html">Part two<b>Where it goes</b></a><a href="../nyc-budget-since-2000/index.html">Part three<b>Since 2000</b></a><a href="../nyc-what-the-city-builds/index.html">Part four<b>The capital budget</b></a></nav>
 <div class="head">
-<a class="back" href="index.html">Back to the infographic</a>
-<h1 style="min-height:0">How "Who pays for New York City" was built</h1>
-<p class="dek">The sources, the methods and the judgment calls behind the $100 revenue explainer. Updated November 16, 2026.</p>
+<a class="back" href="index.html">Back to part one</a>
+<h1 style="min-height:0">How the budget explainer was built</h1>
+<p class="dek">The sources, the methods and the judgment calls behind all four parts: who pays, where it goes, how spending has changed since 2000 and what the city builds. Updated November 17, 2026.</p>
 </div>
 
 <section class="sec"><div class="method">
-<p class="toc"><a href="#what">What the page shows</a><a href="#sources">Sources</a><a href="#calls">Judgment calls</a><a href="#limits">Limits</a><a href="#checks">Review</a><a href="#open">Open questions</a><a href="#data">Data</a></p>
+<p class="toc"><a href="#part1">Part one: Who pays</a><a href="#part2">Part two: Where it goes</a><a href="#part3">Part three: Since 2000</a><a href="#part4">Part four: The capital budget</a><a href="#checks">Review</a><a href="#open">Open questions</a><a href="#data">Data</a></p>
+<p>Each part has its own sources, judgment calls and limits, below. All four use the city's own books: the Comptroller's annual comprehensive financial reports for actual results and the Office of Management and Budget's adopted budget for fiscal 2026 and 2027. The project's research notes record the page, table or cell and a verbatim quotation for every figure.</p>
+
+<h2 class="part" id="part1">Part one: Who pays</h2>
+<p class="k"><a href="index.html">Open part one</a></p>
 
 <h3 id="what">What the page shows</h3>
 <p>The page turns each year's city revenue into 100 squares, one per $1 of every $100, for fiscal 2000 through 2027. It answers three questions: where the money comes from, who is billed for each tax and how much of it the city can change without Albany.</p>
@@ -65,7 +71,7 @@
 <tr><td>Bucket definitions</td><td>Follows the Comptroller's report: mortgage recording, cigarette and auto-use taxes sit in sales tax; the pass-through entity tax, the utility tax and the tax on nonresident city employees sit in business taxes</td><td>The Comptroller's report is the longer series, 26 of the 28 years. Restating it would mean reallocating lines it does not itemize the same way every year</td></tr>
 <tr><td>The pass-through entity tax break</td><td>Left where each source files it. The Comptroller counts it as a business tax; the budget office counts it in personal income tax. That moves about $2 of every $100 between the two buckets from fiscal 2025 to 2026 ($2.36 billion in fiscal 2025)</td><td>Restating either source would put a number on the page that neither publishes. A visible note in the income and business trend text flags the step</td></tr>
 <tr><td>Actual and budget years on one slider</td><td>Fiscal 2026 and 2027 are labeled as budget plans</td><td>Readers want the current budget; the label carries the difference. Federal aid looks low in budget years because the city books most grants only as they are awarded</td></tr>
-<tr><td>"Actual," not "audited"</td><td>Figures through fiscal 2025 are called actual revenue</td><td>The ten-year table sits in the report's statistical section, which the auditor's opinion excludes, and revenue there is on a modified accrual basis, not cash received</td></tr>
+<tr><td>“Actual,” not “audited”</td><td>Figures through fiscal 2025 are called actual revenue</td><td>The ten-year table sits in the report's statistical section, which the auditor's opinion excludes, and revenue there is on a modified accrual basis, not cash received</td></tr>
 <tr><td>Fees, fines and other</td><td>One catch-all bucket: charges for services, water and sewer charges, fines, licenses, interest, non-government grants, unrestricted aid and transfers, net of money one city agency bills another</td><td>Each piece is small; splitting it would add eight thin slivers to a 100-square chart</td></tr>
 <tr><td>Tax audit revenue</td><td>A separate line in other taxes for budget years; folded into each tax in actual years</td><td>That is how each source prints it</td></tr>
 <tr><td>Highs and lows in the trend text</td><td>Print the square count for the cited year, the same figure the key shows when the slider lands on that year</td><td>So the sentence and the key always show the same figure for a year</td></tr>
@@ -76,15 +82,15 @@
 <tr><td>Snapshots, not split squares</td><td>Property, income and business tax squares are not split in place for whatever year is on the slider. Their payer tables show one year each</td><td>The payer figures are a different measure and year from the revenue squares: the fiscal 2026 levy, tax year 2023 liability, tax year 2022 liability. Splitting fiscal 2012's squares by 2023 shares would imply a match that does not exist</td></tr>
 <tr><td>State and federal aid still split in place</td><td>Aid splits by what it funds, for fiscal 2016 to 2025 only; other years show a caption saying so</td><td>Those figures divide each year's own aid and add exactly to the aid lines, checked by script</td></tr>
 <tr><td>Property tax: levy, not revenue</td><td>Shares are of the $37.98 billion fiscal 2026 levy</td><td>The Department of Finance publishes class shares only for the levy. Revenue after refunds and reserves is about 93.5% of the levy</td></tr>
-<tr><td>Property tax: "tax per $100 of value"</td><td>Levy divided by the department's market value, by class. Homes pay about 70 cents; rental buildings $3.26</td><td>The department publishes no effective rate by class. This is the project's own arithmetic, labeled as such</td></tr>
+<tr><td>Property tax: “tax per $100 of value”</td><td>Levy divided by the department's market value, by class. Homes pay about 70 cents; rental buildings $3.26</td><td>The department publishes no effective rate by class. This is the project's own arithmetic, labeled as such</td></tr>
 <tr><td>Property tax: co-op and condo values</td><td>The caveat is in the visible intro, not folded away, and no rate is shown for them</td><td>State law (Real Property Tax Law section 581) bars the use of co-op and condo sale prices in assessment, so the department values them as if they were rentals, far below sale prices. Computing a rate for them from those values reverses the real gap</td></tr>
-<tr><td>Property tax: assessment ratios</td><td>Homes "about 3.5%" of market value, apartment buildings about 33%, commercial 44%</td><td>Taxable assessed value divided by market value from the department's Fast Facts: 3.45%, 32.5% and 43.5%.</td></tr>
+<tr><td>Property tax: assessment ratios</td><td>Homes “about 3.5%” of market value, apartment buildings about 33%, commercial 44%</td><td>Taxable assessed value divided by market value from the department's Fast Facts: 3.45%, 32.5% and 43.5%.</td></tr>
 <tr><td>Income tax: before credits</td><td>Shares are of tax owed before credits, the Independent Budget Office's own measure. The notes give the after-credit figure: the $1 million-and-over group's share drops from 37% to 30%</td><td>Most of that gap is the pass-through entity tax credit, which refunds tax a business already paid on the owner's behalf. Before credits better reflects who the tax falls on</td></tr>
 <tr><td>Income tax: bands</td><td>Six bands, with breaks at $200,000 and $500,000 rather than $250,000</td><td>The Independent Budget Office's published rows force those cut points</td></tr>
 <tr><td>Income tax: three shares side by side</td><td>Share of filers, share of income and share of tax shown together</td><td>The fair-share argument has two sides, and both should be readable from the same sentence</td></tr>
-<tr><td>Business taxes</td><td>Split by industry for the three corporate and business taxes only; "all other" is manufacturing plus the department's "other" sector, 8.9%</td><td>Those three taxes are 78% of the bucket in fiscal 2025. The pass-through entity, utility and smaller taxes have no sector data, and the caption says so. The six shares sum to 100.1, as the department's own printed shares do</td></tr>
+<tr><td>Business taxes</td><td>Split by industry for the three corporate and business taxes only; “all other” is manufacturing plus the department's “other” sector, 8.9%</td><td>Those three taxes are 78% of the bucket in fiscal 2025. The pass-through entity, utility and smaller taxes have no sector data, and the caption says so. The six shares sum to 100.1, as the department's own printed shares do</td></tr>
 <tr><td>Sales tax</td><td>No payer split</td><td>No primary source breaks city sales tax down by who pays it. Model-based estimates are statewide and were not used</td></tr>
-<tr><td>"How concentrated is each tax?"</td><td>Four numbers, two for each side of the fair-share argument</td><td>The neutral heading was chosen over a leading one. Edits should keep the two sides balanced</td></tr>
+<tr><td>“How concentrated is each tax?”</td><td>Four numbers, two for each side of the fair-share argument</td><td>The neutral heading was chosen over a leading one. Edits should keep the two sides balanced</td></tr>
 </tbody></table>
 
 <p><b>Who controls what</b></p>
@@ -93,7 +99,7 @@
 <tr><td>Unrounded shares in the key</td><td>Fiscal 2027: city 29.46, mixed 12.36, state 58.18 per $100, each rounded on its own, with a note that they can add to $99 or $101</td><td>Adding separately rounded square counts would overstate the precision</td></tr>
 <tr><td>Not a measure of room to raise</td><td>Stated on the page</td><td>A share of current revenue says nothing about how much more any tax could bring in</td></tr>
 <tr><td>Aid counted as not city-controlled</td><td>State and federal aid grayed with the state-set taxes</td><td>The city can lobby but sets none of it</td></tr>
-<tr><td>"Set in" versus "capped by" state law</td><td>The second-home surcharge and the mortgage recording tax rates are in state law; the real property transfer tax is capped by it</td><td>Tax Law section 1201(b) sets a ceiling the city adopts by local law, so the city could cut the transfer tax without Albany but not raise it</td></tr>
+<tr><td>“Set in” versus “capped by” state law</td><td>The second-home surcharge and the mortgage recording tax rates are in state law; the real property transfer tax is capped by it</td><td>Tax Law section 1201(b) sets a ceiling the city adopts by local law, so the city could cut the transfer tax without Albany but not raise it</td></tr>
 </tbody></table>
 
 <h3 id="limits">Limits</h3>
@@ -104,23 +110,117 @@
 <li><b>General Fund only.</b> Capital spending, off-budget authorities and the transit authority's own taxes are outside the squares.</li>
 <li><b>Two property tax totals.</b> The budget office prints $37.19 billion for fiscal 2027; the Comptroller's reproduction of the same plan shows $37.30 billion because it adds the state's school tax relief reimbursement. The page uses the budget office's figure.</li>
 <li><b>Residents only.</b> The income tax table covers 3.9 million resident returns. Commuters do not pay city income tax.</li>
-<li><b>"Utilities" is Class 3 only.</b> Utility companies' land and buildings are Class 4 and so sit in the commercial row.</li>
+<li><b>“Utilities” is Class 3 only.</b> Utility companies' land and buildings are Class 4 and so sit in the commercial row.</li>
 <li><b>Kept off the page as unverified:</b> the Citizens Budget Commission's effective tax rates by property type (its site blocked automated reading), and the state enabling law behind the hotel tax rate.</li>
 </ul>
 
-<h3 id="checks">Review</h3>
-<p>Every figure on the page was traced to a source document and then checked independently against it. Before every update the project runs a script that checks the source fingerprints, that every split adds to its parent and that the line-by-line control sort adds to the chart's totals.</p>
+<h2 class="part" id="part2">Part two: Where it goes</h2>
+<p class="k"><a href="../nyc-where-it-goes/index.html">Open part two</a></p>
+<h3 id="what2">What the page shows</h3>
+<p>The city's General Fund spending as 100 squares for fiscal 2000 through 2027, in ten lines. Clicking a line shows its largest agencies, the biggest pieces of it in the fiscal 2027 budget and who pays for it. A table shows who sets each line and what the city can change on its own. A switch redraws fiscal 2027 with pensions, health insurance and debt counted in each service. Four numbers describe what the two biggest lines deliver, and the schools line adds spending per pupil.</p>
+<h3 id="sources2">Sources</h3>
+<table class="t"><thead><tr><th>What it feeds</th><th>Source</th><th>Period</th><th>Measure</th></tr></thead><tbody>
+<tr><td>The $100, fiscal 2000 to 2025</td><td><a href="https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf">Comptroller, annual comprehensive financial report for fiscal 2025</a>, General Fund expenditures and transfers by function and agency; earlier reports for earlier years</td><td>Fiscal years</td><td>Actual spending</td></tr>
+<tr><td>The $100, fiscal 2026 and 2027</td><td><a href="https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/erc6-26.pdf">Office of Management and Budget, adopted budget for fiscal 2027, expense revenue contract</a>, June 2026</td><td>Fiscal years</td><td>Budgeted spending</td></tr>
+<tr><td>Inside each line; who pays for it</td><td><a href="https://www.nyc.gov/assets/omb/downloads/pdf/adopt26/ss6-26.pdf">Office of Management and Budget, supporting schedules for the fiscal 2027 adopted budget</a>: each unit of appropriation and its funding summary</td><td>Fiscal 2027</td><td>Appropriations; funding by source</td></tr>
+<tr><td>Pensions, benefits and debt counted in each service</td><td>The same adopted budget: the note at the end of each agency's page giving the costs held for it in the citywide lines</td><td>Fiscal 2027</td><td>Budgeted spending</td></tr>
+<tr><td>Who sets each line</td><td>The <a href="https://comptroller.nyc.gov/wp-content/uploads/documents/Comments-on-New-York-Citys-Fiscal-Year-2027-Adopted-Budget.pdf">Comptroller's comments on the fiscal 2027 adopted budget</a>; the budget office's May 2026 Message of the Mayor, revenue plan and supporting schedules; the City Council Finance Division's reports on the fiscal 2027 budget; the Independent Budget Office's December 2025 report on class size; the State Comptroller's 2025 review of federal grants; the Mayor's Management Report; the state and federal laws named in the table's source note</td><td>2025 and 2026</td><td>Legal authority and budget lines</td></tr>
+<tr><td>Four numbers on schools and the safety net</td><td>Census Bureau, school system finances, fiscal 2024; <a href="https://www.nyc.gov/assets/operations/downloads/pdf/mmr2026/2026_mmr.pdf">Mayor's Management Report, fiscal 2026</a>; <a href="https://www.osc.ny.gov/files/reports/osdc/pdf/report-4-2027.pdf">State Comptroller, review of the city's financial plan</a>, June 2026</td><td>Fiscal 2024 to 2026</td><td>Spending; people served</td></tr>
+<tr><td>Schools per pupil</td><td><a href="https://www2.census.gov/programs-surveys/school-finances/tables/2024/secondary-education-finance/elsec24_sumtables.xlsx">Census Bureau, Annual Survey of School System Finances</a>, fiscal 2024 Tables 8 and 18 and the fiscal 2016 tables and district files; <a href="https://data.nysed.gov/files/essa/24-25/SRC2025.zip">State Education Department, 2024-25 report card data</a>, expenditures per pupil</td><td>Fiscal 2016 and 2024; school year 2024-25</td><td>Current spending per pupil</td></tr>
+<tr><td>The $100 device</td><td><a href="https://www.ibo.nyc.gov/content/publications/2026-september-nyc-budget-in-100">Independent Budget Office, NYC's Budget in $100</a>, September 2026</td><td>Fiscal 2027</td><td>Used for comparison, not as data</td></tr>
+</tbody></table>
+<h3 id="calls2">Judgment calls</h3>
+<table class="t"><thead><tr><th>Call</th><th>What the page does</th><th>Why</th></tr></thead><tbody>
+<tr><td>Ten lines, grouped by the Comptroller</td><td>Agencies are grouped by the audited report's own classification by function, and budget years assign each agency the same way. Housing, transportation, the City University, parks, culture and libraries share one line</td><td>One classification keeps 28 years on the same basis. Folding the smaller functions together keeps the chart to ten lines. The Independent Budget Office's version uses the same classification; for fiscal 2027 education is $30.65 of every $100 in its figure and 31 squares here</td></tr>
+<tr><td>The Miscellaneous budget split up</td><td>For 2026 and 2027 the budget's catch-all line (agency 098) is divided: benefits, unsettled labor contracts, legal judgments and the general reserve stay in benefits; transit subsidies move to everything else; school-construction aid used to repay bonds and Hudson Yards bond payments move to debt service</td><td>That is where the audited books record the same payments, so budget years line up with actual years</td></tr>
+<tr><td>Actual and budget years on one slider</td><td>Fiscal 2026 and 2027 are labeled as budget plans</td><td>Adopted budgets start with smaller amounts for grants and for costs such as overtime, which are added during the year, so they are not comparable with actual spending</td></tr>
+<tr><td>Debt service as recorded</td><td>Each year shows the debt service the books record, including payments made early toward the next year's debt</td><td>The city uses year-end surpluses to prepay debt, which moves debt service between years. The page says so rather than restating the years</td></tr>
+<tr><td>Who pays for each line</td><td>Payments from one city agency to another are left out, and reimbursements from the capital budget are counted with city funds</td><td>So nothing is counted twice. Citywide that puts city funds at $77 of every $100, a different measure from the $77 in agency budgets in the section on what the city can change</td></tr>
+<tr><td>Who sets each line</td><td>“The city” means the mayor and the City Council together. Lines are marked by who sets most of their size: the mayor and Council, mixed, or Albany, labor contracts and bond contracts</td><td>The Council adopts the budget the mayor proposes, so the page names both. The table names the mandates inside each line, such as class-size caps, binding arbitration for police and fire contracts and federal special education law</td></tr>
+<tr><td>Pensions and benefits counted in, fiscal 2027 only</td><td>The switch adds each agency's share of pensions, benefits and debt service from its note in the adopted budget. A striped block of $2.68 billion that the budget assigns to no agency stays separate</td><td>The fiscal 2025 notes do not fit the audited lines without rescaling: they put pensions at $10.35 billion, while the city paid $9.92 billion. Schools already pay most of their own staff's health insurance, so only the part held in the Miscellaneous budget is added for them</td></tr>
+<tr><td>Per-pupil dollars kept apart from the squares</td><td>The schools figures come from the Census Bureau and the State Education Department, not from the squares, and the page never divides the schools line by enrollment</td><td>The squares include charter school payments and leave pensions to the citywide line; the Census Bureau counts the school system's spending from all sources under its own definitions</td></tr>
+<tr><td>Charter school payments</td><td>Left out of the per-pupil figure, as the Census Bureau leaves them out, and shown on their own</td><td>They grew from $1.46 billion in fiscal 2016 to $3.41 billion in fiscal 2024, so the real trend in total spending depends on whether they are counted. The page gives both</td></tr>
+<tr><td>Why spending per pupil rose</td><td>Gives two calculations showing fewer students account for 87 to 89 percent of the real rise per pupil, and says that is arithmetic</td><td>It does not say why spending or enrollment changed. Consumer prices are not school costs, and a wage index could show a different real trend</td></tr>
+<tr><td>School-by-school range</td><td>Counts the 1,531 schools in the 32 geographic districts that report spending. Charter schools are left out, and District 75 is shown on its own</td><td>The department does not run charter schools. District 75's 60 schools spend more than three times as much per pupil</td></tr>
+</tbody></table>
+<h3 id="limits2">Limits</h3>
+<ul>
+<li><b>General Fund only.</b> NYC Health + Hospitals and the New York City Housing Authority keep their own books, and the Metropolitan Transportation Authority is a state authority. The city money each receives is in the squares; the rest of their spending is not. The Water Board, which bills for water and sewer service and pays the city for running the system, is also outside the squares.</li>
+<li><b>Budget years start small.</b> Fiscal 2026 and 2027 will grow as grants are awarded and costs come in.</li>
+<li><b>No causes.</b> The share of students with disabilities, class sizes and teacher counts bear on why New York spends more per pupil than the national average; the page does not divide that gap into causes.</li>
+</ul>
+
+<h2 class="part" id="part3">Part three: Since 2000</h2>
+<p class="k"><a href="../nyc-budget-since-2000/index.html">Open part three</a></p>
+<h3 id="what3">What the page shows</h3>
+<p>Each of part two's ten lines as spending per resident, in fiscal 2025 dollars, fiscal 2000 through 2025, with how much each line has grown since 2000. Fiscal 2026 and 2027 are shown as budget plans.</p>
+<h3 id="sources3">Sources</h3>
+<table class="t"><thead><tr><th>What it feeds</th><th>Source</th><th>Period</th><th>Measure</th></tr></thead><tbody>
+<tr><td>Spending by line</td><td>The same Comptroller reports and adopted budget as part two</td><td>Fiscal 2000 to 2027</td><td>Actual and budgeted spending</td></tr>
+<tr><td>Population</td><td><a href="https://www2.census.gov/programs-surveys/popest/">Census Bureau, July 1 county estimates for the five boroughs</a>: the series revised to match the 2010 and 2020 censuses for 2000 to 2019, and the vintage 2025 series from 2020 on</td><td>Calendar years</td><td>Residents</td></tr>
+<tr><td>Inflation</td><td><a href="https://download.bls.gov/pub/time.series/cu/cu.data.1.AllItems">Bureau of Labor Statistics, consumer price index for the New York metropolitan area</a> (series CUURS12ASA0), averaged over each July-to-June fiscal year</td><td>Fiscal 2000 to 2025</td><td>Prices</td></tr>
+<tr><td>Pensions in fiscal 2000</td><td><a href="https://comptroller.nyc.gov/wp-content/uploads/documents/C__WWW_NYC-site_rsnyc_pdf_NYC_PensionCostIssueBrief.pdf">Comptroller, issue brief on the city's pension costs</a></td><td>Fiscal 1999 to 2001</td><td>Pension contributions</td></tr>
+</tbody></table>
+<h3 id="calls3">Judgment calls</h3>
+<table class="t"><thead><tr><th>Call</th><th>What the page does</th><th>Why</th></tr></thead><tbody>
+<tr><td>Per resident, after inflation</td><td>Every figure through fiscal 2025 is divided by that year's population and converted to fiscal 2025 prices</td><td>So each line can be compared across years with changes in population and prices taken out</td></tr>
+<tr><td>Consumer prices, not a government price index</td><td>Uses the New York-area consumer price index. The method gives the federal price index for state and local government spending (series A829RD3Q086SBEA) for comparison</td><td>The consumer index is local and measures what residents' money buys; the government index is national. It rose 121% from fiscal 2000 to 2025, against 90% for consumer prices, and on it total spending per resident rose 31.1% instead of 53.1%</td></tr>
+<tr><td>Budget years not adjusted</td><td>Fiscal 2026 and 2027 use the 2025 population and are not adjusted for inflation, and no comparison with 2000 is drawn for them</td><td>Both are plans, and future prices and population are not known</td></tr>
+<tr><td>Pensions, benefits and debt in their own rows</td><td>Service rows leave out their workers' pensions, most of their health insurance and the debt on their buildings, which are counted in the rows for pensions, benefits and debt service. Schools and the City University's community colleges pay most of their staff's health insurance from their own budgets</td><td>That is how the audited books record them, with no agency breakdown</td></tr>
+<tr><td>Debt service and hospital payments left out of the growth comparison</td><td>Neither is in the grew-the-most and grew-the-least comparison</td><td>Debt service swings with early payments, and the city's payments to Health + Hospitals ranged from $1.29 billion in fiscal 2006 to $38 million in fiscal 2008, so any two single years can mislead</td></tr>
+<tr><td>A low starting point for pensions</td><td>The method notes that fiscal 2000 pension contributions were unusually low</td><td>After the late-1990s stock boom the pension funds reset their assets to market value, which the Comptroller estimated cut the city's contributions by $1.1 billion that year</td></tr>
+</tbody></table>
+<h3 id="limits3">Limits</h3>
+<ul>
+<li><b>Population estimates move.</b> Estimates for years between censuses are revised often, by up to a few percent, so per-resident figures for any one year carry that uncertainty.</li>
+<li><b>One price index for everything.</b> Consumer prices do not track what the city pays for its workers, supplies or buildings.</li>
+</ul>
+
+<h2 class="part" id="part4">Part four: The capital budget</h2>
+<p class="k"><a href="../nyc-what-the-city-builds/index.html">Open part four</a></p>
+<h3 id="what4">What the page shows</h3>
+<p>What the city spends on things meant to last, as 100 squares for fiscal 2000 through 2025 by function, with yearly bars after inflation, the bonds sold each year and the operating budget's debt service.</p>
+<h3 id="sources4">Sources</h3>
+<table class="t"><thead><tr><th>What it feeds</th><th>Source</th><th>Period</th><th>Measure</th></tr></thead><tbody>
+<tr><td>Capital spending by function</td><td><a href="https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2025-7-28-2026.pdf">Comptroller, annual comprehensive financial reports</a>, Capital Projects Fund expenditures by function; the 2005, 2015 and 2025 editions cover the series</td><td>Fiscal 2000 to 2025</td><td>Money paid out in the year</td></tr>
+<tr><td>Bonds sold</td><td>Same reports, governmental funds statement: principal amount of bonds issued (“proceeds from sale of bonds” in the older reports)</td><td>Fiscal 2000 to 2025</td><td>New bonds, not refinancing</td></tr>
+<tr><td>Construction prices</td><td><a href="https://fred.stlouisfed.org/series/B842RG3Q086SBEA">Bureau of Economic Analysis, price index for state and local government investment in structures</a> (FRED series B842RG3Q086SBEA), averaged over each July-to-June fiscal year</td><td>Fiscal 2000 to 2025</td><td>Prices, national</td></tr>
+<tr><td>Consumer prices</td><td>The same New York-area consumer price index as part three</td><td>Fiscal 2000 to 2025</td><td>Prices</td></tr>
+<tr><td>Debt service</td><td>The General Fund transfer to the debt service funds, as in part two</td><td>Fiscal 2000 to 2025</td><td>Actual spending</td></tr>
+</tbody></table>
+<h3 id="calls4">Judgment calls</h3>
+<table class="t"><thead><tr><th>Call</th><th>What the page does</th><th>Why</th></tr></thead><tbody>
+<tr><td>Spending, not commitments</td><td>Shows money actually paid out during the year</td><td>Commitments, the value of contracts the city signs, are paid out over several years, so the capital plans the city announces are larger and are a different measure</td></tr>
+<tr><td>Construction prices by default</td><td>The yearly bars use the construction price index, with a switch to consumer prices. On construction prices the city spent 1.1 times as much in fiscal 2025 as in 2000; on consumer prices, 1.7 times</td><td>Capital dollars buy construction, and construction prices nearly tripled over the period. The index is national, not specific to New York City, so the consumer-price view stays one click away</td></tr>
+<tr><td>Squares in each year's own dollars</td><td>The squares are not adjusted for inflation; the stat strip gives each year's dollars and fiscal 2025 prices</td><td>The squares show shares of one year's spending, which inflation does not change</td></tr>
+<tr><td>Bonds without refinancing or water bonds</td><td>Bonds sold leave out bonds sold to refinance older debt. Water and sewer projects are in the spending figure but are paid for with Water Finance Authority bonds not counted in the bonds figure</td><td>Refinancing does not pay for new work. The note says so, because the two figures do not line up dollar for dollar</td></tr>
+<tr><td>“Public schools and CUNY”</td><td>The label for the Comptroller's education function</td><td>It holds school construction for the Department of Education and the City University's projects</td></tr>
+</tbody></table>
+<h3 id="limits4">Limits</h3>
+<ul>
+<li><b>A national price index.</b> The index measures state and local government construction across the country; New York City's own costs may have risen faster or slower.</li>
+<li><b>Borrowing and spending do not match year by year.</b> Bonds pay for work over several years.</li>
+<li><b>Through fiscal 2025.</b> Capital spending for fiscal 2026 and 2027 is not on the page.</li>
+</ul>
+
+<h2 class="part" id="checks">Review</h2>
+<p>Every figure in the four parts was traced to a source document and then checked independently against it. Before every update the project runs a script that checks the source fingerprints, that every split adds to its parent and that the line-by-line control sort adds to part one's totals. The build scripts for parts two to four check their own totals, and the per-pupil figures are rebuilt from the source files by a script that checks the wording quotes its results.</p>
 <p>Drafts of the explainer were shared with budget experts, and the text and charts were refined in response to their comments.</p>
 
-<h3 id="open">Open questions</h3>
+<h2 class="part" id="open">Open questions</h2>
 <ul>
 <li><b>One city-controlled number?</b> A line-by-line sort of the mixed groups, not shown on the page, supports a single figure: about $35 of every $100 in fiscal 2027 comes from taxes and charges whose rates the mayor and the City Council set, or about $33 leaving out water and sewer charges, which only repay the cost of the water system. The weakest calls in that sort total under 30 cents per $100.</li>
 <li><b>Which law extended the city income tax rates.</b> The page says the current rates run through tax year 2029. The state's consolidated Tax Law, as revised June 12, 2026, says so. But the extender bill introduced at the city's request (S10609) shows only a Senate vote, so the chapter that made the change has not been identified.</li>
-<li><b>Refresh when the fiscal 2027 property tax report comes out.</b> The class table is fiscal 2026. The Comptroller's fiscal 2026 report, due about October 31, 2026, will let fiscal 2026 move from a budget plan to actual revenue.</li>
+<li><b>Fiscal 2026 actual results.</b> The Comptroller published its <a href="https://comptroller.nyc.gov/wp-content/uploads/documents/ACFR-2026.pdf">fiscal 2026 annual report</a> on October 30, 2026. The explainer has not yet been updated with it: parts one to three still show fiscal 2026 as a budget plan, and part four ends at fiscal 2025.</li>
+<li><b>Refresh when the fiscal 2027 property tax report comes out.</b> Part one's class table is fiscal 2026.</li>
 </ul>
 
-<h3 id="data">Data and code</h3>
-<p class="getdata"><b>Get the data:</b> <a href="data/revenue_per_100.json">revenue by source, 2000-2027</a><a href="data/property_tax_by_class.json">property tax by class</a><a href="data/pit_by_income.json">income tax by band</a><a href="data/business_by_sector.json">business taxes by sector</a><a href="data/aid_by_function.json">aid by purpose</a><a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-who-pays/research">research notes, with a URL and quotation for every figure</a><a href="https://github.com/Vital-City-NYC/nyc-budget-explainer">code</a></p>
-<p>Research and coding were done with Anthropic's Claude under the author's direction. Each figure was required to come from a downloaded document with a verbatim quotation and was checked independently against that document.</p>
+<h2 class="part" id="data">Data and code</h2>
+<p class="getdata"><b>Get the data:</b> <a href="data/revenue_per_100.json">revenue by source, 2000-2027</a><a href="data/property_tax_by_class.json">property tax by class</a><a href="data/pit_by_income.json">income tax by band</a><a href="data/business_by_sector.json">business taxes by sector</a><a href="data/aid_by_function.json">aid by purpose</a><a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-who-pays/research">part one research notes</a></p>
+<p class="getdata"><b>Part two:</b> <a href="../nyc-where-it-goes/data/spending_per_100.json">spending by line and agency, 2000-2027</a><a href="../nyc-where-it-goes/data/inside.json">units of appropriation</a><a href="../nyc-where-it-goes/data/funding_by_bucket.json">who pays for each line</a><a href="../nyc-where-it-goes/data/loaded_2027.json">2027 with pensions, benefits and debt counted in</a><a href="../nyc-where-it-goes/data/per_pupil.json">schools per pupil</a><a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-where-it-goes/research">research notes</a></p>
+<p class="getdata"><b>Part three:</b> <a href="../nyc-budget-since-2000/data/real_per_resident.json">spending per resident, 2000-2027</a><a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-budget-since-2000/research">research notes</a></p>
+<p class="getdata"><b>Part four:</b> <a href="../nyc-what-the-city-builds/data/capital_per_100.json">capital spending by function, 2000-2025</a><a href="../nyc-what-the-city-builds/data/construction_prices.json">construction prices</a><a href="https://github.com/Vital-City-NYC/nyc-budget-explainer/tree/main/nyc-what-the-city-builds/research">research notes</a></p>
+<p class="getdata"><b>Everything:</b> <a href="https://github.com/Vital-City-NYC/nyc-budget-explainer">code and data</a></p>
+<p>The research notes record a URL and a verbatim quotation for every figure. Research and coding were done with Anthropic's Claude under the author's direction. Each figure was required to come from a downloaded document with a verbatim quotation and was checked independently against that document.</p>
 </div></section>
 </div></body></html>
