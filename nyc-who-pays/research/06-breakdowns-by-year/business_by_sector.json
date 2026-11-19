@@ -1,0 +1,1261 @@
+{
+ "source_note": "NYC Department of Finance, 'Statistical Profiles of New York City Business Income Taxes' (Office/Division of Tax Policy), one report per tax year, listing page https://www.nyc.gov/site/finance/business/business-reports-statistical-profiles.page. Each year uses that year's own combined all-taxes table 'Distribution by Industry' (Business Income Taxes section; Table 3 in tax years 1999-2016, Table 1 in 2017-2022). Liability in $ thousands, as printed. Liability excludes penalty and interest; from the 2014 report on it is described as 'net of all refundable credits'. Industry by taxpayer-reported NAICS code (national activity). Groups: s1 = DOF 'FINANCIAL' (1999-2008) / 'Finance & Insurance' (2009+); s2 = Services; s3 = Trade; s4 = Information; s5 = Real Estate; s6 = Manufacturing + Other. In every year the DOF combined Financial/Finance & Insurance row equals BCT (or COR) finance liability plus GCT and UBT finance & insurance rows, verified to within $1K. Values not revised: each year is from its own report.",
+ "years": {
+  "1999": {
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 2715581,
+   "sectors": {
+    "s1": 972426,
+    "s2": 847417,
+    "s3": 257682,
+    "s4": 165048,
+    "s5": 190715,
+    "s6": 282293
+   },
+   "dof_rows": {
+    "s1": [
+     "FINANCIAL"
+    ],
+    "s2": [
+     "SERVICES"
+    ],
+    "s3": [
+     "TRADE"
+    ],
+    "s4": [
+     "INFORMATION"
+    ],
+    "s5": [
+     "REAL ESTATE"
+    ],
+    "s6": [
+     "MANUFACTURING",
+     "OTHER"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 2715581,
+    "diff_k": 0
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/02pdf/taxpol_btax_99.pdf",
+    "file": "src/taxpol_btax_99.pdf",
+    "md5": "660ad4e89fb49881e7c9d7223429b874",
+    "table": "Table 3: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 11,
+    "printed_page": "3"
+   }
+  },
+  "2000": {
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 2953161,
+   "sectors": {
+    "s1": 1055702,
+    "s2": 937761,
+    "s3": 268496,
+    "s4": 173716,
+    "s5": 221067,
+    "s6": 296419
+   },
+   "dof_rows": {
+    "s1": [
+     "FINANCIAL"
+    ],
+    "s2": [
+     "SERVICES"
+    ],
+    "s3": [
+     "TRADE"
+    ],
+    "s4": [
+     "INFORMATION"
+    ],
+    "s5": [
+     "REAL ESTATE"
+    ],
+    "s6": [
+     "MANUFACTURING",
+     "OTHER"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 2953161,
+    "diff_k": 0
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/03pdf/taxpol_btax_00.pdf",
+    "file": "src/taxpol_btax_00.pdf",
+    "md5": "2ba7d6f22d582f8e3cdf4105510f34a2",
+    "table": "Table 3: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 10,
+    "printed_page": "4"
+   }
+  },
+  "2001": {
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 2654802,
+   "sectors": {
+    "s1": 889579,
+    "s2": 852420,
+    "s3": 242202,
+    "s4": 155326,
+    "s5": 230210,
+    "s6": 285065
+   },
+   "dof_rows": {
+    "s1": [
+     "FINANCIAL"
+    ],
+    "s2": [
+     "SERVICES"
+    ],
+    "s3": [
+     "TRADE"
+    ],
+    "s4": [
+     "INFORMATION"
+    ],
+    "s5": [
+     "REAL ESTATE"
+    ],
+    "s6": [
+     "MANUFACTURING",
+     "OTHER"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 2654802,
+    "diff_k": 0
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/04pdf/taxpol_bustax_01.pdf",
+    "file": "src/taxpol_bustax_01.pdf",
+    "md5": "24988c2d6a4d50889dc20deb7752676c",
+    "table": "Table 3: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 12,
+    "printed_page": "4"
+   }
+  },
+  "2002": {
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 2536522,
+   "sectors": {
+    "s1": 791361,
+    "s2": 854325,
+    "s3": 247496,
+    "s4": 172652,
+    "s5": 213848,
+    "s6": 256840
+   },
+   "dof_rows": {
+    "s1": [
+     "FINANCIAL"
+    ],
+    "s2": [
+     "SERVICES"
+    ],
+    "s3": [
+     "TRADE"
+    ],
+    "s4": [
+     "INFORMATION"
+    ],
+    "s5": [
+     "REAL ESTATE"
+    ],
+    "s6": [
+     "MANUFACTURING",
+     "OTHER"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 2536522,
+    "diff_k": 0
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/05pdf/taxpol_bustax_02.pdf",
+    "file": "src/taxpol_bustax_02.pdf",
+    "md5": "749c1f0e5765e53824d4b32187d35a0f",
+    "table": "Table 3: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 12,
+    "printed_page": "4"
+   }
+  },
+  "2003": {
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 2829223,
+   "sectors": {
+    "s1": 853804,
+    "s2": 942997,
+    "s3": 278846,
+    "s4": 246113,
+    "s5": 254254,
+    "s6": 253209
+   },
+   "dof_rows": {
+    "s1": [
+     "FINANCIAL"
+    ],
+    "s2": [
+     "SERVICES"
+    ],
+    "s3": [
+     "TRADE"
+    ],
+    "s4": [
+     "INFORMATION"
+    ],
+    "s5": [
+     "REAL ESTATE"
+    ],
+    "s6": [
+     "MANUFACTURING",
+     "OTHER"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 2829223,
+    "diff_k": 0
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/07pdf/stat_prof_nyc_bus_tax1.pdf",
+    "file": "src/stat_prof_nyc_bus_tax1.pdf",
+    "md5": "9c196148516bab26524062b6650bad48",
+    "table": "Table 3: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 12,
+    "printed_page": "4"
+   }
+  },
+  "2004": {
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 3512614,
+   "sectors": {
+    "s1": 1216484,
+    "s2": 1079696,
+    "s3": 324886,
+    "s4": 237962,
+    "s5": 334844,
+    "s6": 318742
+   },
+   "dof_rows": {
+    "s1": [
+     "FINANCIAL"
+    ],
+    "s2": [
+     "SERVICES"
+    ],
+    "s3": [
+     "TRADE"
+    ],
+    "s4": [
+     "INFORMATION"
+    ],
+    "s5": [
+     "REAL ESTATE"
+    ],
+    "s6": [
+     "MANUFACTURING",
+     "OTHER"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 3512614,
+    "diff_k": 0
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/04pdf/2004_stat_profiles_of_nyc_bus_income_tax.pdf",
+    "file": "src/2004_stat_profiles_of_nyc_bus_income_tax.pdf",
+    "md5": "6c776218c65a7340055339857f53fd46",
+    "table": "Table 3: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 12,
+    "printed_page": "4"
+   }
+  },
+  "2005": {
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 4220197,
+   "sectors": {
+    "s1": 1650538,
+    "s2": 1187073,
+    "s3": 359527,
+    "s4": 266229,
+    "s5": 446081,
+    "s6": 310749
+   },
+   "dof_rows": {
+    "s1": [
+     "FINANCIAL"
+    ],
+    "s2": [
+     "SERVICES"
+    ],
+    "s3": [
+     "TRADE"
+    ],
+    "s4": [
+     "INFORMATION"
+    ],
+    "s5": [
+     "REAL ESTATE"
+    ],
+    "s6": [
+     "MANUFACTURING",
+     "OTHER"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 4220197,
+    "diff_k": 0
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/05pdf/bit_report_2005_final.pdf",
+    "file": "src/bit_report_2005_final.pdf",
+    "md5": "ee482d6b6aeb8621fa5eaa0dc6287816",
+    "table": "Table 3: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 11,
+    "printed_page": "4"
+   }
+  },
+  "2006": {
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 5222429,
+   "sectors": {
+    "s1": 2141844,
+    "s2": 1375956,
+    "s3": 417372,
+    "s4": 316489,
+    "s5": 554982,
+    "s6": 415786
+   },
+   "dof_rows": {
+    "s1": [
+     "FINANCIAL"
+    ],
+    "s2": [
+     "SERVICES"
+    ],
+    "s3": [
+     "TRADE"
+    ],
+    "s4": [
+     "INFORMATION"
+    ],
+    "s5": [
+     "REAL ESTATE"
+    ],
+    "s6": [
+     "MANUFACTURING",
+     "OTHER"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 5222429,
+    "diff_k": 0
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/09pdf/bit_report_2006_11_12_09.pdf",
+    "file": "src/bit_report_2006_11_12_09.pdf",
+    "md5": "cee2080a373d4518fbd6699004e5296e",
+    "table": "Table 3: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 11,
+    "printed_page": "4"
+   }
+  },
+  "2007": {
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 5373557,
+   "sectors": {
+    "s1": 2096488,
+    "s2": 1490307,
+    "s3": 452875,
+    "s4": 324312,
+    "s5": 650859,
+    "s6": 358716
+   },
+   "dof_rows": {
+    "s1": [
+     "FINANCIAL"
+    ],
+    "s2": [
+     "SERVICES"
+    ],
+    "s3": [
+     "TRADE"
+    ],
+    "s4": [
+     "INFORMATION"
+    ],
+    "s5": [
+     "REAL ESTATE"
+    ],
+    "s6": [
+     "MANUFACTURING",
+     "OTHER"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 5373557,
+    "diff_k": 0
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/07pdf/bit_report_2007_final.pdf",
+    "file": "src/bit_report_2007_final.pdf",
+    "md5": "d03a78afffea8c95d8e46d64cb2bde49",
+    "table": "Table 3: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 11,
+    "printed_page": "4"
+   }
+  },
+  "2008": {
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 5016303,
+   "sectors": {
+    "s1": 2065871,
+    "s2": 1469182,
+    "s3": 356366,
+    "s4": 270966,
+    "s5": 439243,
+    "s6": 414676
+   },
+   "dof_rows": {
+    "s1": [
+     "FINANCIAL"
+    ],
+    "s2": [
+     "SERVICES"
+    ],
+    "s3": [
+     "TRADE"
+    ],
+    "s4": [
+     "INFORMATION"
+    ],
+    "s5": [
+     "REAL ESTATE"
+    ],
+    "s6": [
+     "MANUFACTURING",
+     "OTHER"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 5016304,
+    "diff_k": 1
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/08pdf/bit_report_%202008.pdf",
+    "file": "src/bit_report__2008.pdf",
+    "md5": "0e0bccbd76f63063d615cd61d2249097",
+    "table": "Table 3: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 11,
+    "printed_page": "4"
+   }
+  },
+  "2009": {
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 4670617,
+   "sectors": {
+    "s1": 2081455,
+    "s2": 1286250,
+    "s3": 366194,
+    "s4": 289468,
+    "s5": 262778,
+    "s6": 384470
+   },
+   "dof_rows": {
+    "s1": [
+     "FINANCE & INSURANCE"
+    ],
+    "s2": [
+     "SERVICES"
+    ],
+    "s3": [
+     "TRADE"
+    ],
+    "s4": [
+     "INFORMATION"
+    ],
+    "s5": [
+     "REAL ESTATE"
+    ],
+    "s6": [
+     "MANUFACTURING",
+     "OTHER"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 4670615,
+    "diff_k": -2
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/09pdf/2009_stat_profiles_of_nyc_bus_income_tax.pdf",
+    "file": "src/2009_stat_profiles_of_nyc_bus_income_tax.pdf",
+    "md5": "e57d3ec9e971b9e21573135758505ec8",
+    "table": "Table 3: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 11,
+    "printed_page": "4"
+   }
+  },
+  "2010": {
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 5315450,
+   "sectors": {
+    "s1": 2416153,
+    "s2": 1371999,
+    "s3": 430186,
+    "s4": 327776,
+    "s5": 332576,
+    "s6": 436761
+   },
+   "dof_rows": {
+    "s1": [
+     "FINANCE & INSURANCE"
+    ],
+    "s2": [
+     "SERVICES"
+    ],
+    "s3": [
+     "TRADE"
+    ],
+    "s4": [
+     "INFORMATION"
+    ],
+    "s5": [
+     "REAL ESTATE"
+    ],
+    "s6": [
+     "MANUFACTURING",
+     "OTHER"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 5315451,
+    "diff_k": 1
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2010.pdf",
+    "file": "src/bit_report_2010.pdf",
+    "md5": "1607a767f723b0d8ddc5afa8a9f8e068",
+    "table": "Table 3: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 11,
+    "printed_page": "4"
+   }
+  },
+  "2011": {
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 5463828,
+   "sectors": {
+    "s1": 2380154,
+    "s2": 1459891,
+    "s3": 474178,
+    "s4": 364415,
+    "s5": 371480,
+    "s6": 413710
+   },
+   "dof_rows": {
+    "s1": [
+     "FINANCE & INSURANCE"
+    ],
+    "s2": [
+     "SERVICES"
+    ],
+    "s3": [
+     "TRADE"
+    ],
+    "s4": [
+     "INFORMATION"
+    ],
+    "s5": [
+     "REAL ESTATE"
+    ],
+    "s6": [
+     "MANUFACTURING",
+     "OTHER"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 5463828,
+    "diff_k": 0
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2011.pdf",
+    "file": "src/bit_report_2011.pdf",
+    "md5": "420a7e4c16371ae5592088e7d92c1217",
+    "table": "Table 3: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 11,
+    "printed_page": "4"
+   }
+  },
+  "2012": {
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 6012745,
+   "sectors": {
+    "s1": 2675441,
+    "s2": 1586454,
+    "s3": 512120,
+    "s4": 364612,
+    "s5": 462268,
+    "s6": 411850
+   },
+   "dof_rows": {
+    "s1": [
+     "FINANCE & INSURANCE"
+    ],
+    "s2": [
+     "SERVICES"
+    ],
+    "s3": [
+     "TRADE"
+    ],
+    "s4": [
+     "INFORMATION"
+    ],
+    "s5": [
+     "REAL ESTATE"
+    ],
+    "s6": [
+     "MANUFACTURING",
+     "OTHER"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 6012745,
+    "diff_k": 0
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2012.pdf",
+    "file": "src/bit_report_2012.pdf",
+    "md5": "b8e8e66c6f2db30a28f74bf90707e3bb",
+    "table": "Table 3: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 11,
+    "printed_page": "4"
+   }
+  },
+  "2013": {
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 5733231,
+   "sectors": {
+    "s1": 2352252,
+    "s2": 1560484,
+    "s3": 501141,
+    "s4": 479410,
+    "s5": 426516,
+    "s6": 413427
+   },
+   "dof_rows": {
+    "s1": [
+     "Finance & Insurance"
+    ],
+    "s2": [
+     "Services"
+    ],
+    "s3": [
+     "Trade"
+    ],
+    "s4": [
+     "Information"
+    ],
+    "s5": [
+     "Real Estate"
+    ],
+    "s6": [
+     "Manufacturing",
+     "Other"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 5733230,
+    "diff_k": -1
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2013.pdf",
+    "file": "src/bit_report_2013.pdf",
+    "md5": "5370b11541ee2fa265196e494d17db23",
+    "table": "Table 3: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 12,
+    "printed_page": "4",
+    "xlsx_crosscheck": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2013.xlsx"
+   }
+  },
+  "2014": {
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 6218119,
+   "sectors": {
+    "s1": 2606164,
+    "s2": 1685779,
+    "s3": 499248,
+    "s4": 400597,
+    "s5": 592234,
+    "s6": 434097
+   },
+   "dof_rows": {
+    "s1": [
+     "Finance & Insurance"
+    ],
+    "s2": [
+     "Services"
+    ],
+    "s3": [
+     "Trade"
+    ],
+    "s4": [
+     "Information"
+    ],
+    "s5": [
+     "Real Estate"
+    ],
+    "s6": [
+     "Manufacturing",
+     "Other"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 6218119,
+    "diff_k": 0
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2014.pdf",
+    "file": "src/bit_report_2014.pdf",
+    "md5": "bfb2645459dc9be707dc6680c99dfc44",
+    "table": "Table 3: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 12,
+    "printed_page": "4",
+    "xlsx_crosscheck": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2014.xlsx"
+   }
+  },
+  "2015": {
+   "taxes": [
+    "COR",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 5621961,
+   "sectors": {
+    "s1": 2013463,
+    "s2": 1699478,
+    "s3": 514645,
+    "s4": 341879,
+    "s5": 595669,
+    "s6": 456829
+   },
+   "dof_rows": {
+    "s1": [
+     "Finance & Insurance"
+    ],
+    "s2": [
+     "Services"
+    ],
+    "s3": [
+     "Trade"
+    ],
+    "s4": [
+     "Information"
+    ],
+    "s5": [
+     "Real Estate"
+    ],
+    "s6": [
+     "Manufacturing",
+     "Other"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 5621963,
+    "diff_k": 2
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2015.pdf",
+    "file": "src/bit_report_2015.pdf",
+    "md5": "220e83edfce064dd8c317fe6ab556169",
+    "table": "Table 3: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 12,
+    "printed_page": "4",
+    "xlsx_crosscheck": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2015.xlsx"
+   },
+   "note": "COR = Business Corporation Tax (C corporations, incl. former BCT banks). BCT (S-corp banks only after 2015, <$5M in 2015) is excluded from the report for confidentiality."
+  },
+  "2016": {
+   "taxes": [
+    "COR",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 5501606,
+   "sectors": {
+    "s1": 1952997,
+    "s2": 1690188,
+    "s3": 479570,
+    "s4": 311848,
+    "s5": 570908,
+    "s6": 496096
+   },
+   "dof_rows": {
+    "s1": [
+     "Finance & Insurance"
+    ],
+    "s2": [
+     "Services"
+    ],
+    "s3": [
+     "Trade"
+    ],
+    "s4": [
+     "Information"
+    ],
+    "s5": [
+     "Real Estate"
+    ],
+    "s6": [
+     "Manufacturing",
+     "Other"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 5501607,
+    "diff_k": 1
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2016.pdf",
+    "file": "src/bit_report_2016.pdf",
+    "md5": "4a9c880b6825922ebf36e82655c305fb",
+    "table": "Table 3: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 12,
+    "printed_page": "4",
+    "xlsx_crosscheck": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2016.xlsx"
+   },
+   "note": "COR = Business Corporation Tax (C corporations, incl. former BCT banks). BCT (S-corp banks only after 2015, <$5M in 2015) is excluded from the report for confidentiality."
+  },
+  "2017": {
+   "taxes": [
+    "COR",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 5630926,
+   "sectors": {
+    "s1": 2051132,
+    "s2": 1816775,
+    "s3": 443727,
+    "s4": 303382,
+    "s5": 534248,
+    "s6": 481662
+   },
+   "dof_rows": {
+    "s1": [
+     "Finance & Insurance"
+    ],
+    "s2": [
+     "Services"
+    ],
+    "s3": [
+     "Trade"
+    ],
+    "s4": [
+     "Information"
+    ],
+    "s5": [
+     "Real Estate"
+    ],
+    "s6": [
+     "Manufacturing",
+     "Other"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 5630926,
+    "diff_k": 0
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2017.pdf",
+    "file": "src/bit_report_2017.pdf",
+    "md5": "bfd3aa4a373c494bc2822639cac0fa02",
+    "table": "Table 1: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 11,
+    "printed_page": "5",
+    "xlsx_crosscheck": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2017.xlsx"
+   },
+   "note": "COR = Business Corporation Tax (C corporations, incl. former BCT banks). BCT (S-corp banks only after 2015, <$5M in 2015) is excluded from the report for confidentiality."
+  },
+  "2018": {
+   "taxes": [
+    "COR",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 6485573,
+   "sectors": {
+    "s1": 2275569,
+    "s2": 2037213,
+    "s3": 543279,
+    "s4": 488684,
+    "s5": 559840,
+    "s6": 580988
+   },
+   "dof_rows": {
+    "s1": [
+     "Finance & Insurance"
+    ],
+    "s2": [
+     "Services"
+    ],
+    "s3": [
+     "Trade"
+    ],
+    "s4": [
+     "Information"
+    ],
+    "s5": [
+     "Real Estate"
+    ],
+    "s6": [
+     "Manufacturing",
+     "Other"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 6485573,
+    "diff_k": 0
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2018.pdf",
+    "file": "src/bit_report_2018.pdf",
+    "md5": "d5433139db56beaa9f17e7f70eccf8a7",
+    "table": "Table 1: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 11,
+    "printed_page": "5",
+    "xlsx_crosscheck": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2018.xlsx"
+   },
+   "note": "COR = Business Corporation Tax (C corporations, incl. former BCT banks). BCT (S-corp banks only after 2015, <$5M in 2015) is excluded from the report for confidentiality."
+  },
+  "2019": {
+   "taxes": [
+    "COR",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 6728894,
+   "sectors": {
+    "s1": 2301455,
+    "s2": 2129142,
+    "s3": 548894,
+    "s4": 610978,
+    "s5": 519193,
+    "s6": 619232
+   },
+   "dof_rows": {
+    "s1": [
+     "Finance & Insurance"
+    ],
+    "s2": [
+     "Services"
+    ],
+    "s3": [
+     "Trade"
+    ],
+    "s4": [
+     "Information"
+    ],
+    "s5": [
+     "Real Estate"
+    ],
+    "s6": [
+     "Manufacturing",
+     "Other"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 6728894,
+    "diff_k": 0
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2019.pdf",
+    "file": "src/bit_report_2019.pdf",
+    "md5": "13b799177ea7cb99e1ed20921aa1f569",
+    "table": "Table 1: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 12,
+    "printed_page": "5",
+    "xlsx_crosscheck": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2019.xlsx"
+   },
+   "note": "COR = Business Corporation Tax (C corporations, incl. former BCT banks). BCT (S-corp banks only after 2015, <$5M in 2015) is excluded from the report for confidentiality."
+  },
+  "2020": {
+   "taxes": [
+    "COR",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 6363015,
+   "sectors": {
+    "s1": 2530109,
+    "s2": 1843293,
+    "s3": 527842,
+    "s4": 412376,
+    "s5": 401808,
+    "s6": 647587
+   },
+   "dof_rows": {
+    "s1": [
+     "Finance & Insurance"
+    ],
+    "s2": [
+     "Services"
+    ],
+    "s3": [
+     "Trade"
+    ],
+    "s4": [
+     "Information"
+    ],
+    "s5": [
+     "Real Estate"
+    ],
+    "s6": [
+     "Manufacturing",
+     "Other"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 6363015,
+    "diff_k": 0
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2020.pdf",
+    "file": "src/bit_report_2020.pdf",
+    "md5": "54417abeb78a1dd4a8412f395ace4833",
+    "table": "Table 1: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 11,
+    "printed_page": "5",
+    "xlsx_crosscheck": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2020.xlsx"
+   },
+   "note": "COR = Business Corporation Tax (C corporations, incl. former BCT banks). BCT (S-corp banks only after 2015, <$5M in 2015) is excluded from the report for confidentiality."
+  },
+  "2021": {
+   "taxes": [
+    "COR",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 7882470,
+   "sectors": {
+    "s1": 3175181,
+    "s2": 2243406,
+    "s3": 709684,
+    "s4": 560772,
+    "s5": 554424,
+    "s6": 639003
+   },
+   "dof_rows": {
+    "s1": [
+     "Finance & Insurance"
+    ],
+    "s2": [
+     "Services"
+    ],
+    "s3": [
+     "Trade"
+    ],
+    "s4": [
+     "Information"
+    ],
+    "s5": [
+     "Real Estate"
+    ],
+    "s6": [
+     "Manufacturing",
+     "Other"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 7882470,
+    "diff_k": 0
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2021.pdf",
+    "file": "src/bit_report_2021.pdf",
+    "md5": "38587a59270ddc39ad8236978dc331e5",
+    "table": "Table 1: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 11,
+    "printed_page": "5",
+    "xlsx_crosscheck": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2021.xlsx"
+   },
+   "note": "COR = Business Corporation Tax (C corporations, incl. former BCT banks). BCT (S-corp banks only after 2015, <$5M in 2015) is excluded from the report for confidentiality."
+  },
+  "2022": {
+   "taxes": [
+    "COR",
+    "GCT",
+    "UBT"
+   ],
+   "total_liab_k": 8587075,
+   "sectors": {
+    "s1": 3319281,
+    "s2": 2462933,
+    "s3": 793889,
+    "s4": 734710,
+    "s5": 516266,
+    "s6": 759995
+   },
+   "dof_rows": {
+    "s1": [
+     "Finance & Insurance"
+    ],
+    "s2": [
+     "Services"
+    ],
+    "s3": [
+     "Trade"
+    ],
+    "s4": [
+     "Information"
+    ],
+    "s5": [
+     "Real Estate"
+    ],
+    "s6": [
+     "Manufacturing",
+     "Other"
+    ]
+   },
+   "sum_check": {
+    "sum_six_k": 8587074,
+    "diff_k": -1
+   },
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2022.pdf",
+    "file": "src/bit_report_2022.pdf",
+    "md5": "284019ad8f82cce40159782e6f2609fb",
+    "table": "Table 1: Distribution by Industry (Business Income Taxes, combined)",
+    "pdf_page": 11,
+    "printed_page": "5",
+    "xlsx_crosscheck": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2022.xlsx"
+   },
+   "note": "COR = Business Corporation Tax (C corporations, incl. former BCT banks). BCT (S-corp banks only after 2015, <$5M in 2015) is excluded from the report for confidentiality."
+  }
+ },
+ "excluded_years": {
+  "1998": {
+   "reason": "Report covers only GCT and UBT (no Banking Corporation Tax) and has no combined industry table; per-tax tables recorded below, not summed into the series.",
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/gctubt98.pdf",
+    "file": "src/gctubt98.pdf",
+    "md5": "1ae3bf7f9c477143430bb410fb5ab295"
+   },
+   "report_total_text": "For tax year 1998, these taxpayers generated $2.152 billion in liability.",
+   "per_tax_k": {
+    "GCT (Table 3, pdf p10, printed p3)": {
+     "FINANCE & INSURANCE": 342830,
+     "REAL ESTATE": 151874,
+     "MANUFACTURING": 110450,
+     "PROF / TECH / MANAGERIAL": 233864,
+     "OTHER SERVICES": 222562,
+     "INFORMATION": 114192,
+     "TRADE": 211895,
+     "OTHER": 114882,
+     "TOTAL": 1502550
+    },
+    "UBT partnerships (Table 16, pdf p19, printed p11)": {
+     "LEGAL": 202839,
+     "FINANCE & INSURANCE": 196984,
+     "INFORMATION": 21775,
+     "PROF / TECH / MANAGERIAL": 57203,
+     "ARTS / ENTER / ACCOM / FOOD": 15790,
+     "OTHER SERVICES": 18725,
+     "TRADE": 7793,
+     "REAL ESTATE": 16565,
+     "OTHER": 9419,
+     "TOTAL": 547094
+    },
+    "UBT proprietorships (Table 24, pdf p26, printed p17)": {
+     "LEGAL": 15228,
+     "FINANCE & INSURANCE": 4680,
+     "INFORMATION": 994,
+     "PROF / TECH / MANAGERIAL": 12618,
+     "ARTS / ENTER / ACCOM / FOOD": 7275,
+     "OTHER SERVICES": 45498,
+     "TRADE": 1995,
+     "REAL ESTATE": 2004,
+     "OTHER": 11775,
+     "TOTAL": 102067
+    }
+   }
+  },
+  "1997": {
+   "reason": "GCT and UBT only (no BCT), no combined table, and industries use IRS Principal Business Activity (SIC-like) codes with no Information sector and holding companies inside Finance; mapping to the six groups is not unambiguous.",
+   "src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/00pdf/1997gct_ubt_rpt.pdf",
+    "file": "src/1997gct_ubt_rpt.pdf",
+    "md5": "a5d6e2f24659131b8913a36b4ae3d3eb"
+   }
+  },
+  "1994-1996": {
+   "reason": "Appear only as GCT/UBT per-tax tables inside the 1997 report (PBA codes, no BCT, no combined table); excluded for the same reasons as 1997."
+  },
+  "2023+": {
+   "reason": "Not published on the DOF listing page as of 2026-11-19; bit_report_2023.pdf/.xlsx return 404. a860-gpp.nyc.gov returned 403 to every request from this machine, so the archive could not be checked."
+  }
+ }
+}

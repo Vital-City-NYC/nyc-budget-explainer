@@ -1,0 +1,471 @@
+{
+ "source_note": "NYC Department of Finance, Annual Report on the New York City Real Property Tax (one edition per fiscal year). Four-class levies ($ millions) come from the class-levy history table (Table 19 'Tax Levy Distribution by Class') in the newest edition that covers each year: FY2026 edition for FY2007-2026, FY2023 for FY2004-2006, FY2022 for FY2003, FY2021 for FY2002, FY2020 for FY2001, FY2019 for FY2000. c2_rental_share = (Rentals + Conrentals + 4-10 Family Rentals) / Class 2 total, using the gross 'Tax Levy' column (before STAR and abatements; 'Tax Levy (Sch. Tax)' in FY2005-FY2018 editions) of each year's own 'Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type' table. Owner units = co-ops, condos, condops (large and 2-10 family). Before FY2010 there is no Conrentals category; DOF says those parcels were classified as residential condos, so FY2005-FY2009 shares count rental condo buildings as owner units. FY2000-FY2004 editions have no levy-by-property-type table, so c2_rental_share is null for those years.",
+ "years": {
+  "2000": {
+   "total_m": 8374.3,
+   "c1_m": 1110.2,
+   "c2_m": 2854.1,
+   "c3_m": 622.1,
+   "c4_m": 3787.8,
+   "c2_rental_share": null,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy19.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2000 - FY 2019",
+    "page": "PDF p. 58 (printed p. 50)"
+   },
+   "split_src": null
+  },
+  "2001": {
+   "total_m": 8730.3,
+   "c1_m": 1178.4,
+   "c2_m": 3012.1,
+   "c3_m": 666.2,
+   "c4_m": 3873.6,
+   "c2_rental_share": null,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy20.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2001 - FY 2020",
+    "page": "PDF p. 58 (printed p. 50)"
+   },
+   "split_src": null
+  },
+  "2002": {
+   "total_m": 9271.2,
+   "c1_m": 1265.2,
+   "c2_m": 3239.7,
+   "c3_m": 688.4,
+   "c4_m": 4077.9,
+   "c2_rental_share": null,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy21.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2002 - FY 2021",
+    "page": "PDF p. 58 (printed p. 52)"
+   },
+   "split_src": null
+  },
+  "2003": {
+   "total_m": 10688.8,
+   "c1_m": 1482.8,
+   "c2_m": 3732.1,
+   "c3_m": 792.0,
+   "c4_m": 4681.8,
+   "c2_rental_share": null,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy22.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2003 - FY 2022",
+    "page": "PDF p. 59 (printed p. 53)"
+   },
+   "split_src": null
+  },
+  "2004": {
+   "total_m": 12250.7,
+   "c1_m": 1726.1,
+   "c2_m": 4356.7,
+   "c3_m": 871.9,
+   "c4_m": 5295.9,
+   "c2_rental_share": null,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy23.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2004 - FY 2023",
+    "page": "PDF p. 63 (printed p. 57)"
+   },
+   "split_src": null
+  },
+  "2005": {
+   "total_m": 12720.0,
+   "c1_m": 1868.0,
+   "c2_m": 4435.8,
+   "c3_m": 940.0,
+   "c4_m": 5476.2,
+   "c2_rental_share": 0.5559,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy23.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2004 - FY 2023",
+    "page": "PDF p. 63 (printed p. 57)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/04pdf/taxpol_proptax05.pdf",
+    "table": "Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 33 (printed p. 27)"
+   }
+  },
+  "2006": {
+   "total_m": 13668.1,
+   "c1_m": 2042.9,
+   "c2_m": 4842.5,
+   "c3_m": 1046.5,
+   "c4_m": 5736.2,
+   "c2_rental_share": 0.5513,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy23.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2004 - FY 2023",
+    "page": "PDF p. 63 (printed p. 57)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/06pdf/taxpol_proptax_06.pdf",
+    "table": "Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 33 (printed p. 27)"
+   }
+  },
+  "2007": {
+   "total_m": 14291.2,
+   "c1_m": 2176.5,
+   "c2_m": 5217.8,
+   "c3_m": 1090.1,
+   "c4_m": 5806.8,
+   "c2_rental_share": 0.5429,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/07pdf/nyc_property_tax_fy07.pdf",
+    "table": "Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 33 (printed p. 27)"
+   }
+  },
+  "2008": {
+   "total_m": 14356.3,
+   "c1_m": 2170.4,
+   "c2_m": 5271.4,
+   "c3_m": 1010.1,
+   "c4_m": 5904.4,
+   "c2_rental_share": 0.5441,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/08pdf/nyc_property_tax_fy08.pdf",
+    "table": "Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 33 (printed p. 27)"
+   }
+  },
+  "2009": {
+   "total_m": 15903.5,
+   "c1_m": 2378.5,
+   "c2_m": 5918.4,
+   "c3_m": 1163.9,
+   "c4_m": 6442.7,
+   "c2_rental_share": 0.536,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/09pdf/annual_report_fy09.pdf",
+    "table": "Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 33 (printed p. 27)"
+   }
+  },
+  "2010": {
+   "total_m": 17588.1,
+   "c1_m": 2607.1,
+   "c2_m": 6589.8,
+   "c3_m": 1331.7,
+   "c4_m": 7059.5,
+   "c2_rental_share": 0.5293,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/10pdf/annual_report_fy10.pdf",
+    "table": "Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 33 (printed p. 27)"
+   }
+  },
+  "2011": {
+   "total_m": 18323.7,
+   "c1_m": 2765.4,
+   "c2_m": 6856.3,
+   "c3_m": 1394.0,
+   "c4_m": 7308.0,
+   "c2_rental_share": 0.5292,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/11pdf/nyc_property_tax_fy11.pdf",
+    "table": "Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 33 (printed p. 27)"
+   }
+  },
+  "2012": {
+   "total_m": 19284.5,
+   "c1_m": 2967.0,
+   "c2_m": 7290.8,
+   "c3_m": 1356.4,
+   "c4_m": 7670.4,
+   "c2_rental_share": 0.5247,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/12pdf/nyc_property_tax_fy12.pdf",
+    "table": "Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 32 (printed p. 27)"
+   }
+  },
+  "2013": {
+   "total_m": 20133.1,
+   "c1_m": 3113.0,
+   "c2_m": 7442.5,
+   "c3_m": 1416.0,
+   "c4_m": 8161.7,
+   "c2_rental_share": 0.5267,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_tax_fy13.pdf",
+    "table": "Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 32 (printed p. 27)"
+   }
+  },
+  "2014": {
+   "total_m": 21285.2,
+   "c1_m": 3297.0,
+   "c2_m": 7822.8,
+   "c3_m": 1457.4,
+   "c4_m": 8708.1,
+   "c2_rental_share": 0.5313,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy14fmvandav.pdf",
+    "table": "Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 32 (printed p. 27)"
+   }
+  },
+  "2015": {
+   "total_m": 22591.5,
+   "c1_m": 3405.2,
+   "c2_m": 8174.1,
+   "c3_m": 1374.5,
+   "c4_m": 9637.7,
+   "c2_rental_share": 0.5348,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy15fmvandav.pdf",
+    "table": "Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 32 (printed p. 27)"
+   }
+  },
+  "2016": {
+   "total_m": 24145.0,
+   "c1_m": 3629.5,
+   "c2_m": 8824.7,
+   "c3_m": 1457.2,
+   "c4_m": 10233.6,
+   "c2_rental_share": 0.5359,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy16fmvandav.pdf",
+    "table": "Table 4, Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 36 (printed p. 29)"
+   }
+  },
+  "2017": {
+   "total_m": 25794.1,
+   "c1_m": 3841.3,
+   "c2_m": 9610.6,
+   "c3_m": 1553.0,
+   "c4_m": 10789.1,
+   "c2_rental_share": 0.5331,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy17.pdf",
+    "table": "Table 4, Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 36 (printed p. 29)"
+   }
+  },
+  "2018": {
+   "total_m": 27726.2,
+   "c1_m": 4115.4,
+   "c2_m": 10374.9,
+   "c3_m": 1746.1,
+   "c4_m": 11489.9,
+   "c2_rental_share": 0.5338,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy18.pdf",
+    "table": "Table 4, Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 36 (printed p. 29)"
+   }
+  },
+  "2019": {
+   "total_m": 29574.7,
+   "c1_m": 4341.8,
+   "c2_m": 11181.5,
+   "c3_m": 1841.2,
+   "c4_m": 12210.2,
+   "c2_rental_share": 0.5351,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy19.pdf",
+    "table": "Table 4, Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 37 (printed p. 29)"
+   }
+  },
+  "2020": {
+   "total_m": 31629.8,
+   "c1_m": 4571.0,
+   "c2_m": 12031.9,
+   "c3_m": 2087.2,
+   "c4_m": 12939.7,
+   "c2_rental_share": 0.5305,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy20.pdf",
+    "table": "Table 4, Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 37 (printed p. 29)"
+   }
+  },
+  "2021": {
+   "total_m": 33371.4,
+   "c1_m": 4746.4,
+   "c2_m": 12619.4,
+   "c3_m": 2188.7,
+   "c4_m": 13817.0,
+   "c2_rental_share": 0.5289,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy21.pdf",
+    "table": "Table 4, Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 37 (printed p. 31)"
+   }
+  },
+  "2022": {
+   "total_m": 31636.0,
+   "c1_m": 4657.0,
+   "c2_m": 12429.6,
+   "c3_m": 2271.7,
+   "c4_m": 12277.8,
+   "c2_rental_share": 0.5197,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy22.pdf",
+    "table": "Table 4, Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 38 (printed p. 32)"
+   }
+  },
+  "2023": {
+   "total_m": 33853.7,
+   "c1_m": 4915.8,
+   "c2_m": 13327.8,
+   "c3_m": 2488.2,
+   "c4_m": 13121.9,
+   "c2_rental_share": 0.5181,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy23.pdf",
+    "table": "Table 4, Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 40 (printed p. 34)"
+   }
+  },
+  "2024": {
+   "total_m": 35340.5,
+   "c1_m": 5094.7,
+   "c2_m": 13920.1,
+   "c3_m": 2658.0,
+   "c4_m": 13667.7,
+   "c2_rental_share": 0.5105,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy24.pdf",
+    "table": "Table 4, Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 40 (printed p. 34)"
+   }
+  },
+  "2025": {
+   "total_m": 36862.3,
+   "c1_m": 5274.0,
+   "c2_m": 14428.9,
+   "c3_m": 2952.0,
+   "c4_m": 14207.4,
+   "c2_rental_share": 0.513,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/reports-property-tax/nyc_property_fy25.pdf",
+    "table": "Table 4, Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 40 (printed p. 34)"
+   }
+  },
+  "2026": {
+   "total_m": 37976.6,
+   "c1_m": 5430.3,
+   "c2_m": 14869.4,
+   "c3_m": 3145.0,
+   "c4_m": 14532.0,
+   "c2_rental_share": 0.513,
+   "levy_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 19, Tax Levy Distribution by Class, FY 2007 - FY 2026",
+    "page": "PDF p. 65 (printed p. 59)"
+   },
+   "split_src": {
+    "url": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/Annual%20Report%20FY26%207-8-26%20FINAL.pdf",
+    "table": "Table 4, Reconciliation of the Assessment Roll, Tax Levy and Net Levy Billed by Property Type",
+    "page": "PDF p. 40 (printed p. 34)"
+   }
+  }
+ }
+}

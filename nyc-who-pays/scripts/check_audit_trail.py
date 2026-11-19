@@ -81,7 +81,7 @@ for m in re.finditer(r'BREAK\.(\w+)\s*=\s*\{', script):
         if depth == 0: break
     (snap_keys if re.search(r'\bsnap\s*:\s*1\b', script[m.end() - 1:i]) else split_keys).add(m.group(1))
 check(bool(split_keys | snap_keys), f'found the breakdowns on the page (split: {sorted(split_keys)}; snapshot: {sorted(snap_keys)})')
-TESTED = {'state_aid', 'federal_aid'}
+TESTED = {'state_aid', 'federal_aid', 'property_tax', 'personal_income_tax', 'business_taxes'}   # the last three are tested below, year by year
 check(split_keys <= TESTED, f'every split drawn in the first chart has a partition test (untested: {sorted(split_keys - TESTED) or "none"})')
 
 aid = J('data/aid_by_function.json')['years']
@@ -101,6 +101,23 @@ for key in ('filer_share', 'income_share', 'tax_share', 'net_share'):
     t = sum(b[key] for b in it['bands']); check(abs(t - 100) < 0.3, f'income tax {key} adds to 100 ({t:.1f})')
 bz = J('data/business_by_sector.json')
 t = sum(s['tax_share'] for s in bz['sectors']); check(abs(t - 100) < 0.3, f'business tax_share adds to 100 ({t:.1f})')
+# each year's split, drawn in the first chart: the parts add to 100, and the series covers the years the page says
+for name, d, keys, span in (('property', pt, None, (2000, 2026)), ('income tax', it, ['i1', 'i2', 'i3', 'i4', 'i5', 'i6'], (2006, 2023)),
+                            ('business', bz, ['s1', 's2', 's3', 's4', 's5', 's6'], (1999, 2022))):
+    ys = sorted(map(int, d.get('years', {})))
+    check(bool(ys) and (ys[0], ys[-1]) == span and ys == list(range(span[0], span[1] + 1)), f'{name} years run {span[0]} to {span[1]} with no gaps ({ys[0] if ys else None} to {ys[-1] if ys else None})')
+    off = []
+    for y in ys:
+        v = d['years'][str(y)]
+        ks = keys or (['c1', 'c2', 'c3', 'c4'] if 'c2' in v else ['c1', 'c2r', 'c2o', 'c3', 'c4'])
+        t = sum(v[k] for k in ks)
+        if abs(t - 100) >= 0.05: off.append(f'{y}: {t:.2f}')
+    check(not off, f"{name}: every year's parts add to 100 {off or ''}")
+    check(all(d['years'][str(y)].get('src', '').startswith('https://') for y in ys), f'{name}: every year has a source link')
+# the latest year in each series matches the one-year figures in the charts lower on the page
+check(abs(pt['years'][str(pt['fiscal_year'])]['c2r'] - next(c['levy_share'] for c in pt['classes'] if c['key'] == 'c2r')) < 0.05, 'property: fiscal 2026 rental share matches the lower chart')
+check(all(abs(it['years'][str(it['tax_year'])][b['key']] - b['tax_share']) < 0.05 for b in it['bands']), 'income tax: tax year 2023 matches the lower chart')
+check(all(abs(bz['years'][str(bz['tax_year'])][s['key']] - s['tax_share']) < 0.06 for s in bz['sectors']), 'business: tax year 2022 matches the one-year figures')
 
 ctl = J('research/02-control-lines-fy2027.json')
 cls = {}

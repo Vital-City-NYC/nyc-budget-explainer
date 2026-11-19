@@ -50,6 +50,9 @@ h1{min-height:2.4em;font-family:var(--vc-sans);font-weight:900;font-size:1.5rem;
 .subkey .sw{width:11px;height:11px;display:block}
 .subkey .n{font-family:var(--vc-serif);font-size:1.1rem;font-variant-numeric:tabular-nums}
 .subkey a,.subkey .cap{display:block;margin-top:4px;color:var(--mute);font-size:.75rem;line-height:1.35}
+.subkey .cap a{display:inline;margin:0}
+.subkey .jump{display:block;margin-top:6px;font:inherit;font-size:.75rem;font-weight:700;color:var(--ink);background:none;border:1px solid currentColor;padding:4px 9px;cursor:pointer}
+.subkey .jump:hover{background:var(--ink);color:var(--paper,#fff)}
 .subkey.ins{border-top:1px solid var(--rule);padding-top:8px;margin-top:8px}
 .subkey .k,.klabel{font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin:0 0 5px}
 .subkey>div.mb{grid-template-columns:minmax(0,1fr) 72px 34px}

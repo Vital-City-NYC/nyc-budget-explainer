@@ -1,0 +1,977 @@
+{
+ "source_note": "NYC Independent Budget Office (IBO), annual tables on New York City residents' income and personal income tax liability (full-year city residents; returns of filers claimed as dependents excluded; source returns from NYS Dept. of Taxation and Finance, Office of Tax Policy Analysis). One Excel workbook per tax year. Values from sheet '8. Tax Liability', nominal New York AGI rows 19-39: column B 'Number of Filers' and column F 'NYC Personal Income Tax Liability Before Credits' ($ millions, nominal). Tax years 2006-2014 come from OTPA sample files (estimates, subject to sampling error); 2015 onward from population files. 2006-2020 and 2022 workbooks were retrieved from Internet Archive captures of IBO's ibo.nyc.ny.us/RevenueSpending/ links; 2021 and 2023 from the NYC Government Publications Portal (a860-gpp.nyc.gov), read in a browser because the portal refuses scripted downloads. liab_m is rounded to 0.1; liab_m_exact is the unrounded sum of IBO cells.",
+ "years": {
+  "2006": {
+   "total_liab_m": 6875.4,
+   "total_liab_m_exact": 6875.44545,
+   "total_returns": 3314279,
+   "bands": {
+    "i1": {
+     "liab_m": 809.4,
+     "liab_m_exact": 809.370707,
+     "returns": 2380500
+    },
+    "i2": {
+     "liab_m": 1081.4,
+     "liab_m_exact": 1081.383524,
+     "returns": 595969
+    },
+    "i3": {
+     "liab_m": 870.2,
+     "liab_m_exact": 870.238282,
+     "returns": 220390
+    },
+    "i4": {
+     "liab_m": 743.7,
+     "liab_m_exact": 743.67752,
+     "returns": 78035
+    },
+    "i5": {
+     "liab_m": 485.4,
+     "liab_m_exact": 485.426351,
+     "returns": 20723
+    },
+    "i6": {
+     "liab_m": 2885.3,
+     "liab_m_exact": 2885.349066,
+     "returns": 18662
+    }
+   },
+   "checks": {
+    "returns_sum_minus_total": 0,
+    "liab_sum_minus_total_exact": 0.0,
+    "row17_vs_row39": null,
+    "rounded_bands_sum_minus_rounded_total": 0.0
+   },
+   "src": {
+    "url": "https://www.ibo.nyc.ny.us/RevenueSpending/2006pitdata.xlsx",
+    "archive_url": "https://web.archive.org/web/20221201182815id_/https://www.ibo.nyc.ny.us/RevenueSpending/2006pitdata.xlsx",
+    "file": "2006pitdata.xlsx",
+    "local_file": "src/2006pitdata.xlsx",
+    "md5": "78ca37e51e097623013c668c8f38403d",
+    "bytes": 196228,
+    "sheet": "8. Tax Liability",
+    "rows": "19-39 (bands 19-38, All Filers 39; cross-checked with row 17)",
+    "columns": "A label, B Number of Filers, F NYC Personal Income Tax Liability Before Credits"
+   }
+  },
+  "2007": {
+   "total_liab_m": 8612.0,
+   "total_liab_m_exact": 8611.965812,
+   "total_returns": 3444202,
+   "bands": {
+    "i1": {
+     "liab_m": 825.8,
+     "liab_m_exact": 825.766815,
+     "returns": 2437997
+    },
+    "i2": {
+     "liab_m": 1151.0,
+     "liab_m_exact": 1151.030913,
+     "returns": 628549
+    },
+    "i3": {
+     "liab_m": 967.7,
+     "liab_m_exact": 967.704811,
+     "returns": 243539
+    },
+    "i4": {
+     "liab_m": 863.0,
+     "liab_m_exact": 863.034924,
+     "returns": 88471
+    },
+    "i5": {
+     "liab_m": 560.0,
+     "liab_m_exact": 559.984773,
+     "returns": 23523
+    },
+    "i6": {
+     "liab_m": 4244.4,
+     "liab_m_exact": 4244.443577,
+     "returns": 22124
+    }
+   },
+   "checks": {
+    "returns_sum_minus_total": 1,
+    "liab_sum_minus_total_exact": 1e-06,
+    "row17_vs_row39": null,
+    "rounded_bands_sum_minus_rounded_total": -0.1
+   },
+   "src": {
+    "url": "https://www.ibo.nyc.ny.us/RevenueSpending/2007pitdata.xlsx",
+    "archive_url": "https://web.archive.org/web/20221201205202id_/https://www.ibo.nyc.ny.us/RevenueSpending/2007pitdata.xlsx",
+    "file": "2007pitdata.xlsx",
+    "local_file": "src/2007pitdata.xlsx",
+    "md5": "0b393a14ea6bf86b84ce8118a932cc53",
+    "bytes": 198652,
+    "sheet": "8. Tax Liability",
+    "rows": "19-39 (bands 19-38, All Filers 39; cross-checked with row 17)",
+    "columns": "A label, B Number of Filers, F NYC Personal Income Tax Liability Before Credits"
+   }
+  },
+  "2008": {
+   "total_liab_m": 7492.5,
+   "total_liab_m_exact": 7492.530491,
+   "total_returns": 3403680,
+   "bands": {
+    "i1": {
+     "liab_m": 813.9,
+     "liab_m_exact": 813.905307,
+     "returns": 2362960
+    },
+    "i2": {
+     "liab_m": 1197.3,
+     "liab_m_exact": 1197.307965,
+     "returns": 648723
+    },
+    "i3": {
+     "liab_m": 1033.6,
+     "liab_m_exact": 1033.587315,
+     "returns": 260596
+    },
+    "i4": {
+     "liab_m": 863.0,
+     "liab_m_exact": 862.995333,
+     "returns": 89758
+    },
+    "i5": {
+     "liab_m": 539.1,
+     "liab_m_exact": 539.070598,
+     "returns": 22707
+    },
+    "i6": {
+     "liab_m": 3045.7,
+     "liab_m_exact": 3045.663973,
+     "returns": 18935
+    }
+   },
+   "checks": {
+    "returns_sum_minus_total": -1,
+    "liab_sum_minus_total_exact": -0.0,
+    "row17_vs_row39": null,
+    "rounded_bands_sum_minus_rounded_total": 0.1
+   },
+   "src": {
+    "url": "https://www.ibo.nyc.ny.us/RevenueSpending/2008pitdata.xlsx",
+    "archive_url": "https://web.archive.org/web/20221201193115id_/https://www.ibo.nyc.ny.us/RevenueSpending/2008pitdata.xlsx",
+    "file": "2008pitdata.xlsx",
+    "local_file": "src/2008pitdata.xlsx",
+    "md5": "9b625781023812c734b6c20f3311bcf9",
+    "bytes": 195005,
+    "sheet": "8. Tax Liability",
+    "rows": "19-39 (bands 19-38, All Filers 39; cross-checked with row 17)",
+    "columns": "A label, B Number of Filers, F NYC Personal Income Tax Liability Before Credits"
+   }
+  },
+  "2009": {
+   "total_liab_m": 6546.1,
+   "total_liab_m_exact": 6546.091756,
+   "total_returns": 3461521,
+   "bands": {
+    "i1": {
+     "liab_m": 801.7,
+     "liab_m_exact": 801.701652,
+     "returns": 2434455
+    },
+    "i2": {
+     "liab_m": 1207.2,
+     "liab_m_exact": 1207.235655,
+     "returns": 650292
+    },
+    "i3": {
+     "liab_m": 1029.0,
+     "liab_m_exact": 1028.953964,
+     "returns": 258335
+    },
+    "i4": {
+     "liab_m": 802.9,
+     "liab_m_exact": 802.922527,
+     "returns": 84501
+    },
+    "i5": {
+     "liab_m": 450.7,
+     "liab_m_exact": 450.656822,
+     "returns": 19144
+    },
+    "i6": {
+     "liab_m": 2254.6,
+     "liab_m_exact": 2254.621135,
+     "returns": 14795
+    }
+   },
+   "checks": {
+    "returns_sum_minus_total": 1,
+    "liab_sum_minus_total_exact": -1e-06,
+    "row17_vs_row39": null,
+    "rounded_bands_sum_minus_rounded_total": 0.0
+   },
+   "src": {
+    "url": "https://www.ibo.nyc.ny.us/RevenueSpending/2009pitdata.xlsx",
+    "archive_url": "https://web.archive.org/web/20221201203716id_/https://www.ibo.nyc.ny.us/RevenueSpending/2009pitdata.xlsx",
+    "file": "2009pitdata.xlsx",
+    "local_file": "src/2009pitdata.xlsx",
+    "md5": "0c90050ff545fb37c0ebe3891ce222ea",
+    "bytes": 123573,
+    "sheet": "8. Tax Liability",
+    "rows": "19-39 (bands 19-38, All Filers 39; cross-checked with row 17)",
+    "columns": "A label, B Number of Filers, F NYC Personal Income Tax Liability Before Credits"
+   }
+  },
+  "2010": {
+   "total_liab_m": 7428.5,
+   "total_liab_m_exact": 7428.47334,
+   "total_returns": 3483229,
+   "bands": {
+    "i1": {
+     "liab_m": 798.6,
+     "liab_m_exact": 798.580856,
+     "returns": 2441336
+    },
+    "i2": {
+     "liab_m": 1206.6,
+     "liab_m_exact": 1206.577688,
+     "returns": 646201
+    },
+    "i3": {
+     "liab_m": 1063.4,
+     "liab_m_exact": 1063.392643,
+     "returns": 263769
+    },
+    "i4": {
+     "liab_m": 880.0,
+     "liab_m_exact": 879.980703,
+     "returns": 91877
+    },
+    "i5": {
+     "liab_m": 523.8,
+     "liab_m_exact": 523.757937,
+     "returns": 21691
+    },
+    "i6": {
+     "liab_m": 2956.2,
+     "liab_m_exact": 2956.183511,
+     "returns": 18355
+    }
+   },
+   "checks": {
+    "returns_sum_minus_total": 0,
+    "liab_sum_minus_total_exact": -2e-06,
+    "row17_vs_row39": null,
+    "rounded_bands_sum_minus_rounded_total": 0.1
+   },
+   "src": {
+    "url": "https://www.ibo.nyc.ny.us/RevenueSpending/2010pitdata.xls",
+    "archive_url": "https://web.archive.org/web/20221203235010id_/https://www.ibo.nyc.ny.us/RevenueSpending/2010pitdata.xls",
+    "file": "2010pitdata.xls",
+    "local_file": "src/2010pitdata.xls",
+    "md5": "4e1f59387b71d5cf13e37637bc0ef2f7",
+    "bytes": 225792,
+    "sheet": "8. Tax Liability",
+    "rows": "19-39 (bands 19-38, All Filers 39; cross-checked with row 17)",
+    "columns": "A label, B Number of Filers, F NYC Personal Income Tax Liability Before Credits"
+   }
+  },
+  "2011": {
+   "total_liab_m": 7712.8,
+   "total_liab_m_exact": 7712.765917,
+   "total_returns": 3545808,
+   "bands": {
+    "i1": {
+     "liab_m": 802.5,
+     "liab_m_exact": 802.470382,
+     "returns": 2455767
+    },
+    "i2": {
+     "liab_m": 1256.6,
+     "liab_m_exact": 1256.564897,
+     "returns": 665051
+    },
+    "i3": {
+     "liab_m": 1139.6,
+     "liab_m_exact": 1139.553484,
+     "returns": 280560
+    },
+    "i4": {
+     "liab_m": 965.5,
+     "liab_m_exact": 965.497154,
+     "returns": 100763
+    },
+    "i5": {
+     "liab_m": 576.7,
+     "liab_m_exact": 576.718655,
+     "returns": 23994
+    },
+    "i6": {
+     "liab_m": 2972.0,
+     "liab_m_exact": 2971.961345,
+     "returns": 19675
+    }
+   },
+   "checks": {
+    "returns_sum_minus_total": 2,
+    "liab_sum_minus_total_exact": -0.0,
+    "row17_vs_row39": null,
+    "rounded_bands_sum_minus_rounded_total": 0.1
+   },
+   "src": {
+    "url": "https://www.ibo.nyc.ny.us/RevenueSpending/2011pitdata.xls",
+    "archive_url": "https://web.archive.org/web/20221202065808id_/https://www.ibo.nyc.ny.us/RevenueSpending/2011pitdata.xls",
+    "file": "2011pitdata.xls",
+    "local_file": "src/2011pitdata.xls",
+    "md5": "d1efa43d77cc6fc8ffd0cc130c98b366",
+    "bytes": 230912,
+    "sheet": "8. Tax Liability",
+    "rows": "19-39 (bands 19-38, All Filers 39; cross-checked with row 17)",
+    "columns": "A label, B Number of Filers, F NYC Personal Income Tax Liability Before Credits"
+   }
+  },
+  "2012": {
+   "total_liab_m": 8804.9,
+   "total_liab_m_exact": 8804.855079,
+   "total_returns": 3576851,
+   "bands": {
+    "i1": {
+     "liab_m": 803.1,
+     "liab_m_exact": 803.146416,
+     "returns": 2446304
+    },
+    "i2": {
+     "liab_m": 1291.7,
+     "liab_m_exact": 1291.660093,
+     "returns": 680224
+    },
+    "i3": {
+     "liab_m": 1196.8,
+     "liab_m_exact": 1196.845001,
+     "returns": 295887
+    },
+    "i4": {
+     "liab_m": 1025.0,
+     "liab_m_exact": 1024.997467,
+     "returns": 106521
+    },
+    "i5": {
+     "liab_m": 621.3,
+     "liab_m_exact": 621.336627,
+     "returns": 25781
+    },
+    "i6": {
+     "liab_m": 3866.9,
+     "liab_m_exact": 3866.869476,
+     "returns": 22135
+    }
+   },
+   "checks": {
+    "returns_sum_minus_total": 1,
+    "liab_sum_minus_total_exact": 1e-06,
+    "row17_vs_row39": null,
+    "rounded_bands_sum_minus_rounded_total": -0.1
+   },
+   "src": {
+    "url": "https://www.ibo.nyc.ny.us/RevenueSpending/2012pitdata.xlsx",
+    "archive_url": "https://web.archive.org/web/20221014112349id_/https://www.ibo.nyc.ny.us/RevenueSpending/2012pitdata.xlsx",
+    "file": "2012pitdata.xlsx",
+    "local_file": "src/2012pitdata.xlsx",
+    "md5": "a0904fc977c37616045bc90cb62e9fde",
+    "bytes": 195994,
+    "sheet": "8. Tax Liability",
+    "rows": "19-39 (bands 19-38, All Filers 39; cross-checked with row 17)",
+    "columns": "A label, B Number of Filers, F NYC Personal Income Tax Liability Before Credits"
+   }
+  },
+  "2013": {
+   "total_liab_m": 8788.9,
+   "total_liab_m_exact": 8788.945011,
+   "total_returns": 3685919,
+   "bands": {
+    "i1": {
+     "liab_m": 803.9,
+     "liab_m_exact": 803.874349,
+     "returns": 2511249
+    },
+    "i2": {
+     "liab_m": 1335.7,
+     "liab_m_exact": 1335.681484,
+     "returns": 699008
+    },
+    "i3": {
+     "liab_m": 1275.5,
+     "liab_m_exact": 1275.531305,
+     "returns": 310500
+    },
+    "i4": {
+     "liab_m": 1120.0,
+     "liab_m_exact": 1119.994505,
+     "returns": 115379
+    },
+    "i5": {
+     "liab_m": 671.1,
+     "liab_m_exact": 671.121173,
+     "returns": 28019
+    },
+    "i6": {
+     "liab_m": 3582.7,
+     "liab_m_exact": 3582.742196,
+     "returns": 21764
+    }
+   },
+   "checks": {
+    "returns_sum_minus_total": 0,
+    "liab_sum_minus_total_exact": 1e-06,
+    "row17_vs_row39": null,
+    "rounded_bands_sum_minus_rounded_total": 0.0
+   },
+   "src": {
+    "url": "https://www.ibo.nyc.ny.us/RevenueSpending/2013pitdata.xlsx",
+    "archive_url": "https://web.archive.org/web/20221014112434id_/https://www.ibo.nyc.ny.us/RevenueSpending/2013pitdata.xlsx",
+    "file": "2013pitdata.xlsx",
+    "local_file": "src/2013pitdata.xlsx",
+    "md5": "34b818440528b7e8d7218948e404cc35",
+    "bytes": 198938,
+    "sheet": "8. Tax Liability ",
+    "rows": "19-39 (bands 19-38, All Filers 39; cross-checked with row 17)",
+    "columns": "A label, B Number of Filers, F NYC Personal Income Tax Liability Before Credits"
+   }
+  },
+  "2014": {
+   "total_liab_m": 9960.2,
+   "total_liab_m_exact": 9960.185863,
+   "total_returns": 3727404,
+   "bands": {
+    "i1": {
+     "liab_m": 813.4,
+     "liab_m_exact": 813.35998,
+     "returns": 2486710
+    },
+    "i2": {
+     "liab_m": 1388.8,
+     "liab_m_exact": 1388.777358,
+     "returns": 722682
+    },
+    "i3": {
+     "liab_m": 1382.4,
+     "liab_m_exact": 1382.38322,
+     "returns": 334912
+    },
+    "i4": {
+     "liab_m": 1230.3,
+     "liab_m_exact": 1230.326781,
+     "returns": 126937
+    },
+    "i5": {
+     "liab_m": 749.1,
+     "liab_m_exact": 749.059346,
+     "returns": 31078
+    },
+    "i6": {
+     "liab_m": 4396.3,
+     "liab_m_exact": 4396.279178,
+     "returns": 25085
+    }
+   },
+   "checks": {
+    "returns_sum_minus_total": 0,
+    "liab_sum_minus_total_exact": -0.0,
+    "row17_vs_row39": "row 17 All Filers F = 9960.19 vs row 39 F = 9960.185863",
+    "rounded_bands_sum_minus_rounded_total": 0.1
+   },
+   "src": {
+    "url": "https://www.ibo.nyc.ny.us/RevenueSpending/2014pitdata.xlsx",
+    "archive_url": "https://web.archive.org/web/20221202051312id_/https://www.ibo.nyc.ny.us/RevenueSpending/2014pitdata.xlsx",
+    "file": "2014pitdata.xlsx",
+    "local_file": "src/2014pitdata.xlsx",
+    "md5": "eaf49f3e4ce1bac4a16530d6038f06ef",
+    "bytes": 179169,
+    "sheet": "8. Tax Liability",
+    "rows": "19-39 (bands 19-38, All Filers 39; cross-checked with row 17)",
+    "columns": "A label, B Number of Filers, F NYC Personal Income Tax Liability Before Credits"
+   }
+  },
+  "2015": {
+   "total_liab_m": 10367.5,
+   "total_liab_m_exact": 10367.451669,
+   "total_returns": 3773784,
+   "bands": {
+    "i1": {
+     "liab_m": 817.2,
+     "liab_m_exact": 817.18675,
+     "returns": 2463754
+    },
+    "i2": {
+     "liab_m": 1450.4,
+     "liab_m_exact": 1450.414744,
+     "returns": 751853
+    },
+    "i3": {
+     "liab_m": 1498.3,
+     "liab_m_exact": 1498.266649,
+     "returns": 361148
+    },
+    "i4": {
+     "liab_m": 1338.7,
+     "liab_m_exact": 1338.74813,
+     "returns": 138063
+    },
+    "i5": {
+     "liab_m": 832.1,
+     "liab_m_exact": 832.057798,
+     "returns": 33032
+    },
+    "i6": {
+     "liab_m": 4430.8,
+     "liab_m_exact": 4430.777598,
+     "returns": 25934
+    }
+   },
+   "checks": {
+    "returns_sum_minus_total": 0,
+    "liab_sum_minus_total_exact": -0.0,
+    "row17_vs_row39": null,
+    "rounded_bands_sum_minus_rounded_total": 0.0
+   },
+   "src": {
+    "url": "https://www.ibo.nyc.ny.us/RevenueSpending/2015pitdata.xlsx",
+    "archive_url": "https://web.archive.org/web/20221201212823id_/https://www.ibo.nyc.ny.us/RevenueSpending/2015pitdata.xlsx",
+    "file": "2015pitdata.xlsx",
+    "local_file": "src/2015pitdata.xlsx",
+    "md5": "c9a87012ffbd033df6ddc003921de147",
+    "bytes": 183698,
+    "sheet": "8. Tax Liability",
+    "rows": "19-39 (bands 19-38, All Filers 39; cross-checked with row 17)",
+    "columns": "A label, B Number of Filers, F NYC Personal Income Tax Liability Before Credits"
+   }
+  },
+  "2016": {
+   "total_liab_m": 9923.0,
+   "total_liab_m_exact": 9923.029534,
+   "total_returns": 3800209,
+   "bands": {
+    "i1": {
+     "liab_m": 831.6,
+     "liab_m_exact": 831.56074,
+     "returns": 2448750
+    },
+    "i2": {
+     "liab_m": 1503.1,
+     "liab_m_exact": 1503.136951,
+     "returns": 776052
+    },
+    "i3": {
+     "liab_m": 1547.6,
+     "liab_m_exact": 1547.553559,
+     "returns": 371101
+    },
+    "i4": {
+     "liab_m": 1410.0,
+     "liab_m_exact": 1409.95097,
+     "returns": 145300
+    },
+    "i5": {
+     "liab_m": 846.4,
+     "liab_m_exact": 846.401577,
+     "returns": 33776
+    },
+    "i6": {
+     "liab_m": 3784.4,
+     "liab_m_exact": 3784.425737,
+     "returns": 25230
+    }
+   },
+   "checks": {
+    "returns_sum_minus_total": 0,
+    "liab_sum_minus_total_exact": 0.0,
+    "row17_vs_row39": null,
+    "rounded_bands_sum_minus_rounded_total": 0.1
+   },
+   "src": {
+    "url": "https://www.ibo.nyc.ny.us/RevenueSpending/2016pitdata.xlsx",
+    "archive_url": "https://web.archive.org/web/20221202011046id_/https://www.ibo.nyc.ny.us/RevenueSpending/2016pitdata.xlsx",
+    "file": "2016pitdata.xlsx",
+    "local_file": "src/2016pitdata.xlsx",
+    "md5": "b9041ee7ae1793800e4ba1869f1ac6d1",
+    "bytes": 197626,
+    "sheet": "8. Tax Liability",
+    "rows": "19-39 (bands 19-38, All Filers 39; cross-checked with row 17)",
+    "columns": "A label, B Number of Filers, F NYC Personal Income Tax Liability Before Credits"
+   }
+  },
+  "2017": {
+   "total_liab_m": 12176.6,
+   "total_liab_m_exact": 12176.585375,
+   "total_returns": 3850183,
+   "bands": {
+    "i1": {
+     "liab_m": 897.8,
+     "liab_m_exact": 897.79421,
+     "returns": 2424880
+    },
+    "i2": {
+     "liab_m": 1658.5,
+     "liab_m_exact": 1658.543933,
+     "returns": 802190
+    },
+    "i3": {
+     "liab_m": 1773.0,
+     "liab_m_exact": 1773.003415,
+     "returns": 399477
+    },
+    "i4": {
+     "liab_m": 1634.0,
+     "liab_m_exact": 1634.039636,
+     "returns": 158583
+    },
+    "i5": {
+     "liab_m": 924.2,
+     "liab_m_exact": 924.237366,
+     "returns": 36732
+    },
+    "i6": {
+     "liab_m": 5289.0,
+     "liab_m_exact": 5288.966815,
+     "returns": 28321
+    }
+   },
+   "checks": {
+    "returns_sum_minus_total": 0,
+    "liab_sum_minus_total_exact": -0.0,
+    "row17_vs_row39": null,
+    "rounded_bands_sum_minus_rounded_total": -0.1
+   },
+   "src": {
+    "url": "https://www.ibo.nyc.ny.us/RevenueSpending/2017pitdata.xlsx",
+    "archive_url": "https://web.archive.org/web/20240613183108id_/https://www.ibo.nyc.ny.us/RevenueSpending/2017pitdata.xlsx",
+    "file": "2017pitdata.xlsx",
+    "local_file": "src/2017pitdata.xlsx",
+    "md5": "a399a5f94963b719330b61d75b170e0c",
+    "bytes": 185369,
+    "sheet": "8. Tax Liability",
+    "rows": "19-39 (bands 19-38, All Filers 39; cross-checked with row 17)",
+    "columns": "A label, B Number of Filers, F NYC Personal Income Tax Liability Before Credits"
+   }
+  },
+  "2018": {
+   "total_liab_m": 12148.4,
+   "total_liab_m_exact": 12148.448349,
+   "total_returns": 3871453,
+   "bands": {
+    "i1": {
+     "liab_m": 933.3,
+     "liab_m_exact": 933.269658,
+     "returns": 2364862
+    },
+    "i2": {
+     "liab_m": 1749.2,
+     "liab_m_exact": 1749.164388,
+     "returns": 838188
+    },
+    "i3": {
+     "liab_m": 1900.8,
+     "liab_m_exact": 1900.82128,
+     "returns": 425300
+    },
+    "i4": {
+     "liab_m": 1796.7,
+     "liab_m_exact": 1796.669905,
+     "returns": 172746
+    },
+    "i5": {
+     "liab_m": 1017.9,
+     "liab_m_exact": 1017.940337,
+     "returns": 40345
+    },
+    "i6": {
+     "liab_m": 4750.6,
+     "liab_m_exact": 4750.582781,
+     "returns": 30012
+    }
+   },
+   "checks": {
+    "returns_sum_minus_total": 0,
+    "liab_sum_minus_total_exact": -0.0,
+    "row17_vs_row39": null,
+    "rounded_bands_sum_minus_rounded_total": 0.1
+   },
+   "src": {
+    "url": "https://www.ibo.nyc.ny.us/RevenueSpending/2018pitdata.xlsx",
+    "archive_url": "https://web.archive.org/web/20210731161051id_/https://www.ibo.nyc.ny.us/RevenueSpending/2018pitdata.xlsx",
+    "file": "2018pitdata.xlsx",
+    "local_file": "src/2018pitdata.xlsx",
+    "md5": "a5cc3bf9521077993763d2b0b19856e3",
+    "bytes": 185812,
+    "sheet": "8. Tax Liability",
+    "rows": "19-39 (bands 19-38, All Filers 39; cross-checked with row 17)",
+    "columns": "A label, B Number of Filers, F NYC Personal Income Tax Liability Before Credits"
+   }
+  },
+  "2019": {
+   "total_liab_m": 12609.2,
+   "total_liab_m_exact": 12609.226312,
+   "total_returns": 3995606,
+   "bands": {
+    "i1": {
+     "liab_m": 975.2,
+     "liab_m_exact": 975.185493,
+     "returns": 2404224
+    },
+    "i2": {
+     "liab_m": 1847.5,
+     "liab_m_exact": 1847.52976,
+     "returns": 884200
+    },
+    "i3": {
+     "liab_m": 2014.0,
+     "liab_m_exact": 2013.969007,
+     "returns": 449257
+    },
+    "i4": {
+     "liab_m": 1929.2,
+     "liab_m_exact": 1929.237678,
+     "returns": 184866
+    },
+    "i5": {
+     "liab_m": 1071.6,
+     "liab_m_exact": 1071.562214,
+     "returns": 42599
+    },
+    "i6": {
+     "liab_m": 4771.7,
+     "liab_m_exact": 4771.74216,
+     "returns": 30460
+    }
+   },
+   "checks": {
+    "returns_sum_minus_total": 0,
+    "liab_sum_minus_total_exact": -0.0,
+    "row17_vs_row39": null,
+    "rounded_bands_sum_minus_rounded_total": 0.0
+   },
+   "src": {
+    "url": "https://www.ibo.nyc.ny.us/RevenueSpending/december2019pitdata.xlsx",
+    "archive_url": "https://web.archive.org/web/20230327173039id_/https://www.ibo.nyc.ny.us/RevenueSpending/december2019pitdata.xlsx",
+    "file": "december2019pitdata.xlsx",
+    "local_file": "src/december2019pitdata.xlsx",
+    "md5": "aac898b4f5936a61d54abbce802e6cf3",
+    "bytes": 175002,
+    "sheet": "8. Tax Liability",
+    "rows": "19-39 (bands 19-38, All Filers 39; cross-checked with row 17)",
+    "columns": "A label, B Number of Filers, F NYC Personal Income Tax Liability Before Credits"
+   }
+  },
+  "2020": {
+   "total_liab_m": 13018.4,
+   "total_liab_m_exact": 13018.401549,
+   "total_returns": 4117900,
+   "bands": {
+    "i1": {
+     "liab_m": 1118.6,
+     "liab_m_exact": 1118.595322,
+     "returns": 2547920
+    },
+    "i2": {
+     "liab_m": 1858.2,
+     "liab_m_exact": 1858.169397,
+     "returns": 893634
+    },
+    "i3": {
+     "liab_m": 1959.7,
+     "liab_m_exact": 1959.745882,
+     "returns": 435981
+    },
+    "i4": {
+     "liab_m": 1815.0,
+     "liab_m_exact": 1815.008356,
+     "returns": 173747
+    },
+    "i5": {
+     "liab_m": 982.6,
+     "liab_m_exact": 982.626962,
+     "returns": 39020
+    },
+    "i6": {
+     "liab_m": 5284.3,
+     "liab_m_exact": 5284.25563,
+     "returns": 27598
+    }
+   },
+   "checks": {
+    "returns_sum_minus_total": 0,
+    "liab_sum_minus_total_exact": 0.0,
+    "row17_vs_row39": null,
+    "rounded_bands_sum_minus_rounded_total": 0.0
+   },
+   "src": {
+    "url": "https://www.ibo.nyc.ny.us/RevenueSpending/december2020pitdata.xlsx",
+    "archive_url": "https://web.archive.org/web/20250117235856id_/https://www.ibo.nyc.ny.us/RevenueSpending/december2020pitdata.xlsx",
+    "file": "december2020pitdata.xlsx",
+    "local_file": "src/december2020pitdata.xlsx",
+    "md5": "c7c0d556ae7666cb18c8cf83d3236fe5",
+    "bytes": 176645,
+    "sheet": "8. Tax Liability",
+    "rows": "19-39 (bands 19-38, All Filers 39; cross-checked with row 17)",
+    "columns": "A label, B Number of Filers, F NYC Personal Income Tax Liability Before Credits"
+   }
+  },
+  "2021": {
+   "total_liab_m": 15585.2,
+   "total_liab_m_exact": 15585.241257,
+   "total_returns": 3931511,
+   "bands": {
+    "i1": {
+     "liab_m": 1029.7,
+     "liab_m_exact": 1029.659245,
+     "returns": 2340089
+    },
+    "i2": {
+     "liab_m": 1815.8,
+     "liab_m_exact": 1815.823233,
+     "returns": 864771
+    },
+    "i3": {
+     "liab_m": 2035.8,
+     "liab_m_exact": 2035.839094,
+     "returns": 449711
+    },
+    "i4": {
+     "liab_m": 2046.2,
+     "liab_m_exact": 2046.237328,
+     "returns": 194270
+    },
+    "i5": {
+     "liab_m": 1201.9,
+     "liab_m_exact": 1201.901069,
+     "returns": 47478
+    },
+    "i6": {
+     "liab_m": 7455.8,
+     "liab_m_exact": 7455.781288,
+     "returns": 35192
+    }
+   },
+   "checks": {
+    "returns_sum_minus_total": 0,
+    "liab_sum_minus_total_exact": 0.0,
+    "row17_vs_row39": null,
+    "rounded_bands_sum_minus_rounded_total": 0.0
+   },
+   "src": {
+    "url": "https://a860-gpp.nyc.gov/downloads/g158bm69j",
+    "archive_url": null,
+    "file": "november2023pittable.xlsx",
+    "local_file": "not saved (bytes held in browser only); cell values saved in src/browser_extract_gpp.json",
+    "md5": "f6f1119eba5c0688a71b096321fcbdd8",
+    "bytes": 175148,
+    "sheet": "8. Tax Liability",
+    "rows": "19-39 (bands 19-38, All Filers 39; cross-checked with row 17)",
+    "columns": "A label, B Number of Filers, F NYC Personal Income Tax Liability Before Credits"
+   }
+  },
+  "2022": {
+   "total_liab_m": 14078.7,
+   "total_liab_m_exact": 14078.717241,
+   "total_returns": 3854016,
+   "bands": {
+    "i1": {
+     "liab_m": 852.1,
+     "liab_m_exact": 852.085876,
+     "returns": 2187133
+    },
+    "i2": {
+     "liab_m": 1862.0,
+     "liab_m_exact": 1861.991831,
+     "returns": 872987
+    },
+    "i3": {
+     "liab_m": 2242.8,
+     "liab_m_exact": 2242.800429,
+     "returns": 490171
+    },
+    "i4": {
+     "liab_m": 2301.3,
+     "liab_m_exact": 2301.312872,
+     "returns": 219564
+    },
+    "i5": {
+     "liab_m": 1269.7,
+     "liab_m_exact": 1269.68635,
+     "returns": 50396
+    },
+    "i6": {
+     "liab_m": 5550.8,
+     "liab_m_exact": 5550.839883,
+     "returns": 33765
+    }
+   },
+   "checks": {
+    "returns_sum_minus_total": 0,
+    "liab_sum_minus_total_exact": -0.0,
+    "row17_vs_row39": null,
+    "rounded_bands_sum_minus_rounded_total": 0.0
+   },
+   "src": {
+    "url": "https://ibo.nyc.ny.us/RevenueSpending/2022pitdata.xlsx",
+    "archive_url": "https://web.archive.org/web/20241213202511id_/https://ibo.nyc.ny.us/RevenueSpending/2022pitdata.xlsx",
+    "file": "2022pitdata.xlsx",
+    "local_file": "src/2022pitdata.xlsx",
+    "md5": "7bbc39db9422f61ac43d179c4e59cf7f",
+    "bytes": 178446,
+    "sheet": "8. Tax Liability",
+    "rows": "19-39 (bands 19-38, All Filers 39; cross-checked with row 17)",
+    "columns": "A label, B Number of Filers, F NYC Personal Income Tax Liability Before Credits"
+   }
+  },
+  "2023": {
+   "total_liab_m": 14630.6,
+   "total_liab_m_exact": 14630.593316,
+   "total_returns": 3905234,
+   "bands": {
+    "i1": {
+     "liab_m": 842.0,
+     "liab_m_exact": 841.964965,
+     "returns": 2121623
+    },
+    "i2": {
+     "liab_m": 1964.2,
+     "liab_m_exact": 1964.215183,
+     "returns": 915979
+    },
+    "i3": {
+     "liab_m": 2452.7,
+     "liab_m_exact": 2452.653535,
+     "returns": 533424
+    },
+    "i4": {
+     "liab_m": 2573.0,
+     "liab_m_exact": 2572.960962,
+     "returns": 245497
+    },
+    "i5": {
+     "liab_m": 1366.8,
+     "liab_m_exact": 1366.787869,
+     "returns": 54404
+    },
+    "i6": {
+     "liab_m": 5432.0,
+     "liab_m_exact": 5432.010802,
+     "returns": 34307
+    }
+   },
+   "checks": {
+    "returns_sum_minus_total": 0,
+    "liab_sum_minus_total_exact": -0.0,
+    "row17_vs_row39": null,
+    "rounded_bands_sum_minus_rounded_total": 0.1
+   },
+   "src": {
+    "url": "https://a860-gpp.nyc.gov/downloads/2227mv671",
+    "archive_url": null,
+    "file": "2023-pit-data.xlsx",
+    "local_file": "not saved (bytes held in browser only); cell values saved in src/browser_extract_gpp.json",
+    "md5": "4db3713423d59a5627224ca038929f08",
+    "bytes": 180968,
+    "sheet": "8. Tax Liability",
+    "rows": "19-39 (bands 19-38, All Filers 39; cross-checked with row 17)",
+    "columns": "A label, B Number of Filers, F NYC Personal Income Tax Liability Before Credits"
+   }
+  }
+ }
+}

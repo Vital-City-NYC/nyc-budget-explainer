@@ -59,5 +59,392 @@
  "quotes": {
   "top1": "The top 1 percent of taxpayers, or 1,912 firms, accounted for $4.24 billion, or 93 percent of total liability. (Business Corporation Tax, highlights p.1)",
   "finance": "Finance & Insurance 21,308 5.4 % $3,319,281 38.7 % (Table 1)"
- }
+ },
+ "years": {
+  "1999": {
+   "s1": 35.81,
+   "s2": 31.21,
+   "s3": 9.49,
+   "s4": 6.08,
+   "s5": 7.02,
+   "s6": 10.4,
+   "total_m": 2715.6,
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/02pdf/taxpol_btax_99.pdf",
+   "table": "Table 3: Distribution by Industry (Business Income Taxes, combined), PDF p. 11"
+  },
+  "2000": {
+   "s1": 35.75,
+   "s2": 31.75,
+   "s3": 9.09,
+   "s4": 5.88,
+   "s5": 7.49,
+   "s6": 10.04,
+   "total_m": 2953.2,
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/03pdf/taxpol_btax_00.pdf",
+   "table": "Table 3: Distribution by Industry (Business Income Taxes, combined), PDF p. 10"
+  },
+  "2001": {
+   "s1": 33.51,
+   "s2": 32.11,
+   "s3": 9.12,
+   "s4": 5.85,
+   "s5": 8.67,
+   "s6": 10.74,
+   "total_m": 2654.8,
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/04pdf/taxpol_bustax_01.pdf",
+   "table": "Table 3: Distribution by Industry (Business Income Taxes, combined), PDF p. 12"
+  },
+  "2002": {
+   "s1": 31.2,
+   "s2": 33.68,
+   "s3": 9.76,
+   "s4": 6.81,
+   "s5": 8.43,
+   "s6": 10.13,
+   "total_m": 2536.5,
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/05pdf/taxpol_bustax_02.pdf",
+   "table": "Table 3: Distribution by Industry (Business Income Taxes, combined), PDF p. 12"
+  },
+  "2003": {
+   "s1": 30.18,
+   "s2": 33.33,
+   "s3": 9.86,
+   "s4": 8.7,
+   "s5": 8.99,
+   "s6": 8.95,
+   "total_m": 2829.2,
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/07pdf/stat_prof_nyc_bus_tax1.pdf",
+   "table": "Table 3: Distribution by Industry (Business Income Taxes, combined), PDF p. 12"
+  },
+  "2004": {
+   "s1": 34.63,
+   "s2": 30.74,
+   "s3": 9.25,
+   "s4": 6.77,
+   "s5": 9.53,
+   "s6": 9.07,
+   "total_m": 3512.6,
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/04pdf/2004_stat_profiles_of_nyc_bus_income_tax.pdf",
+   "table": "Table 3: Distribution by Industry (Business Income Taxes, combined), PDF p. 12"
+  },
+  "2005": {
+   "s1": 39.11,
+   "s2": 28.13,
+   "s3": 8.52,
+   "s4": 6.31,
+   "s5": 10.57,
+   "s6": 7.36,
+   "total_m": 4220.2,
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/05pdf/bit_report_2005_final.pdf",
+   "table": "Table 3: Distribution by Industry (Business Income Taxes, combined), PDF p. 11"
+  },
+  "2006": {
+   "s1": 41.01,
+   "s2": 26.35,
+   "s3": 7.99,
+   "s4": 6.06,
+   "s5": 10.63,
+   "s6": 7.96,
+   "total_m": 5222.4,
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/09pdf/bit_report_2006_11_12_09.pdf",
+   "table": "Table 3: Distribution by Industry (Business Income Taxes, combined), PDF p. 11"
+  },
+  "2007": {
+   "s1": 39.01,
+   "s2": 27.73,
+   "s3": 8.43,
+   "s4": 6.04,
+   "s5": 12.11,
+   "s6": 6.68,
+   "total_m": 5373.6,
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/07pdf/bit_report_2007_final.pdf",
+   "table": "Table 3: Distribution by Industry (Business Income Taxes, combined), PDF p. 11"
+  },
+  "2008": {
+   "s1": 41.18,
+   "s2": 29.29,
+   "s3": 7.1,
+   "s4": 5.4,
+   "s5": 8.76,
+   "s6": 8.27,
+   "total_m": 5016.3,
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/08pdf/bit_report_%202008.pdf",
+   "table": "Table 3: Distribution by Industry (Business Income Taxes, combined), PDF p. 11"
+  },
+  "2009": {
+   "s1": 44.56,
+   "s2": 27.54,
+   "s3": 7.84,
+   "s4": 6.2,
+   "s5": 5.63,
+   "s6": 8.23,
+   "total_m": 4670.6,
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/09pdf/2009_stat_profiles_of_nyc_bus_income_tax.pdf",
+   "table": "Table 3: Distribution by Industry (Business Income Taxes, combined), PDF p. 11"
+  },
+  "2010": {
+   "s1": 45.46,
+   "s2": 25.81,
+   "s3": 8.09,
+   "s4": 6.17,
+   "s5": 6.26,
+   "s6": 8.22,
+   "total_m": 5315.4,
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2010.pdf",
+   "table": "Table 3: Distribution by Industry (Business Income Taxes, combined), PDF p. 11"
+  },
+  "2011": {
+   "s1": 43.56,
+   "s2": 26.72,
+   "s3": 8.68,
+   "s4": 6.67,
+   "s5": 6.8,
+   "s6": 7.57,
+   "total_m": 5463.8,
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2011.pdf",
+   "table": "Table 3: Distribution by Industry (Business Income Taxes, combined), PDF p. 11"
+  },
+  "2012": {
+   "s1": 44.5,
+   "s2": 26.38,
+   "s3": 8.52,
+   "s4": 6.06,
+   "s5": 7.69,
+   "s6": 6.85,
+   "total_m": 6012.7,
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2012.pdf",
+   "table": "Table 3: Distribution by Industry (Business Income Taxes, combined), PDF p. 11"
+  },
+  "2013": {
+   "s1": 41.03,
+   "s2": 27.22,
+   "s3": 8.74,
+   "s4": 8.36,
+   "s5": 7.44,
+   "s6": 7.21,
+   "total_m": 5733.2,
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2013.pdf",
+   "table": "Table 3: Distribution by Industry (Business Income Taxes, combined), PDF p. 12"
+  },
+  "2014": {
+   "s1": 41.91,
+   "s2": 27.11,
+   "s3": 8.03,
+   "s4": 6.44,
+   "s5": 9.52,
+   "s6": 6.98,
+   "total_m": 6218.1,
+   "taxes": [
+    "BCT",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2014.pdf",
+   "table": "Table 3: Distribution by Industry (Business Income Taxes, combined), PDF p. 12"
+  },
+  "2015": {
+   "s1": 35.81,
+   "s2": 30.23,
+   "s3": 9.15,
+   "s4": 6.08,
+   "s5": 10.6,
+   "s6": 8.13,
+   "total_m": 5622.0,
+   "taxes": [
+    "COR",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2015.pdf",
+   "table": "Table 3: Distribution by Industry (Business Income Taxes, combined), PDF p. 12"
+  },
+  "2016": {
+   "s1": 35.5,
+   "s2": 30.72,
+   "s3": 8.72,
+   "s4": 5.67,
+   "s5": 10.38,
+   "s6": 9.02,
+   "total_m": 5501.6,
+   "taxes": [
+    "COR",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2016.pdf",
+   "table": "Table 3: Distribution by Industry (Business Income Taxes, combined), PDF p. 12"
+  },
+  "2017": {
+   "s1": 36.43,
+   "s2": 32.26,
+   "s3": 7.88,
+   "s4": 5.39,
+   "s5": 9.49,
+   "s6": 8.55,
+   "total_m": 5630.9,
+   "taxes": [
+    "COR",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2017.pdf",
+   "table": "Table 1: Distribution by Industry (Business Income Taxes, combined), PDF p. 11"
+  },
+  "2018": {
+   "s1": 35.09,
+   "s2": 31.41,
+   "s3": 8.38,
+   "s4": 7.53,
+   "s5": 8.63,
+   "s6": 8.96,
+   "total_m": 6485.6,
+   "taxes": [
+    "COR",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2018.pdf",
+   "table": "Table 1: Distribution by Industry (Business Income Taxes, combined), PDF p. 11"
+  },
+  "2019": {
+   "s1": 34.2,
+   "s2": 31.64,
+   "s3": 8.16,
+   "s4": 9.08,
+   "s5": 7.72,
+   "s6": 9.2,
+   "total_m": 6728.9,
+   "taxes": [
+    "COR",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2019.pdf",
+   "table": "Table 1: Distribution by Industry (Business Income Taxes, combined), PDF p. 12"
+  },
+  "2020": {
+   "s1": 39.76,
+   "s2": 28.97,
+   "s3": 8.3,
+   "s4": 6.48,
+   "s5": 6.31,
+   "s6": 10.18,
+   "total_m": 6363.0,
+   "taxes": [
+    "COR",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2020.pdf",
+   "table": "Table 1: Distribution by Industry (Business Income Taxes, combined), PDF p. 11"
+  },
+  "2021": {
+   "s1": 40.28,
+   "s2": 28.46,
+   "s3": 9.0,
+   "s4": 7.11,
+   "s5": 7.03,
+   "s6": 8.11,
+   "total_m": 7882.5,
+   "taxes": [
+    "COR",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2021.pdf",
+   "table": "Table 1: Distribution by Industry (Business Income Taxes, combined), PDF p. 11"
+  },
+  "2022": {
+   "s1": 38.65,
+   "s2": 28.68,
+   "s3": 9.25,
+   "s4": 8.56,
+   "s5": 6.01,
+   "s6": 8.85,
+   "total_m": 8587.1,
+   "taxes": [
+    "COR",
+    "GCT",
+    "UBT"
+   ],
+   "src": "https://www.nyc.gov/assets/finance/downloads/pdf/reports/business_income_tax_liability/bit_report_2022.pdf",
+   "table": "Table 1: Distribution by Industry (Business Income Taxes, combined), PDF p. 11"
+  }
+ },
+ "years_note": "Each tax year's liability by industry from that year's Statistical Profiles of New York City Business Income Taxes, combined table. Through tax year 2014 the table covers the banking corporation, general corporation and unincorporated business taxes; from 2015 the business corporation tax replaced the first and most of the second."
 }
